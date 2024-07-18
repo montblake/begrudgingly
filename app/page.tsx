@@ -1,6 +1,5 @@
-import Image from 'next/image';
 import InfoPages from '@/app/components/infopages';
-import InfoPages2 from '@/app/components/infopages2';
+
 
 export default function Home() {
   return (
