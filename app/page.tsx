@@ -14,19 +14,27 @@ export default function Home() {
       <div className="h-screen bg-black">
 
         <Landing />
+
         <History />
+        <div className="lg:hidden">
+          <ImagePage page={"zero"} />
+        </div>
+
+        <Premise />
         <div className="lg:hidden">
           <ImagePage page={"two"} />
         </div>
-        <Premise />
-        <div className="lg:hidden">
-          <ImagePage page={"three"} />
-        </div>
+
         <Artist />
+        {/* <div className="lg:hidden"> */}
         <ImagePage page={"one"} />
+        {/* </div> */}
+
         <Audience />
-        <ImagePage page={"four"} />
+        {/* <ImagePage page={"four"} /> */}
+
         <Press />
+        <ImagePage page={"four"} />
         <Footer />
       </div>
 

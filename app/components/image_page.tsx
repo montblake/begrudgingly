@@ -1,12 +1,13 @@
 import Image from 'next/image';
 
 interface ImagePageProps {
-  page: "one" | "two" | "three";
+  page: "zero" | "one" | "two" | "three" | "four";
 }
 
 export default function ImagePage({ page }: ImagePageProps) {
 
   const lookup = {
+    zero: "/charles-full.jpg",
     one: "/dickens_color4.jpg",
     two: "/dickens_color2.jpg",
     three: "/dickens_color5.jpg",

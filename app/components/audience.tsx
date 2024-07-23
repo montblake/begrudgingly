@@ -1,9 +1,9 @@
 export default function Audience() {
   return (
-    <section className="p-12 lg:p-24 flex flex-col justify-start items-center bg-neutral-200 text-neutral-900">
-      <h2 className="text-2xl lg:text-3xl">Audience Reactions</h2>
-      <p className="italic text-xs lg:text-sm text-center">Specifically, comments from Goldstar members who attended the <br />2012 production at The Building Stage.</p>
-      <ul className="text-center flex flex-col gap-4 lg:gap-6 w-3/4 text-md lg:text-lg mt-8 lg:mt-12 max-w-[800px]">
+    <section className="p-12 md:p-24 flex flex-col justify-start items-center bg-neutral-200 text-neutral-900">
+      <h2 className="text-2xl md:text-3xl">Audience Reactions</h2>
+      <p className="italic text-xs md:text-sm text-center">Specifically, comments from Goldstar members who attended the <br />2012 production at The Building Stage.</p>
+      <ul className="text-center flex flex-col gap-4 md:gap-6 w-3/4 text-md md:text-lg mt-8 md:mt-12 max-w-[800px]">
 
         <li>
           The sleeper Christmas event of the season. You don&lsquo;t have to be into Dickens to appreciate it. It is so well done. I want to see it again.
@@ -33,11 +33,11 @@ export default function Audience() {
         </li>
 
         <li>
-          Exceptional! It&lsquo;s very funny, clever, and touching. <br />Blake Montgomery is very talented. I highly recommend this show!
+          Exceptional! It&lsquo;s very funny, clever, and touching. Blake Montgomery is very talented. I highly recommend this show!
         </li>
 
         <li>
-          Exactly what I needed to connect to the spirit of the season! Fabulous talent, wonderful humor, inspiring and insightful. <br />Thank you - Thank you - Thank you!
+          Exactly what I needed to connect to the spirit of the season! Fabulous talent, wonderful humor, inspiring and insightful. Thank you — Thank you — Thank you!
         </li>
       </ul>
     </section>
