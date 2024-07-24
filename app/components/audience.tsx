@@ -3,7 +3,7 @@ export default function Audience() {
     <section className="p-12 md:p-24 flex flex-col justify-start items-center bg-neutral-200 text-neutral-900">
       <h2 className="text-2xl md:text-3xl">Audience Reactions</h2>
       <p className="italic text-xs md:text-sm text-center">Specifically, comments from Goldstar members who attended the <br />2012 production at The Building Stage.</p>
-      <ul className="text-center flex flex-col gap-4 md:gap-6 w-3/4 text-md md:text-lg mt-8 md:mt-12 max-w-[800px]">
+      <ul className="text-center flex flex-col gap-4 md:gap-6 w-3/4 text-sm md:text-md lg:text-lg mt-8 md:mt-12 max-w-[800px]">
 
         <li>
           The sleeper Christmas event of the season. You don&lsquo;t have to be into Dickens to appreciate it. It is so well done. I want to see it again.
