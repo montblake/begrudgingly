@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function History() {
   return (
-    <section className="PAGETWO bg-neutral-200 flex flex-row-reverse justify-center items-center px-8 sm:px-12 md:px-36 pt-8 pb-8 md:pb-12" >
+    <section className="PAGETWO bg-neutral-200 flex flex-row-reverse justify-center items-center px-8 sm:px-12 md:px-36 pt-4 sm:pt-8 pb-8 md:pb-12" >
       <div className="flex justify-end items-end gap-12" >
         <div className="hidden w-1/3 rounded-lg overflow-hidden mix-blend-multiply md:flex justify-start items-start" >
           <Image

@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Landing() {
   return (
-    <div className="LANDING h-[90%] sm:bg-cover-dickens sm:bg-cover sm:bg-no-repeat md:bg-right-top bg-right flex flex-col justify-start items-start sm:justify-between">
+    <div className="LANDING h-[95%] sm:h-[92.5%] md:h-[90%] sm:bg-cover-dickens sm:bg-cover sm:bg-no-repeat md:bg-right-top bg-right flex flex-col justify-start items-start sm:justify-between">
 
       <div className="p-4 pt-4 md:p-16 md:pt-12 w-full">
         <div className="text-neutral-400">
@@ -29,11 +29,11 @@ export default function Landing() {
         />
       </div>
 
-      <div className="text-sm md:text-md text-neutral-400 bg-neutral-600/25 px-4 sm:px-8 py-4 md:px-16 md:py-8 flex flex-col items-center mx-4 mb-4 md:mx-16 md:mb-8 rounded-lg backdrop-blur border border-neutral-700">
+      <div className="text-xs sm:text-sm md:text-md text-neutral-300 bg-neutral-600/25 px-4 sm:px-8 py-4 md:px-16 md:py-8 flex flex-col items-center mx-4 mb-4 md:mx-16 md:mb-8 rounded-lg backdrop-blur border border-neutral-700">
         <p className="mb-2">Originally produced by the Building Stage in December of 2011 and 2012, CHARLES DICKENS BEGRUDGINGLY... charmed audiences with its unique, ridiculous, and ultimately warm-hearted cheer. Now, Blake Montgomery is bringing his Jeff Award-winning show back for the 2024 holiday season.</p>
         <a href="mailto:blakemontgomery312@gmail.com?subject=Charles Dickens Begrudgingly...">
           <button
-            className="bg-amber-200 text-neutral-800 rounded-full px-4 py-1 md:px-8 md:py-2 my-2">Get In Touch</button>
+            className="bg-amber-200 text-neutral-800 rounded-full px-4 py-1 md:px-8 md:py-2">Get In Touch</button>
         </a>
       </div>
     </div>
