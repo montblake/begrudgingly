@@ -1,4 +1,3 @@
-import InfoPages from '@/app/components/infopages';
 import Landing from '@/app/components/landing';
 import History from '@/app/components/history';
 import Premise from '@/app/components/premise';
