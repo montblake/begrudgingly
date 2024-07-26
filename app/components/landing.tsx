@@ -8,7 +8,7 @@ export default function Landing() {
         <div className="text-neutral-400">
 
           <h2 className="text-2xl md:text-4xl md:mb-2 drop-shadow-lg">Charles Dickens</h2>
-          <h1 className="text-5xl md:text-8xl text-neutral-100 mb-2 md:mb-4 drop-shadow-lg">Begrudgingly</h1>
+          <h1 className="text-4xl sm:text-5xl md:text-8xl text-neutral-100 mb-2 md:mb-4 drop-shadow-lg">Begrudgingly</h1>
           <h2 className="text-2xl md:text-4xl drop-shadow-lg">Performs </h2>
           <h2 className="text-2xl md:text-4xl drop-shadow-lg">&lsquo;A Christmas Carol.&rsquo;</h2>
           <h2 className="text-2xl mb-4 md:text-4xl md:mb-8 drop-shadow-lg">Again.</h2>
@@ -20,16 +20,17 @@ export default function Landing() {
         </div>
       </div>
 
-      <div className="sm:hidden h-[400px] overflow-hidden" >
+      <div className="sm:hidden w-full h-[360px] border-2 border-neutral-700 relative overflow-hidden" >
         <Image
           src="/dickens_image2_color.jpg"
           width="800"
           height="800"
           alt="Dickens reading..."
+          className="absolute top-[-30%] left-0 opacity-100"
         />
       </div>
 
-      <div className="text-xs sm:text-sm md:text-md text-neutral-300 bg-neutral-600/25 px-4 sm:px-8 py-4 md:px-16 md:py-8 flex flex-col items-center mx-4 mb-4 md:mx-16 md:mb-8 rounded-lg backdrop-blur border border-neutral-700">
+      <div className="text-xs sm:text-sm md:text-md text-neutral-300 bg-neutral-600/25 px-0 sm:px-4 py-4 md:px-16 md:py-8 flex flex-col items-center mx-4 mb-4 md:mx-16 md:mb-8 rounded-lg backdrop-blur sm:border border-neutral-700">
         <p className="mb-2">Originally produced by the Building Stage in December of 2011 and 2012, CHARLES DICKENS BEGRUDGINGLY... charmed audiences with its unique, ridiculous, and ultimately warm-hearted cheer. Now, Blake Montgomery is bringing his Jeff Award-winning show back for the 2024 holiday season.</p>
         <a href="mailto:blakemontgomery312@gmail.com?subject=Charles Dickens Begrudgingly...">
           <button
