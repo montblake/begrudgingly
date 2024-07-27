@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <section className="bg-black  flex justify-center items-start px-24 py-12">
+    <section className="  flex justify-center items-start px-24 py-12">
 
       {/* IMAGE */}
       <a href="mailto:blakemontgomery312@gmail.com?subject=Charles Dickens Begrudgingly...">
