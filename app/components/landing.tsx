@@ -1,36 +1,39 @@
+
 import Image from 'next/image';
+import Title from '@/app/components/title';
+import TitleAnimated from '@/app/components/title_animated';
+
 
 export default function Landing() {
   return (
-    <div className="LANDING">
+    <div className="LANDING bg-neutral-800 p-2">
 
 
-      <div className="w-full flex flex-col justify-start items-center r elative top-[-100px] pt-8 pb-8">
-        <h1 className="text-5xl tracking-tighter text-neutral-200">Begrudgingly,</h1>
 
-        <h2 className="text-amber-200 text-xs text-center uppercase mt-4 mb-2">Charles Dickens performs &lsquo;A Christmas Carol&rsquo;</h2>
-
-
-        <h2 className="text-5xl tracking-tighter text-neutral-200">Again!</h2>
-      </div>
+      {/* <Title version={3} /> */}
+      <TitleAnimated />
 
 
-      <div className="sm:hidden h-[320px]  relative overflow-hidden border border-neutral-500 m-2" >
-        <Image
-          src="/dickens_image2_color.jpg"
-          width="800"
-          height="800"
-          alt="Dickens reading..."
-          className="absolute top-[-10%] left-0 opacity-100"
-        />
-      </div>
+      <>
+        {/* <div className="h-[320px] relative overflow-hidden mx-2 border border-neutral-500 rounded-md" >
+          <Image
+            src="/dickens_image2_color.jpg"
+            width="800"
+            height="800"
+            alt="Dickens reading..."
+            className="absolute top-[-10%] left-0 opacity-100"
+          />
+        </div> */}
 
 
-      <div className="w-full flex flex-col justify-start items-center pt-8 pb-8">
+        {/* <div className="w-full flex flex-col justify-start items-center pt-6 pb-10">
 
-        <h4 className="text-amber-200 text-xs text-center uppercase">created and performed by</h4>
-        <h4 className="text-xl text-neutral-200">Blake Montgomery</h4>
-      </div>
+          <h4 className="text-amber-200 text-xs text-center uppercase">created and performed by</h4>
+          <h4 className="text-xl text-neutral-200">Blake Montgomery</h4>
+        </div> */}
+      </>
+
+
     </div >
   );
 }

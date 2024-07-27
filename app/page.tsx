@@ -7,16 +7,16 @@ import ImagePage from '@/app/components/image_page';
 import Audience from '@/app/components/audience';
 import Press from '@/app/components/press';
 import Footer from '@/app/components/footer';
-import PageTwo from '@/app/components/pagetwo';
-import Outcome from '@/app/components/outcome';
+import News from '@/app/components/news';
+import Play from '@/app/components/play';
 
 export default function Home() {
   return (
-    <main className="bg-neutral-900 w-screen h-min-screen">
+    <main className="bg-neutral-800 w-screen h-min-screen pb-2">
 
 
       <Landing />
-      <PageTwo />
+      <News />
       <Audience />
       <History />
       {/* <div className="lg:hidden">
@@ -28,7 +28,7 @@ export default function Home() {
         <ImagePage page={"two"} />
       </div> */}
 
-      <Outcome />
+      <Play />
 
       <Press />
 
@@ -40,8 +40,8 @@ export default function Home() {
 
       {/* <ImagePage page={"four"} /> */}
 
-      <ImagePage page={"four"} />
       <Footer />
+      <ImagePage page={"four"} />
 
 
     </main>

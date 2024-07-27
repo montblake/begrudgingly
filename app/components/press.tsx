@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from 'react';
+import { CircleArrowRight, CircleArrowLeft } from 'lucide-react';
 
 const QUOTES = [
   "The sleeper Christmas event of the season. You don't have to be into Dickens to appreciate it. It is so well done. I want to see it again.",
@@ -34,20 +35,24 @@ export default function Press() {
   }
 
   return (
-    <>
-      <h1 className="text-amber-200 text-xs text-center uppercase mt-12">Press Reviews</h1>
-      <div className="p-4 flex gap-4 w-full justify-between items-center text-neutral-600 mt-0 mb-16">
-        <p className="text-2xl" onClick={prevQuote}>&lt;</p>
+    <div className="p-12 h-[360px] relative">
+      <h1 className="text-amber-200 text-xs text-center uppercase">Press Reviews</h1>
+      <div className="flex w-full justify-center items-center text-neutral-600 pt-6">
         <h2 className="text-md text-center text-neutral-200" onClick={toggleShow}>{QUOTES[currentQuote]}</h2>
-        <p className="text-2xl" onClick={nextQuote}>&gt;</p>
+      </div>
+      <div className="absolute bottom-8 left-0 w-full flex justify-center gap-2">
+        <div className="opacity-[80%]">
+          <CircleArrowLeft color="rgb(253 230 138)" size={25} onClick={prevQuote} />
+        </div>
+        <div className="opacity-[80%]">
+          <CircleArrowRight color="rgb(253 230 138)" size={25} onClick={nextQuote} />
+        </div>
       </div>
       <div className="text-center text-md ">
         {showExplanation &&
           <p className="italic text-xs text-center text-amber-200">Specifically, comments from Goldstar members who attended the <br />2012 production at The Building Stage.</p>
         }
-
-
       </div>
-    </>
+    </div>
   )
 }
