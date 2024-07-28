@@ -1,5 +1,4 @@
 import Landing from '@/app/components/landing';
-import Background from '@/app/components/background';
 import History from '@/app/components/history';
 import Premise from '@/app/components/premise';
 import Artist from '@/app/components/artist';

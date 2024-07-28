@@ -16,7 +16,7 @@ const QUOTES = [
 
 export default function Audience() {
 
-  const [showExplanation, setShowExplanation] = useState<Boolean>(false);
+  const [showExplanation, setShowExplanation] = useState<boolean>(false);
   const [currentQuote, setCurrentQuote] = useState<number>(0);
 
   const toggleShow = () => {
