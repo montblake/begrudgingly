@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Premise() {
   return (
-    <section className="bg-neutral-200 rounded-md mx-2 my-1 flex flex-col p-4 pb-8 md:mx-16 md:my-8 md:py-12 md:px-12 md:flex-row-reverse md:gap-8">
+    <section className="bg-neutral-200 rounded-md mx-2 my-1 flex flex-col p-4 pb-8 md:mx-16 md:my-2 md:py-12 md:px-12 md:flex-row-reverse md:gap-8 max-w-[1080px]">
       <div className="w-full IMAGE rounded-lg overflow-hidden border border-neutral-600 h-[400px] mb-4 md:w-1/3 md:h-fit">
         <Image
           src="/dickens_color2.jpg"

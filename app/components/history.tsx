@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function History() {
   return (
-    <section className="bg-neutral-200 flex flex-col md:flex-row items-center justify-center md:items-end md:gap-8 pt-4 pb-8 mx-2 my-1 rounded-md px-4 md:mx-16 md:my-8 md:py-12 md:px-12" >
+    <section className="bg-neutral-200 flex flex-col md:flex-row items-center justify-center md:items-end md:gap-8 pt-4 pb-8 mx-2 my-1 rounded-md px-4 md:mx-16 md:py-12 md:px-12 max-w-[1080px] md:my-2" >
 
       <div className="w-full h-[320px] md:h-auto overflow-hidden rounded-md pt-8 px-2 border border-neutral-700 mb-4 md:mb-0 md:w-1/3 md:border-none md:pt-0" >
         <Image

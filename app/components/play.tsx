@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Play() {
   return (
-    <section className="bg-neutral-200 flex flex-col items-center justify-center mx-2 my-1 rounded-md px-4 pt-4 pb-8 md:mx-16 md:my-8 md:py-12 md:px-12 md:flex-row md:gap-8 md:items-start" >
+    <section className="bg-neutral-200 flex flex-col items-center justify-center mx-2 my-1 rounded-md px-4 pt-4 pb-8 md:mx-16 md:my-2 md:py-12 md:px-12 md:flex-row md:gap-8 md:items-start max-w-[1080px]" >
 
       <div className="w-full overflow-hidden rounded-lg md:w-1/3" >
         <Image
