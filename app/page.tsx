@@ -41,7 +41,7 @@ export default function Home() {
       {/* <ImagePage page={"four"} /> */}
 
       <Footer />
-      <ImagePage page={"four"} />
+      <ImagePage page={"one"} />
 
 
     </main>
