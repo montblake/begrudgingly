@@ -10,7 +10,7 @@ export default function Artist() {
           width="1000"
           height="800"
           alt="Dickens reading..."
-          className="relative -top-32 md:top-0"
+          className="relative sm:-top-32 md:top-0"
         />
       </div>
       <div className="text-neutral-700 md:w-2/3">

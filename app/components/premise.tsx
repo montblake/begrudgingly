@@ -9,7 +9,7 @@ export default function Premise() {
           width="800"
           height="800"
           alt="Dickens reading..."
-          className="relative -top-24 md:top-0"
+          className="relative top-0"
         />
       </div>
       <div className="text-neutral-700 w-full md:w-2/3">

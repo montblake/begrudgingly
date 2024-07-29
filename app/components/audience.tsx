@@ -34,12 +34,12 @@ export default function Audience() {
   }
 
   return (
-    <div className="py-12 px-24 h-[360px] relative flex flex-col justify-start items-center">
+    <div className="py-12 px-12 md:px-24 relative flex flex-col justify-center items-center w-full">
       <h1 className="text-amber-200 text-xs md:text-base text-center uppercase ">Audience Reactions</h1>
-      <div className="flex justify-center items-center text-neutral-600 pt-6 w-2/3">
-        <h2 className="text-md md:text-2xl text-center text-neutral-200" onClick={toggleShow}>{QUOTES[currentQuote]}</h2>
+      <div className="flex justify-center items-center text-neutral-600 h-[300px] sm:w-2/3">
+        <h2 className="text-lg sm:text-xl md:text-2xl text-center text-neutral-200" onClick={toggleShow}>{QUOTES[currentQuote]}</h2>
       </div>
-      <div className="absolute bottom-8 md:bottom-16 left-0 w-full flex justify-center gap-2">
+      <div className="w-full flex justify-center gap-2">
         <div className="opacity-[80%]">
           <CircleArrowLeft color="rgb(253 230 138)" size={25} onClick={prevQuote} />
         </div>
