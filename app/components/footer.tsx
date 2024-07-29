@@ -5,7 +5,7 @@ export default function Footer() {
       <h2 className="uppercase text-sm text-amber-200">Contact</h2>
       <div className="text-neutral-200 text-sm py-8">
 
-        <p>While this is a "one-man show", it certainly cannot be a "one-man operation." Currently, I am seeking a venue for this year's performances as well as members of the sales/marketing team supporting the production.</p>
+        <p>While this is a one-man show, it certainly cannot be a one-man operation. Currently, I am seeking a venue for this year&apos;s performances as well as members of the sales/marketing team supporting the production.</p>
         <div className="flex flex-col items-start pt-4">
 
           <p>Blake Montgomery</p>
