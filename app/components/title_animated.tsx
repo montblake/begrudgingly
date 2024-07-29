@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function TitleAnimated() {
   return (
 
-    <div className="h-screen w-full rounded-lg overflow-hidden flex-col md:bg-cover-dickens md:bg-cover md:bg-right-top md:bg-no-repeat md:border md:border-neutral-600 text-left">
+    <div className="h-screen w-full relative rounded-lg overflow-hidden flex-col md:bg-cover-dickens md:bg-cover md:bg-right-top md:bg-no-repeat md:border md:border-neutral-600 text-left">
       <div className="h-[85%] md:h-[75%] flex flex-col">
         {/* sm */}
         <div
@@ -74,8 +74,27 @@ export default function TitleAnimated() {
           className="hidden md:flex grow flex-col justify-start items-start overflow-hidden p-8"
 
         >
+          <motion.div className="w-full h-full bg-neutral-900 absolute top-0 left-0 z-0 flex justify-end"
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { opacity: 1 },
+            }}
+            initial="visible"
+            animate="hidden"
+            transition={{ delay: 2.5, duration: 5.5 }}
+          >
+            <div className="w-1/2 bg-neutral-200 h-auto overflow-hidden rounded-lg border border-neutral-700 m-2" >
+              <Image
+                src="/charles-full.jpg"
+                width="800"
+                height="800"
+                alt="Dickens reading..."
+                className="mix-blend-multiply"
+              />
+            </div>
+          </motion.div>
           <motion.h2
-            className="text-3xl md:text-6xl tracking-tight text-neutral-300"
+            className="text-3xl md:text-6xl tracking-tight text-neutral-300 relative z-10"
             animate={{
               y: [0, 0, 0, 0, 0],
 
@@ -100,7 +119,7 @@ export default function TitleAnimated() {
           </motion.h1>
 
           <motion.h2
-            className="text-3xl md:text-6xl tracking-tight text-neutral-300"
+            className="text-3xl md:text-6xl tracking-tight text-neutral-300 relative z-10"
             animate={{
               y: [-96, -96, 0, 0, 0],
             }}
@@ -110,7 +129,7 @@ export default function TitleAnimated() {
           </motion.h2>
 
           <motion.h2
-            className="text-3xl md:text-6xl tracking-tight text-neutral-300"
+            className="text-3xl md:text-6xl tracking-tight text-neutral-300 relative z-10"
             animate={{
               y: [-96, -96, 0, 0, 0],
               x: [-8, -8, -8, -8, -8],
@@ -121,7 +140,7 @@ export default function TitleAnimated() {
           </motion.h2>
 
           <motion.h1
-            className="text-4xl md:text-8xl tracking-tighter text-amber-200 uppercase"
+            className=" text-4xl md:text-8xl tracking-tighter text-amber-200 uppercase relative  z-10"
             animate={{
               // scale: [1.5, 1.5, 1.5, 1.5, 1.5],
               opacity: [0, 1, 1, 1, 1],
@@ -176,9 +195,9 @@ export default function TitleAnimated() {
           </motion.div>
         </div>
       </div>
-
+      {/* PHone Version */}
       <motion.div
-        className="h-[15%] md:h-[25%] grow w-full flex flex-col justify-center items-center md:items-start md:justify-start md:px-8"
+        className="h-[15%] md:hidden grow w-full flex flex-col justify-center items-center md:items-start md:justify-start md:px-8"
         variants={{
           hidden: { opacity: 0 },
           visible: { opacity: 1 },
@@ -186,6 +205,20 @@ export default function TitleAnimated() {
         initial="hidden"
         animate="visible"
         transition={{ delay: 8.0, duration: 1 }}
+      >
+        <h4 className="text-amber-200 text-xs md:text-lg text-center uppercase">created and performed by</h4>
+        <h4 className="text-xl md:text-4xl text-neutral-200">Blake Montgomery</h4>
+      </motion.div>
+      {/* MD:Version quicker */}
+      <motion.div
+        className="hidden h-[15%] md:h-[25%] grow w-full md:flex flex-col justify-center items-center md:items-start md:justify-start md:px-8 relative z-10"
+        variants={{
+          hidden: { opacity: 0 },
+          visible: { opacity: 1 },
+        }}
+        initial="hidden"
+        animate="visible"
+        transition={{ delay: 6.0, duration: 2 }}
       >
         <h4 className="text-amber-200 text-xs md:text-lg text-center uppercase">created and performed by</h4>
         <h4 className="text-xl md:text-4xl text-neutral-200">Blake Montgomery</h4>

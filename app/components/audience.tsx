@@ -39,12 +39,12 @@ export default function Audience() {
       <div className="flex justify-center items-center text-neutral-600 h-[300px] sm:w-2/3">
         <h2 className="text-lg sm:text-xl md:text-2xl text-center text-neutral-200" onClick={toggleShow}>{QUOTES[currentQuote]}</h2>
       </div>
-      <div className="w-full flex justify-center gap-2">
-        <div className="opacity-[80%]">
-          <CircleArrowLeft color="rgb(253 230 138)" size={25} onClick={prevQuote} />
+      <div className="w-full flex justify-center gap-8">
+        <div className="opacity-[70%] hover:opacity-[90%] active:opacity-[90%]">
+          <CircleArrowLeft color="rgb(253 230 138)" size={48} onClick={prevQuote} />
         </div>
-        <div className="opacity-[80%]">
-          <CircleArrowRight color="rgb(253 230 138)" size={25} onClick={nextQuote} />
+        <div className="opacity-[70%] hover:opacity-[90%] active:opacity-[90%]">
+          <CircleArrowRight color="rgb(253 230 138)" size={48} onClick={nextQuote} />
         </div>
       </div>
       <div className="text-center text-md ">
