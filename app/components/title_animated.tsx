@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function TitleAnimated() {
   return (
 
-    <div className="h-screen w-full relative rounded-lg overflow-hidden flex-col md:bg-cover-dickens md:bg-cover md:bg-right-top md:bg-no-repeat md:border md:border-neutral-600 text-left">
+    <div className="h-screen w-full relative rounded-lg overflow-hidden flex-col md:bg-cover-dickens md:bg-cover md:bg-right-top md:bg-no-repeat md:border-x md:border-neutral-600 text-left">
       <div className="h-[85%] md:h-[75%] flex flex-col">
         {/* sm */}
         <div

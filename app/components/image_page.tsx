@@ -18,7 +18,7 @@ export default function ImagePage({ page }: ImagePageProps) {
     <section className="flex justify-center items-center w-full">
 
       {/* UNDER TABLE IMAGE AS BACKGROUND */}
-      <div className=" relative overflow-hidden border border-neutral-600 rounded-md w-full">
+      <div className=" relative overflow-hidden border-x border-neutral-600 rounded-md w-full">
         <Image
           src={lookup[page]}
           alt="Dickens Production Image"

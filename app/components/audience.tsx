@@ -34,17 +34,17 @@ export default function Audience() {
   }
 
   return (
-    <div className="py-12 px-12 md:px-24 relative flex flex-col justify-center items-center w-full">
+    <div className="py-12 px-12 md:px-24 relative flex flex-col justify-center items-center w-full bg-neutral-900 border-x border-neutral-600">
       <h1 className="text-amber-200 text-xs md:text-base text-center uppercase ">Audience Reactions</h1>
       <div className="flex justify-center items-center text-neutral-600 h-[300px] sm:w-2/3">
         <h2 className="text-lg sm:text-xl md:text-2xl text-center text-neutral-200" onClick={toggleShow}>{QUOTES[currentQuote]}</h2>
       </div>
       <div className="w-full flex justify-center gap-8">
-        <div className="opacity-[70%] hover:opacity-[90%] active:opacity-[90%]">
-          <CircleArrowLeft color="rgb(253 230 138)" size={48} onClick={prevQuote} />
+        <div className="opacity-[100%]">
+          <CircleArrowLeft color="rgb(253 230 138)" size={48} strokeWidth="1" onClick={prevQuote} />
         </div>
-        <div className="opacity-[70%] hover:opacity-[90%] active:opacity-[90%]">
-          <CircleArrowRight color="rgb(253 230 138)" size={48} onClick={nextQuote} />
+        <div className="opacity-[100%]">
+          <CircleArrowRight color="rgb(253 230 138)" size={48} strokeWidth="1" onClick={nextQuote} />
         </div>
       </div>
       <div className="text-center text-md ">
