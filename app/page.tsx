@@ -11,8 +11,8 @@ import Play from '@/app/components/play';
 
 export default function Home() {
   return (
-    <main className="bg-neutral-800 flex justify-center items-start">
-      <div className="max-w-[1400px] bg-neutral-800 w-screen h-min-screen px-16 flex flex-col justify-start items-center">
+    <main className="bg-neutral-900 w-screen h-min-screen flex justify-center items-start">
+      <div className="max-w-[1400px] bg-neutral-900 sm:px-2 md:px-16">
 
 
         <Landing />
