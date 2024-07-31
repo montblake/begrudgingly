@@ -13,12 +13,8 @@ const REVIEWS = [
 
 export default function Press() {
 
-  // const [showExplanation, setShowExplanation] = useState<boolean>(false);
-  const [currentQuote, setCurrentQuote] = useState<number>(0);
+  const [currentQuote, setCurrentQuote] = useState<number>(3);
 
-  // const toggleShow = () => {
-  //   setShowExplanation(!showExplanation);
-  // }
 
   const nextQuote = () => {
     const newQuote = (currentQuote + 1) % REVIEWS.length;
@@ -31,7 +27,7 @@ export default function Press() {
   }
 
   return (
-    <div className="bg-neutral-900 py-12 px-12 md:px-24 relative flex flex-col justify-center items-center w-full border-x border-neutral-600">
+    <div className="bg-neutral-900 py-12 px-12 md:px-24 relative flex flex-col justify-center items-center w-full">
       <h1 className="text-amber-200 text-xs md:text-base text-center uppercase ">Press Reviews</h1>
       <div className="flex flex-col justify-center items-center text-neutral-600 h-[360px] sm:w-2/3">
         <h2 className="text-md sm:text-xl md:text-2xl text-center text-neutral-200 mb-2" >{REVIEWS[currentQuote].quote}</h2>
@@ -39,11 +35,11 @@ export default function Press() {
         <p className="italic text-xs sm:text-md md:text-lg text-center text-neutral-200" >{REVIEWS[currentQuote].credit.split(",")[1]}</p>
       </div>
       <div className="w-full flex justify-center gap-8">
-        <div className="opacity-[100%]">
-          <CircleArrowLeft color="rgb(253 230 138)" size={48} strokeWidth="1" onClick={prevQuote} />
+        <div className="opacity-[100%] bg-amber-200 rounded-full">
+          <CircleArrowLeft color="black" size={48} strokeWidth="1.5" onClick={prevQuote} />
         </div>
-        <div className="opacity-[100%]">
-          <CircleArrowRight color="rgb(253 230 138)" size={48} strokeWidth="1" onClick={nextQuote} />
+        <div className="opacity-[100%] bg-amber-200 rounded-full">
+          <CircleArrowRight color="black" size={48} strokeWidth="1.5" onClick={nextQuote} />
         </div>
       </div>
       {/* <div className="text-center text-md ">
