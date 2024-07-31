@@ -9,9 +9,6 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "cover-dickens": "url('/dickens_newcover.jpg')",
         "footer-dickens": "url('/final_half_dickens.jpg')",
         "under-dickens": "url('/dickens_color4.jpg')",
