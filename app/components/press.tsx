@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { CircleArrowRight, CircleArrowLeft } from 'lucide-react';
 
 const REVIEWS = [
-  { quote: "As the guests enter, each one is made welcome by Mr. Dickens. He runs to the tea cups, matching saucer and cup with the appropriate pattern. He flings a biscuit to the nearest patron young and old. He moves through the aisle with likeable ease, keenly observing audience. He makes you smile almost instantly.", credit: "Lazlo Collins, Chicagoland Theater Reviews" },
+  { quote: "As the guests enter, each one is made welcome by Mr. Dickens. [...] He moves through the aisle with likeable ease, keenly observing audience. He makes you smile almost instantly.", credit: "Lazlo Collins, Chicagoland Theater Reviews" },
   { quote: "Encore!", credit: "Katy Walsh, Let's Play at ChicagoNow" },
   { quote: "I was expecting something transgressive and wonderfully bitter based on the show's title, but writer-performer Blake Montgomery has envisioned something far cozier than my personal cynicism could have predicted. [...] It is charming and awkward and the sort of thing that is disarming in its good-natured sweetness.", credit: "Nina Metz, Chicago Tribune" }
   ,
@@ -35,10 +35,10 @@ export default function Press() {
         <p className="italic text-xs sm:text-md md:text-lg text-center text-neutral-200" >{REVIEWS[currentQuote].credit.split(",")[1]}</p>
       </div>
       <div className="w-full flex justify-center gap-8">
-        <div className="opacity-[100%] bg-amber-200 rounded-full">
+        <div className="bg-amber-200/80 active:bg-amber-200 hover:bg-amber-200 rounded-full">
           <CircleArrowLeft color="black" size={48} strokeWidth="1.5" onClick={prevQuote} />
         </div>
-        <div className="opacity-[100%] bg-amber-200 rounded-full">
+        <div className="bg-amber-200/80 active:bg-amber-200 hover:bg-amber-200 rounded-full">
           <CircleArrowRight color="black" size={48} strokeWidth="1.5" onClick={nextQuote} />
         </div>
       </div>

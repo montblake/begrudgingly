@@ -40,10 +40,10 @@ export default function Audience() {
         <h2 className="text-lg sm:text-xl landscape:text-2xl text-center text-neutral-200" onClick={toggleShow}>{QUOTES[currentQuote]}</h2>
       </div>
       <div className="w-full flex justify-center gap-8">
-        <div className="opacity-[100%] bg-amber-200 rounded-full">
+        <div className=" bg-amber-200/80 hover:bg-amber-200 active:bg-amber-200 rounded-full">
           <CircleArrowLeft color="black" size={48} strokeWidth="1.5" onClick={prevQuote} />
         </div>
-        <div className="opacity-[100%] bg-amber-200 rounded-full">
+        <div className="  bg-amber-200/80 hover:bg-amber-200 active:bg-amber-200 rounded-full">
           <CircleArrowRight color="black" size={48} strokeWidth="1.5" onClick={nextQuote} />
         </div>
       </div>
