@@ -7,7 +7,7 @@ export default function News() {
 
       <div className="w-full flex justify-center bg-neutral-200 rounded-md border border-neutral-600">
 
-        < div className="landscape:w-2/3 text-neutral-700 flex flex-col p-4 pb-8 sm:p-8 sm:pb-16 md:p-16 md:pb-24 lg:px-24 lg:pb-36  rounded-md landscape:my-8 landscape:pt-16 landscape:pb-24 " >
+        < div className="landscape:w-2/3 text-neutral-700 flex flex-col p-4 pb-8 sm:p-16 sm:pt-12 md:p-24 md:pt-16 lg:p-48 lg:pt-36   rounded-md landscape:my-8 landscape:pt-16 landscape:pb-24 " >
           <h2 className="text-lg landscape:text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold mb-0 landscape:mb-2 sm:mb-1 md:mb-2 lg:mb-2" > The News</h2>
 
           <p className="text-sm landscape:text-lg sm:text-lg md:text-xl lg:text-2xl mb-2 sm:mb-3 landscape:mb-4">
