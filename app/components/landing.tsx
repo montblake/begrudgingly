@@ -173,7 +173,7 @@ export default function Landing() {
 
             <Image
               src="/dickens_image2_color.jpg"
-              width="1200"
+              width="1400"
               height="1200"
               alt="Dickens Reading 'A Christmas Carol'"
               className="absolute z-20"
@@ -192,7 +192,7 @@ export default function Landing() {
           >
             <Image
               src="/charles-full.jpg"
-              width="1200"
+              width="1400"
               height="1200"
               alt="Dickens Public Reading, Historical Illustration"
               className="absolute z-40"
