@@ -15,9 +15,9 @@ export default function Landing() {
 
         >
           <motion.h2
-            className="text-3xl landscape:text-6xl tracking-tight text-neutral-300"
+            className="text-3xl translate-y-[80px] landscape:text-6xl tracking-tight text-neutral-300"
             animate={{
-              y: [80, 0, 0, 10, 0],
+              y: [80, 0, 0, 0, 0],
 
             }}
             transition={{ delay: 2, duration: 4.0 }}
@@ -27,7 +27,7 @@ export default function Landing() {
           </motion.h2>
 
           <motion.h1
-            className="text-4xl landscape:text-7xl tracking-tighter text-amber-200 uppercase relative z-10"
+            className="text-4xl opacity-0 landscape:text-7xl tracking-tighter text-amber-200 uppercase relative z-10"
             animate={{
               scale: [0, 0, 0, 1.75, 1],
               opacity: [0, 0, 0, 1, 1],
@@ -39,7 +39,7 @@ export default function Landing() {
           </motion.h1>
 
           <motion.h2
-            className="text-3xl landscape:text-6xl tracking-tight text-neutral-300"
+            className="text-3xl translate-y-[40px] landscape:text-6xl tracking-tight text-neutral-300"
             animate={{
               y: [40, -40, -40, -10, 0],
             }}
@@ -49,7 +49,7 @@ export default function Landing() {
           </motion.h2>
 
           <motion.h2
-            className="text-3xl landscape:text-6xl tracking-tight text-neutral-300"
+            className="text-3xl translate-y-[40px] landscape:text-6xl tracking-tight text-neutral-300"
             animate={{
               y: [40, -40, -40, -10, 0],
             }}
@@ -59,7 +59,7 @@ export default function Landing() {
           </motion.h2>
 
           <motion.h1
-            className="text-4xl landscape:text-7xl tracking-tighter text-amber-200 uppercase"
+            className="text-4xl opacity-0 landscape:text-7xl tracking-tighter text-amber-200 uppercase"
             animate={{
               scale: [0, 1.75, 1.75, 1, 1],
               opacity: [0, 1, 1, 1, 1],
@@ -109,7 +109,7 @@ export default function Landing() {
           </motion.h2>
 
           <motion.h1
-            className="text-4xl landscape:text-8xl tracking-tighter text-amber-200 uppercase relative z-10"
+            className="text-4xl opacity-0 landscape:text-8xl tracking-tighter text-amber-200 uppercase relative z-10"
             animate={{
               // scale: [0, 0, 0, 1.25, 1.25],
               opacity: [0, 0, 0, 1, 1],
@@ -122,7 +122,7 @@ export default function Landing() {
           </motion.h1>
 
           <motion.h2
-            className="text-3xl landscape:text-6xl tracking-tight text-neutral-300 relative z-10"
+            className="text-3xl translate-y-[-96px] landscape:text-6xl tracking-tight text-neutral-300 relative z-10"
             animate={{
               y: [-96, -96, 0, 0, 0],
             }}
@@ -132,7 +132,7 @@ export default function Landing() {
           </motion.h2>
 
           <motion.h2
-            className="text-3xl landscape:text-6xl tracking-tight text-neutral-300 relative z-10"
+            className="text-3xl translate-y-[-96px] translate-x-[-8px] landscape:text-6xl tracking-tight text-neutral-300 relative z-10"
             animate={{
               y: [-96, -96, 0, 0, 0],
               x: [-8, -8, -8, -8, -8],
@@ -143,7 +143,7 @@ export default function Landing() {
           </motion.h2>
 
           <motion.h1
-            className=" text-4xl landscape:text-8xl tracking-tighter text-amber-200 uppercase relative  z-10"
+            className=" text-4xl opacity-0 translate-y[-65px] landscape:text-8xl tracking-tighter text-amber-200 uppercase relative  z-10"
             animate={{
               // scale: [1.5, 1.5, 1.5, 1.5, 1.5],
               opacity: [0, 1, 1, 1, 1],
