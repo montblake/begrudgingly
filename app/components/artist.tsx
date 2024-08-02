@@ -7,7 +7,7 @@ export default function Artist() {
         <div className="landscape:w-[80%] flex flex-col mx-2 my-1 rounded-md p-4 pb-8 sm:p-8 sm:pb-16 md:p-16 md:pb-24 lg:px-24 lg:pb-36 landscape:my-2 landscape:py-12 landscape:flex-row-reverse landscape:gap-8 landscape:items-start">
 
 
-          <div className="rounded-lg overflow-hidden border border-neutral-700 h-[360px] md:h-[800px] landscape:h-fit w-full landscape:w-1/3">
+          <div className="rounded-lg overflow-hidden border border-neutral-700 h-[320px] sm:h-[500px] md:h-[640px] lg:h-[800px] landscape:h-fit w-full landscape:w-1/3">
             <Image
               src="/blake_headshot.jpg"
               width="1400"

@@ -5,7 +5,7 @@ export default function History() {
     <section className="bg-neutral-900 " >
       <div className="bg-neutral-200 mx-2 my-1 rounded-md flex justify-center">
         <div className="landscape:w-[80%] flex flex-col landscape:flex-row items-center justify-center landscape:items-end landscape:gap-8 p-4 pb-8 sm:p-8 sm:pb-16 md:p-16 md:pb-24 lg:px-24 lg:pb-36 landscape:py-24 landscape:px-0 landscape:pb-36">
-          <div className="w-full h-[320px] md:h-[800px] overflow-hidden rounded-lg pt-8 px-2 landscape:p-0 border border-neutral-700 landscape:mb-0 landscape:w-1/3 landscape:border-none landscape:pt-0 flex justify-end items-start landscape:items-end landscape:h-fit" >
+          <div className="w-full h-[320px] sm:h-[500px] md:h-[640px] lg:h-[800px] overflow-hidden rounded-lg pt-8 px-2 landscape:p-0 border border-neutral-700 landscape:mb-0 landscape:w-1/3 landscape:border-none landscape:pt-0 flex justify-end items-start landscape:items-end landscape:h-fit" >
             <Image
               src="/charles-full.jpg"
               width="1400"

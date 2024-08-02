@@ -6,7 +6,7 @@ export default function Play() {
       <div className="bg-neutral-200  my-1 rounded-md  flex justify-center">
 
         <div className="landscape:w-[80%] flex flex-col items-center justify-center p-4 pb-8 sm:p-8 sm:pb-16 md:p-16 md:pb-24 lg:px-24 lg:pb-36 landscape:py-12 landscape:px-0 landscape:flex-row landscape:gap-8 landscape:pt-24 landscape:pb-36 landscape:items-start">
-          <div className="w-full overflow-hidden rounded-lg landscape:w-1/3 md:h-[800px] flex items-center landscape:h-fit landscape:items-start" >
+          <div className="w-full overflow-hidden rounded-lg landscape:w-1/3 h-[320px] sm:h-[500px] md:h-[640px] lg:h-[800px] flex items-center landscape:h-fit landscape:items-start" >
             <Image
               src="/dickens_color3.jpg"
               width="1400"
