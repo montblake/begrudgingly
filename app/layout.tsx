@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Libre_Baskerville } from "next/font/google";
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/react';
 
 const baskerville = Libre_Baskerville({ subsets: ["latin"], weight: ["400", "700"] })
 
@@ -16,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={baskerville.className}>{children}</body>
+      <body className={baskerville.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
