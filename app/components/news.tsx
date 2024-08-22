@@ -15,12 +15,13 @@ export default function News() {
           <div className="landscape:w-2/3 lg:w-2/3">
 
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-2xl font-bold mb-0 landscape:text-2xl landscape:mb-2 sm:mb-1 md:mb-2 lg:mb-2" > The News</h2>
+            <div>
+              <p className="text-sm landscape:text-lg sm:text-lg md:text-xl lg:text-lg mb-2 sm:mb-3 landscape:mb-4 lg:mb-4">
+                <span className="uppercase text-sm sm:text-base md:text-lg lg:text-lg">Charles Dickens Begrudgingly</span> charmed audiences when first produced in Chicago at the Building Stage in December of 2011 and 2012.
+                This unique holiday show, which imagines a still-living Dickens forced to perform his famous <span className="uppercase text-sm sm:text-base md:text-lg lg:text-lg">Christmas Carol</span> for the 171st year in a row, lovingly celebrates and skewers the famous author and our Christmas traditions.</p>
+              <p className="text-sm landscape:text-lg sm:text-lg md:text-xl lg:text-lg">Now, ten years after the closing the theater, former Building Stage Artistic Director Blake Montgomery brings his Jeff Award-winning show back to the stage in time for the 2024 holiday season.</p>
 
-            <p className="text-sm landscape:text-lg sm:text-lg md:text-xl lg:text-lg mb-2 sm:mb-3 landscape:mb-4 lg:mb-4">
-              <span className="uppercase text-sm sm:text-base md:text-lg lg:text-lg">Charles Dickens Begrudgingly</span> charmed audiences when first produced in Chicago at the Building Stage in December of 2011 and 2012.
-              This unique holiday show, which imagines a still-living Dickens forced to perform his famous <span className="uppercase text-sm sm:text-base md:text-lg lg:text-lg">Christmas Carol</span> for the 171st year in a row, lovingly celebrates and skewers the famous author and our Christmas traditions.</p>
-            <p className="text-sm landscape:text-lg sm:text-lg md:text-xl lg:text-lg">Now, ten years after the closing the theater, former Building Stage Artistic Director Blake Montgomery brings his Jeff Award-winning show back to the stage in time for the 2024 holiday season.</p>
-
+            </div>
           </div>
           <CallToAction />
 

@@ -71,7 +71,7 @@ export default function TitleAnimated() {
         </div>
         {/* MEDIUM ANIMATED TEXT */}
         <div
-          className="hidden md:flex grow flex-col justify-start items-start overflow-hidden p-8"
+          className="hidden md:flex grow flex-col justify-start items-start overflow-hidden bg-red-500"
 
         >
           <motion.div className="w-full h-full bg-neutral-900 absolute top-0 left-0 z-0 flex justify-end"
