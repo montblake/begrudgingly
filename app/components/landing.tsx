@@ -6,16 +6,21 @@ import Image from 'next/image';
 export default function Landing() {
   return (
     // IN LANDSCAPE MODE, images are displayed as background-images
-    <div className=" h-screen w-full relative flex-col landscape:bg-cover-dickens landscape:bg-cover landscape:bg-right-top landscape:bg-no-repeat">
+    <div className="
+    w-full h-[80vh] relative flex flex-col items-center justify-center
+    landscape:bg-cover-dickens landscape:bg-cover landscape:bg-right-top landscape:bg-no-repeat
+    lg:bg-cover-dickens lg:bg-cover lg:bg-right-top lg:bg-no-repeat
+    ">
+
       {/* TEXT TITLE SECTION */}
-      <div className="h-[85%] landscape:h-[75%] flex flex-col">
-        {/* for phone and portrait display*/}
+      <div className="h-[85%] w-full flex flex-col landscape:h-[75%] lg:h-[75%]">
+        {/* for phone and portrait display through md breakpoint*/}
         <div
-          className="h-[250px] flex flex-col justify-end items-center landscape:hidden overflow-hidden pb-8"
+          className="h-[250px] flex flex-col justify-end items-center overflow-hidden pb-8 landscape:hidden lg:hidden"
 
         >
           <motion.h2
-            className="text-3xl translate-y-[80px] landscape:text-6xl tracking-tight text-neutral-300"
+            className="text-3xl translate-y-[80px] tracking-tight text-neutral-300 landscape:text-6xl lg:text-6xl"
             animate={{
               y: [80, 0, 0, 0, 0],
 
@@ -27,7 +32,7 @@ export default function Landing() {
           </motion.h2>
 
           <motion.h1
-            className="text-4xl opacity-0 landscape:text-7xl tracking-tighter text-amber-200 uppercase relative z-10"
+            className="text-4xl opacity-0  tracking-tighter text-amber-200 uppercase relative z-10 landscape:text-7xl lg:text-7xl"
             animate={{
               scale: [0, 0, 0, 1.75, 1],
               opacity: [0, 0, 0, 1, 1],
@@ -39,7 +44,7 @@ export default function Landing() {
           </motion.h1>
 
           <motion.h2
-            className="text-3xl translate-y-[40px] landscape:text-6xl tracking-tight text-neutral-300"
+            className="text-3xl translate-y-[40px] tracking-tight text-neutral-300 landscape:text-6xl lg:text-6xl"
             animate={{
               y: [40, -40, -40, -10, 0],
             }}
@@ -49,7 +54,7 @@ export default function Landing() {
           </motion.h2>
 
           <motion.h2
-            className="text-3xl translate-y-[40px] landscape:text-6xl tracking-tight text-neutral-300"
+            className="text-3xl translate-y-[40px] tracking-tight text-neutral-300 landscape:text-6xl lg:text-6xl"
             animate={{
               y: [40, -40, -40, -10, 0],
             }}
@@ -59,7 +64,7 @@ export default function Landing() {
           </motion.h2>
 
           <motion.h1
-            className="text-4xl opacity-0 landscape:text-7xl tracking-tighter text-amber-200 uppercase"
+            className="text-4xl opacity-0 tracking-tighter text-amber-200 uppercase landscape:text-7xl lg:text-7xl"
             animate={{
               scale: [0, 1.75, 1.75, 1, 1],
               opacity: [0, 1, 1, 1, 1],
@@ -74,7 +79,7 @@ export default function Landing() {
         {/* TEXT TITLE SECTION FOR LANDSCAPE MODE (USED WITH BG_IMAGE) */}
         {/* INITIAL DICKENS ILLUSTRATION IS INCLUDED HERE AND THEN HIDDEN */}
         <div
-          className="hidden landscape:flex grow flex-col justify-start items-start overflow-hidden p-8"
+          className="hidden grow flex-col justify-start items-center overflow-hidden py-8 landscape:flex lg:flex"
 
         >
           <motion.div className="w-full h-full bg-neutral-900 absolute top-0 left-0 z-0 flex justify-end"
@@ -96,70 +101,73 @@ export default function Landing() {
               />
             </div>
           </motion.div>
-          <motion.h2
-            className="text-3xl landscape:text-6xl tracking-tight text-neutral-300 relative z-10"
-            animate={{
-              y: [0, 0, 0, 0, 0],
+          <div className="w-[80%] relative z-10">
 
-            }}
-            transition={{ delay: 2, duration: 4.0 }}
+            <motion.h2
+              className="text-3xl tracking-tight text-neutral-300 landscape:text-6xl lg:text-6xl  drop-shadow-[0px_0px_1px_rgba(0,0,0,2)]"
+              animate={{
+                y: [0, 0, 0, 0, 0],
 
-          >
-            Charles Dickens
-          </motion.h2>
+              }}
+              transition={{ delay: 2, duration: 4.0 }}
 
-          <motion.h1
-            className="text-4xl opacity-0 landscape:text-8xl tracking-tighter text-amber-200 uppercase relative z-10"
-            animate={{
-              // scale: [0, 0, 0, 1.25, 1.25],
-              opacity: [0, 0, 0, 1, 1],
-              // x: [0, 0, 0, 68, 68],
+            >
+              Charles Dickens
+            </motion.h2>
 
-            }}
-            transition={{ delay: 4, duration: 4.0 }}
-          >
-            Begrudgingly
-          </motion.h1>
+            <motion.h1
+              className="text-4xl opacity-0 tracking-tighter text-amber-200 uppercase relative z-10 landscape:text-8xl lg:text-8xl"
+              animate={{
+                // scale: [0, 0, 0, 1.25, 1.25],
+                opacity: [0, 0, 0, 1, 1],
+                // x: [0, 0, 0, 68, 68],
 
-          <motion.h2
-            className="text-3xl translate-y-[-96px] landscape:text-6xl tracking-tight text-neutral-300 relative z-10"
-            animate={{
-              y: [-96, -96, 0, 0, 0],
-            }}
-            transition={{ delay: 4, duration: 4.0 }}
-          >
-            Performs
-          </motion.h2>
+              }}
+              transition={{ delay: 4, duration: 4.0 }}
+            >
+              Begrudgingly
+            </motion.h1>
 
-          <motion.h2
-            className="text-3xl translate-y-[-96px] translate-x-[-8px] landscape:text-6xl tracking-tight text-neutral-300 relative z-10"
-            animate={{
-              y: [-96, -96, 0, 0, 0],
-              x: [-8, -8, -8, -8, -8],
-            }}
-            transition={{ delay: 4, duration: 4.0 }}
-          >
-            &lsquo;A Christmas Carol&rsquo;
-          </motion.h2>
+            <motion.h2
+              className="text-3xl translate-y-[-96px] tracking-tight text-neutral-300 relative z-10 landscape:text-6xl lg:text-6xl"
+              animate={{
+                y: [-96, -96, 0, 0, 0],
+              }}
+              transition={{ delay: 4, duration: 4.0 }}
+            >
+              Performs
+            </motion.h2>
 
-          <motion.h1
-            className=" text-4xl opacity-0 translate-y[-65px] landscape:text-8xl tracking-tighter text-amber-200 uppercase relative  z-10"
-            animate={{
-              // scale: [1.5, 1.5, 1.5, 1.5, 1.5],
-              opacity: [0, 1, 1, 1, 1],
-              y: [-65, -65, 0, 0, 0],
-              // x: [68, 68, 68, 68, 68],
-            }}
-            transition={{ delay: 2, duration: 4.0 }}
-          >
-            Again.
-          </motion.h1>
+            <motion.h2
+              className="text-3xl translate-y-[-96px] translate-x-[-8px] tracking-tight text-neutral-300 relative z-10 landscape:text-6xl lg:text-6xl drop-shadow-[0px_0px_1px_rgba(0,0,0,2)]"
+              animate={{
+                y: [-96, -96, 0, 0, 0],
+                x: [-8, -8, -8, -8, -8],
+              }}
+              transition={{ delay: 4, duration: 4.0 }}
+            >
+              &lsquo;A Christmas Carol&rsquo;
+            </motion.h2>
+
+            <motion.h1
+              className=" text-4xl opacity-0 translate-y[-65px] tracking-tighter text-amber-200 uppercase relative z-10 landscape:text-8xl lg:text-8xl"
+              animate={{
+                // scale: [1.5, 1.5, 1.5, 1.5, 1.5],
+                opacity: [0, 1, 1, 1, 1],
+                y: [-65, -65, 0, 0, 0],
+                // x: [68, 68, 68, 68, 68],
+              }}
+              transition={{ delay: 2, duration: 4.0 }}
+            >
+              Again.
+            </motion.h1>
+          </div>
         </div>
         {/* IMAGES SECTION */}
         {/* PHONE/PORTRAIT MODE IMAGES. HIDDEN WHEN IN LANDSCAPE MODE */}
         <div
           className="h-[300px] overflow-hidden border-y
-          landscape:border-x border-neutral-500 relative grow landscape:hidden"
+           border-neutral-500 relative grow landscape:hidden landscape:border-x lg:hidden lg:border-x"
         >
           <motion.div
             variants={{
@@ -204,7 +212,11 @@ export default function Landing() {
       {/* CREDITS SECTION: CREATED BY BLAKE MONTGOMERY  */}
       {/* PHone Version */}
       <motion.div
-        className="h-[15%] landscape:hidden grow w-full flex flex-col justify-center items-center landscape:items-start landscape:justify-start landscape:px-8"
+        className="
+        h-[15%]  grow w-full flex flex-col justify-center items-center
+        landscape:hidden landscape:items-start landscape:justify-start landscape:px-8
+        lg:hidden lg:items-start lg:justify-start lg:px-8
+        "
         variants={{
           hidden: { opacity: 0 },
           visible: { opacity: 1 },
@@ -213,12 +225,16 @@ export default function Landing() {
         animate="visible"
         transition={{ delay: 8.0, duration: 1 }}
       >
-        <h4 className="text-amber-200 text-xs landscape:text-lg text-center uppercase">created and performed by</h4>
-        <h4 className="text-xl landscape:text-4xl text-neutral-200">Blake Montgomery</h4>
+        <h4 className="text-amber-200 text-xs text-center uppercase landscape:text-lg lg:text-lg">created and performed by</h4>
+        <h4 className="text-xl text-neutral-200 landscape:text-4xl lg:text-4xl">Blake Montgomery</h4>
       </motion.div>
       {/* landscape:Version quicker */}
       <motion.div
-        className="hidden h-[15%] landscape:h-[25%] grow w-full landscape:flex flex-col justify-center items-center landscape:items-start landscape:justify-start landscape:px-8 relative z-10"
+        className="
+          hidden h-[15%] grow w-full flex-col justify-center items-center relative z-10
+          landscape:h-[25%]  landscape:w-[80%] landscape:flex landscape:items-start landscape:justify-start 
+          lg:h-[25%]  lg:w-[80%] lg:flex lg:items-start lg:justify-start
+        "
         variants={{
           hidden: { opacity: 0 },
           visible: { opacity: 1 },
@@ -227,8 +243,8 @@ export default function Landing() {
         animate="visible"
         transition={{ delay: 6.5, duration: 2 }}
       >
-        <h4 className="text-amber-200 text-xs landscape:text-lg text-center uppercase">created and performed by</h4>
-        <h4 className="text-xl landscape:text-4xl text-neutral-200">Blake Montgomery</h4>
+        <h4 className="text-amber-200 text-xs text-center uppercase landscape:text-lg lg:text-lg">created and performed by</h4>
+        <h4 className="text-xl text-neutral-200 landscape:text-4xl lg:text-4xl">Blake Montgomery</h4>
       </motion.div>
 
 
