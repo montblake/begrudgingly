@@ -1,7 +1,11 @@
 // import { Mail } from 'lucide-react';
 import CallToAction from '@/app/components/call_to_action';
 
-export default function News() {
+type NewsProps = {
+  context: 'booking' | 'landing'
+}
+
+export default function News({ context }: NewsProps) {
   return (
     <section className="bg-neutral-900 p-2">
 
@@ -22,7 +26,7 @@ export default function News() {
 
           </div>
 
-          <CallToAction />
+          <CallToAction context={context} />
         </div>
       </div>
     </section >

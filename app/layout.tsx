@@ -6,8 +6,8 @@ import { Analytics } from '@vercel/analytics/react';
 const baskerville = Libre_Baskerville({ subsets: ["latin"], weight: ["400", "700"] })
 
 export const metadata: Metadata = {
-  title: "Charles Dickens Begrudgingly",
-  description: "The Award-Winning Holiday Show, CHARLES DICKENS BEGRUDGINGLY PERFORMS 'A CHRISTMAS CAROL' AGAIN, created and performed by Blake Montgomery returns to the Chicago stage in 2024.",
+  title: "Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL, Again",
+  description: "Blake Montgomery's Award-Winning Holiday Show Returns To The Chicago",
 };
 
 export default function RootLayout({
