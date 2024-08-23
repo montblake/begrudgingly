@@ -6,13 +6,13 @@ export default function Premise() {
       <div className="bg-neutral-200 rounded-md flex justify-center">
         <div className="
           flex flex-col p-4 pb-8 sm:p-16 sm:pt-12 md:p-24 md:pt-16 
-          landscape:w-[80%] landscape:flex-row-reverse landscape:items-end landscape:gap-8 landscape:py-24 landscape:px-0 landscape:pb-36
-          lg:w-[80%] lg:flex-row-reverse lg:items-end lg:gap-8 lg:py-24 lg:px-0 lg:pb-36
+          landscape:w-[80%] landscape:flex-row-reverse landscape:items-start landscape:gap-8 landscape:py-24 landscape:px-0 landscape:pb-36
+          lg:w-[80%] lg:flex-row-reverse lg:items-start lg:gap-8 lg:py-24 lg:px-0 lg:pb-36
         ">
           <div className="
             w-full h-[360px] sm:h-[540px] md:h-[640px] overflow-hidden rounded-lg  border border-neutral-700 flex justify-end items-start 
-            landscape:p-0 landscape:mb-0 landscape:w-1/3 landscape:border-none landscape:pt-0 landscape:items-end landscape:h-fit
-            lg:p-0 lg:mb-0 lg:w-1/3 lg:border-none lg:pt-0 lg:items-end lg:h-fit
+            landscape:p-0 landscape:mb-0 landscape:w-1/3 landscape:border-none landscape:pt-0 landscape:h-fit
+            lg:p-0 lg:mb-0 lg:w-1/3 lg:border-none lg:pt-0 lg:h-fit
           ">
             <Image
               src="/dickens_color2.jpg"
