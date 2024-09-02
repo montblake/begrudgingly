@@ -1,11 +1,8 @@
 // import { Mail } from 'lucide-react';
-import CallToAction from '@/app/components/call_to_action';
+// import CallToAction from '@/app/components/call_to_action';
 
-type NewsProps = {
-  context: 'booking' | 'landing'
-}
 
-export default function News({ context }: NewsProps) {
+export default function News() {
   return (
     <section className="bg-neutral-900 p-2">
 
@@ -22,11 +19,18 @@ export default function News({ context }: NewsProps) {
             <p className="text-sm sm:text-base md:text-lg mb-2 sm:mb-3 landscape:text-lg landscape:mb-4 lg:text-lg lg:mb-4">
               <span className="uppercase">Charles Dickens Begrudgingly</span> charmed audiences when first produced in Chicago at the Building Stage in December of 2011 and 2012.
               This unique holiday show, which imagines a still-living Dickens forced to perform his famous <span className="uppercase">Christmas Carol</span> for the 171st year in a row, lovingly celebrates and skewers the famous author and our Christmas traditions.</p>
-            <p className="text-sm sm:text-base md:text-lg mb-2 sm:mb-3 landscape:text-lg landscape:mb-4 lg:text-lg lg:mb-4">Now, ten years after the closing the theater, former Building Stage Artistic Director Blake Montgomery brings his Jeff Award-winning show back to the stage in time for the 2024 holiday season.</p>
+            <p className="text-sm sm:text-base md:text-lg mb-2 sm:mb-3 landscape:text-lg landscape:mb-4 lg:text-lg lg:mb-4">Now, ten years after the closing the theater, former Building Stage Artistic Director Blake Montgomery brings his Jeff Award-winning show back to the Chicago stage for the 2024 holiday season.</p>
 
           </div>
 
-          <CallToAction context={context} />
+          {/* <CallToAction context={context} /> */}
+
+          <div className="w-full h-full flex flex-col justify-center items-center bg-neutral-700 rounded-lg p-8 sm:p-16 md:p-24 text-neutral-200 mt-4 landscape:p-8 landscape:mt-0 landscape:w-1/3 lg:p-8 lg:mt-0 lg:w-1/3">
+
+            <p className="text-lg sm:text-xl md:text-2xl tracking-tight uppercase text-center landscape:text-xl lg:text-xl">Venue and Dates coming soon.</p>
+
+
+          </div>
         </div>
       </div>
     </section >

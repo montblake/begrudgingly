@@ -13,7 +13,7 @@ const CALLS = {
     buttonText: "Follow Dickens"
   },
   booking: {
-    title: "Now Booking for the holidays in q2024 and 2025",
+    title: "Now Booking for the 2025 holiday season",
     bulletPoints: [
       "Depending on availability and house size, performances could be held the weekend, week, or few weeks leading up to December 25.",
       "Open to discuss both straight rental and presentation/co-production arrangements",
