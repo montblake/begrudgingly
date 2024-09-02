@@ -15,7 +15,7 @@ export default function Home() {
 
 
         <Landing />
-        <News context={'landing'} />
+        <News />
 
         <Audience />
 
