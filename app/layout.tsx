@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
-import { Libre_Baskerville, Italianno } from "next/font/google";
+import { Libre_Baskerville } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 
 const baskerville = Libre_Baskerville({
   subsets: ["latin"],
   weight: ["400", "700"],
-});
-
-const italianno = Italianno({
-  subsets: ["latin"],
-  weight: ["400"],
 });
 
 export const metadata: Metadata = {
