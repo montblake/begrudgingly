@@ -45,11 +45,13 @@ export default function News() {
             <p className="text-lg sm:text-xl md:text-2xl tracking-tight uppercase text-center landscape:text-xl lg:text-xl">
               December 5
             </p>
-            <p className={italianno.className}>through</p>
+            <p className={`${italianno.className} text-xl lowercase`}>
+              through
+            </p>
             <p className="text-lg sm:text-xl md:text-2xl tracking-tight uppercase text-center landscape:text-xl lg:text-xl">
               December 22
             </p>
-            <p className={italianno.className}>at</p>
+            <p className={`${italianno.className} text-xl lowercase`}>at</p>
             <p className="text-lg sm:text-xl md:text-2xl tracking-tight uppercase text-center landscape:text-xl lg:text-xl">
               The Den Theatre
             </p>
