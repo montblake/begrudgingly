@@ -9,32 +9,35 @@ const italianno = Italianno({
 
 export default function News() {
   return (
-    <section className=" p-2 w-full landscape:w-1/2">
+    <section className=" p-2 w-full landscape:w-1/2 bg-white">
       <div className="bg-neutral-200 my-1 rounded-md flex justify-center w-full">
         <div
           className="w-full 
-          flex flex-col p-4 pb-8"
+          flex flex-col p-0"
         >
-          <div className="text-neutral-700 w-full mt-4">
-            <h2 className="text-base sm:text-lg md:text-xl font-bold mb-0 sm:mb-1 md:mb-2 landscape:text-2xl landscape:mb-2 lg:text-2xl lg:mb-2">
+          <div className="text-neutral-700 w-full">
+            {/* <h2 className="text-base sm:text-lg md:text-xl font-bold mb-0 sm:mb-1 md:mb-2 landscape:text-2xl landscape:mb-2 lg:text-2xl lg:mb-2">
               {" "}
               The News
-            </h2>
+            </h2> */}
 
-            <p className="text-sm sm:text-base md:text-lg mb-2 sm:mb-3 landscape:text-lg landscape:mb-4 lg:text-lg lg:mb-4">
-              <span className="uppercase">Charles Dickens Begrudgingly</span>{" "}
-              charmed audiences when first produced in Chicago at the Building
-              Stage in December of 2011 and 2012. This unique holiday show,
-              which imagines a still-living Dickens forced to perform his famous{" "}
-              <span className="uppercase">Christmas Carol</span> for the 171st
-              year in a row, lovingly celebrates and skewers the famous author
-              and our Christmas traditions.
-            </p>
-            <p className="text-sm sm:text-base md:text-lg mb-2 sm:mb-3 landscape:text-lg landscape:mb-4 lg:text-lg lg:mb-4">
-              Now, ten years after the closing the theater, former Building
-              Stage Artistic Director Blake Montgomery brings his Jeff
-              Award-winning show back to the Chicago stage for the 2024 holiday
-              season.
+            <p className="text-sm sm:text-base md:text-lg  landscape:text-lg ">
+              <span
+                className="italic
+              "
+              >
+                Charles Dickens Begrudgingly...
+              </span>{" "}
+              originally charmed audiences during its Chicago debut at The
+              Building Stage in December 2011 and 2012. This one-of-a-kind
+              holiday production, which imagines a still-living Dickens forced
+              to perform his famous{" "}
+              <span className="italic">A Christmas Carol</span> for the 171st
+              consecutive year, lovingly celebrates and skewers the famous
+              author and our Christmas traditions. Now, ten years after the
+              closing of The Building Stage, former Artistic Director Blake
+              Montgomery revives his Jeff Award-winning solo performance for the
+              2024 holiday season.
             </p>
           </div>
 
