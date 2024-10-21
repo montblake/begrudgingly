@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export default function SignUp() {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-100 text-neutral-800">
+    <div className="min-h-screen flex flex-col bg-gray-100 text-black">
       <div className="p-4">
         <Link
           href="/"
-          className="text-red-600 hover:text-red-700 transition duration-300"
+          className="text-gray-500 hover:underline transition duration-300"
         >
           ← Back to Home
         </Link>
@@ -44,7 +44,7 @@ export default function SignUp() {
             </div>
             <button
               type="submit"
-              className="w-full bg-red-600 text-white py-2 rounded-md hover:bg-red-700 transition duration-300"
+              className="w-full bg-amber-300 text-black py-2 rounded-md hover:bg-amber-400 transition duration-300"
             >
               Subscribe
             </button>

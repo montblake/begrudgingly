@@ -1,32 +1,27 @@
-"use client"
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-
+"use client";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Landing() {
   return (
     // IN LANDSCAPE MODE, images are displayed as background-images
-    <div className="
+    <div
+      className="
     w-full h-[80vh] relative flex flex-col items-center justify-center
     landscape:bg-cover-dickens landscape:bg-cover landscape:bg-right-top landscape:bg-no-repeat
     lg:bg-cover-dickens lg:bg-cover lg:bg-right-top lg:bg-no-repeat
-    ">
-
+    "
+    >
       {/* TEXT TITLE SECTION */}
       <div className="h-[85%] w-full flex flex-col landscape:h-[75%] lg:h-[75%]">
         {/* for phone and portrait display through md breakpoint*/}
-        <div
-          className="h-[250px] flex flex-col justify-end items-center overflow-hidden pb-8 landscape:hidden lg:hidden"
-
-        >
+        <div className="h-[250px] flex flex-col justify-end items-center overflow-hidden pb-8 landscape:hidden lg:hidden">
           <motion.h2
-            className="text-3xl translate-y-[80px] tracking-tight text-neutral-300 landscape:text-6xl lg:text-6xl"
+            className="text-3xl translate-y-[80px] tracking-tight text-gray-300 landscape:text-6xl lg:text-6xl"
             animate={{
               y: [80, 0, 0, 0, 0],
-
             }}
             transition={{ delay: 2, duration: 4.0 }}
-
           >
             Charles Dickens
           </motion.h2>
@@ -36,7 +31,6 @@ export default function Landing() {
             animate={{
               scale: [0, 0, 0, 1.75, 1],
               opacity: [0, 0, 0, 1, 1],
-
             }}
             transition={{ delay: 2, duration: 4.0 }}
           >
@@ -44,7 +38,7 @@ export default function Landing() {
           </motion.h1>
 
           <motion.h2
-            className="text-3xl translate-y-[40px] tracking-tight text-neutral-300 landscape:text-6xl lg:text-6xl"
+            className="text-3xl translate-y-[40px] tracking-tight text-gray-300 landscape:text-6xl lg:text-6xl"
             animate={{
               y: [40, -40, -40, -10, 0],
             }}
@@ -54,7 +48,7 @@ export default function Landing() {
           </motion.h2>
 
           <motion.h2
-            className="text-3xl translate-y-[40px] tracking-tight text-neutral-300 landscape:text-6xl lg:text-6xl"
+            className="text-3xl translate-y-[40px] tracking-tight text-gray-300 landscape:text-6xl lg:text-6xl"
             animate={{
               y: [40, -40, -40, -10, 0],
             }}
@@ -78,11 +72,9 @@ export default function Landing() {
 
         {/* TEXT TITLE SECTION FOR LANDSCAPE MODE (USED WITH BG_IMAGE) */}
         {/* INITIAL DICKENS ILLUSTRATION IS INCLUDED HERE AND THEN HIDDEN */}
-        <div
-          className="hidden grow flex-col justify-start items-center overflow-hidden py-8 landscape:flex lg:flex"
-
-        >
-          <motion.div className="w-full h-full bg-neutral-900 absolute top-0 left-0 z-0 flex justify-end"
+        <div className="hidden grow flex-col justify-start items-center overflow-hidden py-8 landscape:flex lg:flex">
+          <motion.div
+            className="w-full h-full bg-neutral-900 absolute top-0 left-0 z-0 flex justify-end"
             variants={{
               hidden: { opacity: 0 },
               visible: { opacity: 1 },
@@ -91,7 +83,7 @@ export default function Landing() {
             animate="hidden"
             transition={{ delay: 3, duration: 2 }}
           >
-            <div className="w-1/2 bg-neutral-200 h-auto overflow-hidden rounded-lg border border-neutral-700 m-2" >
+            <div className="w-1/2 bg-neutral-200 h-auto overflow-hidden rounded-lg border border-neutral-700 m-2">
               <Image
                 src="/charles-full.jpg"
                 width="800"
@@ -102,15 +94,12 @@ export default function Landing() {
             </div>
           </motion.div>
           <div className="w-[80%] relative z-10">
-
             <motion.h2
-              className="text-3xl tracking-tight text-neutral-300 landscape:text-6xl lg:text-6xl  drop-shadow-[0px_0px_1px_rgba(0,0,0,2)]"
+              className="text-3xl tracking-tight text-gray-300 landscape:text-6xl lg:text-6xl  drop-shadow-[0px_0px_1px_rgba(0,0,0,2)]"
               animate={{
                 y: [0, 0, 0, 0, 0],
-
               }}
               transition={{ delay: 2, duration: 4.0 }}
-
             >
               Charles Dickens
             </motion.h2>
@@ -121,7 +110,6 @@ export default function Landing() {
                 // scale: [0, 0, 0, 1.25, 1.25],
                 opacity: [0, 0, 0, 1, 1],
                 // x: [0, 0, 0, 68, 68],
-
               }}
               transition={{ delay: 4, duration: 4.0 }}
             >
@@ -129,7 +117,7 @@ export default function Landing() {
             </motion.h1>
 
             <motion.h2
-              className="text-3xl translate-y-[-96px] tracking-tight text-neutral-300 relative z-10 landscape:text-6xl lg:text-6xl"
+              className="text-3xl translate-y-[-96px] tracking-tight text-gray-300 relative z-10 landscape:text-6xl lg:text-6xl"
               animate={{
                 y: [-96, -96, 0, 0, 0],
               }}
@@ -139,7 +127,7 @@ export default function Landing() {
             </motion.h2>
 
             <motion.h2
-              className="text-3xl translate-y-[-96px] translate-x-[-8px] tracking-tight text-neutral-300 relative z-10 landscape:text-6xl lg:text-6xl drop-shadow-[0px_0px_1px_rgba(0,0,0,2)]"
+              className="text-3xl translate-y-[-96px] translate-x-[-8px] tracking-tight text-gray-300 relative z-10 landscape:text-6xl lg:text-6xl drop-shadow-[0px_0px_1px_rgba(0,0,0,2)]"
               animate={{
                 y: [-96, -96, 0, 0, 0],
                 x: [-8, -8, -8, -8, -8],
@@ -178,7 +166,6 @@ export default function Landing() {
             animate="visible"
             transition={{ delay: 5.0, duration: 4.0 }}
           >
-
             <Image
               src="/dickens_image2_color.jpg"
               width="1400"
@@ -225,8 +212,12 @@ export default function Landing() {
         animate="visible"
         transition={{ delay: 8.0, duration: 1 }}
       >
-        <h4 className="text-amber-200 text-xs text-center uppercase landscape:text-lg lg:text-lg">created and performed by</h4>
-        <h4 className="text-xl text-neutral-200 landscape:text-4xl lg:text-4xl">Blake Montgomery</h4>
+        <h4 className="text-amber-200 text-xs text-center uppercase landscape:text-lg lg:text-lg">
+          created and performed by
+        </h4>
+        <h4 className="text-xl text-gray-200 landscape:text-4xl lg:text-4xl">
+          Blake Montgomery
+        </h4>
       </motion.div>
       {/* landscape:Version quicker */}
       <motion.div
@@ -243,11 +234,13 @@ export default function Landing() {
         animate="visible"
         transition={{ delay: 6.5, duration: 2 }}
       >
-        <h4 className="text-amber-200 text-xs text-center uppercase landscape:text-lg lg:text-lg">created and performed by</h4>
-        <h4 className="text-xl text-neutral-200 landscape:text-4xl lg:text-4xl">Blake Montgomery</h4>
+        <h4 className="text-amber-200 text-xs text-center uppercase landscape:text-lg lg:text-lg">
+          created and performed by
+        </h4>
+        <h4 className="text-xl text-gray-200 landscape:text-4xl lg:text-4xl">
+          Blake Montgomery
+        </h4>
       </motion.div>
-
-
-    </div >
+    </div>
   );
 }

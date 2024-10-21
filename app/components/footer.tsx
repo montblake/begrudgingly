@@ -19,11 +19,11 @@ export default function Footer() {
           </p>
         </div>
 
-        <hr className="w-full border-neutral-600 border-t-1 my-4 md:hidden" />
+        <hr className="w-full border-gray-600 border-t-1 my-4 md:hidden" />
         <div className="flex flex-row items-center justify-start space-x-2">
           <Link
             href="/signup"
-            className="bg-gray-300 border border-gray-400 hover:bg-gray-100 rounded-md p-2 text-black text-xs w-auto h-20"
+            className="bg-gray-300 border border-gray-400 hover:bg-gray-100 rounded-md p-2 text-black text-xs aspect-square h-20"
           >
             Join Mailing List
           </Link>

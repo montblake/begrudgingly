@@ -15,7 +15,7 @@ export default function News() {
           className="w-full 
           flex flex-col p-0"
         >
-          <div className="text-neutral-700 w-full">
+          <div className="text-gray-700 w-full">
             {/* <h2 className="text-base sm:text-lg md:text-xl font-bold mb-0 sm:mb-1 md:mb-2 landscape:text-2xl landscape:mb-2 lg:text-2xl lg:mb-2">
               {" "}
               The News
@@ -41,7 +41,7 @@ export default function News() {
             </p>
           </div>
 
-          <div className="w-full h-full flex flex-col justify-center items-center bg-neutral-700 rounded-lg p-8 text-neutral-200 mt-4">
+          <div className="w-full h-full flex flex-col justify-center items-center bg-neutral-700 rounded-lg p-8 text-gray-200 mt-4">
             <p className={`${italianno.className} text-xl lowercase`}>
               Performances Begin
             </p>
@@ -61,7 +61,7 @@ export default function News() {
             <p className="text-xs tracking-tight uppercase text-center">
               1331 N Milwaukee, Chicago
             </p>
-            <div className="flex flex-col bg-amber-200/80 rounded-lg p-4 text-neutral-800 my-6">
+            <div className="flex flex-col bg-amber-200/80 rounded-lg p-4 text-gray-800 my-6">
               Tickets Available Soon
             </div>
           </div>

@@ -32,11 +32,11 @@ export default function Home() {
         className="w-full relative left-0 z-0 px-0 sm:px-20 md:px-28 lg:px-44 xl:px-48"
         ref={layeredImagesRef}
       >
-        <div className="relative w-full max-w-[1200px] mx-auto overflow-hidden">
+        <div className="relative w-full max-w-[1200px] mx-auto overflow-hidden mt-8">
           <div className="relative w-full overflow-hidden bg-white">
             <Image
               src="/dickens_layers/layered_reading.png"
-              alt="Blake Montgomery Headshot"
+              alt="Historical Dickens Reading"
               layout="responsive"
               width={800}
               height={800}

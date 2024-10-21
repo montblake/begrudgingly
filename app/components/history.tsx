@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function History() {
   return (
     <div className="flex flex-col items-center justify-center pb-8 sm:p-8 sm:pt-12 md:p-16 md:pt-16  landscape:w-[80%] landscape:flex-row landscape:items-end landscape:gap-8 landscape:py-24 landscape:px-0 landscape:pb-36 lg:w-[80%] lg:flex-row lg:items-end lg:gap-8 lg:py-24 lg:px-0 lg:pb-36">
-      <div className="text-neutral-200 w-full mt-4 md:mt-8 landscape:w-2/3 landscape:mt-0 lg:w-2/3 lg:mt-0">
+      <div className="text-gray-200 w-full mt-4 md:mt-8 landscape:w-2/3 landscape:mt-0 lg:w-2/3 lg:mt-0">
         <h2 className="text-base sm:text-lg md:text-xl font-bold mb-0 sm:mb-1 md:mb-2 landscape:mb-2 landscape:text-2xl lg:mb-2 lg:text-2xl">
           {" "}
           The History{" "}
@@ -18,7 +18,7 @@ export default function History() {
           his life.
         </p>
       </div>
-      <div className="text-neutral-200 w-full mt-4 md:mt-8 landscape:w-2/3 landscape:mt-0 lg:w-2/3 lg:mt-0">
+      <div className="text-gray-200 w-full mt-4 md:mt-8 landscape:w-2/3 landscape:mt-0 lg:w-2/3 lg:mt-0">
         <h2 className="text-base sm:text-lg md:text-xl font-bold mb-0 sm:mb-1 md:mb-2 landscape:text-2xl landscape:mb-2 lg:text-2xl lg:mb-2">
           The Premise
         </h2>
@@ -41,7 +41,7 @@ export default function History() {
         {/* <p>Whether this miracle is the result of the magic of Christmas, the power of the author&apos;s popularity, or a freak accident resulting from the interaction between an over-eager booking agent and some hitherto unappreciated arcana of contract law, it is impossible to state for certain.</p> */}
       </div>
 
-      <div className="text-neutral-200 w-full mt-4 md:mt-8 landscape:w-2/3 landscape:mt-0 lg:w-2/3 lg:mt-0">
+      <div className="text-gray-200 w-full mt-4 md:mt-8 landscape:w-2/3 landscape:mt-0 lg:w-2/3 lg:mt-0">
         <h2 className="text-base sm:text-lg md:text-xl font-bold mb-0 sm:mb-1 md:mb-2 landscape:text-2xl landscape:mb-2 lg:text-2xl lg:mb-2">
           The Play
         </h2>

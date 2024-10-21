@@ -26,7 +26,7 @@ export default function Premise() {
               className="relative top-0"
             />
           </div>
-          <div className="text-neutral-700 w-full mt-4 md:mt-8 landscape:w-2/3 landscape:mt-0 lg:w-2/3 lg:mt-0">
+          <div className="text-gray-700 w-full mt-4 md:mt-8 landscape:w-2/3 landscape:mt-0 lg:w-2/3 lg:mt-0">
             <h2 className="text-base sm:text-lg md:text-xl font-bold mb-0 sm:mb-1 md:mb-2 landscape:text-2xl landscape:mb-2 lg:text-2xl lg:mb-2">
               The Premise
             </h2>

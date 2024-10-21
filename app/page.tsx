@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 import Nav from "@/app/components/nav";
 import CallToAction from "@/app/components/call_to_action";
 import Footer from "@/app/components/footer";
-
+import Audience from "@/app/components/audience";
+import Press from "@/app/components/press";
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
   const layeredImagesRef = useRef(null);
@@ -130,6 +131,10 @@ export default function Home() {
             solo performance for the 2024 holiday season.
           </p>
         </div>
+        <hr className="w-full border-neutral-600" />
+        <Audience />
+        <hr className="w-full border-neutral-600" />
+        <Press />
         <Footer />
       </div>
     </main>

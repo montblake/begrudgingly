@@ -134,7 +134,7 @@ export default function NewLanding() {
           season.
         </p>
 
-        <div className="w-full h-full flex flex-col justify-center items-center  rounded-lg text-neutral-200 mt-4">
+        <div className="w-full h-full flex flex-col justify-center items-center  rounded-lg text-gray-200 mt-4">
           <p className={`${italianno.className} text-xl lowercase`}>
             Performances Begin
           </p>
@@ -152,7 +152,7 @@ export default function NewLanding() {
           <p className="text-xs tracking-tight uppercase text-center">
             1331 N Milwaukee, Chicago
           </p>
-          <div className="flex flex-col bg-amber-200/80 rounded-lg p-4 text-neutral-800 my-6">
+          <div className="flex flex-col bg-amber-200/80 rounded-lg p-4 text-gray-800 my-6">
             Tickets Available Soon
           </div>
         </div>
