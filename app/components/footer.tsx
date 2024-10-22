@@ -3,23 +3,28 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className=" w-full flex-col justify-start items-center text-gray-800  z-50 bg-gray-200 px-12 sm:px-24 md:px-32 lg:px-48 xl:px-48 landscape:px-16 landscape:pt-8 sm:pt-12 md:pt-16 lg:pt-8 border-t border-gray-300">
+    <div className=" w-full flex-col justify-start items-center text-gray-800 z-50 bg-gray-200 px-12 sm:px-24 md:px-32 lg:px-48 xl:px-48 landscape:px-16 pt-8 landscape:pt-8 sm:pt-12 md:pt-16 lg:pt-8 border-t border-gray-300">
       <div className="flex flex-col w-full justify-start items-start md:flex-row md:justify-between">
         <div className="flex flex-col w-full">
-          <h1 className="text-xs sm:text-sm md:text-base">
+          <h1 className="text-xs sm:text-sm md:text-base italic font-bold">
             Charles Dickens Begrudgingly
             <br />
             Performs &lsquo;A Christmas Carol&rsquo; Again
           </h1>
-          <p className="mt-2 italic text-xs md:text-sm mb-2">
+          <p className="mt-2 text-xs md:text-sm mb-2">
             Created and performed by Blake Montgomery
           </p>
-          <p className="italic text-xs md:text-sm mb-2">
-            December 5 – 22, 2024
-          </p>
-          <p className="text-xs md:text-sm italic">
-            The Den Theatre
-            <br /> 1331 N. Milwaukee Ave., Chicago, IL
+          <p className="text-xs md:text-sm mb-2">December 5 – 22, 2024</p>
+          <p className="text-xs md:text-sm">
+            <a
+              href="https://www.thedentheatre.com"
+              target="_blank"
+              className="hover:underline"
+            >
+              The Den Theatre
+            </a>
+            <br /> 1331 N. Milwaukee Ave.
+            <br /> Chicago, IL
           </p>
         </div>
 
@@ -73,9 +78,10 @@ export default function Footer() {
         className="hover:text-red-600 mx-4"
       >
         <hr className="w-full border-neutral-600 border-t-1" />
-        <div className="flex flex-row justify-between items-center pt-4 text-xs md:text-sm">
-          <p className="">this is a</p>
-          <p>clownshow</p>
+        <div className="flex flex-row justify-end items-center pt-4 text-xs md:text-sm">
+          <p className="">
+            this is a <span className="font-bold">clownshow</span>
+          </p>
         </div>
       </a>
     </div>

@@ -1,52 +1,49 @@
 "use client";
 
 import Nav from "@/app/components/nav";
-import CallToAction from "@/app/components/call_to_action";
 import Footer from "@/app/components/footer";
 import LayeredImage from "@/app/components/layered_image";
+import BuyButton from "@/app/components/buy_button";
 import PullQuote from "@/app/components/pull_quote";
+import IntroText from "@/app/components/intro_text";
+import SecondNav from "@/app/components/second_nav";
 
 export default function Home() {
   return (
     <main className="w-full min-h-screen flex flex-col justify-start items-start bg-black relative mx-auto">
       <Nav />
-      <PullQuote />
 
       <div
-        className="w-full landscape:h-[80vh] flex flex-col bg-black landscape:flex-row-reverse landscape:justify-between landscape:items-start gap-0
-
+        className="w-full landscape:h-fit flex flex-col bg-black landscape:flex-row landscape:justify-between landscape:items-start gap-0
+        mt-6 landscape:mt-12 landscape:overflow-scroll
       "
       >
-        <div className="w-full landscape:hidden ">
+        <div className="w-full landscape:hidden pt-8 landscape:pt-0">
           <LayeredImage />
+          <div className="mt-8">
+            <BuyButton />
+          </div>
         </div>
 
-        <div className="w-full landscape:w-1/3 landscape:h-full">
-          <CallToAction />
-        </div>
         <div className="w-1/2 hidden landscape:block landscape:flex flex-col justify-start items-start ">
           <LayeredImage />
         </div>
 
-        <div className="w-full h-full landscape:w-1/3 relative z-40 font-serif px-12 sm:px-24 md:px-32 lg:px-48 pb-16 sm:pb-24 md:pb-32 lg:pb-48 pt-0 sm:pt-4 md:pt-8 lg:pt-12 landscape:pt-0 landscape:pl-8 landscape:pr-0 landscape:mt-0 landscape:pb-0 flex flex-col justify-start items-start ">
-          <div className="flex flex-col justify-end items-end   px-20 landscape:px-8  landscape:pr-16 h-full pb-12">
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl landscape:text-base drop-shadow-lg">
-              This one-of-a-kind holiday production, which imagines a
-              still-living Dickens forced to perform his famous{" "}
-              <span className="italic">A Christmas Carol</span> for the 171st
-              consecutive year, lovingly celebrates and skewers the famous
-              author and our Christmas traditions.
-            </p>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl landscape:text-base drop-shadow-lg mt-4">
-              <span className="italic">Charles Dickens Begrudgingly...</span>{" "}
-              originally charmed audiences during its Chicago debut at The
-              Building Stage in December 2011 and 2012. Now, ten years after the
-              closing of The Building Stage, former Artistic Director Blake
-              Montgomery revives his Jeff Award-winning solo performance for the
-              2024 holiday season.
-            </p>
+        <div className="w-full h-full landscape:w-1/2 relative z-40 font-serif px-12 sm:px-24 md:px-32 lg:px-48 pb-8 landscape:pt-0 landscape:px-8 landscape:pb-0 landscape:pr-24 flex flex-col justify-start items-start text-gray-400">
+          <hr className="w-full border-gray-400/80 mt-16 landscape:mt-8" />
+          <PullQuote />
+          <hr className="w-full border-gray-400/80 mt-16 mb-8" />
+          <div className="mt-0 mb-8 w-full hidden landscape:block">
+            <BuyButton />
+          </div>
+          <IntroText />
+          <div className="w-full hidden landscape:block">
+            <SecondNav />
           </div>
         </div>
+      </div>
+      <div className="w-full landscape:hidden px-12 sm:px-24 md:px-32 lg:px-48 xl:px-48 landscape:px-16">
+        <SecondNav />
       </div>
       <Footer />
     </main>
