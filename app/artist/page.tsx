@@ -4,7 +4,6 @@ import Image from "next/image";
 import Footer from "../components/footer";
 import Nav from "../components/nav";
 import { useState, useEffect, useRef } from "react";
-import { motion } from "framer-motion";
 import BuyButton from "../components/buy_button";
 
 export default function Home() {
@@ -24,14 +23,15 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="max-w-[1400px] min-h-screen flex flex-col justify-start items-start bg-black relative mx-auto">
+    <main className="max-w-[1400px] min-h-screen flex flex-col justify-start items-start bg-black relative mx-auto mt-10 sm:mt-12 landscape:mt-0">
       <Nav />
 
       <div
-        className="w-full relative mt-4 left-0 z-0 px-0 sm:px-20 md:px-28 lg:px-44 xl:px-48"
+        className="w-full landscape:h-fit flex flex-col bg-black landscape:flex-row landscape:justify-between landscape:items-start gap-0
+        mt-6 landscape:mt-12 landscape:overflow-scroll landscape:py-8 landscape:px-16 landscape:gap-16 "
         ref={layeredImagesRef}
       >
-        <div className="relative w-full max-w-[1200px] mx-auto overflow-hidden">
+        <div className="relative w-full max-w-[1200px] mx-auto overflow-hidden landscape:w-1/2 h-fit">
           <div className="relative w-full overflow-hidden">
             <Image
               src="/dickens_layers/layered_blake.png"
@@ -46,7 +46,7 @@ export default function Home() {
               isScrolled ? "opacity-100" : "opacity-20"
             }`}
           ></div>
-          {/* <Image
+          <Image
             src="/dickens_layers/layered_shadowbox.png"
             alt="Dickens 2024 Publicity Image"
             layout="fill"
@@ -54,13 +54,8 @@ export default function Home() {
             className={`transition-opacity duration-1000 ${
               isScrolled ? "opacity-0" : "opacity-100"
             }`}
-          /> */}
-          {/* <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1, duration: 2 }}
-            className="absolute top-0 left-0 w-full h-full z-40"
-          >
+          />
+          <div className="absolute top-0 left-0 w-full h-full z-40">
             <Image
               src="/dickens_layers/layered_border.png"
               alt="Dickens 2024 Publicity Image"
@@ -79,60 +74,53 @@ export default function Home() {
                 isScrolled ? "opacity-0" : "opacity-100"
               }`}
             />
-          </motion.div> */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.25, duration: 3 }}
-            className="absolute top-0 left-0 w-full h-full"
-          >
+          </div>
+          <div className="absolute top-0 left-0 w-full h-full">
             <Image
               src="/dickens_layers/layered_title_less_shadow.png"
               alt="Dickens 2024 Publicity Image"
               layout="fill"
               objectFit="contain"
             />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1, duration: 3 }}
-            className="absolute top-0 left-0 w-full h-full"
-          >
+          </div>
+          <div className="absolute top-0 left-0 w-full h-full">
             <Image
               src="/dickens_layers/layered_credits.png"
               alt="Dickens 2024 Publicity Image"
               layout="fill"
               objectFit="contain"
             />
-          </motion.div>
+          </div>
         </div>
-      </div>
-      <div className="w-full flex flex-col bg-black">
-        <div className="w-full relative z-40 font-serif px-12 sm:px-24 md:px-32 lg:px-48 pb-16 sm:pb-24 md:pb-32 lg:pb-48 pt-8 sm:pt-12 md:pt-16 lg:pt-24 ">
-          <p className="text-gray-100 text-base sm:text-lg md:text-xl drop-shadow-lg">
-            Blake Montgomery began his career in Chicago directing ensemble
-            clown theater and performing with a variety of non-naturalistic
-            Chicago theaters, most notably Redmoon with whom he collaborated for
-            over a decade. In 2005, Montgomery founded The Building Stage, a
-            theater company and performance space, where he served as Artistic
-            Director until its closing in 2013. The company was known for its
-            ensemble-devised, director-driven creations, particularly in
-            literary adaptations like their Jeff Award-winning{" "}
-            <span className="italic">Moby-Dick</span> and the poetic,
-            clown-inspired <span className="italic">Dawn, Quixote</span>.
-            Montgomery&apos;s artistic approach draws on his training at the
-            École Jacques Lecoq, the Dell&apos;Arte School of Physical Theater,
-            and Middlebury College. A member of Actors&apos; Equity, his
-            performances in Chicago include work with The House Theatre,
-            Hypocrites, Remy Bumppo, Court Theatre, Chicago Shakespeare,
-            Steppenwolf, and Writers Theatre.
-          </p>
-        </div>
-        <BuyButton />
 
-        <Footer />
+        <div className="w-full flex flex-col bg-black landscape:w-1/2">
+          <div className="w-full relative z-40 font-serif px-12 sm:px-24 md:px-32 lg:px-48 pb-8 sm:pb-12 md:pb-16 lg:pb-20 pt-8 sm:pt-12 md:pt-16 lg:pt-24 landscape:p-0 ">
+            <p className="text-gray-400 text-base sm:text-lg md:text-xl lg:text-2xl landscape:text-base">
+              <span className="font-bold text-gray-200">Blake Montgomery</span>{" "}
+              began his career in Chicago directing ensemble clown theater and
+              performing with a variety of non-naturalistic Chicago theaters,
+              most notably Redmoon with whom he collaborated for over a decade.
+              In 2005, Montgomery founded The Building Stage, a theater company
+              and performance space, where he served as Artistic Director until
+              its closing in 2013. The company was known for its
+              ensemble-devised, director-driven creations, particularly in
+              literary adaptations like their Jeff Award-winning{" "}
+              <span className="italic">Moby-Dick</span> and the poetic,
+              clown-inspired <span className="italic">Dawn, Quixote</span>.
+              Montgomery&apos;s artistic approach draws on his training at the
+              École Jacques Lecoq, the Dell&apos;Arte School of Physical
+              Theater, and Middlebury College. A member of Actors&apos; Equity,
+              his performances in Chicago include work with The House Theatre,
+              Hypocrites, Remy Bumppo, Court Theatre, Chicago Shakespeare,
+              Steppenwolf, and Writers Theatre.
+            </p>
+          </div>
+          <div className="mb-16 sm:mb-20 md:mb-24 lg:mb-28 landscape:mt-12">
+            <BuyButton />
+          </div>
+        </div>
       </div>
+      <Footer />
     </main>
   );
 }
