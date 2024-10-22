@@ -27,16 +27,15 @@ export default function Home() {
       <Nav />
 
       <div
-        className="w-full landscape:h-fit flex flex-col bg-black landscape:flex-row landscape:justify-between landscape:items-start gap-0
-        mt-6 landscape:mt-12 landscape:overflow-scroll landscape:py-8 landscape:px-16 landscape:gap-16 "
+        className="w-full landscape:h-fit flex flex-col bg-black landscape:flex-row landscape:justify-between landscape:items-start gap-0 landscape:mt-12 landscape:overflow-scroll landscape:py-8 landscape:px-16 landscape:gap-16 pt-0 sm:pt-8"
         ref={layeredImagesRef}
       >
         <div className="relative w-full max-w-[1200px] mx-auto overflow-hidden landscape:w-1/2 h-fit">
-          <div className="relative w-full overflow-hidden">
+          <div className="relative w-full overflow-hidden max-w-[600px] mx-auto">
             <Image
               src="/dickens_layers/layered_blake.png"
               alt="Blake Montgomery Headshot"
-              width={1200}
+              width={600}
               height={800}
               className="w-full h-auto"
             />
@@ -93,8 +92,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full flex flex-col bg-black landscape:w-1/2">
-          <div className="w-full relative z-40 font-serif px-12 sm:px-24 md:px-32 lg:px-48 pb-8 sm:pb-12 md:pb-16 lg:pb-20 pt-8 sm:pt-12 md:pt-16 lg:pt-24 landscape:p-0 ">
+        <div className="w-full flex flex-col bg-black landscape:w-1/2 max-w-[600px] mx-auto">
+          <div className="w-full relative z-40 font-serif px-12 sm:px-0 pb-8 sm:pb-12 md:pb-16 lg:pb-20 pt-12 landscape:p-0 ">
             <p className="text-gray-400 text-base sm:text-lg md:text-xl lg:text-2xl landscape:text-base">
               <span className="font-bold text-gray-200">Blake Montgomery</span>{" "}
               began his career in Chicago directing ensemble clown theater and

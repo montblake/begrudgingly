@@ -10,7 +10,7 @@ export default function Performances() {
         <p className="text-xs italic mb-4">
           Click any date to visit the box office page for that performance.
         </p>
-        <div className="w-3/4 border border-gray-600 rounded-md flex flex-col justify-center items-center mt-4">
+        <div className="w-1/2 border border-gray-600 rounded-md flex flex-col justify-center items-center mt-4">
           <h2 className="text-sm mb-1 italic text-gray-400 text-center border-b border-gray-600 p-4 w-full">
             Previews, $16
           </h2>
@@ -44,7 +44,7 @@ export default function Performances() {
             </p>
           </div>
         </div>
-        <div className="w-3/4 border border-gray-600 rounded-md flex flex-col justify-center items-center mt-4">
+        <div className="w-1/2 border border-gray-600 rounded-md flex flex-col justify-center items-center mt-4">
           <h2 className="text-sm mb-1 italic text-gray-400 text-center border-b border-gray-600 p-4 w-full">
             Performances, $32
           </h2>
@@ -132,7 +132,7 @@ export default function Performances() {
             </p>
           </div>
         </div>
-        <div className="w-3/4 border border-gray-600 rounded-md flex flex-col justify-center items-center mt-4">
+        <div className="w-1/2 border border-gray-600 rounded-md flex flex-col justify-center items-center mt-4">
           <h2 className="text-sm mb-1 italic text-gray-400 text-center border-b border-gray-600 p-4 w-full">
             Performance Venue
           </h2>
