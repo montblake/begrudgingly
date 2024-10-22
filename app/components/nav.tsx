@@ -6,7 +6,7 @@ export default function Nav() {
   const pathname = usePathname();
   return (
     <div className="fixed top-0 left-0 w-full z-50 flex justify-center items-center border-b border-gray-400">
-      <nav className="text-xs sm:text-sm md:text-base  bg-gray-200 w-full max-w-[1400px] flex justify-center p-2">
+      <nav className="text-xs sm:text-sm md:text-base  bg-gray-200 w-full flex justify-center p-2">
         <ul className="flex space-x-4">
           <li>
             {pathname === "/" ? (

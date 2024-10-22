@@ -46,7 +46,7 @@ export default function Home() {
               isScrolled ? "opacity-100" : "opacity-20"
             }`}
           ></div>
-          <Image
+          {/* <Image
             src="/dickens_layers/layered_shadowbox.png"
             alt="Dickens 2024 Publicity Image"
             layout="fill"
@@ -54,8 +54,8 @@ export default function Home() {
             className={`transition-opacity duration-1000 ${
               isScrolled ? "opacity-0" : "opacity-100"
             }`}
-          />
-          <motion.div
+          /> */}
+          {/* <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 2 }}
@@ -79,7 +79,7 @@ export default function Home() {
                 isScrolled ? "opacity-0" : "opacity-100"
               }`}
             />
-          </motion.div>
+          </motion.div> */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

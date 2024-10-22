@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className=" w-full flex-col justify-start items-center text-gray-800  z-50 bg-gray-200 px-12 sm:px-24 md:px-32 lg:px-48 xl:px-48 pt-4 sm:pt-8 md:pt-12 lg:pt-16 h-full border-t border-gray-300">
+    <div className=" w-full flex-col justify-start items-center text-gray-800  z-50 bg-gray-200 px-12 sm:px-24 md:px-32 lg:px-48 xl:px-48 landscape:px-16 landscape:pt-8 sm:pt-12 md:pt-16 lg:pt-8 border-t border-gray-300">
       <div className="flex flex-col w-full justify-start items-start md:flex-row md:justify-between">
         <div className="flex flex-col w-full">
           <h1 className="text-xs sm:text-sm md:text-base">
@@ -11,11 +11,15 @@ export default function Footer() {
             <br />
             Performs &lsquo;A Christmas Carol&rsquo; Again
           </h1>
-          <p className="mt-2 italic text-xs md:text-sm">
+          <p className="mt-2 italic text-xs md:text-sm mb-2">
             Created and performed by Blake Montgomery
           </p>
-          <p className="italic text-xs md:text-sm">
-            December 5 – 22 at The Den Theatre
+          <p className="italic text-xs md:text-sm mb-2">
+            December 5 – 22, 2024
+          </p>
+          <p className="text-xs md:text-sm italic">
+            The Den Theatre
+            <br /> 1331 N. Milwaukee Ave., Chicago, IL
           </p>
         </div>
 
