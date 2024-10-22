@@ -1,5 +1,4 @@
 import Nav from "@/app/components/nav";
-import BuyButton from "@/app/components/buy_button";
 
 export default function Performances() {
   return (
@@ -158,7 +157,6 @@ export default function Performances() {
             </p>
           </div>
         </div>
-        {/* <BuyButton /> */}
       </div>
     </div>
   );
