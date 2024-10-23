@@ -1,8 +1,9 @@
 import Nav from "@/app/components/nav";
+import Footer from "@/app/components/footer";
 
 export default function Performances() {
   return (
-    <div className="w-full h-screen relative z-50 text-gray-400 flex flex-col justify-start items-center bg-black mt-12">
+    <main className="w-full h-screen relative z-50 text-gray-400 flex flex-col justify-start items-center bg-black mt-10">
       <Nav />
       <div className="flex flex-col justify-center items-center pt-12 px-12 w-full pb-12">
         {/* <BuyButton /> */}
@@ -149,6 +150,7 @@ export default function Performances() {
           </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </main>
   );
 }

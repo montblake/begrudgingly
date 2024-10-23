@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className=" w-full flex-col justify-start items-center text-gray-800 z-50 bg-gray-200 px-12 sm:px-24 md:px-32 lg:px-48 xl:px-48 landscape:px-16 pt-8 landscape:pt-8 sm:pt-12 md:pt-16 lg:pt-8 border-t border-gray-300">
+    <div className=" w-full flex-col justify-start items-center text-gray-900 z-50 bg-gray-200 px-12 landscape:px-16 pt-8 landscape:pt-8 sm:pt-12 md:pt-16 lg:pt-8 border-t border-gray-300">
       <div className="flex flex-col w-full justify-start items-start md:flex-row md:justify-between">
         <div className="flex flex-col w-full">
           <h1 className="text-xs sm:text-sm md:text-base italic font-bold">
@@ -32,7 +32,7 @@ export default function Footer() {
         <div className="flex flex-row items-center justify-start space-x-2">
           <Link
             href="/signup"
-            className="bg-gray-300 border border-gray-400 hover:bg-gray-100 rounded-md p-2 text-black text-xs aspect-square h-20"
+            className="bg-gray-300 border border-gray-400 hover:bg-gray-100 rounded-md p-2 text-gray-900 text-xs aspect-square h-20"
           >
             Join Mailing List
           </Link>
@@ -41,7 +41,7 @@ export default function Footer() {
               href="https://facebook.com/yourpage"
               target="_blank"
               rel="noopener noreferrer"
-              className=" bg-gray-300 border border-gray-400 hover:bg-gray-100 rounded-md p-2 text-black text-xs w-20 h-20"
+              className=" bg-gray-300 border border-gray-400 hover:bg-gray-100 rounded-md p-2 text-gray-900 text-xs w-20 h-20"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@ export default function Footer() {
               href="https://instagram.com/yourpage"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gray-300 border border-gray-400 hover:bg-gray-100 rounded-md p-2 text-black text-xs w-20 h-20"
+              className="bg-gray-300 border border-gray-400 hover:bg-gray-100 rounded-md p-2 text-gray-900 text-xs w-20 h-20"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
