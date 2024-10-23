@@ -3,30 +3,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
-const storyIdeas = [
-  {
-    title: "historical note",
-    text: "In 1853, ten years after having dashed off his surprisingly successful holiday story, 'A Christmas Carol', Charles Dickens gave his first public reading of the work. The effort was so well received, as well as providing much needed cash, that Dickens continued to perform these celebrated readings for the rest of his life.",
-  },
-  {
-    title: "a fabrication",
-    text: "Never one to let the facts get in the way of a good story, creator Blake Montgomery conflates the enduring popularity of the ubiquitous holiday 'Christmas Carol' with Dickens's personal readings and imagines that reports of the author's death were greatly exaggerated. And so, year after year, each and every December, not only do theaters around the globe produce adaptations of his famous book but Dickens himself is brought back to the stage to continue his tradition of solo readings ad infinitum.",
-  },
-  {
-    title: "something new",
-    text: `Now over 200 years old, Dickens has reached a breaking point and unbeknownst to theater management, he will not be performing his show this evening. Instead, he has planned something entirely new, something he is calling, "Charles Dickens's First Annual Holiday Party."`,
-  },
-  {
-    title: "ghostly intervention",
-    text: `Perhaps Dickens will get his wish. Or, perhaps, the Spirits of Christmas might intervene and force him to perform his worn-out tale once again, in the course of which, due to some highly irregular and ridiculous occurrence, he might see his work in a new light, rediscovering its beauty and his passion while, along the way, forging the kind of intimate, joyful connection with the audience he had hoped would come from hosting a party in the first place.`,
-  },
-];
-
 const DickensAnimation: React.FC = () => {
   const [eyePosition, setEyePosition] = useState({ x: 0, y: 0 });
   const dickensRef = useRef<HTMLDivElement>(null);
-
-  const [storyIdea, setStoryIdea] = useState(0);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -52,68 +31,95 @@ const DickensAnimation: React.FC = () => {
     };
   }, []);
 
-  const handleStoryClick = (index: number) => {
-    setStoryIdea(index);
-  };
-
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center relative bg-gradient-to-b from-gray-300 to-gray-900 mt-12">
+    <div className="w-full min-h-screen flex flex-col relative bg-gradient-to-b from-yellow-400/50 to-red-900/80 mt-12 landscape:h-[85vh]">
       {/* Story Idea Areas */}
-      <div className="absolute top-0 left-0 w-full h-3/4 z-40 mt-24">
-        {storyIdeas.map((idea, index) => (
+      <div className="absolute z-40 top-0 left-0 w-full h-full px-4 py-4 flex flex-col justify-between items-between landscape:px-16 landscape:py-8 landscape:h-[85vh]">
+        <div className="flex flex-col landscape:flex-row justify-between items-start gap-4 landscape:gap-0">
           <div
-            key={index}
-            className={`w-[${
-              100 + index * 20
-            }px] text-center aspect-square rounded-full text-neutral-200 flex justify-center items-center absolute top-1/2 left-1/2 cursor-pointer`}
-            style={{
-              transform: `translate(${
-                index === 0
-                  ? "-250%"
-                  : index === 1
-                  ? "240%"
-                  : index === 2
-                  ? "-250%"
-                  : "130%"
-              }, ${
-                index === 0
-                  ? "-300%"
-                  : index === 1
-                  ? "-180%"
-                  : index === 2
-                  ? "-40%"
-                  : "30%"
-              })`,
-            }}
-            onClick={() => handleStoryClick(index)}
+            className={`w-full landscape:w-[300px] text-neutral-900 flex flex-col justify-start items-start cursor-pointer hover:bg-neutral-200 hover:bg-opacity-20 p-4 rounded-lg hover:opacity-100 transition-opacity duration-300 opacity-20`}
           >
             <p
-              className={`relative top-[-${
-                index * 5
-              }px] leading-none whitespace-nowrap drop-shadow:md text-${
-                index === 0
-                  ? "3xl"
-                  : index === 1
-                  ? "3xl"
-                  : index === 2
-                  ? "3xl"
-                  : "3xl"
-              }`}
+              className={`relative leading-none whitespace-nowrap drop-shadow-md text-3xl landscape:text-4xl text-black mb-1`}
             >
-              {idea.title.split("\n").map((line, i) => (
-                <React.Fragment key={i}>
-                  {line}
-                  {/* {i < idea.title.split("\n").length - 1 && <br />} */}
-                </React.Fragment>
-              ))}
+              Fact
+            </p>
+            <p className="text-xs landscape:text-sm text-black">
+              In 1853, ten years after having dashed off his surprisingly
+              successful holiday story, 'A Christmas Carol', Charles Dickens
+              gave his first public reading of the work. The effort was so well
+              received, as well as providing much needed cash, that Dickens
+              continued to perform these celebrated readings for the rest of his
+              life.
             </p>
           </div>
-        ))}
+          <div
+            className={`w-full landscape:w-[300px] text-neutral-900 flex flex-col justify-start items-start cursor-pointer hover:bg-neutral-200 hover:bg-opacity-20 p-4 rounded-lg hover:opacity-100 transition-opacity duration-300 opacity-20`}
+          >
+            <p
+              className={`relative leading-none whitespace-nowrap drop-shadow-md text-3xl landscape:text-4xl text-black mb-1`}
+            >
+              Fiction
+            </p>
+            <p className="text-xs landscape:text-sm text-black">
+              Never one to let the facts get in the way of a good story, creator
+              Blake Montgomery conflates the enduring popularity of the
+              ubiquitous holiday 'Christmas Carol' with Dickens's personal
+              readings and imagines that reports of the author's death were
+              greatly exaggerated. And so, year after year, each and every
+              December, not only do theaters around the globe produce
+              adaptations of his famous book but Dickens himself is brought back
+              to the stage to continue his tradition of solo readings ad
+              infinitum.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col landscape:flex-row-reverse justify-between items-end gap-4 landscape:gap-0">
+          <div
+            className={`w-full landscape:w-[300px] text-neutral-900 flex flex-col justify-start items-start cursor-pointer hover:bg-neutral-200 hover:bg-opacity-20 p-4 rounded-lg hover:opacity-100 transition-opacity duration-300 opacity-20`}
+          >
+            <p
+              className={`relative leading-none whitespace-nowrap drop-shadow-md text-3xl landscape:text-4xl text-black mb-1`}
+            >
+              Premise
+            </p>
+            <p className="text-xs landscape:text-sm text-black">
+              Now over 200 years old, Dickens has reached a breaking point and
+              unbeknownst to theater management, he will not be performing his
+              show this evening. Instead, he has planned something entirely new,
+              something he is calling, "Charles Dickens's First Annual Holiday
+              Party."
+            </p>
+          </div>
+          <div className="flex flex-col items-center text-xs landscape:text-sm italic">
+            <p>Hover Over Any Text to bring it into focus.</p>
+            <p>Watch Dickens's eyes to see how he reacts.</p>
+          </div>
+          <div
+            className={`w-full landscape:w-[300px] text-neutral-900 flex flex-col justify-start items-start cursor-pointer hover:bg-neutral-200 hover:bg-opacity-20 p-4 rounded-lg hover:opacity-100 transition-opacity duration-300 opacity-20`}
+          >
+            <p
+              className={`relative leading-none whitespace-nowrap drop-shadow-md text-3xl landscape:text-4xl text-black mb-1`}
+            >
+              Possibility
+            </p>
+            <p className="text-xs landscape:text-sm text-black">
+              Perhaps Dickens will get his wish. Or, perhaps, the Spirits of
+              Christmas might intervene and force him to perform his worn-out
+              tale once again, in the course of which, due to some highly
+              irregular and ridiculous occurrence, he might see his work in a
+              new light, rediscovering its beauty and his passion while, along
+              the way, forging the kind of intimate, joyful connection with the
+              audience he had hoped would come from hosting a party in the first
+              place.
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* IMAGE SECTION */}
       <div
-        className="absolute top-0 left-50 w-[500px] h-[700px] mt-24"
+        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[250px] h-[350px] landscape:top-0 landscape:left-[30%] landscape:transform-none landscape:w-[500px] landscape:h-[700px]"
         ref={dickensRef}
       >
         <Image
@@ -142,8 +148,9 @@ const DickensAnimation: React.FC = () => {
           <Image
             src="/eyes_layers/dickens_left_eye.png"
             alt="Charles Dickens Left Eye"
-            width={10}
-            height={20}
+            width={5}
+            height={10}
+            className="landscape:w-[10px] landscape:h-[20px]"
           />
         </div>
         <div
@@ -159,8 +166,9 @@ const DickensAnimation: React.FC = () => {
           <Image
             src="/eyes_layers/dickens_right_eye.png"
             alt="Charles Dickens Right Eye"
-            width={10}
-            height={10}
+            width={5}
+            height={5}
+            className="landscape:w-[10px] landscape:h-[10px]"
           />
         </div>
         <Image
@@ -170,13 +178,6 @@ const DickensAnimation: React.FC = () => {
           objectFit="contain"
         />
         {/* END IMAGE SECTION */}
-      </div>
-      {/* Text section */}
-      <div className="absolute bottom-8 left-[50%] translate-x-[-50%]  w-1/2 h-auto flex flex-col justify-center items-center bg-gray-50 px-12 py-8 rounded-lg text-gray-900">
-        <h1 className="text-xl font-bold mb-2">
-          {storyIdeas[storyIdea].title}
-        </h1>
-        <p className="text-sm">{storyIdeas[storyIdea].text}</p>
       </div>
     </div>
   );

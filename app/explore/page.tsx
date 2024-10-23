@@ -24,7 +24,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="max-w-[1400px] h-screen flex flex-col justify-start items-start relative mx-auto">
+    <main className="w-full h-min-screen flex flex-col justify-start items-start relative mx-auto">
       <Nav />
 
       {/* <div className="absolute bottom-0 left-0 w-full h-1/4 flex flex-col justify-center items-center bg-black p-12 sm:p-24 md:p-32 lg:p-48"> */}
