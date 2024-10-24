@@ -2,26 +2,21 @@
 
 import Nav from "../components/nav";
 import Footer from "../components/footer";
-import { useState, useEffect, useRef } from "react";
+// import { useState, useEffect, useRef } from "react";
 
-import BuyButton from "../components/buy_button";
 import Eyes from "../components/eyes";
 export default function Home() {
-  const [panelNum, setPanelNum] = useState(1);
-  const [isScrolled, setIsScrolled] = useState(false);
-  const layeredImagesRef = useRef(null);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setIsScrolled(window.scrollY > 0);
+  //   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
+  //   window.addEventListener("scroll", handleScroll);
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   return (
     <main className="w-full h-min-screen flex flex-col justify-start items-start relative mx-auto">

@@ -61,7 +61,10 @@ export default function Nav() {
               </a>
             </li>
           </ul>
-          <button className="md:hidden" onClick={toggleMenu}>
+          <button
+            className="md:hidden text-gray-600 relative z-50"
+            onClick={toggleMenu}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
