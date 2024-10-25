@@ -68,111 +68,87 @@ export default function Performances() {
               <a
                 href=" https://ci.ovationtix.com/35386/performance/11538764"
                 target="_blank"
-                className="text-amber-300/60 hover:text-yellow-200/80 transition-colors duration-300"
+                className="bg-amber-300/80 px-4 py-1 rounded-md text-gray-50 hover:bg-yellow-300/80 transition-colors duration-300 w-64 text-center"
               >
-                <p className="text-sm ">Thursday, December 5 at 8pm</p>
-                {/* <Ticket className="w-4 h-4" /> */}
+                <p className="text-sm">Thursday, December 5 at 8pm</p>
               </a>
-              <p className="text-sm">
-                <a
-                  href="https://ci.ovationtix.com/35386/performance/11538765"
-                  target="_blank"
-                  className="text-amber-300/60 hover:text-yellow-200/80 transition-colors duration-300"
-                >
-                  Friday, December 6 at 8pm
-                </a>
-              </p>
-              <p className="text-sm">
-                <a
-                  href="https://ci.ovationtix.com/35386/performance/11540127"
-                  target="_blank"
-                  className="text-amber-300/60 hover:text-yellow-200/80 transition-colors duration-300"
-                >
-                  Saturday, December 7 at 8pm
-                </a>
-              </p>
-
-              <p className="text-sm">
-                <a
-                  href="https://ci.ovationtix.com/35386/performance/11540128"
-                  target="_blank"
-                  className="text-amber-300/60 hover:text-yellow-200/80 transition-colors duration-300"
-                >
-                  Sunday, December 8 at 7pm
-                </a>
-              </p>
-              <p className="text-sm">
-                <a
-                  href="https://ci.ovationtix.com/35386/performance/11540129"
-                  target="_blank"
-                  className="text-amber-300/60 hover:text-yellow-200/80 transition-colors duration-300"
-                >
-                  Thursday, December 12 at 8pm
-                </a>
-              </p>
-              <p className="text-sm">
-                <a
-                  href="https://ci.ovationtix.com/35386/performance/11540130"
-                  target="_blank"
-                  className="text-amber-300/60 hover:text-yellow-200/80 transition-colors duration-300"
-                >
-                  Friday, December 13 at 8pm
-                </a>
-              </p>
-              <p className="text-sm">
-                <a
-                  href="https://ci.ovationtix.com/35386/performance/11540131"
-                  target="_blank"
-                  className="text-amber-300/60 hover:text-yellow-200/80 transition-colors duration-300"
-                >
-                  Saturday, December 14 at 8pm
-                </a>
-              </p>
-              <p className="text-sm">
-                <a
-                  href="https://ci.ovationtix.com/35386/performance/11540132"
-                  target="_blank"
-                  className="text-amber-300/60 hover:text-yellow-200/80 transition-colors duration-300"
-                >
-                  Sunday, December 15 at 7pm
-                </a>
-              </p>
-              <p className="text-sm">
-                <a
-                  href="https://ci.ovationtix.com/35386/performance/11540133"
-                  target="_blank"
-                  className="text-amber-300/60 hover:text-yellow-200/80 transition-colors duration-300"
-                >
-                  Thursday, December 19 at 8pm
-                </a>
-              </p>
-              <p className="text-sm">
-                <a
-                  href="https://ci.ovationtix.com/35386/performance/11540134"
-                  target="_blank"
-                  className="text-amber-300/60 hover:text-yellow-200/80 transition-colors duration-300"
-                >
-                  Friday, December 20 at 8pm
-                </a>
-              </p>
-              <p className="text-sm">
-                <a
-                  href="https://ci.ovationtix.com/35386/performance/11540135"
-                  target="_blank"
-                  className="text-amber-300/60 hover:text-yellow-200/80 transition-colors duration-300"
-                >
-                  Saturday, December 21 at 8pm
-                </a>
-              </p>
-              <p className="text-sm">
-                <a
-                  href="https://ci.ovationtix.com/35386/performance/11540136"
-                  target="_blank"
-                  className="text-amber-300/60 hover:text-yellow-200/80 transition-colors duration-300"
-                >
-                  Sunday, December 22 at 3pm
-                </a>
-              </p>
+              <a
+                href="https://ci.ovationtix.com/35386/performance/11538765"
+                target="_blank"
+                className="bg-amber-300/80 px-4 py-1 rounded-md text-gray-50 hover:bg-yellow-300/80 transition-colors duration-300 w-64 text-center"
+              >
+                <p className="text-sm">Friday, December 6 at 8pm</p>
+              </a>
+              <a
+                href="https://ci.ovationtix.com/35386/performance/11540127"
+                target="_blank"
+                className="bg-amber-300/80 px-4 py-1 rounded-md text-gray-50 hover:bg-yellow-300/80 transition-colors duration-300 w-64 text-center"
+              >
+                <p className="text-sm">Saturday, December 7 at 8pm</p>
+              </a>
+              <a
+                href="https://ci.ovationtix.com/35386/performance/11540128"
+                target="_blank"
+                className="bg-amber-300/80 px-4 py-1 rounded-md text-gray-50 hover:bg-yellow-300/80 transition-colors duration-300 w-64 text-center"
+              >
+                <p className="text-sm">Sunday, December 8 at 7pm</p>
+              </a>
+              <a
+                href="https://ci.ovationtix.com/35386/performance/11540129"
+                target="_blank"
+                className="bg-amber-300/80 px-4 py-1 rounded-md text-gray-50 hover:bg-yellow-300/80 transition-colors duration-300 w-64 text-center"
+              >
+                <p className="text-sm">Thursday, December 12 at 8pm</p>
+              </a>
+              <a
+                href="https://ci.ovationtix.com/35386/performance/11540130"
+                target="_blank"
+                className="bg-amber-300/80 px-4 py-1 rounded-md text-gray-50 hover:bg-yellow-300/80 transition-colors duration-300 w-64 text-center"
+              >
+                <p className="text-sm">Friday, December 13 at 8pm</p>
+              </a>
+              <a
+                href="https://ci.ovationtix.com/35386/performance/11540131"
+                target="_blank"
+                className="bg-amber-300/80 px-4 py-1 rounded-md text-gray-50 hover:bg-yellow-300/80 transition-colors duration-300 w-64 text-center"
+              >
+                <p className="text-sm">Saturday, December 14 at 8pm</p>
+              </a>
+              <a
+                href="https://ci.ovationtix.com/35386/performance/11540132"
+                target="_blank"
+                className="bg-amber-300/80 px-4 py-1 rounded-md text-gray-50 hover:bg-yellow-300/80 transition-colors duration-300 w-64 text-center"
+              >
+                <p className="text-sm">Sunday, December 15 at 7pm</p>
+              </a>
+              <a
+                href="https://ci.ovationtix.com/35386/performance/11540133"
+                target="_blank"
+                className="bg-amber-300/80 px-4 py-1 rounded-md text-gray-50 hover:bg-yellow-300/80 transition-colors duration-300 w-64 text-center"
+              >
+                <p className="text-sm">Thursday, December 19 at 8pm</p>
+              </a>
+              <a
+                href="https://ci.ovationtix.com/35386/performance/11540134"
+                target="_blank"
+                className="bg-amber-300/80 px-4 py-1 rounded-md text-gray-50 hover:bg-yellow-300/80 transition-colors duration-300 w-64 text-center"
+              >
+                <p className="text-sm">Friday, December 20 at 8pm</p>
+              </a>
+              <a
+                href="https://ci.ovationtix.com/35386/performance/11540135"
+                target="_blank"
+                className="bg-amber-300/80 px-4 py-1 rounded-md text-gray-50 hover:bg-yellow-300/80 transition-colors duration-300 w-64 text-center"
+              >
+                <p className="text-sm">Saturday, December 21 at 8pm</p>
+              </a>
+              <a
+                href="https://ci.ovationtix.com/35386/performance/11540136"
+                target="_blank"
+                className="bg-amber-300/80 px-4 py-1 rounded-md text-gray-50 hover:bg-yellow-300/80 transition-colors duration-300 w-64 text-center"
+              >
+                <p className="text-sm">Sunday, December 22 at 3pm</p>
+              </a>
             </div>
             <hr className="w-full border-gray-600 mb-4 mt-16" />
             <h1 className="text-5xl mb-1 text-center uppercase text-gray-600">

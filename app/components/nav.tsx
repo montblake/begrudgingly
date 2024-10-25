@@ -57,7 +57,7 @@ export default function Nav() {
                   pathname === "/performances" ? "font-bold text-gray-900" : ""
                 }`}
               >
-                Choose Performances
+                Performances
               </a>
             </li>
           </ul>
