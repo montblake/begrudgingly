@@ -1,13 +1,13 @@
 export default function BuyButton() {
   return (
-    <div className="w-1/2 landscape:w-fit mx-auto h-auto relative z-40">
+    <div className="w-1/2 lg:w-full mx-auto h-auto relative z-40">
       <a
         href="https://thedentheatre.com/performances/2024/12/5/charles-dickens-begrudgingly-performs-a-christmas-carol-again-the-den-theatre-comedy-club"
         target="_blank"
         className="relative z-50 top-0"
       >
-        <button className="flex flex-col bg-amber-200/80 rounded-lg p-4 text-gray-800 relative z-50 w-full mx-auto text-xs justify-center items-center font-bold border border-black hover:bg-amber-200 ">
-          <h1 className="text-xl">Purchase Tickets</h1>
+        <button className="bg-amber-300/80 px-4 py-2 rounded-2xl w-full text-gray-50 border-2 border-black hover:border-gray-50 transition-colors duration-300 text-center">
+          <h1 className="text-lg">Tickets</h1>
         </button>
       </a>
     </div>

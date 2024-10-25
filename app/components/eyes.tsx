@@ -50,8 +50,8 @@ const DickensAnimation: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative flex flex-col items-center justify-center landscape:flex-row w-full overflow-hidden">
-      <div className="w-full h-[65vh] flex flex-col relative bg-[radial-gradient(circle_at_50%_25%,gray,black)] landscape:h-[85vh] landscape:w-1/2 landscape:mt-10">
+    <div className="relative flex flex-col items-center justify-center lg:flex-row w-full overflow-hidden">
+      <div className="w-full h-[65vh] flex flex-col relative bg-[radial-gradient(circle_at_50%_25%,gray,black)] lg:h-[85vh] lg:w-1/2 lg:mt-10">
         <StoryIdeas setDisplayText={setDisplayText} />
         <BackgroundText />
         <DickensImage
@@ -67,7 +67,7 @@ const DickensAnimation: React.FC = () => {
 };
 
 const InstructionText: React.FC = () => (
-  <div className="flex flex-col items-center text-xs landscape:text-sm italic text-neutral-200 absolute top-[10vh] w-full landscape:top-[5vh]">
+  <div className="flex flex-col items-center text-xs lg:text-sm italic text-neutral-200 absolute top-[10vh] w-full lg:top-[5vh]">
     <p>Click Any Text to bring it into focus.</p>
     <p>Watch Dickens&apos;s eyes to see how he reacts.</p>
   </div>

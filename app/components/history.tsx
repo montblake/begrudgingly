@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function History() {
   return (
-    <div className="flex flex-col items-center justify-center pb-8 sm:p-8 sm:pt-12 md:p-16 md:pt-16  landscape:w-[80%] landscape:flex-row landscape:items-end landscape:gap-8 landscape:py-24 landscape:px-0 landscape:pb-36 lg:w-[80%] lg:flex-row lg:items-end lg:gap-8 lg:py-24 lg:px-0 lg:pb-36">
-      <div className="text-gray-200 w-full mt-4 md:mt-8 landscape:w-2/3 landscape:mt-0 lg:w-2/3 lg:mt-0">
-        <h2 className="text-base sm:text-lg md:text-xl font-bold mb-0 sm:mb-1 md:mb-2 landscape:mb-2 landscape:text-2xl lg:mb-2 lg:text-2xl">
+    <div className="flex flex-col items-center justify-center pb-8 sm:p-8 sm:pt-12 md:p-16 md:pt-16  lg:w-[80%] lg:flex-row lg:items-end lg:gap-8 lg:py-24 lg:px-0 lg:pb-36 lg:w-[80%] lg:flex-row lg:items-end lg:gap-8 lg:py-24 lg:px-0 lg:pb-36">
+      <div className="text-gray-200 w-full mt-4 md:mt-8 lg:w-2/3 lg:mt-0 lg:w-2/3 lg:mt-0">
+        <h2 className="text-base sm:text-lg md:text-xl font-bold mb-0 sm:mb-1 md:mb-2 lg:mb-2 lg:text-2xl lg:mb-2 lg:text-2xl">
           {" "}
           The History{" "}
         </h2>
-        <p className="text-sm sm:text-base md:text-lg mb-2 sm:mb-3 landscape:text-lg landscape:mb-4 lg:text-lg lg:mb-4">
+        <p className="text-sm sm:text-base md:text-lg mb-2 sm:mb-3 lg:text-lg lg:mb-4 lg:text-lg lg:mb-4">
           {" "}
           In 1853, ten years after having dashed off his surprisingly successful
           holiday story, <span className="italic"> A Christmas Carol</span>,
@@ -18,12 +18,12 @@ export default function History() {
           his life.
         </p>
       </div>
-      <div className="text-gray-200 w-full mt-4 md:mt-8 landscape:w-2/3 landscape:mt-0 lg:w-2/3 lg:mt-0">
-        <h2 className="text-base sm:text-lg md:text-xl font-bold mb-0 sm:mb-1 md:mb-2 landscape:text-2xl landscape:mb-2 lg:text-2xl lg:mb-2">
+      <div className="text-gray-200 w-full mt-4 md:mt-8 lg:w-2/3 lg:mt-0 lg:w-2/3 lg:mt-0">
+        <h2 className="text-base sm:text-lg md:text-xl font-bold mb-0 sm:mb-1 md:mb-2 lg:text-2xl lg:mb-2 lg:text-2xl lg:mb-2">
           The Premise
         </h2>
         <div>
-          <p className="text-sm sm:text-base md:text-lg mb-2 sm:mb-3 landscape:text-lg landscape:mb-4 lg:text-lg lg:mb-4">
+          <p className="text-sm sm:text-base md:text-lg mb-2 sm:mb-3 lg:text-lg lg:mb-4 lg:text-lg lg:mb-4">
             Never one to let the facts get in the way of a good story, creator
             Blake Montgomery conflates the enduring popularity of the ubiquitous
             holiday <span className="italic">Christmas Carol</span> with
@@ -31,7 +31,7 @@ export default function History() {
             author&apos;s death were greatly exaggerated.
           </p>
 
-          <p className="text-sm sm:text-base md:text-lg mb-2 sm:mb-3 landscape:text-lg landscape:mb-4 lg:text-lg lg:mb-4">
+          <p className="text-sm sm:text-base md:text-lg mb-2 sm:mb-3 lg:text-lg lg:mb-4 lg:text-lg lg:mb-4">
             And so, year after year, each and every December, not only do
             theaters around the globe produce adaptations of his famous book but
             Dickens himself is brought back to the stage to continue his
@@ -41,23 +41,23 @@ export default function History() {
         {/* <p>Whether this miracle is the result of the magic of Christmas, the power of the author&apos;s popularity, or a freak accident resulting from the interaction between an over-eager booking agent and some hitherto unappreciated arcana of contract law, it is impossible to state for certain.</p> */}
       </div>
 
-      <div className="text-gray-200 w-full mt-4 md:mt-8 landscape:w-2/3 landscape:mt-0 lg:w-2/3 lg:mt-0">
-        <h2 className="text-base sm:text-lg md:text-xl font-bold mb-0 sm:mb-1 md:mb-2 landscape:text-2xl landscape:mb-2 lg:text-2xl lg:mb-2">
+      <div className="text-gray-200 w-full mt-4 md:mt-8 lg:w-2/3 lg:mt-0 lg:w-2/3 lg:mt-0">
+        <h2 className="text-base sm:text-lg md:text-xl font-bold mb-0 sm:mb-1 md:mb-2 lg:text-2xl lg:mb-2 lg:text-2xl lg:mb-2">
           The Play
         </h2>
         <div>
-          <p className="text-sm sm:text-base md:text-lg mb-2 sm:mb-3 landscape:text-lg landscape:mb-4 lg:text-lg lg:mb-4">
+          <p className="text-sm sm:text-base md:text-lg mb-2 sm:mb-3 lg:text-lg lg:mb-4 lg:text-lg lg:mb-4">
             Now over 200 years old, Dickens has reached a breaking point and
             unbeknownst to theater management, he will not be performing his
             show this evening. Instead, he has planned something entirely new,
             something he is calling, &ldquo;Charles Dicken&apos;s First Annual
             Holiday Party.&rdquo;
           </p>
-          <p className="text-sm sm:text-base md:text-lg mb-2 sm:mb-3 landscape:text-lg landscape:mb-4 lg:text-lg lg:mb-4">
+          <p className="text-sm sm:text-base md:text-lg mb-2 sm:mb-3 lg:text-lg lg:mb-4 lg:text-lg lg:mb-4">
             {" "}
             Perhaps Dickens will get his wish.
           </p>
-          <p className="text-sm sm:text-base md:text-lg mb-2 sm:mb-3 landscape:text-lg landscape:mb-4 lg:text-lg lg:mb-4">
+          <p className="text-sm sm:text-base md:text-lg mb-2 sm:mb-3 lg:text-lg lg:mb-4 lg:text-lg lg:mb-4">
             Or, perhaps, the Spirits of Christmas might intervene and force him
             to perform his worn-out tale once again, in the course of which, due
             to some highly irregular and ridiculous occurrence, he might see his

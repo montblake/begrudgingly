@@ -40,11 +40,11 @@ export default function Press() {
 
   return (
     <div className="bg-black py-8 px-12 md:px-24 relative flex flex-col justify-center items-center w-full">
-      <h1 className="text-amber-200 text-center uppercase text-xs sm:text-sm md:text-base landscape:text-base lg:text-base">
+      <h1 className="text-amber-200 text-center uppercase text-xs sm:text-sm md:text-base lg:text-base lg:text-base">
         Press Reviews
       </h1>
       <div className="flex flex-col justify-center items-center text-gray-600 h-[360px] sm:w-2/3">
-        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-2xl landscape:text-2xl text-center text-gray-200 mb-2">
+        <h2 className="text-lg sm:text-xl md:text-2xl lg:text-2xl lg:text-2xl text-center text-gray-200 mb-2">
           {REVIEWS[currentQuote].quote}
         </h2>
         <p className="text-xs sm:text-md md:text-lg lg:text-base text-center text-gray-200">

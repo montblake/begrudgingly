@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className=" w-full flex-col justify-start items-center text-gray-900 z-50 bg-gray-200 px-12 landscape:px-16 pt-8 landscape:pt-8 sm:pt-12 md:pt-16 lg:pt-8 border-t border-gray-300">
+    <div className=" w-full flex-col justify-start items-center text-gray-900 z-50 bg-gray-200 px-12 lg:px-16 pt-8 lg:pt-8 lg:pt-8 border-t border-gray-300 ">
       <div className="flex flex-col w-full justify-start items-start md:flex-row md:justify-between">
         <div className="flex flex-col w-full">
-          <h1 className="text-xs sm:text-sm md:text-base italic font-bold">
+          <h1 className="text-sm md:text-base italic font-bold">
             Charles Dickens Begrudgingly
             <br />
             Performs &lsquo;A Christmas Carol&rsquo; Again
@@ -28,20 +28,28 @@ export default function Footer() {
           </p>
         </div>
 
-        <hr className="w-full border-gray-600 border-t-1 my-4 md:hidden" />
-        <div className="flex flex-row items-center justify-start space-x-2">
+        {/* <hr className="w-full border-gray-600 border-t-1 my-4 md:hidden" /> */}
+        <div className="flex flex-row items-center justify-start space-x-2 mt-4 md:mt-0">
           <Link
             href="/signup"
-            className="bg-gray-300 border border-gray-400 hover:bg-gray-100 rounded-md p-2 text-gray-900 text-xs aspect-square h-20"
+            className="bg-gray-300 border border-gray-400 hover:bg-gray-100 rounded-md p-2 text-gray-900 text-xs aspect-square h-16"
           >
-            Join Mailing List
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
+            </svg>
           </Link>
           <div className="flex space-x-2 justify-start w-full">
             <a
               href="https://facebook.com/yourpage"
               target="_blank"
               rel="noopener noreferrer"
-              className=" bg-gray-300 border border-gray-400 hover:bg-gray-100 rounded-md p-2 text-gray-900 text-xs w-20 h-20"
+              className=" bg-gray-300 border border-gray-400 hover:bg-gray-100 rounded-md p-2 text-gray-900 text-xs aspect-square h-16"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +65,7 @@ export default function Footer() {
               href="https://instagram.com/yourpage"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gray-300 border border-gray-400 hover:bg-gray-100 rounded-md p-2 text-gray-900 text-xs w-20 h-20"
+              className="bg-gray-300 border border-gray-400 hover:bg-gray-100 rounded-md p-2 text-gray-900 text-xs aspect-square h-16"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

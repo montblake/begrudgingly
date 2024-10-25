@@ -13,7 +13,7 @@ const DickensImage: React.FC<DickensImageProps> = ({
   isMobile,
 }) => (
   <div
-    className="absolute -bottom-[10vh] left-[12.5vw] transform-none w-[375px] h-[525px] landscape:top-[20vh] landscape:left-[5vw] landscape:transform-none landscape:w-[500px] landscape:h-[700px]"
+    className="absolute -bottom-[10vh] left-[12.5vw] transform-none w-[375px] h-[525px] lg:top-[20vh] lg:left-[5vw] lg:transform-none lg:w-[500px] lg:h-[700px]"
     ref={dickensRef}
   >
     <Image
@@ -88,7 +88,7 @@ const DickensEye: React.FC<DickensEyeProps> = ({
       alt={alt}
       width={5}
       height={10}
-      className="landscape:w-[10px] landscape:h-[10px]"
+      className="lg:w-[10px] lg:h-[10px]"
     />
   </div>
 );

@@ -5,7 +5,7 @@ interface DisplayTextProps {
 }
 
 const DisplayText: React.FC<DisplayTextProps> = ({ displayText }) => (
-  <div className="relative z-50 w-full landscape:w-1/2 text-gray-400 flex flex-col justify-start items-start cursor-pointer px-12 py-8 hover:opacity-100 transition-opacity duration-300 opacity-100 bg-black border-t border-neutral-800 landscape:items-center landscape:justify-center landscape:h-[85vh] landscape:mt-10 landscape:px-24">
+  <div className="relative z-50 w-full lg:w-1/2 text-gray-400 flex flex-col justify-start items-start cursor-pointer px-12 py-8 hover:opacity-100 transition-opacity duration-300 opacity-100 bg-black border-t border-neutral-800 lg:items-center lg:justify-center lg:h-[85vh] lg:mt-10 lg:px-24">
     {displayText === 3 && (
       <TextContent
         title="Possibility"
@@ -40,10 +40,10 @@ interface TextContentProps {
 
 const TextContent: React.FC<TextContentProps> = ({ title, content }) => (
   <>
-    <p className="relative leading-none whitespace-nowrap drop-shadow-md text-2xl landscape:text-2xl mb-1">
+    <p className="relative leading-none whitespace-nowrap drop-shadow-md text-2xl lg:text-2xl mb-1">
       {title}
     </p>
-    <p className="text-xs landscape:text-base">{content}</p>
+    <p className="text-xs lg:text-base">{content}</p>
   </>
 );
 

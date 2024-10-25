@@ -1,6 +1,6 @@
 export default function PullQuote() {
   return (
-    <div className="landscape:mb-0 text-gray-400 mt-16 px-0">
+    <div className="lg:mb-0 text-gray-400 mt-16 px-0">
       <h1 className="text-3xl text-center">
         &ldquo;Montgomery&apos;s smart, heartfelt reinvention proves that you
         don&apos;t need fake snow and flying ghosts to make the tale

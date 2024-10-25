@@ -43,7 +43,7 @@ export default function NewLanding() {
           />
         </div>
       )}
-      <div className="w-full landscape:w-1/2 relative">
+      <div className="w-full lg:w-1/2 relative">
         <Image
           src="/dickens_layers/base_layer.png"
           alt="Dickens 2024 Publicity Image"
@@ -116,7 +116,7 @@ export default function NewLanding() {
       </div>
 
       <div className="h-screen w-full relative top-[100%] left-0 z-40 text-white p-36">
-        <p className=" text-sm sm:text-base md:text-lg landscape:text-lg ">
+        <p className=" text-sm sm:text-base md:text-lg lg:text-lg ">
           <span
             className="italic
               "
@@ -138,15 +138,15 @@ export default function NewLanding() {
           <p className={`${italianno.className} text-xl lowercase`}>
             Performances Begin
           </p>
-          <p className="text-lg sm:text-xl md:text-2xl tracking-tight uppercase text-center landscape:text-xl lg:text-xl">
+          <p className="text-lg sm:text-xl md:text-2xl tracking-tight uppercase text-center lg:text-xl lg:text-xl">
             December 5
           </p>
           <p className={`${italianno.className} text-xl lowercase`}>through</p>
-          <p className="text-lg sm:text-xl md:text-2xl tracking-tight uppercase text-center landscape:text-xl lg:text-xl">
+          <p className="text-lg sm:text-xl md:text-2xl tracking-tight uppercase text-center lg:text-xl lg:text-xl">
             December 22
           </p>
           <p className={`${italianno.className} text-xl lowercase`}>at</p>
-          <p className="text-lg sm:text-xl md:text-2xl tracking-tight uppercase text-center landscape:text-xl lg:text-xl">
+          <p className="text-lg sm:text-xl md:text-2xl tracking-tight uppercase text-center lg:text-xl lg:text-xl">
             The Den Theatre
           </p>
           <p className="text-xs tracking-tight uppercase text-center">
@@ -161,7 +161,7 @@ export default function NewLanding() {
         <Play />
       </div>
 
-      {/* <p className="text-sm sm:text-base md:text-lg  landscape:text-lg ">
+      {/* <p className="text-sm sm:text-base md:text-lg  lg:text-lg ">
           <span
             className="italic
               "

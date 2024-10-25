@@ -36,13 +36,13 @@ export default function Audience() {
   };
 
   return (
-    <div className="py-8 px-12 relative flex flex-col justify-center items-center w-full bg-black landscape:px-24 lg:px-24">
-      <h1 className="text-amber-200 text-xs sm:text-sm md:text-base lg:text-base landscape:text-base text-center uppercase">
+    <div className="py-8 px-12 relative flex flex-col justify-center items-center w-full bg-black lg:px-24 lg:px-24">
+      <h1 className="text-amber-200 text-xs sm:text-sm md:text-base lg:text-base lg:text-base text-center uppercase">
         Audience Reactions
       </h1>
       <div className="flex justify-center items-center text-gray-600 h-[300px] sm:w-2/3">
         <h2
-          className="text-lg sm:text-xl md:text-2xl lg:text-2xl landscape:text-2xl text-center text-gray-200"
+          className="text-lg sm:text-xl md:text-2xl lg:text-2xl lg:text-2xl text-center text-gray-200"
           onClick={toggleShow}
         >
           {QUOTES[currentQuote]}

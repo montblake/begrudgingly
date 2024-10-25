@@ -9,19 +9,19 @@ const italianno = Italianno({
 
 export default function News() {
   return (
-    <section className=" p-2 w-full landscape:w-1/2 bg-white">
+    <section className=" p-2 w-full lg:w-1/2 bg-white">
       <div className="bg-neutral-200 my-1 rounded-md flex justify-center w-full">
         <div
           className="w-full 
           flex flex-col p-0"
         >
           <div className="text-gray-700 w-full">
-            {/* <h2 className="text-base sm:text-lg md:text-xl font-bold mb-0 sm:mb-1 md:mb-2 landscape:text-2xl landscape:mb-2 lg:text-2xl lg:mb-2">
+            {/* <h2 className="text-base sm:text-lg md:text-xl font-bold mb-0 sm:mb-1 md:mb-2 lg:text-2xl lg:mb-2 lg:text-2xl lg:mb-2">
               {" "}
               The News
             </h2> */}
 
-            <p className="text-sm sm:text-base md:text-lg  landscape:text-lg ">
+            <p className="text-sm sm:text-base md:text-lg  lg:text-lg ">
               <span
                 className="italic
               "
@@ -45,17 +45,17 @@ export default function News() {
             <p className={`${italianno.className} text-xl lowercase`}>
               Performances Begin
             </p>
-            <p className="text-lg sm:text-xl md:text-2xl tracking-tight uppercase text-center landscape:text-xl lg:text-xl">
+            <p className="text-lg sm:text-xl md:text-2xl tracking-tight uppercase text-center lg:text-xl lg:text-xl">
               December 5
             </p>
             <p className={`${italianno.className} text-xl lowercase`}>
               through
             </p>
-            <p className="text-lg sm:text-xl md:text-2xl tracking-tight uppercase text-center landscape:text-xl lg:text-xl">
+            <p className="text-lg sm:text-xl md:text-2xl tracking-tight uppercase text-center lg:text-xl lg:text-xl">
               December 22
             </p>
             <p className={`${italianno.className} text-xl lowercase`}>at</p>
-            <p className="text-lg sm:text-xl md:text-2xl tracking-tight uppercase text-center landscape:text-xl lg:text-xl">
+            <p className="text-lg sm:text-xl md:text-2xl tracking-tight uppercase text-center lg:text-xl lg:text-xl">
               The Den Theatre
             </p>
             <p className="text-xs tracking-tight uppercase text-center">

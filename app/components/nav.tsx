@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { useState } from "react";
+import Tooltip from "@mui/material/Tooltip";
 
 export default function Nav() {
   const pathname = usePathname();
@@ -15,31 +16,23 @@ export default function Nav() {
   return (
     <>
       <div className="fixed top-0 left-0 w-full z-50 flex justify-center items-center border-b border-gray-400">
-        <nav className="text-xs sm:text-sm md:text-base bg-gray-200 w-full flex justify-between py-2 px-4 sm:px-12 landscape:px-16">
+        <nav className="text-xs sm:text-sm md:text-base bg-gray-200 w-full flex justify-between py-2 px-12 lg:px-16">
           <ul className="flex space-x-6 items-center justify-center mr-8">
             <li>
-              <a href="/" className="text-gray-600 ">
-                <Image
-                  src="/cdb_logo.png"
-                  alt="Home"
-                  width={200}
-                  height={32}
-                  className="h-5 w-auto mix-blend-multiply relative -top-[2px] hover:scale-105 transition-all duration-300"
-                />
-              </a>
+              <Tooltip title="Home" arrow>
+                <a href="/" className="text-gray-600 flex items-center">
+                  <Image
+                    src="/cdb_logo.png"
+                    alt="Home"
+                    width={200}
+                    height={32}
+                    className="h-5 w-auto mix-blend-multiply relative -top-[2px] hover:scale-105 transition-all duration-300"
+                  />
+                </a>
+              </Tooltip>
             </li>
           </ul>
           <ul className="hidden md:flex space-x-6 items-center">
-            <li>
-              <a
-                href="/explore"
-                className={`text-gray-600 hover:underline ${
-                  pathname === "/explore" ? "font-bold text-gray-900" : ""
-                }`}
-              >
-                Explore Show
-              </a>
-            </li>
             <li>
               <a
                 href="/artist"
@@ -109,12 +102,12 @@ export default function Nav() {
             <ul className="mt-8 space-y-4">
               <li>
                 <a
-                  href="/explore"
+                  href="/"
                   className={`block text-gray-600 hover:underline ${
-                    pathname === "/explore" ? "font-bold text-gray-900" : ""
+                    pathname === "/" ? "font-bold text-gray-900" : ""
                   }`}
                 >
-                  Explore Show
+                  Home
                 </a>
               </li>
               <li>
