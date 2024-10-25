@@ -19,7 +19,7 @@ export default function LayeredImage() {
   }, []);
   return (
     <div
-      className="w-full relative -mt-8 left-0 z-0 px-0 sm:px-20 md:px-28 lg:px-44 xl:px-48 lg:px-0"
+      className="w-full relative -mt-8 left-0 z-0 px-0 sm:px-20 md:px-28 lg:px-0"
       ref={layeredImagesRef}
     >
       <div className="relative w-full max-w-[600px] lg:max-w-[600px] mx-auto">

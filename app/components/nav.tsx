@@ -35,22 +35,22 @@ export default function Nav() {
           <ul className="hidden md:flex space-x-6 items-center">
             <li>
               <a
-                href="/artist"
-                className={`text-gray-600 hover:underline ${
-                  pathname === "/artist" ? "font-bold text-gray-900" : ""
-                }`}
-              >
-                Meet Artist
-              </a>
-            </li>
-            <li>
-              <a
                 href="/performances"
                 className={`text-gray-600 hover:underline ${
                   pathname === "/performances" ? "font-bold text-gray-900" : ""
                 }`}
               >
                 Performances
+              </a>
+            </li>
+            <li>
+              <a
+                href="/artist"
+                className={`text-gray-600 hover:underline ${
+                  pathname === "/artist" ? "font-bold text-gray-900" : ""
+                }`}
+              >
+                Meet the Artist
               </a>
             </li>
           </ul>
@@ -112,16 +112,6 @@ export default function Nav() {
               </li>
               <li>
                 <a
-                  href="/artist"
-                  className={`block text-gray-600 hover:underline ${
-                    pathname === "/artist" ? "font-bold text-gray-900" : ""
-                  }`}
-                >
-                  Meet Artist
-                </a>
-              </li>
-              <li>
-                <a
                   href="/performances"
                   className={`block text-gray-600 hover:underline ${
                     pathname === "/performances"
@@ -129,7 +119,17 @@ export default function Nav() {
                       : ""
                   }`}
                 >
-                  Choose Performances
+                  Performances
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/artist"
+                  className={`block text-gray-600 hover:underline ${
+                    pathname === "/artist" ? "font-bold text-gray-900" : ""
+                  }`}
+                >
+                  Meet the Artist
                 </a>
               </li>
             </ul>
