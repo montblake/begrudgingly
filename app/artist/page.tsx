@@ -30,7 +30,7 @@ export default function Home() {
         className="max-w-[1200px] mx-auto w-full h-full lg:h-fit flex flex-col lg:flex-row lg:justify-between lg:items-start gap-0 lg:mt-12 lg:overflow-scroll lg:py-8 lg:px-16 lg:gap-8 pt-8 sm:pt-12 lg:pt-16"
         ref={layeredImagesRef}
       >
-        <div className="relative w-full max-w-[600px] mx-auto overflow-hidden lg:w-1/2 px-12 sm:px-0 ">
+        <div className="relative w-full max-w-[600px] h-full mx-auto overflow-hidden lg:w-1/2 px-12 sm:px-0 ">
           <div className="relative w-full mx-auto overflow-hidden lg:rounded-2xl  h-[500px] w-[500px] sm:h-[600px] sm:w-[600px] lg:h-[700px] lg:w-[500px] rounded-2xl">
             <Image
               src="/dickens_layers/layered_blake.png"
@@ -47,20 +47,12 @@ export default function Home() {
             }`}
           ></div>
 
-          <div className="absolute top-[3vh] left-0 w-full h-full">
+          <div className="absolute bottom-0 left-0 w-full h-fullflex justify-center items-end">
             <Image
-              src="/dickens_layers/layered_title_less_shadow.png"
+              src="/just_title.png"
               alt="Dickens Show Title"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
-          <div className="absolute top-[3vh] left-0 w-full h-full">
-            <Image
-              src="/dickens_layers/layered_credits.png"
-              alt="Dickens Credits"
-              layout="fill"
-              objectFit="contain"
+              width={800}
+              height={400}
             />
           </div>
         </div>

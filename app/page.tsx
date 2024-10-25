@@ -10,7 +10,7 @@ import SecondNav from "@/app/components/second_nav";
 
 export default function Home() {
   return (
-    <main className="w-full min-h-screen flex flex-col justify-start items-start bg-black relative mx-auto">
+    <main className="w-full min-h-screen flex flex-col justify-start items-start lg:justify-between bg-black relative mx-auto">
       <Nav />
 
       <div

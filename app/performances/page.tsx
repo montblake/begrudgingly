@@ -14,13 +14,13 @@ export default function Performances() {
           </h1>
           <hr className="w-full border-gray-600 mb-8 mt-2" />
           <Image
-            src="/dickens_layers/layered_title.png"
+            src="/just_title.png"
             alt="Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again"
             width={500}
             height={500}
-            className="-mt-[27.5vh]"
+            className=""
           />
-          <hr className="w-full border-gray-600 mb-12 -mt-8" />
+          <hr className="w-full border-gray-600 mb-12 mt-8" />
           <div className="flex flex-col justify-center items-center mb-8">
             <p className="text-sm italic mb-2 text-gray-400">
               This December, find Mr. Dickens at
@@ -144,22 +144,21 @@ export default function Performances() {
                 <p className="text-sm">Sunday, December 22 at 3pm</p>
               </a>
             </div>
-
-            <hr className="w-full border-gray-600 mb-16 mt-24 lg:mt-12 lg:mb-8 w-3/4" />
-            <ul className="text-sm mb-8 text-gray-200 flex flex-col gap-1 justify-center items-center">
-              <li>All tickets are general admission</li>
-              <li className="mb-4">Recommended for ages 15 and up</li>
-              <li className="mb-0">
-                Late seating at the discretion of management
-              </li>
-              <li className="mb-4">The Den has a nice bar, come early</li>
-              <li className="mb-0">The show runs 95 minutes</li>
-              <li className="mb-4">There is no intermission</li>
-              <li className="mb-0">Mr. Dickens can&apos;t wait to meet you</li>
-            </ul>
           </div>
         </div>
       </div>
+      <div className="w-full px-12 max-w-screen-xl">
+        <ul className="text-sm mb-8 text-gray-200 flex flex-col lg:flex-row flex-wrap gap-1 lg:space-x-8 justify-center items-center bg-gray-200/40 p-4 rounded-xl w-full">
+          <li>All tickets are general admission</li>
+          <li className="mb-0">Recommended for ages 15 and up</li>
+          <li className="mb-0">Late seating at the discretion of management</li>
+          <li className="mb-0">The Den has a nice bar, come early</li>
+          <li className="mb-0">The show runs 95 minutes</li>
+          <li className="mb-0">There is no intermission</li>
+          <li className="mb-0">Mr. Dickens can&apos;t wait to meet you</li>
+        </ul>
+      </div>
+
       <Footer />
     </main>
   );

@@ -48,15 +48,14 @@ export default function LayeredImage() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 2 }}
+          transition={{ delay: 0.2, duration: 1 }}
           className="absolute top-0 left-0 w-full h-full"
         >
           <Image
             src="/dickens_layers/layered_border.png"
             alt="Dickens 2024 Publicity Image"
-            layout="fill"
-            objectFit="contain"
-            className={`transition-opacity duration-1000 ${
+            fill
+            className={`transition-opacity duration-1000 object-contain ${
               isScrolled ? "opacity-100" : "opacity-100"
             }`}
           />
@@ -64,9 +63,8 @@ export default function LayeredImage() {
           <Image
             src="/dickens_layers/layered_venue.png"
             alt="Dickens 2024 Publicity Image"
-            layout="fill"
-            objectFit="contain"
-            className={`transition-opacity duration-1000 ${
+            fill
+            className={`transition-opacity duration-1000 object-contain ${
               isScrolled ? "opacity-100" : "opacity-100"
             }`}
           />
@@ -74,27 +72,29 @@ export default function LayeredImage() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.25, duration: 3 }}
+          transition={{ delay: 0.1, duration: 1.5 }}
           className="absolute top-0 left-0 w-full h-full"
         >
           <Image
             src="/dickens_layers/layered_title.png"
             alt="Dickens 2024 Publicity Image"
-            layout="fill"
-            objectFit="contain"
+            fill
+            className={`transition-opacity duration-1000 object-contain ${
+              isScrolled ? "opacity-100" : "opacity-100"
+            }`}
           />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 3 }}
+          transition={{ delay: 0.3, duration: 1.5 }}
           className="absolute top-0 left-0 w-full h-full"
         >
           <Image
             src="/dickens_layers/layered_credits.png"
             alt="Dickens 2024 Publicity Image"
-            layout="fill"
-            objectFit="contain"
+            fill
+            className={`transition-opacity duration-1000 object-contain`}
           />
         </motion.div>
       </div>
