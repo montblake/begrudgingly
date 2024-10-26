@@ -1,6 +1,6 @@
 export default function BuyButton() {
   return (
-    <div className="w-1/2 lg:w-full mx-auto h-auto relative z-40">
+    <div className="w-1/2 mx-auto h-auto relative z-40">
       <a
         href="https://thedentheatre.com/performances/2024/12/5/charles-dickens-begrudgingly-performs-a-christmas-carol-again-the-den-theatre-comedy-club"
         target="_blank"
