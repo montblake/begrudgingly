@@ -16,7 +16,7 @@ export default function Nav() {
   return (
     <>
       <div className="fixed top-0 left-0 w-full z-50 flex justify-center items-center border-b border-gray-400">
-        <nav className="text-xs sm:text-sm md:text-base bg-gray-200 w-full flex justify-between py-2 px-12 lg:px-16">
+        <nav className="text-xs sm:text-sm md:text-base bg-gray-200 w-full flex justify-between py-2 px-4 sm:px-12 lg:px-16">
           <ul className="flex space-x-6 items-center justify-center mr-8">
             <li>
               <Tooltip title="Home" arrow>
