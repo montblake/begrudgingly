@@ -36,67 +36,40 @@ export default function LayeredImage() {
             isScrolled ? "opacity-100" : "opacity-0"
           }`}
         ></div>
-        {/* <Image
-            src="/dickens_layers/layered_shadowbox.png"
-            alt="Dickens 2024 Publicity Image"
-            width={800}
-            height={800}
-            className={`absolute top-0 left-0 w-full h-auto max-w-[600px] mx-auto transition-opacity duration-1000 ${
-              isScrolled ? "opacity-0" : "opacity-100"
-            }`}
-          /> */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2, duration: 1 }}
-          className="absolute top-0 left-0 w-full h-full"
-        >
-          <Image
-            src="/dickens_layers/layered_border.png"
-            alt="Dickens 2024 Publicity Image"
-            fill
-            className={`transition-opacity duration-1000 object-contain ${
-              isScrolled ? "opacity-100" : "opacity-100"
-            }`}
-          />
 
-          <Image
-            src="/dickens_layers/layered_venue.png"
-            alt="Dickens 2024 Publicity Image"
-            fill
-            className={`transition-opacity duration-1000 object-contain ${
-              isScrolled ? "opacity-100" : "opacity-100"
-            }`}
-          />
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.1, duration: 1.5 }}
-          className="absolute top-0 left-0 w-full h-full"
-        >
-          <Image
-            src="/dickens_layers/layered_title.png"
-            alt="Dickens 2024 Publicity Image"
-            fill
-            className={`transition-opacity duration-1000 object-contain ${
-              isScrolled ? "opacity-100" : "opacity-100"
-            }`}
-          />
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 1.5 }}
-          className="absolute top-0 left-0 w-full h-full"
-        >
-          <Image
-            src="/dickens_layers/layered_credits.png"
-            alt="Dickens 2024 Publicity Image"
-            fill
-            className={`transition-opacity duration-1000 object-contain`}
-          />
-        </motion.div>
+        <Image
+          src="/dickens_layers/border_layer_new.png"
+          alt="Dickens 2024 Publicity Image"
+          fill
+          className={`transition-opacity duration-1000 object-contain ${
+            isScrolled ? "opacity-100" : "opacity-100"
+          }`}
+        />
+
+        <Image
+          src="/dickens_layers/venue_layer_new.png"
+          alt="Dickens 2024 Publicity Image"
+          fill
+          className={`transition-opacity duration-1000 object-contain ${
+            isScrolled ? "opacity-100" : "opacity-100"
+          }`}
+        />
+
+        <Image
+          src="/dickens_layers/layered_title.png"
+          alt="Dickens 2024 Publicity Image"
+          fill
+          className={`transition-opacity duration-1000 object-contain ${
+            isScrolled ? "opacity-100" : "opacity-100"
+          }`}
+        />
+
+        <Image
+          src="/dickens_layers/layered_credits.png"
+          alt="Dickens 2024 Publicity Image"
+          fill
+          className={`transition-opacity duration-1000 object-contain`}
+        />
       </div>
     </div>
   );
