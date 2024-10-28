@@ -32,7 +32,7 @@ export default function Nav() {
               </Tooltip>
             </li>
           </ul>
-          <ul className="hidden md:flex space-x-6 items-center">
+          <ul className="hidden md:flex space-x-4 items-center">
             <li>
               <a
                 href="/"
@@ -53,6 +53,17 @@ export default function Nav() {
                 Performances
               </a>
             </li>
+
+            <li>
+              <a
+                href="/explore"
+                className={`text-gray-600 hover:underline ${
+                  pathname === "/explore" ? "font-bold text-gray-900" : ""
+                }`}
+              >
+                Explore Show
+              </a>
+            </li>
             <li>
               <a
                 href="/artist"
@@ -60,7 +71,7 @@ export default function Nav() {
                   pathname === "/artist" ? "font-bold text-gray-900" : ""
                 }`}
               >
-                Meet the Artist
+                Meet Artist
               </a>
             </li>
           </ul>
@@ -130,6 +141,16 @@ export default function Nav() {
                   }`}
                 >
                   Performances
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/explore"
+                  className={`block text-gray-600 hover:underline ${
+                    pathname === "/artist" ? "font-bold text-gray-900" : ""
+                  }`}
+                >
+                  Explore the Show
                 </a>
               </li>
               <li>
