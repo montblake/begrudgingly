@@ -35,6 +35,16 @@ export default function Nav() {
           <ul className="hidden md:flex space-x-6 items-center">
             <li>
               <a
+                href="/"
+                className={`text-gray-600 hover:underline ${
+                  pathname === "/" ? "font-bold text-gray-900" : ""
+                }`}
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
                 href="/performances"
                 className={`text-gray-600 hover:underline ${
                   pathname === "/performances" ? "font-bold text-gray-900" : ""

@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
 
         {/* <hr className="w-full border-gray-600 border-t-1 my-4 md:hidden" /> */}
-        <div className="flex flex-row items-center justify-start space-x-2 mt-4 md:mt-0">
+        <div className="flex flex-row items-center justify-start space-x-2 mt-4 md:mt-0 hidden">
           <Link
             href="/signup"
             className="bg-gray-300 border border-gray-400 hover:bg-gray-100 rounded-md p-2 text-gray-900 text-xs aspect-square h-16"
