@@ -29,7 +29,7 @@ export default function Home() {
           <LayeredImage />
         </div>
 
-        <div className="w-full h-full lg:w-1/2 relative z-40 font-serif px-4 sm:px-24 md:px-32 lg:px-48 pb-8 lg:pt-0 lg:px-8 lg:pb-0 lg:pr-24 flex flex-col justify-start items-start text-gray-400">
+        <div className="w-full h-full lg:w-1/2 relative z-40 font-serif px-4 sm:px-12 lg:px-16 pb-8 lg:pt-0 lg:px-8 lg:pb-0 lg:pr-24 flex flex-col justify-start items-start text-gray-400">
           <hr className="w-full border-gray-400/80 mt-16 lg:mt-8" />
           <PullQuote />
           <hr className="w-full border-gray-400/80 mt-16 mb-8" />
