@@ -11,9 +11,10 @@ export default function IntroText() {
       <p className="text-base sm:text-lg md:text-xl lg:text-2xl lg:text-base mt-4">
         <span className="italic">Charles Dickens Begrudgingly...</span>{" "}
         originally charmed audiences during its Chicago debut at The Building
-        Stage in December 2011 and 2012. Now, ten years after the closing of The
-        Building Stage, former Artistic Director Blake Montgomery revives his
-        Jeff Award-winning solo performance for the 2024 holiday season.
+        Stage in December 2011 and again in 2012. Now, ten years after the
+        closing of The Building Stage, former Artistic Director Blake Montgomery
+        revives his Jeff Award-winning solo performance for the 2024 holiday
+        season.
       </p>
     </div>
   );

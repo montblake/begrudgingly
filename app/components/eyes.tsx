@@ -51,7 +51,7 @@ const DickensAnimation: React.FC = () => {
 
   return (
     <div className="relative flex flex-col items-center justify-center lg:flex-row w-full overflow-hidden">
-      <div className="w-full h-[65vh] flex flex-col relative bg-[radial-gradient(circle_at_50%_25%,gray,black)] lg:h-[85vh] lg:w-1/2 lg:mt-10">
+      <div className="w-full h-[65vh] flex flex-col relative bg-amber-300/40 lg:h-[85vh] lg:w-1/2 lg:mt-10">
         <StoryIdeas setDisplayText={setDisplayText} />
         <BackgroundText />
         <DickensImage

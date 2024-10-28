@@ -15,7 +15,9 @@ const DisplayText: React.FC<DisplayTextProps> = ({ displayText }) => (
     {displayText === 0 && (
       <TextContent
         title="Fact"
-        content="In 1853, ten years after having dashed off his surprisingly successful holiday story, 'A Christmas Carol', Charles Dickens gave his first public reading of the work. The effort was so well received, as well as providing much needed cash, that Dickens continued to perform these celebrated readings for the rest of his life."
+        content="In 1853, ten years after publishing A Christmas Carol, Charles Dickens began reading his work to audiences, finding both success and purpose in these public performances. But what if Dickens never stopped? What if he's bound to repeat his reading of A Christmas Carol every December—year after year, century after century?
+
+        Now, over 200 years old and tired of his own creation, Dickens has a new idea. Instead of performing his classic tale yet again, he plans to host Charles Dickens's First Annual Holiday Party. But as we all know, holiday spirits have a way of interfering with even the best-laid plans. Through humor, unexpected twists, and intimate moments, Dickens may just rediscover the beauty in his work and the joy of sharing it with an audience, one more time."
       />
     )}
     {displayText === 2 && (
@@ -40,9 +42,9 @@ interface TextContentProps {
 
 const TextContent: React.FC<TextContentProps> = ({ title, content }) => (
   <>
-    <p className="relative leading-none whitespace-nowrap drop-shadow-md text-2xl lg:text-2xl mb-1">
+    {/* <p className="relative leading-none whitespace-nowrap drop-shadow-md text-2xl lg:text-2xl mb-1">
       {title}
-    </p>
+    </p> */}
     <p className="text-xs lg:text-base">{content}</p>
   </>
 );
