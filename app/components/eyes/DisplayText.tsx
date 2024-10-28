@@ -42,9 +42,9 @@ interface TextContentProps {
 
 const TextContent: React.FC<TextContentProps> = ({ title, content }) => (
   <>
-    {/* <p className="relative leading-none whitespace-nowrap drop-shadow-md text-2xl lg:text-2xl mb-1">
+    <p className="relative leading-none whitespace-nowrap drop-shadow-md text-2xl lg:text-2xl mb-1">
       {title}
-    </p> */}
+    </p>
     <p className="text-xs lg:text-base">{content}</p>
   </>
 );
