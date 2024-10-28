@@ -30,8 +30,8 @@ export default function Home() {
         className="max-w-[1200px] mx-auto w-full h-full lg:h-fit flex flex-col lg:flex-row lg:justify-between lg:items-start gap-0 lg:mt-12 lg:overflow-scroll lg:py-8 lg:px-16 lg:gap-8 pt-8 sm:pt-12 lg:pt-16"
         ref={layeredImagesRef}
       >
-        <div className="relative w-full max-w-[600px] h-full mx-auto overflow-hidden lg:w-1/2 px-12 sm:px-0 ">
-          <div className="relative w-full mx-auto overflow-hidden lg:rounded-2xl  h-[500px] w-[500px] sm:h-[600px] sm:w-[600px] lg:h-[700px] lg:w-[500px] rounded-2xl">
+        <div className="relative w-full max-w-[600px] h-full mx-auto overflow-hidden lg:w-1/2 px-4  sm:px-12 lg:px-0 ">
+          <div className="relative w-full mx-auto overflow-hidden lg:rounded-2xl  h-[500px] w-[500px] sm:h-[600px] sm:w-[500px] lg:h-[700px] lg:w-[500px] rounded-2xl">
             <Image
               src="/dickens_layers/layered_blake.png"
               alt="Blake Montgomery Headshot"
@@ -58,7 +58,7 @@ export default function Home() {
         </div>
 
         <div className="w-full flex flex-col bg-black lg:w-1/2 max-w-[600px] mx-auto">
-          <div className="w-full relative z-40 font-serif px-12 sm:px-0 pb-8 sm:pb-12 md:pb-16 lg:pb-12 pt-4 lg:p-0 ">
+          <div className="w-full relative z-40 font-serif px-4 sm:px-12  lg:px-0 pb-8 sm:pb-12 lg:pb-12 pt-4 lg:p-0 ">
             <p className="text-gray-400 text-base lg:text-lg lg:text-lg">
               <span className="font-bold text-gray-200">Blake Montgomery</span>{" "}
               began his career in Chicago directing ensemble clown theater and
