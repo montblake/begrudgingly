@@ -30,7 +30,7 @@ export default function Footer() {
 
         {/* <hr className="w-full border-gray-600 border-t-1 my-4 md:hidden" /> */}
         <div className="flex flex-row items-center justify-start space-x-2 mt-4 md:mt-0 hidden">
-          <Link
+          {/* <Link
             href="/signup"
             className="bg-gray-300 border border-gray-400 hover:bg-gray-100 rounded-md p-2 text-gray-900 text-xs aspect-square h-16"
           >
@@ -43,13 +43,13 @@ export default function Footer() {
             >
               <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
             </svg>
-          </Link>
+          </Link> */}
           <div className="flex space-x-2 justify-start w-full">
             <a
-              href="https://facebook.com/yourpage"
+              href="https://www.facebook.com/people/DickensAgain/61567779243511/"
               target="_blank"
               rel="noopener noreferrer"
-              className=" bg-gray-300 border border-gray-400 hover:bg-gray-100 rounded-md p-2 text-gray-900 text-xs aspect-square h-16"
+              className="bg-gray-300 border border-gray-400 hover:bg-gray-100 rounded-md p-2 text-gray-900 text-xs aspect-square h-16"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="https://instagram.com/yourpage"
+              href="https://www.instagram.com/dickensagain"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gray-300 border border-gray-400 hover:bg-gray-100 rounded-md p-2 text-gray-900 text-xs aspect-square h-16"
