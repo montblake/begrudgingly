@@ -61,7 +61,7 @@ export default function Nav() {
                   pathname === "/explore" ? "font-bold text-gray-900" : ""
                 }`}
               >
-                Explore Show
+                <span className="hidden lg:inline">Explore</span> Show
               </a>
             </li>
             <li>
@@ -71,7 +71,7 @@ export default function Nav() {
                   pathname === "/artist" ? "font-bold text-gray-900" : ""
                 }`}
               >
-                Meet Artist
+                <span className="hidden lg:inline">Meet</span> Artist
               </a>
             </li>
           </ul>
