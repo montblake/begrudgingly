@@ -1,4 +1,4 @@
-import Link from "next/link";
+// import Link from "next/link";
 // import BuyButton from "./buy_button";
 
 export default function Footer() {
