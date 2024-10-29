@@ -10,17 +10,18 @@ import SecondNav from "@/app/components/second_nav";
 
 export default function Home() {
   return (
-    <main className="w-full min-h-screen flex flex-col justify-start items-start lg:justify-between bg-black relative mx-auto">
+    <main className="w-full min-h-screen flex flex-col justify-start items-start lg:justify-between bg-victorian-texture bg-cover bg-center bg-no-repeat relative relative mx-auto">
       <Nav />
+      <div className="w-full h-full bg-black/90 absolute top-0 left-0 z-0" />
 
       <div
-        className="w-full max-w-[1200px] mx-auto lg:h-fit flex flex-col bg-black lg:flex-row lg:justify-between lg:items-start gap-0
+        className="w-full max-w-[1200px] mx-auto lg:h-fit flex flex-col  lg:flex-row lg:justify-between lg:items-start gap-0
         mt-6 lg:mt-12 lg:overflow-scroll
       "
       >
         <div className="w-full lg:hidden pt-8 lg:pt-0">
           <LayeredImage />
-          <div className="mt-8">
+          <div className="mt-0">
             <BuyButton />
           </div>
         </div>
@@ -45,6 +46,7 @@ export default function Home() {
       <div className="w-full lg:hidden px-12 sm:px-24 md:px-32 lg:px-48 xl:px-48 lg:px-16">
         <SecondNav />
       </div>
+
       <Footer />
     </main>
   );

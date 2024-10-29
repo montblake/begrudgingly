@@ -1,10 +1,18 @@
 export default function TicketLinks() {
   return (
-    <div className="flex flex-col justify-center items-center w-full lg:w-1/2">
-      <div className="w-full  flex flex-col justify-center items-center mt-4 lg:mt-0">
-        <p className="text-2xl uppercase  mb-4 text-gray-400">
-          Tickets on sale now!
-        </p>
+    <div className="flex flex-col justify-start items-start w-full ">
+      <div className="lg:mb-0 text-gray-400 px-4 sm:px-12 lg:px-0  w-full">
+        <hr className="w-full border-gray-400/80 mb-8 lg:mt-0" />
+        <h2 className="text-lg text-center uppercase">Chicago 2024 Tickets</h2>
+        {/* <h1 className="text-7xl text-center uppercase">Tickets</h1> */}
+        <h1 className="text-4xl text-center uppercase">On Sale Now</h1>
+        {/* <h1 className="text-3xl text-center">
+          &ldquo;Exactly what I needed to connect to the spirit of the
+          season!&rdquo;
+        </h1> */}
+        <hr className="w-full border-gray-400/80 mt-8" />
+      </div>
+      <div className="w-full  flex flex-col justify-center items-center mt-12 lg:mt-8 ">
         <div className="flex flex-col justify-center items-center gap-1 w-full">
           <a
             href=" https://ci.ovationtix.com/35386/performance/11538764"

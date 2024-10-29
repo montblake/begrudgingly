@@ -12,6 +12,7 @@ const config: Config = {
         "cover-dickens": "url('/dickens_newcover.jpg')",
         "footer-dickens": "url('/final_half_dickens.jpg')",
         "under-dickens": "url('/dickens_color4.jpg')",
+        "victorian-texture": "url('/victorian-texture.webp')",
       },
     },
   },

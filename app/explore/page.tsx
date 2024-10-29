@@ -23,11 +23,11 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="w-full min-h-screen flex flex-col justify-between items-start bg-black relative mx-auto mt-8 sm:mt-6 lg:mt-0">
+    <main className="w-full min-h-screen flex flex-col justify-between items-start bg-victorian-texture bg-cover bg-center bg-no-repeat relative mx-auto mt-8 lg:mt-10">
       <Nav />
-
+      <div className="w-full h-full bg-black/85 absolute top-0 left-0 z-0" />
       <div
-        className="max-w-[1200px] mx-auto w-full h-full lg:h-fit flex flex-col lg:flex-row lg:justify-between lg:items-start gap-0 lg:mt-8 lg:overflow-scroll lg:py-8 lg:px-16 lg:gap-8 pt-8 sm:pt-12 lg:pt-8"
+        className="max-w-[1200px] mx-auto w-full h-full lg:h-fit flex flex-col lg:flex-row lg:justify-between lg:items-start gap-0 lg:overflow-scroll lg:py-8 lg:px-16 lg:gap-8 pt-8 sm:pt-12 lg:pt-8 mix-blend-screen"
         ref={layeredImagesRef}
       >
         <div className="relative w-full max-w-[600px] h-full mx-auto overflow-hidden lg:w-1/2 px-4  sm:px-12 lg:px-0 ">
