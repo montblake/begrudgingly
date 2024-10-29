@@ -59,9 +59,22 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full flex flex-col bg-black lg:w-1/2 max-w-[600px] mx-auto mt-8 lg:mt-0">
-          <div className="w-full relative z-40 font-serif px-4 sm:px-12  lg:px-0 pb-8 sm:pb-12 lg:pb-4 pt-4 lg:p-0 text-gray-200 ">
-            <p className=" text-gray-400 text-base lg:text-lg lg:text-lg mb-2 sm:mb-3 lg:mb-4  lg:mb-4">
+        <div className="w-full flex flex-col bg-black lg:w-1/2 max-w-[600px] mx-auto mt-8 lg:mt-0 mb-12 lg:mb-0">
+          <div className="lg:mb-0 text-gray-400 px-4 sm:px-12 lg:px-0">
+            <hr className="w-full border-gray-400/80 mb-16 lg:mt-0" />
+            <h1 className="text-3xl text-center">
+              An intimate, imaginative holiday treat filled with laughs, a dash
+              of mischief, and a touch of holiday magic.
+            </h1>
+            <hr className="w-full border-gray-400/80 mt-16" />
+          </div>
+
+          <div className="mt-8 mb-8 lg:mb-8 lg:mt-8">
+            <BuyButton />
+          </div>
+
+          <div className="w-full relative z-40 font-serif px-4 sm:px-12  lg:px-0 pb-8 sm:pb-12 lg:pb-4 pt-0 lg:p-0 text-gray-200">
+            <p className=" text-gray-400 text-base sm:text-lg md:text-xl lg:text-2xl lg:text-base mb-2 sm:mb-3 lg:mb-4  lg:mb-4">
               <span className="text-gray-200 font-bold">Explore the Show.</span>{" "}
               In 1853, ten years after publishing A Christmas Carol, Charles
               Dickens began reading his work to live audiences, finding both
@@ -69,7 +82,7 @@ export default function Home() {
               successful that he continued until his death in 1870.
             </p>
 
-            <p className="text-gray-400 text-base lg:text-lg lg:text-lg mb-2 sm:mb-3 lg:mb-4  lg:mb-4">
+            <p className="text-gray-400 text-base sm:text-lg md:text-xl lg:text-2xl lg:text-base mb-2 sm:mb-3 lg:mb-4  lg:mb-4">
               But… what if that’s not exactly the whole story? What if reports
               of his death were, shall we say, exaggerated? And what if, for
               some mysterious and mystical reason, Dickens is bound to repeat
@@ -77,14 +90,14 @@ export default function Home() {
               century after century?
             </p>
 
-            <p className="text-gray-400 text-base lg:text-lg lg:text-lg mb-2 sm:mb-3 lg:mb-4  lg:mb-4">
+            <p className="text-gray-400 text-base sm:text-lg md:text-xl lg:text-2xl lg:text-base mb-2 sm:mb-3 lg:mb-4  lg:mb-4">
               Now, over 200 years old and a bit weary of his own creation,
               Dickens finds himself once again booked to perform his overly
               familiar Christmas tale. This year, the venue? Some place called
               The Den Theatre. In the city of Chicago. America.
             </p>
 
-            <p className="text-gray-400 text-base lg:text-lg lg:text-lg mb-2 sm:mb-3 lg:mb-4  lg:mb-4">
+            <p className="text-gray-400 text-base sm:text-lg md:text-xl lg:text-2xl lg:text-base mb-2 sm:mb-3 lg:mb-4  lg:mb-4">
               Join the famous author as he tries to change his fate and avoid
               another performance of his most famous work. Perhaps Dickens might
               get his wish of simply hosting a holiday party. Or perhaps, the
@@ -92,14 +105,6 @@ export default function Home() {
               in his work—and the joy of sharing it with an audience, one more
               time.
             </p>
-            <p className="text-gray-400 text-base lg:text-lg lg:text-lg mb-2 sm:mb-3 lg:mb-4  lg:mb-4">
-              Filled with laughs, a dash of mischief, and maybe even a touch of
-              holiday magic, Charles Dickens Begrudgingly is an intimate,
-              imaginative holiday treat.
-            </p>
-          </div>
-          <div className="mb-16 sm:mb-20 md:mb-24 lg:mb-4 lg:mt-0">
-            <BuyButton />
           </div>
         </div>
       </div>

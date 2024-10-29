@@ -1,10 +1,10 @@
 "use client";
 
-import Nav from "../components/nav";
-import Footer from "../components/footer";
+import Nav from "./nav";
+import Footer from "./footer";
 // import { useState, useEffect, useRef } from "react";
 // import Eyes from "../components/eyes";
-import Explore from "../components/explore";
+import Explore from "./explore";
 
 export default function Home() {
   // useEffect(() => {
