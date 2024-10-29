@@ -59,7 +59,7 @@ export default function Home() {
 
         <div className="w-full flex flex-col bg-black lg:w-1/2 max-w-[600px] mx-auto">
           <div className="w-full relative z-40 font-serif px-4 sm:px-12  lg:px-0 pb-8 sm:pb-12 lg:pb-12 pt-4 lg:p-0 ">
-            <p className="text-gray-400 text-base lg:text-lg lg:text-lg">
+            <p className="text-gray-400 text-base sm:text-lg md:text-xl lg:text-2xl lg:text-base">
               <span className="font-bold text-gray-200">Blake Montgomery</span>{" "}
               began his career in Chicago directing ensemble clown theater and
               performing with a variety of non-naturalistic Chicago theaters,
