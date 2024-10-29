@@ -58,12 +58,9 @@ export default function Home() {
         </div>
 
         <div className="w-full flex flex-col bg-black lg:w-1/2 max-w-[600px] mx-auto mt-8 lg:mt-0 mb-12 lg:mb-0">
-          <div className="lg:mb-0 text-gray-400 px-4 sm:px-12 lg:px-0">
+          <div className="lg:mb-0 text-gray-400 px-4 sm:px-12 lg:px-0 relative z-40">
             <hr className="w-full border-gray-400/80 mb-16 lg:mt-0" />
-            {/* <h1 className="text-3xl text-center">
-              &ldquo;An exceptional one-man performance that entertained
-              thoroughly! Superbly crafted and performed.&rdquo;
-            </h1> */}
+
             <h1 className="text-3xl text-center">
               &ldquo;Top-notch performance! Just what we needed to lift our
               spirits and put the holiday season in perspective.&rdquo;
