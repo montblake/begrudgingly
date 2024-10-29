@@ -147,7 +147,7 @@ export default function Nav() {
                 <a
                   href="/explore"
                   className={`block text-gray-600 hover:underline ${
-                    pathname === "/artist" ? "font-bold text-gray-900" : ""
+                    pathname === "/explore" ? "font-bold text-gray-900" : ""
                   }`}
                 >
                   Explore the Show
