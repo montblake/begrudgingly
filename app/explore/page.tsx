@@ -76,25 +76,27 @@ export default function Home() {
           <div className="w-full relative z-40 font-serif px-4 sm:px-12  lg:px-0 pb-8 sm:pb-12 lg:pb-4 pt-0 lg:p-0 text-gray-200">
             <p className=" text-gray-400 text-base sm:text-lg md:text-xl lg:text-2xl lg:text-base mb-2 sm:mb-3 lg:mb-4  lg:mb-4">
               <span className="text-gray-200 font-bold">Explore the Show.</span>{" "}
-              In 1853, ten years after publishing A Christmas Carol, Charles
-              Dickens began reading his work to live audiences, finding both
-              success and purpose in these public performances. They were so
-              successful that he continued until his death in 1870.
+              In 1853, ten years after publishing{" "}
+              <span className="italic">A Christmas Carol</span>, Charles Dickens
+              began reading his work to live audiences, finding both success and
+              purpose in these public performances. They were so successful that
+              he continued until his death in 1870.
             </p>
 
             <p className="text-gray-400 text-base sm:text-lg md:text-xl lg:text-2xl lg:text-base mb-2 sm:mb-3 lg:mb-4  lg:mb-4">
               But… what if that’s not exactly the whole story? What if reports
               of his death were, shall we say, exaggerated? And what if, for
               some mysterious and mystical reason, Dickens is bound to repeat
-              his reading of A Christmas Carol every December—year after year,
-              century after century?
+              his reading of <span className="italic">A Christmas Carol</span>{" "}
+              every December—year after year, century after century?
             </p>
 
             <p className="text-gray-400 text-base sm:text-lg md:text-xl lg:text-2xl lg:text-base mb-2 sm:mb-3 lg:mb-4  lg:mb-4">
               Now, over 200 years old and a bit weary of his own creation,
               Dickens finds himself once again booked to perform his overly
               familiar Christmas tale. This year, the venue? Some place called
-              The Den Theatre. In the city of Chicago. America.
+              <span className="italic">The Den Theatre</span>. In the city of
+              Chicago. America.
             </p>
 
             <p className="text-gray-400 text-base sm:text-lg md:text-xl lg:text-2xl lg:text-base mb-2 sm:mb-3 lg:mb-4  lg:mb-4">
