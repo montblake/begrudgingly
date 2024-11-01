@@ -9,9 +9,9 @@ const baskerville = Libre_Baskerville({
 });
 
 export const metadata: Metadata = {
-  title: "Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL, Again",
+  title: "Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again",
   description:
-    "Blake Montgomery's Award-Winning Holiday Show Returns To The Chicago's Den Theatre, December 5-22, 2024",
+    "Blake Montgomery's Jeff Award-winning solo show returns to Chicago at The Den Theatre, December 5-22, 2024",
 };
 
 export default function RootLayout({
