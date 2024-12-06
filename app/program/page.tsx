@@ -68,101 +68,176 @@ export default function Program() {
         <h1 className="text-2xl font-bold mb-4 mt-12">Company Biographies</h1>
         <div className="flex flex-col items-center justify-start gap-4">
           <p className="text-base">
-            Blake Montgomery (Dickens) began his career in Chicago directing
-            ensemble clown theater and performing with a variety of
-            non-naturalistic Chicago theaters, most notably Redmoon with whom he
-            collaborated for more than a decade. In 2005, Montgomery founded The
-            Building Stage, a theater company and performance space, where he
-            served as Artistic Director until its closing in 2013. The company
-            was known for its ensemble-devised, director-driven creations,
-            particularly in literary adaptations like their Jeff Award-winning
-            Moby-Dick and the poetic, clown-inspired Dawn, Quixote. Montgomery's
+            <span className="font-bold">
+              Blake Montgomery (Dickens, Creator)
+            </span>{" "}
+            began his career in Chicago directing ensemble clown theater and
+            performing with a variety of non-naturalistic Chicago theaters, most
+            notably Redmoon with whom he collaborated for more than a decade. In
+            2005, Montgomery founded The Building Stage, a theater company and
+            performance space, where he served as Artistic Director until its
+            closing in 2013. The company was known for its ensemble-devised,
+            director-driven creations, particularly in literary adaptations like
+            their Jeff Award-winning <span className="italic">Moby-Dick</span>{" "}
+            and the poetic, clown-inspired{" "}
+            <span className="italic">Dawn, Quixote</span>. Montgomery&apos;s
             artistic approach draws on his training at the École Jacques Lecoq,
-            the Dell'Arte School of Physical Theater, and Middlebury College. A
-            member of Actors' Equity, his performances in Chicago include work
-            with The House Theatre, The Hypocrites, Remy Bumppo Theatre Company,
-            Court Theatre, Chicago Shakespeare, Steppenwolf, and Writers
-            Theatre. Honoring the Past, Present, and Future: this performance is
-            dedicated to Anne, Lauren, and Bodie.
+            the Dell&apos;Arte School of Physical Theater, and Middlebury
+            College. A member of Actors&apos; Equity, his performances in
+            Chicago include work with The House Theatre, The Hypocrites, Remy
+            Bumppo Theatre Company, Court Theatre, Chicago Shakespeare,
+            Steppenwolf, and Writers Theatre. Honoring the Past, Present, and
+            Future: this performance is dedicated to Anne, Lauren, and Bodie.
           </p>
           <p className="text-base">
-            Izumi Inaba (costume designer) is so delighted to work with Blake
-            again! Previously with him, she has designed Charles Dickens
-            Begrudgingly Performs ‘A Christmas Carol,’ Again and Moby Dick at
-            Building Stage back in 2011. Her recent works include Noises Off
-            (Steppenwolf Theatre Company), I Am Not Your Perfect Mexican
-            Daughter (Denver Center Performing Arts), Milo Imagines The World
-            (Chicago Children’s Theatre), Every Brilliant Thing (Writers
-            Theatre), The Comedians (Ravens Theatre). Upcoming projects include
-            Empty Ride (Old Globe), The Play That Goes Wrong (Indiana Repartory
-            Theatre), and Cats (Paramount Theatre). Izumi is a member of United
-            Scenic Artists Local USA 829 and represented by Gersh.
+            <span className="font-bold">Izumi Inaba (Costume Design)</span> is
+            so delighted to work with Blake again! Previously with him, she has
+            designed{" "}
+            <span className="italic">
+              Charles Dickens Begrudgingly Performs ‘A Christmas Carol’ Again
+            </span>{" "}
+            and <span className="italic">Moby Dick</span> at Building Stage back
+            in 2011. Her recent works include{" "}
+            <span className="italic">Noises Off</span> (Steppenwolf Theatre
+            Company),{" "}
+            <span className="italic">
+              I Am Not Your Perfect Mexican Daughter
+            </span>{" "}
+            (Denver Center Performing Arts),{" "}
+            <span className="italic">Milo Imagines The World</span> (Chicago
+            Children’s Theatre),{" "}
+            <span className="italic">Every Brilliant Thing</span> (Writers
+            Theatre), and <span className="italic">The Comedians</span> (Ravens
+            Theatre). Upcoming projects include{" "}
+            <span className="italic">Empty Ride</span> (Old Globe),{" "}
+            <span className="italic">The Play That Goes Wrong</span> (Indiana
+            Repartory Theatre), and <span className="italic">Cats</span>{" "}
+            (Paramount Theatre). Izumi is a member of United Scenic Artists
+            Local USA 829 and represented by Gersh.
           </p>
           <p className="text-base">
-            Megan E. Pirtle (Wig Designer) is a Chicago based theatre artist
-            specialized in wig, costume, and makeup design. Her previous designs
-            for Haymarket include La liberazione di Ruggiero dall’isola
-            d’Alcina, Marc’ Antonio e Cleopatra, L’incoronazione di Poppea, and
-            L’amant Anonyme. Selected wig design credits include Trouble in
-            Mind, Campaigns Inc. (co-design), Relentless, Rutherford & Son
-            (TimeLine), Mesmerized (Chicago Children’s Theatre) The October
-            Storm, The Last Pair of Earlies, Crumbs from the Table of Joy
-            (Raven), Gypsy, Hello Dolly (co-design), You’re a Good Man Charlie
-            Brown, and The Princess & the Pea (Marriott). She has also worked as
-            the Wig & Hair Coordinator and Artisan for Villette, Her Honor Jane
-            Byrne (Lookingglass), Two Trains Running (Court), Ring of Fire
-            (Drury Lane), Dial M for Murder and Georgiana & Kitty (Northlight).
-            Most recently, Megan was the Makeup Coordinator for the Chicago
-            premiere of Emmet Otter’s Jug- Band Christmas (Timothy Allen
-            McDonald/ iTheatrics). Megan is also a licensed cosmetologist of
-            Illinois. And in 2023, she was the recipient of the Michael Merritt
-            Emerging Technical Collaborator Award. For more, visit
-            meganpirtledesign.com.
+            <span className="font-bold">Megan E. Pirtle (Wig Design)</span> is a
+            Chicago based theatre artist specialized in wig, costume, and makeup
+            design. Her previous designs for Haymarket include{" "}
+            <span className="italic">
+              La liberazione di Ruggiero dall&apos;isola d&apos;Alcina
+            </span>
+            , <span className="italic">Marc&apos;Antonio e Cleopatra</span>,{" "}
+            <span className="italic">L&apos;incoronazione di Poppea</span>, and{" "}
+            <span className="italic">L&apos;amant Anonyme</span>. Selected wig
+            design credits include{" "}
+            <span className="italic">Trouble in Mind</span>,{" "}
+            <span className="italic">Campaigns Inc.</span> (co-design),{" "}
+            <span className="italic">Relentless</span>,{" "}
+            <span className="italic">Rutherford & Son</span> (TimeLine),{" "}
+            <span className="italic">Mesmerized</span> (Chicago Children&apos;s
+            Theatre), <span className="italic">The October Storm</span>,{" "}
+            <span className="italic">The Last Pair of Earlies</span>,{" "}
+            <span className="italic">Crumbs from the Table of Joy</span>{" "}
+            (Raven), <span className="italic">Gypsy</span>,{" "}
+            <span className="italic">Hello Dolly</span> (co-design),{" "}
+            <span className="italic">You&apos;re a Good Man Charlie Brown</span>
+            , and <span className="italic">The Princess & the Pea</span>{" "}
+            (Marriott). She has also worked as the Wig & Hair Coordinator and
+            Artisan for <span className="italic">Villette</span>,{" "}
+            <span className="italic">Her Honor Jane Byrne</span> (Lookingglass),{" "}
+            <span className="italic">Two Trains Running</span> (Court),{" "}
+            <span className="italic">Ring of Fire</span> (Drury Lane),{" "}
+            <span className="italic">Dial M for Murder</span> and{" "}
+            <span className="italic">Georgiana & Kitty</span> (Northlight). Most
+            recently, Megan was the Makeup Coordinator for the Chicago premiere
+            of{" "}
+            <span className="italic">
+              Emmet Otter&apos;s Jug-Band Christmas
+            </span>{" "}
+            (Timothy Allen McDonald/iTheatrics). Megan is also a licensed
+            cosmetologist of Illinois. And in 2023, she was the recipient of the
+            Michael Merritt Emerging Technical Collaborator Award. For more,
+            visit meganpirtledesign.com.
           </p>
           <p className="text-base">
-            Oskar Westbridge (Sound Design) is a director, sound designer, and
-            teaching artist. They recently directed/sound designed R.U.R
-            (Rossum’s Universal Robots) and Frankenstein as a guest artist at
+            <span className="font-bold">Emmitt Socey (Lighting Design)</span> is
+            a recent graduate of Loyola University Chicago and one of those
+            multi-hyphenates people love to talk about. They work primarily as a
+            director and lighting designer with recent credits including Guest
+            Co-Director for <span className="italic">Orange Julius</span> for
+            Loyola, Dramaturg and Director of new one-woman show{" "}
+            <span className="italic">You Will Speak Again</span>,{" "}
+            <span className="italic">Kapemba&apos;tona</span>, and Lighting
+            Designer for <span className="italic">Blood to Drink</span> at
+            Earlham College in Richmond, IN. They also had the joy of interning
+            at Peninsula Players Theatre in Door County, WI, where they were the
+            props intern for the summer. They would like to thank Lee Keenan
+            specifically for supporting their growth and connecting them with
+            this production.
+          </p>
+          <p className="text-base">
+            <span className="font-bold">Oskar Westbridge (Sound Design)</span>{" "}
+            is a director, sound designer, and teaching artist. They recently
+            directed/sound designed <span className="italic">R.U.R</span>{" "}
+            (Rossum&apos;s Universal Robots) and{" "}
+            <span className="italic">Frankenstein</span> as a guest artist at
             Triton College. They are a graduate of The Theater School at DePaul
             University, a faculty member of the National High School Institute
-            (“Cherubs”) program, and a alumni of Directors Lab North 2024. See
-            more at oskarcywestbridge.com.
+            (&ldquo;Cherubs&rdquo;) program, and a alumni of Directors Lab North
+            2024. See more at oskarcywestbridge.com.
           </p>
           <p className="text-base">
-            GEORGE KEATING (Ghost of Rehearsals Present) — George is honored to
-            hover about rehearsals and attempt to say helpful things. When it’s
-            not Christmas, he can be seen teaching at The Theatre School at
-            DePaul University. He appears on stages in Chicago for the past 30
-            years and occasionally on your television or social media platform.
-            George is the Theatre Arts Division Director of The National High
-            School Institute at Northwestern University, more commonly known as
-            the cherubs program. He plans to make theatre and music, and be
-            around art, until he is inevitably compared to the Dickensian
-            “doornail.”
+            <span className="font-bold">
+              George Keating (Ghost of Rehearsals Present)
+            </span>{" "}
+            is honored to hover about rehearsals and attempt to say helpful
+            things. When it&apos;s not Christmas, he can be seen teaching at The
+            Theatre School at DePaul University. He appears on stages in Chicago
+            for the past 30 years and occasionally on your television or social
+            media platform. George is the Theatre Arts Division Director of The
+            National High School Institute at Northwestern University, more
+            commonly known as the cherubs program. He plans to make theatre and
+            music, and be around art, until he is inevitably compared to the
+            Dickensian &ldquo;doornail.&rdquo;
           </p>
           <p className="text-base">
-            Jake Snell (Stage Management) is from Palos Heights, IL and
-            currently resides in Rogers Park as a freelance stage and production
-            manager. Jake is a recent graduate from Loyola University Chicago
-            where he studied theater and psychology. Recent credits include work
-            with Goodman Theatre, Northlight Theatre, Congo Square Theatre,
-            Black Ensemble Theatre, Definition Theatre, Griffin Theatre,
-            Porchlight Music Theatre, and Trap Door Theatre. Jake would like to
+            <span className="font-bold">Jake Snell (Stage Manager)</span> is
+            from Palos Heights, IL and currently resides in Rogers Park as a
+            freelance stage and production manager. Jake is a recent graduate
+            from Loyola University Chicago where he studied theater and
+            psychology. Recent credits include work with Goodman Theatre,
+            Northlight Theatre, Congo Square Theatre, Black Ensemble Theatre,
+            Definition Theatre, Griffin Theatre, Porchlight Music Theatre, and
+            Trap Door Theatre. Jake would like to thank his family and friends
             thank his family and friends for their endless love and support.
           </p>
           <p className="text-base">
-            Thompson MacKenzie Scribner (Board Operator) is brand new to
-            Chicago! She loves big rocks, small rocks, and animals with weird
-            organs. You can find her blog at thompsonscribner.com or on
-            substack.com/@thompsonmac.
+            <span className="font-bold">Andrew Snyder (House Manager)</span> is
+            a Theatre Artist/Musician from Fort Smith, AR. Previous Chicago
+            credits include Stage Management for{" "}
+            <span className="italic">By the Way, Meet Vera Stark</span>,{" "}
+            <span className="italic">The Pavilion</span>, and{" "}
+            <span className="italic">Dying For It</span> with The Artistic Home.
+            Andrew holds a B.A. in Acting/Directing from the University of
+            Arkansas at Fort Smith and an M.F.A in Acting from Northern Illinois
+            University.
           </p>
           <p className="text-base">
-            Andrew Snyder (House Management) is a Theatre Artist/Musician from
-            Fort Smith, AR. Previous Chicago credits include Stage Management
-            for "By the Way, Meet Vera Stark", "The Pavilion" and "Dying For It"
-            with The Artistic Home. Andrew holds a B.A. in Acting/Directing from
-            the University of Arkansas at Fort Smith and an M.F.A in Acting from
-            Northern Illinois University.
+            <span className="font-bold">
+              Hannah Kwak (Production Electrician)
+            </span>{" "}
+            is a Chicago based sound engineer and electrician. She is the
+            assistant sound supervisor for Chicago Children&apos;s
+            Theatre&apos;s 24-25 season and is the production assistant for Joe
+            Mazza at brave lux inc. She recently worked on Writer&apos;s
+            Theatre&apos;s <span className="italic">Great Comet</span> as the
+            LX/A2 cover and will be sound designing at Citadel Theatre in the
+            spring. She is an alum of Loyola University Chicago and is thrilled
+            to be part of this production!
+          </p>
+          <p className="text-base">
+            <span className="font-bold">
+              Thompson MacKenzie Scribner (Board Operator)
+            </span>{" "}
+            is brand new to Chicago! She loves big rocks, small rocks, and
+            animals with weird organs. You can find her blog at
+            thompsonscribner.com or on substack.com/@thompsonmac.
           </p>
         </div>
       </div>
