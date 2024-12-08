@@ -224,7 +224,7 @@ export default function Program() {
             <span className="font-bold">
               Hannah Kwak (Production Electrician)
             </span>{" "}
-            is a Chicago based sound engineer and electrician. She is the
+            is a Chicago-based sound engineer and electrician. She is the
             assistant sound supervisor for Chicago Children&apos;s
             Theatre&apos;s 24-25 season and is the production assistant for Joe
             Mazza at brave lux inc. She recently worked on Writer&apos;s
@@ -240,6 +240,38 @@ export default function Program() {
             is brand new to Chicago! She loves big rocks, small rocks, and
             animals with weird organs. You can find her blog at
             thompsonscribner.com or on substack.com/@thompsonmac.
+          </p>
+        </div>
+      </div>
+      <div className="flex flex-col items-center justify-start max-w-xl">
+        <h1 className="text-2xl font-bold mb-4 mt-12">About the Show</h1>
+        <div className="flex flex-col items-center justify-start gap-4">
+          <p className="text-base">
+            <span className="font-bold">Charles Dickens Begrudgingly...</span>{" "}
+            was first created and performed in December of 2011 at The Building
+            Stage in Chicago&apos;s industrial West Loop. The piece was
+            remounted / revised in 2012, also at The Building Stage. The version
+            you see tonight builds on those previous productions -- and very
+            possibly on discoveries made onstage last night.
+          </p>
+        </div>
+      </div>
+      <div className="flex flex-col items-center justify-start max-w-xl">
+        <h1 className="text-2xl font-bold mb-4 mt-12">About the Company</h1>
+        <div className="flex flex-col items-center justify-start gap-4">
+          <p className="text-base">
+            <span className="font-bold">CLOWNSHOW</span> is a theater company
+            dedicated to producing the creative work of Blake Montgomery.
+            Launching in 2024 with the revised remount of{" "}
+            <span className="italic">Charles Dickens Begrudgingly...</span>,
+            current plans include a new solo piece by Blake scheduled to debut
+            in 2025. This piece, about another Victorian author, Wilkie Collins,
+            and his creation of{" "}
+            <span className="italic">The Woman in White</span>, is inspired by
+            the very first piece Blake presented in Chicago back in 1998.
+            Eventually, the company hopes to feature Blake&apos;s directorial
+            work and ensemble-created aesthetic as well as his solo
+            performances.
           </p>
         </div>
       </div>
