@@ -7,9 +7,9 @@ export default function Program() {
         <h1 className="font-bold text-center mb-12">
           <span className="text-4xl">Charles Dickens</span>
           <br />
-          <span className="text-6xl">Begrudgingly</span>
+          <span className="text-5xl">Begrudgingly</span>
           <br />
-          <span className="text-xl relative top-[8px]">
+          <span className="text-lg relative top-[8px]">
             Performs <span className="italic">A Christmas Carol</span> Again
           </span>
         </h1>
@@ -41,7 +41,7 @@ export default function Program() {
           <h5 className="text-base italic">Production Electrician</h5>
           <h2 className="text-xl font-bold mb-2">Hannah Kwak</h2>
           <h5 className="text-base italic">board operator</h5>
-          <h2 className="text-xl font-bold mb-2">
+          <h2 className="text-xl font-bold mb-2 text-center">
             Thompson MacKenzie Scribner
           </h2>
           <h5 className="text-base italic">electrician</h5>
@@ -118,7 +118,7 @@ export default function Program() {
           <p className="text-base">
             <span className="font-bold">Megan E. Pirtle (Wig Design)</span> is a
             Chicago based theatre artist specialized in wig, costume, and makeup
-            design. Her previous designs for Haymarket include{" "}
+            design. Her designs for Haymarket include{" "}
             <span className="italic">
               La liberazione di Ruggiero dall&apos;isola d&apos;Alcina
             </span>
@@ -174,13 +174,15 @@ export default function Program() {
           <p className="text-base">
             <span className="font-bold">Oskar Westbridge (Sound Design)</span>{" "}
             is a director, sound designer, and teaching artist. They recently
-            directed/sound designed <span className="italic">R.U.R</span>{" "}
-            (Rossum&apos;s Universal Robots) and{" "}
-            <span className="italic">Frankenstein</span> as a guest artist at
-            Triton College. They are a graduate of The Theater School at DePaul
-            University, a faculty member of the National High School Institute
-            (&ldquo;Cherubs&rdquo;) program, and a alumni of Directors Lab North
-            2024. See more at oskarcywestbridge.com.
+            directed/sound designed{" "}
+            <span className="italic">
+              R.U.R (Rossum&apos;s Universal Robots)
+            </span>{" "}
+            and <span className="italic">Frankenstein</span> as a guest artist
+            at Triton College. They are a graduate of The Theater School at
+            DePaul University, a faculty member of the National High School
+            Institute (&ldquo;Cherubs&rdquo;) program, and a alumni of Directors
+            Lab North 2024. See more at oskarcywestbridge.com.
           </p>
           <p className="text-base">
             <span className="font-bold">
@@ -205,7 +207,7 @@ export default function Program() {
             Northlight Theatre, Congo Square Theatre, Black Ensemble Theatre,
             Definition Theatre, Griffin Theatre, Porchlight Music Theatre, and
             Trap Door Theatre. Jake would like to thank his family and friends
-            thank his family and friends for their endless love and support.
+            for their endless love and support.
           </p>
           <p className="text-base">
             <span className="font-bold">Andrew Snyder (House Manager)</span> is
