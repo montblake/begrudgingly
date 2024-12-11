@@ -14,7 +14,7 @@ export default function TicketLinks() {
       </div>
       <div className="w-full  flex flex-col justify-center items-center mt-12 lg:mt-8 ">
         <div className="flex flex-col justify-center items-center gap-1 w-full">
-          <a
+          {/* <a
             href=" https://ci.ovationtix.com/35386/performance/11538764"
             target="_blank"
             className="bg-amber-300/80 px-4 py-2 rounded-xl text-gray-50 border-2 border-black hover:border-gray-50 transition-colors duration-200 w-72 text-center"
@@ -43,7 +43,7 @@ export default function TicketLinks() {
             className="bg-amber-300/80 px-4 py-2 rounded-xl text-gray-50 border-2 border-black hover:border-gray-50 transition-colors duration-200 w-72 text-center"
           >
             <p className="text-sm">Sunday, December 8 at 7pm</p>
-          </a>
+          </a> */}
           <a
             href="https://ci.ovationtix.com/35386/performance/11540129"
             target="_blank"
