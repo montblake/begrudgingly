@@ -6,12 +6,13 @@ import Nav from "../components/nav";
 
 export default function Home() {
   return (
-    <main className="w-full min-h-screen flex flex-col justify-between items-start bg-victorian-texture bg-cover bg-center bg-no-repeat relative mx-auto mt-10 lg:mt-10">
+    <main className="w-full min-h-screen flex flex-col justify-between items-start bg-victorian-texture bg-cover bg-center bg-no-repeat bg-fixed relative mx-auto mt-14">
       <Nav />
       <div className="w-full h-full bg-black/85 absolute top-0 left-0 z-0" />
-      <div className="max-w-[1200px] mx-auto w-full h-full lg:h-fit flex flex-col lg:flex-row lg:justify-between lg:items-start gap-0 lg:overflow-scroll lg:px-16 lg:gap-8 pt-8 sm:pt-12 lg:pt-8 lg:pb-8">
-        <div className="relative w-full max-w-[600px] h-full mx-auto overflow-hidden lg:w-1/2 px-4  sm:px-12 lg:px-0 ">
-          <div className="relative w-full mx-auto overflow-hidden lg:rounded-2xl  h-[auto] max-h-[60vh] lg:max-h-[66vh] w-[500px] sm:w-[500px] lg:w-[500px] rounded-2xl flex justify-center items-center">
+
+      <div className="max-w-[1200px] mx-auto w-full h-full lg:h-fit flex flex-col lg:flex-row lg:justify-between lg:items-start gap-0 lg:px-16 lg:gap-8 pt-8 sm:pt-12 lg:pt-8 lg:pb-8">
+        <div className="relative w-full h-full mx-auto overflow-hidden lg:w-1/2 px-4  sm:px-12 lg:px-0 ">
+          <div className=" mx-auto overflow-hidden lg:rounded-2xl h-auto w-full max-w-[500px] rounded-2xl flex justify-center items-center">
             <Image
               src="/dickens_layers/layered_blake.png"
               alt="Blake Montgomery Headshot"
@@ -19,7 +20,6 @@ export default function Home() {
               height={800}
               className="w-full h-full"
             />
-            {/* <div className="absolute h-full bottom-0 inset-0 bg-gradient-to-b from-transparent via-transparent to-black z-10"></div> */}
           </div>
 
           <div className="absolute bottom-0 left-0 w-full h-fullflex justify-center items-end drop-shadow-lg">
@@ -33,7 +33,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full flex flex-col bg-black lg:w-1/2 max-w-[600px] mx-auto mt-8 lg:mt-0 mb-12 lg:mb-0">
+        <div className="w-full flex flex-col bg-black lg:w-1/2 max-w-[600px] mx-auto mt-8 lg:mt-0 mb-0 lg:mb-0">
           <div className="lg:mb-0 text-neutral-400 px-4 sm:px-12 lg:px-0 relative z-40">
             <h1 className="text-3xl text-center">
               &ldquo;Top-notch performance! Just what we needed to lift our
