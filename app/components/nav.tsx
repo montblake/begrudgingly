@@ -5,6 +5,41 @@ import Image from "next/image";
 import { useState } from "react";
 import Tooltip from "@mui/material/Tooltip";
 
+const navLinks = [
+  {
+    href: "/",
+    label: "Home",
+    desktopLabel: "Home",
+  },
+  {
+    href: "/premise",
+    label: "Premise",
+    desktopLabel: (
+      <>
+        <span className="hidden lg:inline">The</span> Premise
+      </>
+    ),
+  },
+  {
+    href: "/production",
+    label: "Production",
+    desktopLabel: (
+      <>
+        <span className="hidden lg:inline">The</span> Production
+      </>
+    ),
+  },
+  {
+    href: "/performer",
+    label: "Performer",
+    desktopLabel: (
+      <>
+        <span className="hidden lg:inline">The</span> Performer
+      </>
+    ),
+  },
+];
+
 export default function Nav() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +51,7 @@ export default function Nav() {
   return (
     <>
       <div className="fixed top-0 left-0 w-full z-50 flex justify-center items-center border-b border-gray-400">
-        <nav className="text-xs sm:text-sm md:text-base bg-gray-200 w-full flex justify-between py-2 px-4 sm:px-12 lg:px-16">
+        <nav className="text-xs sm:text-sm md:text-base bg-gray-300 w-full flex justify-between py-4 px-4 sm:px-12 lg:px-16">
           <ul className="flex space-x-6 items-center justify-center mr-8">
             <li>
               <Tooltip title="Home" arrow>
@@ -33,47 +68,18 @@ export default function Nav() {
             </li>
           </ul>
           <ul className="hidden md:flex space-x-4 items-center">
-            <li>
-              <a
-                href="/"
-                className={`text-gray-600 hover:underline ${
-                  pathname === "/" ? "font-bold text-gray-900" : ""
-                }`}
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="/performances"
-                className={`text-gray-600 hover:underline ${
-                  pathname === "/performances" ? "font-bold text-gray-900" : ""
-                }`}
-              >
-                Performances
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="/explore"
-                className={`text-gray-600 hover:underline ${
-                  pathname === "/explore" ? "font-bold text-gray-900" : ""
-                }`}
-              >
-                <span className="hidden lg:inline">Explore</span> Show
-              </a>
-            </li>
-            <li>
-              <a
-                href="/artist"
-                className={`text-gray-600 hover:underline ${
-                  pathname === "/artist" ? "font-bold text-gray-900" : ""
-                }`}
-              >
-                <span className="hidden lg:inline">Meet</span> Artist
-              </a>
-            </li>
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className={`text-sm text-gray-600 hover:text-gray-900 active:underline ${
+                    pathname === link.href ? "font-bold text-gray-900" : ""
+                  }`}
+                >
+                  {link.desktopLabel}
+                </a>
+              </li>
+            ))}
           </ul>
           <button
             className="md:hidden text-gray-600 relative z-50"
@@ -121,48 +127,18 @@ export default function Nav() {
               </svg>
             </button>
             <ul className="mt-8 space-y-4">
-              <li>
-                <a
-                  href="/"
-                  className={`block text-gray-600 hover:underline ${
-                    pathname === "/" ? "font-bold text-gray-900" : ""
-                  }`}
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/performances"
-                  className={`block text-gray-600 hover:underline ${
-                    pathname === "/performances"
-                      ? "font-bold text-gray-900"
-                      : ""
-                  }`}
-                >
-                  Performances
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/explore"
-                  className={`block text-gray-600 hover:underline ${
-                    pathname === "/explore" ? "font-bold text-gray-900" : ""
-                  }`}
-                >
-                  Explore the Show
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/artist"
-                  className={`block text-gray-600 hover:underline ${
-                    pathname === "/artist" ? "font-bold text-gray-900" : ""
-                  }`}
-                >
-                  Meet the Artist
-                </a>
-              </li>
+              {navLinks.map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    className={`block uppercase text-gray-600 hover:underline ${
+                      pathname === link.href ? "font-bold text-gray-900" : ""
+                    }`}
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

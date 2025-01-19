@@ -3,7 +3,7 @@
 
 export default function Footer() {
   return (
-    <div className=" w-full flex-col justify-start items-center text-gray-900 z-50 bg-gray-200 px-4 sm:px-12 lg:px-16 pt-8 lg:pt-8 lg:pt-8 border-t border-gray-300 ">
+    <div className=" w-full flex-col justify-start items-center text-gray-900 z-50 bg-gray-300 px-4 sm:px-12 lg:px-16 pt-8 lg:pt-8 lg:pt-8 border-t border-gray-300 ">
       <div className="flex flex-col w-full justify-start items-start md:flex-row md:justify-between">
         <div className="flex flex-col w-full">
           <h1 className="text-sm md:text-base italic font-bold">
@@ -14,7 +14,7 @@ export default function Footer() {
           <p className="mt-2 text-xs md:text-sm mb-2">
             Created and performed by Blake Montgomery
           </p>
-          <p className="text-xs md:text-sm mb-2">December 5 – 22, 2024</p>
+          {/* <p className="text-xs md:text-sm mb-2">December 5 – 22, 2024</p>
           <p className="text-xs md:text-sm">
             <a
               href="https://www.thedentheatre.com"
@@ -25,7 +25,7 @@ export default function Footer() {
             </a>
             <br /> 1331 N. Milwaukee Ave.
             <br /> Chicago, IL
-          </p>
+          </p> */}
         </div>
 
         {/* <hr className="w-full border-gray-600 border-t-1 my-4 md:hidden" /> */}
@@ -87,7 +87,7 @@ export default function Footer() {
       >
         <hr className="w-full border-neutral-600 border-t-1" />
         <div className="flex flex-row justify-end items-center pt-4 text-xs md:text-sm">
-          <p className="">
+          <p className="text-left w-full">
             this is a <span className="font-bold">clownshow</span>
           </p>
         </div>

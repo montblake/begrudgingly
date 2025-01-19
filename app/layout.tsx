@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${baskerville.className} bg-gray-50`}>
+      <body className={`${baskerville.className} bg-gray-300`}>
         {children}
         <Analytics />
       </body>

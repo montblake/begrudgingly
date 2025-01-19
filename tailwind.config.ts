@@ -9,10 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "cover-dickens": "url('/dickens_newcover.jpg')",
-        "footer-dickens": "url('/final_half_dickens.jpg')",
-        "under-dickens": "url('/dickens_color4.jpg')",
+        "shadow-dickens":
+          "url('/photos/bravelux/100-joe-mazza-chicago-brave-lux-inc-5206928.jpg')",
         "victorian-texture": "url('/victorian-texture.webp')",
+      },
+      textShadow: {
+        "shadow-dickens": "0 0 4px rgba(0, 0, 0, 1)",
+      },
+      colors: {
+        "title-start": "#dcbf7d",
+        "title-middle": "cba95f",
+        "title-end": "#b48a34",
       },
     },
   },

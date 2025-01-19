@@ -14,7 +14,7 @@ export default function Venue() {
         <p className="text-sm italic text-gray-400">Box Office</p>
         <p className="text-lg">
           <a
-            href="tel:773-697-3830"
+            // href="tel:773-697-3830"
             className="hover:text-amber-300/80 text-gray-200 transition-colors duration-300"
           >
             (773) 697-3830
@@ -22,7 +22,7 @@ export default function Venue() {
         </p>
         <p>
           <a
-            href="https://thedentheatre.com/"
+            // href="https://thedentheatre.com/"
             target="_blank"
             className="hover:text-amber-300/80 text-gray-200 transition-colors duration-300"
           >
