@@ -16,10 +16,10 @@ export default function Popcies() {
       </div>
 
       <div className="flex flex-col justify-center items-center relative py-4">
-        <hr className="w-1/3 border-gray-600 border-t-1 mb-4" />
+        <hr className="w-1/3 border-neutral-600 border-t-1 mb-4" />
         <p className="mb-0">Late seating at the discretion of management.</p>
         <p className="mb-0">The Den has a nice bar, come early.</p>
-        <hr className="w-1/3 border-gray-600 border-t-1 mt-4" />
+        <hr className="w-1/3 border-neutral-600 border-t-1 mt-4" />
       </div>
 
       <div className="pb-2 flex flex-col justify-center items-center">
@@ -36,7 +36,7 @@ export default function Popcies() {
       />
 
       <div className="pt-12">
-        <p className="text-center text-gray-200">
+        <p className="text-center text-neutral-200">
           Mr. Dickens can&apos;t wait to meet you!
         </p>
       </div>

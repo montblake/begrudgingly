@@ -3,7 +3,7 @@
 
 export default function Footer() {
   return (
-    <div className=" w-full flex-col justify-start items-center text-gray-900 z-50 bg-gray-300 px-4 sm:px-12 lg:px-16 pt-8 lg:pt-8 lg:pt-8 border-t border-gray-300 ">
+    <div className=" w-full flex-col justify-start items-center text-neutral-900 z-50 bg-neutral-300 px-4 sm:px-12 lg:px-16 pt-8 lg:pt-8 lg:pt-8 border-t border-neutral-300 ">
       <div className="flex flex-col w-full justify-start items-start md:flex-row md:justify-between">
         <div className="flex flex-col w-full">
           <h1 className="text-sm md:text-base italic font-bold">
@@ -28,11 +28,11 @@ export default function Footer() {
           </p> */}
         </div>
 
-        {/* <hr className="w-full border-gray-600 border-t-1 my-4 md:hidden" /> */}
+        {/* <hr className="w-full border-neutral-600 border-t-1 my-4 md:hidden" /> */}
         <div className="flex flex-row items-center justify-start space-x-2 mt-4 md:mt-0">
           <a
             href="mailto:dickens@dickensagain.com"
-            className="bg-gray-300 border border-gray-400 hover:bg-gray-100 rounded-md p-2 text-gray-900 text-xs aspect-square h-16"
+            className="bg-neutral-300 border border-neutral-400 hover:bg-neutral-100 rounded-md p-2 text-neutral-900 text-xs aspect-square h-16"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ export default function Footer() {
               href="https://www.facebook.com/people/DickensAgain/61567779243511/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gray-300 border border-gray-400 hover:bg-gray-100 rounded-md p-2 text-gray-900 text-xs aspect-square h-16"
+              className="bg-neutral-300 border border-neutral-400 hover:bg-neutral-100 rounded-md p-2 text-neutral-900 text-xs aspect-square h-16"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@ export default function Footer() {
               href="https://www.instagram.com/dickensagain"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gray-300 border border-gray-400 hover:bg-gray-100 rounded-md p-2 text-gray-900 text-xs aspect-square h-16"
+              className="bg-neutral-300 border border-neutral-400 hover:bg-neutral-100 rounded-md p-2 text-neutral-900 text-xs aspect-square h-16"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

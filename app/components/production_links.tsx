@@ -26,7 +26,7 @@ export default function ProductionLinks() {
   ];
 
   return (
-    <div className="flex flex-row justify-center items-center gap-4 sm:gap-8 py-4 bg-black w-full fixed top-14 left-0 z-100 border-b border-gray-200/20 px-8">
+    <div className="flex flex-row justify-center items-center gap-4 sm:gap-8 py-4 bg-black w-full fixed top-14 left-0 z-100 border-b border-neutral-200/20 px-8">
       {links.map((link) => {
         const isCurrentPage = pathname === link.href;
         return (
@@ -39,7 +39,7 @@ export default function ProductionLinks() {
               className={`text-xs ${
                 isCurrentPage
                   ? "text-white"
-                  : "text-gray-400 hover:text-gray-200 active:underline"
+                  : "text-neutral-400 hover:text-neutral-200 active:underline"
               }`}
             >
               {link.label}

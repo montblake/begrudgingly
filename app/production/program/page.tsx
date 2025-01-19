@@ -4,7 +4,7 @@ import ProductionLinks from "../../components/production_links";
 
 export default function Program() {
   return (
-    // bg-gray-100
+    // bg-neutral-100
     <div className="min-h-screen flex flex-col items-center justify-start bg-victorian-texture bg-fixed bg-cover bg-center bg-no-repeat text-black relative mt-24 w-full py-12 md:py-16 px-4 sm:px-16">
       <div className="w-full h-full bg-red-950/85 absolute top-0 left-0 z-0" />
       <Nav />

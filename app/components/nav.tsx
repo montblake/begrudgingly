@@ -50,12 +50,12 @@ export default function Nav() {
 
   return (
     <>
-      <div className="fixed top-0 left-0 w-full z-50 flex justify-center items-center border-b border-gray-400">
-        <nav className="text-xs sm:text-sm md:text-base bg-gray-300 w-full flex justify-between py-4 px-4 sm:px-12 lg:px-16">
+      <div className="fixed top-0 left-0 w-full z-50 flex justify-center items-center border-b border-neutral-400">
+        <nav className="text-xs sm:text-sm md:text-base bg-neutral-300 w-full flex justify-between py-4 px-4 sm:px-12 lg:px-16">
           <ul className="flex space-x-6 items-center justify-center mr-8">
             <li>
               <Tooltip title="Home" arrow>
-                <a href="/" className="text-gray-600 flex items-center">
+                <a href="/" className="text-neutral-600 flex items-center">
                   <Image
                     src="/cdb_logo.png"
                     alt="Home"
@@ -72,8 +72,8 @@ export default function Nav() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className={`text-sm text-gray-600 hover:text-gray-900 active:underline ${
-                    pathname === link.href ? "font-bold text-gray-900" : ""
+                  className={`text-sm text-neutral-600 hover:text-neutral-900 active:underline ${
+                    pathname === link.href ? "font-bold text-neutral-900" : ""
                   }`}
                 >
                   {link.desktopLabel}
@@ -82,7 +82,7 @@ export default function Nav() {
             ))}
           </ul>
           <button
-            className="md:hidden text-gray-600 relative z-50"
+            className="md:hidden text-neutral-600 relative z-50"
             onClick={toggleMenu}
           >
             <svg
@@ -106,10 +106,10 @@ export default function Nav() {
       {/* Overlay Menu */}
       {isMenuOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50">
-          <div className="fixed right-0 top-0 h-full w-64 bg-gray-200 p-4">
+          <div className="fixed right-0 top-0 h-full w-64 bg-neutral-200 p-4">
             <button
               onClick={toggleMenu}
-              className="absolute top-2 right-2 text-gray-600"
+              className="absolute top-2 right-2 text-neutral-600"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -131,8 +131,8 @@ export default function Nav() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className={`block uppercase text-gray-600 hover:underline ${
-                      pathname === link.href ? "font-bold text-gray-900" : ""
+                    className={`block uppercase text-neutral-600 hover:underline ${
+                      pathname === link.href ? "font-bold text-neutral-900" : ""
                     }`}
                   >
                     {link.label}

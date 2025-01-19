@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export default function SignUp() {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-100 text-black">
+    <div className="min-h-screen flex flex-col bg-neutral-100 text-black">
       <div className="p-4">
         <Link
           href="/"
-          className="text-gray-500 hover:underline transition duration-300"
+          className="text-neutral-500 hover:underline transition duration-300"
         >
           ← Back to Home
         </Link>

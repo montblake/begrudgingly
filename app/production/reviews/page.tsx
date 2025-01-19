@@ -82,7 +82,7 @@ export default function Home() {
       </div>
       <div className="w-full h-full bg-red-950/85 absolute top-0 left-0 z-0" />
 
-      <div className="w-full h-full flex flex-col justify-between items-start text-gray-100 text-center text-sm relative z-1 pt-8 pb-16">
+      <div className="w-full h-full flex flex-col justify-between items-start text-neutral-100 text-center text-sm relative z-1 pt-8 pb-16">
         <div className="flex flex-row flex-wrap gap-16 justify-center items-start py-8 overflow-x-scroll overflow-y-hidden scroll-smooth max-w-[1200px] mx-auto">
           {reviews.map((review, index) => (
             <div
@@ -143,7 +143,7 @@ export default function Home() {
                       href={review.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-xs underline hover:text-gray-300 relative z-1"
+                      className="text-xs underline hover:text-neutral-300 relative z-1"
                     >
                       Read Full Review
                     </a>

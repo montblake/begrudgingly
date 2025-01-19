@@ -6,22 +6,33 @@ import ProductionLinks from "../components/production_links";
 import LayeredImage from "../components/layered_image";
 export default function Home() {
   return (
-    <main className="w-full h-screen flex flex-col justify-start items-start bg-black relative mx-auto">
+    <main className="w-full min-h-screen flex flex-col justify-start items-start lg:justify-between bg-victorian-texture bg-cover bg-center bg-no-repeat bg-fixed relative relative mx-auto">
       <Nav />
       <div className="w-full relative z-40 mt-2">
         <ProductionLinks />
       </div>
+      <div className="w-full h-full bg-black/75 absolute top-0 left-0 z-0" />
 
-      <div className="w-full h-full flex flex-col justify-start items-start text-white text-center text-sm relative z-1 bg-victorian-texture bg-cover bg-center bg-no-repeat mt-28 sm:mt-24 lg:mt-20">
-        <div className="w-full h-full bg-black/85 absolute top-0 left-0 z-0" />
-        <div className="flex flex-col justify-start items-center my-0 w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3 mx-auto">
+      <div
+        className="w-full max-w-[1200px] mx-auto lg:h-fit flex flex-col lg:flex-row lg:justify-between lg:items-start gap-0
+  mt-16 lg:overflow-scroll mb-12
+"
+      >
+        <div className=" w-full h-[66vh] pt-8 lg:pt-0 lg:w-1/2 lg:flex flex-col justify-start items-start ">
           <LayeredImage />
         </div>
-        <p className="text-neutral-400 text-xs py-8 px-8 sm:px-12 md:px-16 pb-12 text-left relative z-100 w-full max-w-2xl h-full mx-auto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          quos. Lorem ipsum dolor sit amet adipisicing elit. Quisquam, quos.
-          Lorem ipsum amet consectetur adipisicing elit. Quisquam, quos.
-        </p>
+
+        <div className="w-full h-full lg:w-1/2 relative z-40 font-serif px-4 sm:px-12 lg:px-16 pb-8 lg:pt-0 lg:px-8 lg:pb-0 lg:pr-24 flex flex-col justify-start items-start text-neutral-400">
+          {/* <hr className="w-full max-w-md mx-auto border-neutral-400/80 mt-8" /> */}
+          <p className="text-neutral-400 text-sm py-8 text-left relative z-100 w-full max-w-md h-full mx-auto px-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            quos. Lorem ipsum dolor sit amet adipisicing elit. Quisquam, quos.
+            Lorem ipsum amet consectetur adipisicing elit. Quisquam, quos. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+            Lorem ipsum dolor sit amet adipisicing elit. Quisquam, quos. Lorem
+            ipsum amet consectetur adipisicing elit. Quisquam, quos.
+          </p>
+        </div>
       </div>
 
       <Footer />

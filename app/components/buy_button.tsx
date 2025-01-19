@@ -6,7 +6,7 @@ export default function BuyButton() {
         target="_blank"
         className="relative z-50 top-0"
       >
-        <button className="bg-amber-300/80 px-4 py-2 rounded-2xl w-full text-gray-50 border-2 border-black hover:border-gray-50 transition-colors duration-300 text-center">
+        <button className="bg-amber-300/80 px-4 py-2 rounded-2xl w-full text-neutral-50 border-2 border-black hover:border-neutral-50 transition-colors duration-300 text-center">
           <h1 className="text-lg">Tickets</h1>
         </button>
       </a>
