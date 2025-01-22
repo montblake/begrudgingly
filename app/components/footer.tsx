@@ -3,8 +3,8 @@
 
 export default function Footer() {
   return (
-    <div className="w-full fixed bottom-0 left-0 h-fit z-100 z-50">
-      <div className="w-full h-8 bg-gradient-to-b from-transparent to-neutral-950" />
+    <div className="w-full hidden md:block fixed bottom-0 left-0 h-fit z-100 z-50">
+      {/* <div className="w-full h-4 bg-gradient-to-b from-transparent to-neutral-950" /> */}
       <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center gap-x-4 gap-y-2  text-neutral-400 z-50 bg-neutral-800 px-4 pt-8 sm:py-2 py-2 border-t border-neutral-600">
         {/* <div className="flex flex-col w-full justify-start items-start md:flex-row md:justify-between">
         <div className="flex flex-col w-full"> */}

@@ -1,6 +1,6 @@
 export default function IntroText() {
   return (
-    <div className="w-full h-auto">
+    <div className="px-4 w-full h-auto">
       <p className="text-base sm:text-lg md:text-xl lg:text-2xl lg:text-base">
         This one-of-a-kind holiday production, which imagines a still-living
         Dickens forced to perform his famous{" "}
