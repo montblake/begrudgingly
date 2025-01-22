@@ -6,9 +6,9 @@ import Image from "next/image";
 
 export default function Performances() {
   return (
-    <main className="w-full min-h-screen text-neutral-400 flex flex-col justify-between items-center bg-victorian-texture bg-cover bg-center bg-no-repeat relative">
-      <div className="w-full h-full bg-black/85 absolute top-0 left-0 z-0" />
-      <Nav />
+    <main className="w-full min-h-screen text-neutral-400 flex flex-col justify-between items-center bg-black/75 relative">
+      {/* <div className="w-full h-full bg-black/85 absolute top-0 left-0 z-0" />
+      <Nav /> */}
       <div className="max-w-screen-xl w-full mt-10 flex flex-col justify-center items-center lg:items-start lg:flex-row h-full pb-12 relative z-10">
         <div className="flex flex-col justify-center items-center lg:w-1/2 px-4 bg-transparent">
           <Image

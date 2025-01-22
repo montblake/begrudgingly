@@ -2,8 +2,9 @@
 
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Tooltip from "@mui/material/Tooltip";
+import ProductionLinks from "./production_links";
 
 const navLinks = [
   {
@@ -43,25 +44,38 @@ const navLinks = [
 export default function Nav() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isProductionLinksOpen, setIsProductionLinksOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // const toggleProductionLinks = () => {
+  //   setIsProductionLinksOpen(!isProductionLinksOpen);
+  // };
+
+  useEffect(() => {
+    if (pathname.includes("/production")) {
+      setIsProductionLinksOpen(true);
+    } else {
+      setIsProductionLinksOpen(false);
+    }
+  }, [pathname]);
+
   return (
     <>
-      <div className="fixed top-0 left-0 w-full z-50 flex justify-center items-center border-b border-neutral-400">
-        <nav className="text-xs sm:text-sm md:text-base bg-neutral-300 w-full flex justify-between py-4 px-4 sm:px-12 lg:px-16">
+      <div className="w-full h-fit z-50 flex flex-col justify-center items-center fixed top-0 left-0">
+        <nav className="text-xs sm:text-sm md:text-base  w-full flex justify-between py-4 px-4 sm:px-12 lg:px-16 bg-neutral-800 border-b border-neutral-600">
           <ul className="flex space-x-6 items-center justify-center mr-8">
             <li>
               <Tooltip title="Home" arrow>
-                <a href="/" className="text-neutral-600 flex items-center">
+                <a href="/" className="text-neutral-200 flex items-center">
                   <Image
                     src="/cdb_logo.png"
                     alt="Home"
                     width={200}
                     height={32}
-                    className="h-5 w-auto mix-blend-multiply relative -top-[2px] hover:scale-105 transition-all duration-300"
+                    className="h-5 w-auto invert relative z-100 -top-[2px] hover:scale-105 transition-all duration-300 opacity-90"
                   />
                 </a>
               </Tooltip>
@@ -72,8 +86,10 @@ export default function Nav() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className={`text-sm text-neutral-600 hover:text-neutral-900 active:underline ${
-                    pathname === link.href ? "font-bold text-neutral-900" : ""
+                  className={`text-sm  ${
+                    pathname === link.href
+                      ? "font-bold text-neutral-200"
+                      : "text-neutral-400 hover:text-neutral-300 active:underline"
                   }`}
                 >
                   {link.desktopLabel}
@@ -82,7 +98,7 @@ export default function Nav() {
             ))}
           </ul>
           <button
-            className="md:hidden text-neutral-600 relative z-50"
+            className="md:hidden text-neutral-200 relative z-50"
             onClick={toggleMenu}
           >
             <svg
@@ -101,11 +117,14 @@ export default function Nav() {
             </svg>
           </button>
         </nav>
+        {isProductionLinksOpen && <ProductionLinks />}
+
+        <div className="w-full h-8 bg-gradient-to-b from-neutral-950 to-transparent" />
       </div>
 
       {/* Overlay Menu */}
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50">
+        <div className="fixed inset-0 bg-neutral-950 bg-opacity-50 z-50">
           <div className="fixed right-0 top-0 h-full w-64 bg-neutral-200 p-4">
             <button
               onClick={toggleMenu}

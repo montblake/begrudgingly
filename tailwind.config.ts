@@ -11,7 +11,7 @@ const config: Config = {
       backgroundImage: {
         "shadow-dickens":
           "url('/photos/bravelux/100-joe-mazza-chicago-brave-lux-inc-5206928.jpg')",
-        "victorian-texture": "url('/victorian-texture.webp')",
+        "victorian-texture": "url('/victorian-texture_dark.png')",
       },
       textShadow: {
         "shadow-dickens": "0 0 4px rgba(0, 0, 0, 1)",

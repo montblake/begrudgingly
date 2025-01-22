@@ -6,11 +6,11 @@ import Nav from "../components/nav";
 
 export default function Home() {
   return (
-    <main className="w-full min-h-screen flex flex-col justify-between items-start bg-victorian-texture bg-cover bg-center bg-no-repeat bg-fixed relative mx-auto mt-10">
+    <main className="w-full min-h-screen flex flex-col justify-between items-start relative mx-auto mt-14">
       <Nav />
-      <div className="w-full h-full bg-black/85 absolute top-0 left-0 z-0" />
+      {/* <div className="w-full h-full bg-black/85 absolute top-0 left-0 z-0" /> */}
       <div className="max-w-[1200px] mx-auto w-full h-full lg:h-fit flex flex-col lg:flex-row lg:justify-between lg:items-start gap-0 lg:overflow-scroll lg:py-8 lg:px-16 lg:gap-8 pt-8 sm:pt-12 lg:pt-8 mix-blend-screen">
-        <div className="relative w-full max-w-[600px] h-full mx-auto overflow-hidden lg:w-1/2 px-4  sm:px-12 lg:px-0 ">
+        <div className="relative w-full max-w-[600px] h-full mx-auto overflow-hidden lg:w-1/2 px-4  sm:px-12 lg:px-0">
           <div className="relative w-full mx-auto overflow-hidden lg:rounded-2xl h-[500px] w-[500px] sm:h-[600px] sm:w-[500px] lg:h-[700px] lg:w-[500px] rounded-2xl">
             <Image
               src="/charles-full.jpg"
@@ -34,9 +34,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full flex flex-col bg-black lg:w-1/2 max-w-[600px] mx-auto mt-8 lg:mt-0 mb-12 lg:mb-0">
+        <div className="w-full flex flex-col lg:w-1/2 max-w-[600px] mx-auto mt-8 lg:mt-0 mb-12 lg:mb-0">
           <div className="lg:mb-0 text-neutral-400 px-4 sm:px-12 lg:px-0 relative z-40">
-            <hr className="w-full border-neutral-400/80 mb-16 lg:mt-0" />
+            <hr className="w-full border-neutral-400/80 mb-16 lg:hidden" />
             <h1 className="text-3xl text-center">
               An intimate, imaginative holiday treat filled with laughs, a dash
               of mischief, and a touch of holiday magic.

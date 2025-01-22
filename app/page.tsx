@@ -1,24 +1,30 @@
 "use client";
 
-import Nav from "@/app/components/nav";
-import Footer from "@/app/components/footer";
-import LayeredImage from "@/app/components/layered_image";
+// import Nav from "@/app/components/nav";
+// import Footer from "@/app/components/footer";
+// import LayeredImage from "@/app/components/layered_image";
 import PullQuote from "@/app/components/pull_quote";
 import IntroText from "@/app/components/intro_text";
-
+import Image from "next/image";
 export default function Home() {
   return (
-    <main className="w-full min-h-screen flex flex-col justify-start items-start lg:justify-between bg-victorian-texture bg-cover bg-center bg-no-repeat bg-fixed relative relative mx-auto">
-      <Nav />
-      <div className="w-full h-full bg-black/75 absolute top-0 left-0 z-0" />
+    <main className="w-full min-h-screen flex flex-col justify-start items-start lg:justify-between relative relative mx-auto pb-24 lg:pb-16">
+      {/* <Nav />
+      <div className="w-full h-full bg-black/75 absolute top-0 left-0 z-0" /> */}
 
       <div
         className="w-full max-w-[1200px] mx-auto lg:h-fit flex flex-col lg:flex-row lg:justify-between lg:items-start gap-0
         mt-16 lg:overflow-scroll mb-12
       "
       >
-        <div className=" w-full h-[66vh] pt-8 lg:pt-0 lg:w-1/2 lg:flex flex-col justify-start items-start ">
-          <LayeredImage />
+        <div className=" w-full h-full pt-8 lg:pt-0 lg:w-1/2 lg:flex flex-col justify-start items-start ">
+          <Image
+            src="/new_poster_trimmed.png"
+            alt="Blake Montgomery Headshot"
+            width={1000}
+            height={1000}
+            className="h-auto w-full opacity-100"
+          />
         </div>
 
         <div className="w-full h-full lg:w-1/2 relative z-40 font-serif px-4 sm:px-12 lg:px-16 pb-8 lg:pt-0 lg:px-8 lg:pb-0 lg:pr-24 flex flex-col justify-start items-start text-neutral-400">
@@ -29,7 +35,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }

@@ -75,12 +75,12 @@ const reviews = [
 
 export default function Home() {
   return (
-    <main className="w-full min-h-screen flex flex-col justify-center items-center bg-victorian-texture bg-cover bg-center bg-no-repeat bg-fixed relative mx-auto mt-24">
-      <Nav />
+    <main className="w-full min-h-screen flex flex-col justify-center items-center relative mx-auto mt-24">
+      {/* <Nav />
       <div className="w-full relative z-40 mt-2">
         <ProductionLinks />
       </div>
-      <div className="w-full h-full bg-red-950/85 absolute top-0 left-0 z-0" />
+      <div className="w-full h-full bg-red-950/85 absolute top-0 left-0 z-0" /> */}
 
       <div className="w-full h-full flex flex-col justify-between items-start text-neutral-100 text-center text-sm relative z-1 pt-8 pb-16">
         <div className="flex flex-row flex-wrap gap-16 justify-center items-start py-8 overflow-x-scroll overflow-y-hidden scroll-smooth max-w-[1200px] mx-auto">
@@ -89,7 +89,7 @@ export default function Home() {
               key={index}
               className="w-[90vw] md:w-[40vw] max-w-[400px] flex-shrink-0 text-center"
             >
-              <div className="bg-black/60 text-neutral-200 border border-neutral-700 rounded-xl drop-shadow-lg relative z-1 overflow-scroll px-0 pt-8 pb-0">
+              <div className="bg-red-950/50 backdrop-blur-md text-neutral-200 border border-neutral-700 rounded-xl drop-shadow-lg relative z-1 overflow-scroll px-0 pt-8 pb-0">
                 <div className="flex flex-col justify-start items-center gap-4 mb-12 w-full relative z-1 px-8">
                   <h2
                     className={`${

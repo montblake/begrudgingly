@@ -3,33 +3,25 @@
 
 export default function Footer() {
   return (
-    <div className=" w-full flex-col justify-start items-center text-neutral-900 z-50 bg-neutral-300 px-4 sm:px-12 lg:px-16 pt-8 lg:pt-8 lg:pt-8 border-t border-neutral-300 ">
-      <div className="flex flex-col w-full justify-start items-start md:flex-row md:justify-between">
-        <div className="flex flex-col w-full">
-          <h1 className="text-sm md:text-base italic font-bold">
-            Charles Dickens Begrudgingly
-            <br />
-            Performs &lsquo;A Christmas Carol&rsquo; Again
-          </h1>
-          <p className="mt-2 text-xs md:text-sm mb-2">
-            Created and performed by Blake Montgomery
-          </p>
-          {/* <p className="text-xs md:text-sm mb-2">December 5 – 22, 2024</p>
-          <p className="text-xs md:text-sm">
-            <a
-              href="https://www.thedentheatre.com"
-              target="_blank"
-              className="hover:underline"
-            >
-              The Den Theatre
-            </a>
-            <br /> 1331 N. Milwaukee Ave.
-            <br /> Chicago, IL
-          </p> */}
-        </div>
+    <div className="w-full fixed bottom-0 left-0 h-fit z-100 z-50">
+      <div className="w-full h-8 bg-gradient-to-b from-transparent to-neutral-950" />
+      <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center gap-x-4 gap-y-2  text-neutral-400 z-50 bg-neutral-800 px-4 pt-8 sm:py-2 py-2 border-t border-neutral-600">
+        {/* <div className="flex flex-col w-full justify-start items-start md:flex-row md:justify-between">
+        <div className="flex flex-col w-full"> */}
+        <h1 className="text-xs italic inline-block">
+          Charles Dickens Begrudgingly{" "}
+          <span className="inline-block sm:inline">
+            Performs &lsquo;A Christmas Carol&rsquo; Again.
+          </span>
+        </h1>
+        <p className="text-xs inline-block">
+          Created and performed by Blake Montgomery.
+        </p>
+        {/* </div>
+      </div> */}
 
         {/* <hr className="w-full border-neutral-600 border-t-1 my-4 md:hidden" /> */}
-        <div className="flex flex-row items-center justify-start space-x-2 mt-4 md:mt-0">
+        {/* <div className="flex flex-row items-center justify-start space-x-2 mt-4 md:mt-0">
           <a
             href="mailto:dickens@dickensagain.com"
             className="bg-neutral-300 border border-neutral-400 hover:bg-neutral-100 rounded-md p-2 text-neutral-900 text-xs aspect-square h-16"
@@ -78,20 +70,20 @@ export default function Footer() {
               </svg>
             </a>
           </div>
-        </div>
-      </div>
-      <a
-        href="https://thisisaclownshow.com"
-        target="_blank"
-        className="hover:text-red-600 mx-4"
-      >
-        <hr className="w-full border-neutral-600 border-t-1" />
-        <div className="flex flex-row justify-end items-center pt-4 text-xs md:text-sm">
-          <p className="text-left w-full">
-            this is a <span className="font-bold">clownshow</span>
+        </div> */}
+        <a
+          href="https://thisisaclownshow.com"
+          target="_blank"
+          className="hover:text-red-600"
+        >
+          {/* <hr className="w-full border-neutral-600 border-t-1" /> */}
+          {/* <div className="text-xs md:text-sm"> */}
+          <p className="text-xs inline-block">
+            This is a <span className="font-bold">clownshow</span>.
           </p>
-        </div>
-      </a>
+          {/* </div> */}
+        </a>
+      </div>
     </div>
   );
 }

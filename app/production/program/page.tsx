@@ -5,12 +5,12 @@ import ProductionLinks from "../../components/production_links";
 export default function Program() {
   return (
     // bg-neutral-100
-    <div className="min-h-screen flex flex-col items-center justify-start bg-victorian-texture bg-fixed bg-cover bg-center bg-no-repeat text-black relative mt-24 w-full py-12 md:py-16 px-4 sm:px-16">
-      <div className="w-full h-full bg-red-950/85 absolute top-0 left-0 z-0" />
-      <Nav />
+    <div className="min-h-screen flex flex-col items-center justify-start relative mt-24 w-full py-12 md:py-16 px-4 sm:px-16">
+      {/* <div className="w-full h-full bg-red-950/85 absolute top-0 left-0 z-0" /> */}
+      {/* <Nav />
       <div className="w-full mt-10 mb-8 fixed top-12 left-0 z-40">
         <ProductionLinks />
-      </div>
+      </div> */}
       <div className="flex flex-col items-center justify-center max-w-2xl px-4 sm:px-12 md:px-16 w-full bg-neutral-100 relative z-10 py-8 sm:py-12 md:py-16 rounded-xl mx-24">
         <h1 className="font-bold text-center mb-12">
           <span className="text-4xl">Charles Dickens</span>
@@ -284,7 +284,6 @@ export default function Program() {
           </div>
         </div>
       </div>
-      <ProductionLinks />
     </div>
   );
 }

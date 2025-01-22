@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Libre_Baskerville } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import Nav from "./components/nav";
+import Footer from "./components/footer";
 
 const baskerville = Libre_Baskerville({
   subsets: ["latin"],
@@ -21,8 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${baskerville.className} bg-neutral-300`}>
+      <body
+        className={`${baskerville.className} bg-victorian-texture bg-no-repeat bg-cover bg-fixed relative`}
+      >
+        <Nav />
         {children}
+        <Footer />
         <Analytics />
       </body>
     </html>
