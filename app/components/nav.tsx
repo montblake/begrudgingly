@@ -160,7 +160,7 @@ export default function Nav() {
               ))}
             </ul>
             <hr className="w-full border-neutral-600 my-24" />
-            <div className="w-full h-full flex flex-col justify-start items-start gap-4">
+            <div className="w-full h-full flex flex-col justify-start items-start gap-4 text-neutral-600">
               <div className="flex flex-col justify-start items-start gap-0 font-bold">
                 <h1>Charles Dickens Begrudingly</h1>
                 <h2>

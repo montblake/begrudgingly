@@ -1,46 +1,59 @@
-"use client";
-
-import PullQuote from "@/app/components/pull_quote";
-import IntroText from "@/app/components/intro_text";
 import Image from "next/image";
+
 export default function Home() {
   return (
-    <main className="w-full min-h-screen flex flex-col justify-start items-start md:justify-start md:items-center mx-auto pb-4">
-      <div
-        className="w-full max-w-[1000px] mx-auto lg:h-fit flex flex-col justify-center items-center md:flex-row md:justify-between md:items-start gap-0
-        mt-16 md:overflow-scroll scroll-smooth
-      "
-      >
-        <Image
-          src="/new_poster_trimmed.png"
-          alt="Blake Montgomery Headshot"
-          width={1000}
-          height={1000}
-          className="w-full h-auto max-w-[420px] md:max-w-[500px] pt-4 md:pl-8 md:pr-0 opacity-100"
-        />
+    <main className="w-full h-full mt-20 pb-0 relative overflow-y-scroll md:overflow-y-hidden">
+      <div className="w-full max-w-[1000px] mx-auto h-fit md:h-full flex flex-col md:flex-row justify-start items-start gap-4 px-4 py-2 rounded-2xl pb-16  overflow-hidden">
+        <div className="w-full h-full min-h-[360px] max-w-[500px] mx-auto rounded-2xl overflow-hidden drop-shadow-lg">
+          <Image
+            src="/new_poster_trimmed.png"
+            alt="Charles Dickens Begrudgingly... Poster"
+            width={1000}
+            height={1000}
+            className="w-full h-auto"
+          />
+        </div>
 
-        <div className="w-full h-full font-serif px-4 sm:px-8 pt-8 md:pt-14 md:mr-auto md:pl-0 md:pr-8 flex flex-col justify-start items-center text-neutral-400 md:items-start md:justify-start md:max-w-[500px] pb-16">
-          <PullQuote />
-          {/* <hr className="w-full border-neutral-400/80 mt-16 mb-8" /> */}
-          <div className="w-full h-4 flex justify-center items-center my-8">
-            <Image
-              src={"/diamond-3.png"}
-              alt={"decoration"}
-              width={20}
-              height={20}
-              className="opacity-75 w-4 h-auto"
-            />
+        <div className="w-full max-w-[500px] mx-auto flex flex-col py-4 md:py-0 md:pl-0 md:pr-8  h-full md:overflow-y-scroll">
+          <div className="md:mb-0 text-neutral-400 px-4 sm:px-4 md:px-0">
+            <h1 className="text-3xl text-center md:text-left">
+              Montgomery&apos;s smart, heartfelt reinvention proves that you
+              don&apos;t need fake snow and flying ghosts to make the tale
+              resonate.
+            </h1>
+            <p className="text-sm mt-2 text-center md:text-left">
+              Kerry Reid, <span className="italic">Chicago Reader</span>
+            </p>
           </div>
-          <IntroText />
-          {/* <div className="w-full h-4 flex justify-center items-center my-8">
-            <Image
+
+          <div className="w-full h-4 flex justify-center md:justify-start items-center my-8">
+            <hr className="w-full border-neutral-400/80" />
+            {/* <Image
               src={"/diamond-3.png"}
               alt={"decoration"}
               width={20}
               height={20}
-              className="opacity-75 w-4 h-auto"
-            />
-          </div> */}
+              className="opacity-75 w-8 h-auto"
+            /> */}
+          </div>
+
+          <div className="w-full px-4 sm:px-4  md:px-0 pb-8 sm:pb-12 md:p-0 pt-4">
+            <p className="text-neutral-400 text-sm">
+              This one-of-a-kind holiday production, which imagines a
+              still-living Dickens forced to perform his famous{" "}
+              <span className="italic">A Christmas Carol</span> for the 171st
+              consecutive year, lovingly celebrates and skewers the famous
+              author and our Christmas traditions.
+            </p>
+            <p className="text-neutral-400 text-sm mt-4">
+              <span className="italic">Charles Dickens Begrudgingly...</span>{" "}
+              originally charmed audiences during its Chicago debut at The
+              Building Stage in December 2011 and again in 2012. Now, ten years
+              after the closing of The Building Stage, former Artistic Director
+              Blake Montgomery revives his Jeff Award-winning solo performance
+              for the 2024 holiday season.
+            </p>
+          </div>
         </div>
       </div>
 
