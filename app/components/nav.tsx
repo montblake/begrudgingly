@@ -75,7 +75,7 @@ export default function Nav() {
                     alt="Home"
                     width={200}
                     height={32}
-                    className="h-5 w-auto invert relative z-100 -top-[2px] hover:scale-105 transition-all duration-300 opacity-90"
+                    className="h-5 w-auto relative z-100 -top-[1px] hover:scale-105 transition-all duration-300 opacity-90"
                   />
                 </a>
               </Tooltip>
@@ -118,7 +118,7 @@ export default function Nav() {
           </button>
         </nav>
         {isProductionLinksOpen && <ProductionLinks />}
-{/* 
+        {/* 
         <div className="w-full h-8 bg-gradient-to-b from-neutral-950 to-transparent" /> */}
       </div>
 
@@ -162,12 +162,29 @@ export default function Nav() {
             <hr className="w-full border-neutral-600 my-24" />
             <div className="w-full h-full flex flex-col justify-start items-start gap-4">
               <div className="flex flex-col justify-start items-start gap-0 font-bold">
-              <h1>Charles Dickens Begrudingly</h1>
-              <h2>Performs <span className="italic">A Christmas Carol</span> Again</h2>
+                <h1>Charles Dickens Begrudingly</h1>
+                <h2>
+                  Performs <span className="italic">A Christmas Carol</span>{" "}
+                  Again
+                </h2>
               </div>
-              <p>Created and performed by <br/><span className="">Blake Montgomery</span></p>
-            <hr className="w-full border-neutral-600 my-24" />
-              <p>This is a <a href="https://www.thisisaclownshow.com" className="underline" target="_blank" rel="noopener noreferrer">clownshow</a>.</p>
+              <p>
+                Created and performed by <br />
+                <span className="">Blake Montgomery</span>
+              </p>
+              <hr className="w-full border-neutral-600 my-24" />
+              <p>
+                This is a{" "}
+                <a
+                  href="https://www.thisisaclownshow.com"
+                  className="underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  clownshow
+                </a>
+                .
+              </p>
             </div>
           </div>
         </div>
