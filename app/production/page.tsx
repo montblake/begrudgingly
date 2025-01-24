@@ -1,28 +1,27 @@
 import Image from "next/image";
-import SecondNav from "../components/second_nav_prod";
 
 export default function Production() {
   return (
-    <main className="w-full h-full mt-32 pb-0 relative overflow-y-scroll md:overflow-y-hidden">
-      <div className="w-full max-w-[1000px] mx-auto h-fit md:h-full flex flex-col md:flex-row justify-start items-start gap-4 px-4 md:px-8 rounded-2xl pb-16 overflow-hidden">
-        <div className="flex md:flex-col flex-col-reverse gap-2 w-full justify-center items-center">
-          <div className="w-full h-full min-h-[360px] max-h-[50vh] md:max-h-[75vh] max-w-[500px] mx-auto rounded-2xl overflow-hidden drop-shadow-lg border border-neutral-700">
+    <main className="w-full h-full min-h-[90vh] mt-28 pb-0 overflow-y-scroll md:overflow-y-hidden flex flex-col justify-center items-center">
+      <div className="w-full max-w-[1000px] mx-auto h-fit md:h-full flex flex-col md:flex-row justify-start items-start gap-4 px-4 py-4 md:px-8 rounded-2xl pb-16 overflow-hidden bg-neutral-950/40">
+        <div className="w-full h-full">
+          <div className="w-full h-full min-h-[360px] max-w-[320px] sm:max-w-[360px] md:max-w-[500px] mx-auto rounded-2xl overflow-hidden drop-shadow-lg">
             <Image
-              src="/photos/bravelux/mazza_image_vertical.jpg"
-              alt="Charles Dickens Begrudgingly... Production Image by Joe Mazza / brave lux inc."
-              width={1000}
-              height={1000}
+              src="/2024_production_poster_web.png"
+              alt="Charles Dickens Begrudgingly... 2024 Poster Image"
+              width={600}
+              height={800}
               className="w-full h-auto"
             />
           </div>
-          <p className="text-xs text-neutral-400 italic drop-shadow-xl">
+          {/* <p className="text-xs text-neutral-400 italic drop-shadow-xl">
             Production Image by Joe Mazza / brave lux inc.
-          </p>
+          </p> */}
         </div>
-        <div className="w-full max-w-[500px] mx-auto flex flex-col py-4 md:py-0 md:pl-4 md:pr-4  h-full md:overflow-y-scroll">
+        <div className="w-full max-w-[500px] mx-auto flex flex-col py-4 md:py-4 md:pl-4 md:pr-4  h-full md:overflow-y-scroll ">
           <div className="md:mb-0 text-neutral-400 px-4 sm:px-4 md:px-0">
             <h1 className="text-3xl text-center md:text-left drop-shadow-xl">
-              ...a remarkably artful riff on Dickens' original, written and
+              A remarkably artful riff on Dickens&apos; original, written and
               performed stunningly well by Blake Montgomery
             </h1>
             <p className="text-sm mt-2 text-center md:text-left">
@@ -62,25 +61,30 @@ export default function Production() {
             </p>
             <p className="text-neutral-400 text-sm drop-shadow-xl mt-4">
               Curious? Meet the creative team and production staff in the{" "}
-              <a href="/performances" className="text-neutral-200">
+              <a href="/production/program" className="text-neutral-200">
                 digital program
               </a>
-              . Explore the show through the eyes of the critics in the{" "}
-              <a href="/performances" className="text-neutral-200">
-                Press Reviews
-              </a>
               . See the show through the eyes of Joe Mazza in the{" "}
-              <a href="/performances" className="text-neutral-200">
+              <a
+                href="/production/photos_publicity"
+                className="text-neutral-200"
+              >
                 publicity photos
               </a>
               . Experience the first preview with Michael Brosilow&apos;s{" "}
-              <a href="/performances" className="text-neutral-200">
+              <a
+                href="/production/photos_performance"
+                className="text-neutral-200"
+              >
                 production photos
+              </a>
+              . Explore the show through the eyes of the critics in the{" "}
+              <a href="/production/reviews" className="text-neutral-200">
+                press reviews
               </a>
               .
             </p>
           </div>
-          {/* <SecondNav /> */}
         </div>
       </div>
     </main>

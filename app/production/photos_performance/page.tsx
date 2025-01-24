@@ -25,12 +25,12 @@ const photos = [
     credit: "Michael Brosilow",
     vertical: false,
   },
-  {
-    src: "/photos/brosilow/DSC_6365.jpg",
-    alt: "Charles Dickens",
-    credit: "Michael Brosilow",
-    vertical: false,
-  },
+  // {
+  //   src: "/photos/brosilow/DSC_6365.jpg",
+  //   alt: "Charles Dickens",
+  //   credit: "Michael Brosilow",
+  //   vertical: false,
+  // },
 
   {
     src: "/photos/brosilow/MBP_0883.jpg",
@@ -62,12 +62,12 @@ const photos = [
     credit: "Michael Brosilow",
     vertical: true,
   },
-  {
-    src: "/photos/brosilow/MBP_1109.jpg",
-    alt: "Charles Dickens",
-    credit: "Michael Brosilow",
-    vertical: true,
-  },
+  // {
+  //   src: "/photos/brosilow/MBP_1109.jpg",
+  //   alt: "Charles Dickens",
+  //   credit: "Michael Brosilow",
+  //   vertical: true,
+  // },
   {
     src: "/photos/brosilow/MBP_0863.jpg",
     alt: "Charles Dickens",

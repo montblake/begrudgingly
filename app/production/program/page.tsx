@@ -1,7 +1,7 @@
 export default function Program() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-start relative mt-24 w-full py-12 md:py-16 px-4 sm:px-16">
-      <div className="flex flex-col items-center justify-center max-w-2xl px-4 sm:px-12 md:px-16 w-full bg-neutral-100 relative z-10 py-8 sm:py-12 md:py-16 rounded-xl mx-24">
+    <div className="min-h-screen flex flex-col items-center justify-start relative mt-20 w-full py-12 md:py-16 px-4 sm:px-16">
+      <div className="flex flex-col items-center justify-center max-w-2xl px-4 sm:px-12 md:px-16 w-full bg-neutral-100/70 relative z-10 py-8 sm:py-12 md:py-16 rounded-xl mx-24">
         <h1 className="font-bold text-center mb-12">
           <span className="text-4xl">Charles Dickens</span>
           <br />
