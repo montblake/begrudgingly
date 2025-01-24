@@ -5,17 +5,21 @@ export default function Footer() {
   return (
     <div className="w-full hidden md:block fixed bottom-0 left-0 h-fit z-100 z-50">
       {/* <div className="w-full h-4 bg-gradient-to-b from-transparent to-neutral-950" /> */}
-      <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center gap-x-4 gap-y-2  text-neutral-400 z-50 bg-neutral-800 px-4 pt-8 sm:py-2 py-2 border-t border-neutral-600">
+      <div className="w-full flex flex-row justify-between items-center gap-x-4  text-neutral-400 bg-neutral-800 px-4 md:px-12 py-2 border-t border-neutral-600">
         {/* <div className="flex flex-col w-full justify-start items-start md:flex-row md:justify-between">
         <div className="flex flex-col w-full"> */}
-        <h1 className="text-xs italic inline-block">
+        <h1 className="text-xs uppercase inline-block">
           Charles Dickens Begrudgingly{" "}
-          <span className="inline-block sm:inline">
-            Performs &lsquo;A Christmas Carol&rsquo; Again.
+          <span className="inline xl:hidden">...</span>
+          <span className="hidden xl:inline">
+            Performs <span className="italic">A Christmas Carol</span> Again.
           </span>
         </h1>
         <p className="text-xs inline-block">
-          Created and performed by Blake Montgomery.
+          <span className="hidden lg:inline lowercase">
+            Created and performed
+          </span>
+          <span className=""> by Blake Montgomery</span>
         </p>
         {/* </div>
       </div> */}
@@ -78,8 +82,9 @@ export default function Footer() {
         >
           {/* <hr className="w-full border-neutral-600 border-t-1" /> */}
           {/* <div className="text-xs md:text-sm"> */}
-          <p className="text-xs inline-block">
-            This is a <span className="font-bold">clownshow</span>.
+          <p className="text-xs inline-block text-red-600">
+            <span className="hidden lg:inline">This is a </span>
+            <span className=" uppercase">clownshow</span>
           </p>
           {/* </div> */}
         </a>

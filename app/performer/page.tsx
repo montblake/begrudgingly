@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Performer() {
   return (
     <main className="w-full h-full mt-20 pb-0 relative overflow-y-scroll md:overflow-y-hidden">
-      <div className="w-full max-w-[1000px] mx-auto h-fit md:h-full flex flex-col md:flex-row justify-start items-start gap-4 px-4 py-2 rounded-2xl pb-16  overflow-hidden">
+      <div className="w-full max-w-[1000px] mx-auto h-fit md:h-full flex flex-col md:flex-row justify-start items-start gap-4 px-4 md:px-8 py-2 rounded-2xl pb-16  overflow-hidden">
         <div className="w-full h-full min-h-[360px] max-w-[500px] mx-auto rounded-2xl overflow-hidden drop-shadow-lg border border-neutral-400">
           <Image
             src="/dickens_layers/layered_blake.png"
@@ -17,11 +17,12 @@ export default function Performer() {
         <div className="w-full max-w-[500px] mx-auto flex flex-col py-4 md:py-0 md:pl-4 md:pr-4  h-full md:overflow-y-scroll">
           <div className="md:mb-0 text-neutral-400 px-4 sm:px-4 md:px-0">
             <h1 className="text-3xl text-center md:text-left">
-              Top-notch performance! Just what we needed to lift our spirits and
-              put the holiday season in perspective.
+              Montgomery is a superb storyteller! His rendition of the familiar
+              tale is the perfect balance of dramatic and playful.... I highly
+              recommend the gift of Blake Montgomery this season.
             </h1>
-            <p className="text-sm mt-2 text-center md:text-left">
-              Kerry Reid, <span className="italic">Chicago Reader</span>
+            <p className="text-sm mt-2 text-center md:text-left italic">
+              The Fourth Walsh
             </p>
           </div>
 

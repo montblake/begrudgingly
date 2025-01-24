@@ -75,7 +75,7 @@ export default function Nav() {
                     alt="Home"
                     width={200}
                     height={32}
-                    className="h-5 w-auto relative z-100 -top-[1px] hover:scale-105 transition-all duration-300 opacity-90"
+                    className="h-5 w-auto relative z-100 -top-[1px] hover:scale-105 transition-all duration-300 opacity-90 mix-blend-screen"
                   />
                 </a>
               </Tooltip>
