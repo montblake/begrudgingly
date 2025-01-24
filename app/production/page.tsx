@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SecondNav from "../components/second_nav_prod";
 
 export default function Production() {
   return (
@@ -21,14 +22,20 @@ export default function Production() {
         <div className="w-full max-w-[500px] mx-auto flex flex-col py-4 md:py-0 md:pl-4 md:pr-4  h-full md:overflow-y-scroll">
           <div className="md:mb-0 text-neutral-400 px-4 sm:px-4 md:px-0">
             <h1 className="text-3xl text-center md:text-left drop-shadow-xl">
-              Montgomery is a superb storyteller! His rendition of the familiar
-              tale is the perfect balance of dramatic and playful.... I highly
-              recommend the gift of Blake Montgomery this season.
+              ...a remarkably artful riff on Dickens' original, written and
+              performed stunningly well by Blake Montgomery
             </h1>
             <p className="text-sm mt-2 text-center md:text-left">
-              <span className="italic">The Fourth Walsh</span>
+              Bill Esler, <span className="italic">Buzz Center Stage</span>
             </p>
           </div>
+          {/* <Image
+            src="/production-title.png"
+            alt="Charles Dickens Begrudgingly... at The Den Theatre, Chicago, December 2024"
+            width={1000}
+            height={1000}
+            className="w-full h-auto bg-black/25"
+          /> */}
 
           <div className="w-full h-4 flex justify-center md:justify-start items-center my-8">
             <hr className="w-full border-neutral-600" />
@@ -41,22 +48,39 @@ export default function Production() {
             /> */}
           </div>
 
-          <div className="w-full pt-4 pb-8 px-4 sm:px-4  sm:pb-12 md:px-0 md:pb-16 md:pt-0">
+          <div className="w-full pt-4 pb-8 px-4 sm:px-4  sm:pb-12 md:px-0 md:pb-8 md:pt-0">
             <p className="text-neutral-400 text-sm drop-shadow-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              varius, est vulputate aliquet convallis, erat dui tincidunt
-              turpis, id lacinia nunc risus quis eros. Donec at odio egestas,
-              mollis ante non, facilisis lacus. Aliquam pellentesque velit
-              tortor, vitae gravida leo dapibus at. Donec sed ornare tortor.
+              In 2024, Blake Montgomery brought CHARLES DICKENS BEGRUDGINGLY...
+              back to the stage with a new production company, CLOWNSHOW.
             </p>
-            <p className="text-neutral-400 text-sm mt-4 drop-shadow-xl ">
-              Morbi id ex sed nibh feugiat dapibus eu at tortor. Aenean eros
-              diam, sollicitudin ac lobortis ac, blandit vel elit. Nullam a
-              suscipit metus, at lobortis purus. Duis et nulla sed augue
-              scelerisque vehicula in eu libero. Nam at porttitor arcu. Cras
-              quam ante, ornare vel volutpat quis, auctor eget diam.
+            <p className="text-neutral-400 text-sm drop-shadow-xl mt-4">
+              Performed at The Den Theatre in Chicago from December 5th - 22nd,
+              the production was hailed as a &ldquo;one-man yuletide tour de
+              force&rdquo;, &ldquo;wonderfully off-the-cuff and intimate&rdquo;,
+              &ldquo;charming and sly&rdquo;, and &ldquo;a work and performance
+              not to be missed.&rdquo;
+            </p>
+            <p className="text-neutral-400 text-sm drop-shadow-xl mt-4">
+              Curious? Meet the creative team and production staff in the{" "}
+              <a href="/performances" className="text-neutral-200">
+                digital program
+              </a>
+              . Explore the show through the eyes of the critics in the{" "}
+              <a href="/performances" className="text-neutral-200">
+                Press Reviews
+              </a>
+              . See the show through the eyes of Joe Mazza in the{" "}
+              <a href="/performances" className="text-neutral-200">
+                publicity photos
+              </a>
+              . Experience the first preview with Michael Brosilow&apos;s{" "}
+              <a href="/performances" className="text-neutral-200">
+                production photos
+              </a>
+              .
             </p>
           </div>
+          {/* <SecondNav /> */}
         </div>
       </div>
     </main>

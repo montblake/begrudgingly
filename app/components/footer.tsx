@@ -82,7 +82,7 @@ export default function Footer() {
         >
           {/* <hr className="w-full border-neutral-600 border-t-1" /> */}
           {/* <div className="text-xs md:text-sm"> */}
-          <p className="text-xs inline-block text-red-600">
+          <p className="text-xs inline-block text-neutral-400 hover:text-red-600 active:underline">
             <span className="hidden lg:inline">This is a </span>
             <span className=" uppercase">clownshow</span>
           </p>
