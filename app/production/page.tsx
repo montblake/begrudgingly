@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Production() {
   return (
-    <main className="w-full h-full min-h-[90vh] mt-28 pb-0 overflow-y-scroll md:overflow-y-hidden flex flex-col justify-center items-center">
-      <div className="w-full max-w-[1000px] mx-auto h-fit md:h-full flex flex-col md:flex-row justify-start items-start gap-4 px-4 py-4 md:px-8 rounded-2xl pb-16 overflow-hidden bg-neutral-950/40">
+    <main className="w-full h-fit py-4">
+      <div className="w-full max-w-[1000px] mx-auto h-fit md:h-full flex flex-col md:flex-row justify-start items-start gap-4 px-4 py-0 md:px-8 rounded-2xl pb-0 overflow-hidden bg-neutral-950/0">
         <div className="w-full h-full">
           <div className="w-full h-full min-h-[360px] max-w-[320px] sm:max-w-[360px] md:max-w-[500px] mx-auto rounded-2xl overflow-hidden drop-shadow-lg">
             <Image
@@ -37,7 +37,8 @@ export default function Production() {
           /> */}
 
           <div className="w-full h-4 flex justify-center md:justify-start items-center my-8">
-            <hr className="w-full border-neutral-600" />
+            <hr className="w-full border-neutral-400/80" />
+
             {/* <Image
               src={"/diamond-3.png"}
               alt={"decoration"}

@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="w-full h-full mt-20 pb-0 relative overflow-y-scroll md:overflow-y-hidden">
-      <div className="w-full max-w-[1000px] mx-auto h-fit md:h-full flex flex-col md:flex-row justify-start items-start gap-4 px-4 md:px-8 py-2 rounded-2xl pb-16 overflow-hidden">
+    <main className="w-full h-fit py-8">
+      <div className="w-full max-w-[1000px] mx-auto h-fit md:h-full flex flex-col md:flex-row justify-start items-start gap-4 px-4 md:px-8 py-0 rounded-2xl pb-0 overflow-hidden">
         <div className="w-full h-full min-h-[360px] max-w-[500px] mx-auto rounded-2xl overflow-hidden drop-shadow-lg">
           <Image
             src="/new_poster_trimmed.png"

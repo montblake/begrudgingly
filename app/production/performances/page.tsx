@@ -1,5 +1,5 @@
-import Venue from "@/app/components/venue";
-import TicketLinks from "@/app/components/ticket_links";
+import Venue from "@/components/venue";
+import TicketLinks from "@/components/ticket_links";
 import Image from "next/image";
 
 export default function Performances() {

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Premise() {
   return (
-    <main className="w-full h-full mt-20 pb-8 relative overflow-y-scroll md:overflow-y-hidden">
+    <main className="w-full h-fit py-8">
       <div className="w-full max-w-[1000px] mx-auto h-fit md:h-full flex flex-col md:flex-row justify-start items-start gap-4 px-4 md:px-8 py-2 rounded-2xl pb-16 overflow-hidden">
         <div className=" w-full h-full min-h-[360px] max-w-[500px] mx-auto rounded-2xl overflow-hidden drop-shadow-lg border border-neutral-600">
           <Image
