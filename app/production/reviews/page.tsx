@@ -72,19 +72,9 @@ export default function Reviews() {
         {reviews.map((review, index) => (
           <>
             {index !== reviews.length - 1 ? (
-              <ReviewCard
-                key={index}
-                review={review}
-                index={index}
-                numReviews={reviews.length}
-              />
+              <ReviewCard key={index} review={review} index={index} />
             ) : (
-              <ReviewCardAlt
-                key={index}
-                review={review}
-                index={index}
-                numReviews={reviews.length}
-              />
+              <ReviewCardAlt key={index} review={review} index={index} />
             )}
           </>
         ))}
