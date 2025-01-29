@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -57,8 +55,9 @@ export default function Home() {
             </p>
             <p className="text-neutral-400 text-sm">
               Charles Dickens is currently exploring performance options for the
-              holidays in 2025 and beyond. If you're interested in presenting or
-              producing the show in your theater, please get in touch.
+              holidays in 2025 and beyond. If you&apos;re interested in
+              presenting or producing the show in your theater, please get in
+              touch.
             </p>
             <div className="mt-4">
               <a href="mailto:dickens@dickensagain.com">

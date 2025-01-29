@@ -7,11 +7,14 @@ import { motion } from "motion/react";
 export default function ReviewCard({
   review,
   index,
-  numReviews,
 }: {
-  review: any;
+  review: {
+    top: string;
+    excerpts: string[];
+    source: string;
+    link: string;
+  };
   index: number;
-  numReviews: number;
 }) {
   const [showExcerpts, setShowExcerpts] = useState(false);
 
