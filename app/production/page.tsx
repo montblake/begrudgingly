@@ -2,23 +2,24 @@ import Image from "next/image";
 
 export default function Production() {
   return (
-    <main className="w-full h-fit py-4">
+    <main className="w-full h-full py-8">
       <div className="w-full max-w-[1000px] mx-auto h-fit md:h-full flex flex-col md:flex-row justify-start items-start gap-4 px-4 py-0 md:px-8 rounded-2xl pb-0 overflow-hidden bg-neutral-950/0">
-        <div className="w-full h-full">
-          <div className="w-full h-full min-h-[360px] max-w-[320px] sm:max-w-[360px] md:max-w-[500px] mx-auto rounded-2xl overflow-hidden drop-shadow-lg">
+        <div className="w-full h-full flex flex-col justify-start items-center gap-2">
+          <div className="w-full h-fit min-h-[360px] max-w-[320px] sm:max-w-[360px] md:max-w-[500px] mx-auto rounded-2xl overflow-hidden drop-shadow-lg border border-neutral-600">
             <Image
-              src="/2024_production_poster_web.png"
-              alt="Charles Dickens Begrudgingly... 2024 Poster Image"
+              src="/production_dickens.jpg"
+              alt="Charles Dickens Begrudgingly... 2024 Production Image"
               width={600}
               height={800}
               className="w-full h-auto"
             />
           </div>
-          {/* <p className="text-xs text-neutral-400 italic drop-shadow-xl">
-            Production Image by Joe Mazza / brave lux inc.
-          </p> */}
+          <p className="text-xs text-neutral-400 italic drop-shadow-xl">
+            Production image by Joe Mazza / brave lux inc.
+          </p>
         </div>
-        <div className="w-full max-w-[500px] mx-auto flex flex-col py-4 md:py-4 md:pl-4 md:pr-4  h-full md:overflow-y-scroll ">
+
+        <div className="w-full max-w-[500px] mx-auto flex flex-col py-4 md:py-0 md:pl-4 md:pr-4  h-full md:overflow-y-scroll ">
           <div className="md:mb-0 text-neutral-400 px-4 sm:px-4 md:px-0">
             <h1 className="text-3xl text-center md:text-left drop-shadow-xl">
               A remarkably artful riff on Dickens&apos; original, written and
@@ -28,24 +29,9 @@ export default function Production() {
               Bill Esler, <span className="italic">Buzz Center Stage</span>
             </p>
           </div>
-          {/* <Image
-            src="/production-title.png"
-            alt="Charles Dickens Begrudgingly... at The Den Theatre, Chicago, December 2024"
-            width={1000}
-            height={1000}
-            className="w-full h-auto bg-black/25"
-          /> */}
 
           <div className="w-full h-4 flex justify-center md:justify-start items-center my-8">
             <hr className="w-full border-neutral-400/80" />
-
-            {/* <Image
-              src={"/diamond-3.png"}
-              alt={"decoration"}
-              width={20}
-              height={20}
-              className="opacity-75 w-8 h-auto"
-            /> */}
           </div>
 
           <div className="w-full pt-4 pb-8 px-4 sm:px-4  sm:pb-12 md:px-0 md:pb-8 md:pt-0">

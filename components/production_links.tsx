@@ -26,7 +26,7 @@ export default function ProductionLinks() {
   ];
 
   return (
-    <div className="flex flex-row justify-center items-center gap-4 sm:gap-8 py-4 bg-neutral-700 w-full h-fit border-b border-neutral-200/20 px-8">
+    <div className="flex flex-row justify-center items-center gap-4 sm:gap-8 py-4 bg-neutral-700 w-full h-fit border-b border-neutral-950 px-8">
       {links.map((link) => {
         const isCurrentPage = pathname === link.href;
         return (

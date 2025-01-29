@@ -22,16 +22,16 @@ export default function ReviewCard({
       onClick={() => setShowExcerpts(!showExcerpts)}
     >
       <div
-        className={`flex-1 bg-neutral-950/50 text-neutral-300 backdrop-blur-sm border border-neutral-500 rounded-xl drop-shadow-lg px-0 pt-8 pb-0 flex flex-col items-center justify-center w-full`}
+        className={`flex-1 bg-neutral-950/50 text-neutral-300 backdrop-blur-sm border border-neutral-500 rounded-xl drop-shadow-lg px-0 pt-8 pb-0 flex flex-col items-center justify-center`}
       >
-        <div className="flex-1 flex flex-col justify-between items-center gap-0 mb-2 w-full px-0 max-w-[400px]">
+        <div className="flex-1 flex flex-col justify-between items-center gap-0 mb-2 w-full px-0 ">
           <h2
-            className={`text-4xl mb-0 text-center w-full px-8 py-0 transition-opacity duration-300 mb-12`}
+            className={`text-base mb-0 text-center w-full px-8 py-0 transition-opacity duration-300 mb-12`}
           >
             {review.top}
           </h2>
 
-          <div className="w-full max-w-[500px] h-auto flex flex-col gap-2 justify-center items-center mt-0 mb-0 px-8 md:px-12">
+          <div className="w-full h-auto flex flex-col gap-2 justify-center items-center mt-0 mb-0 ">
             <div
               className={`w-full h-auto flex flex-col gap-2 justify-center items-center mt-0 mb-0 `}
             >
@@ -48,43 +48,25 @@ export default function ReviewCard({
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.0 }}
-                className={`bg-neutral-950/35 w-full mt-0 mb-0 mx-auto flex flex-col justify-center items-center gap-4 border-[.5px] border-neutral-500 rounded-xl px-8 md:px-12 transition-all duration-1000 ease-in-out py-16 h-full`}
+                className={`bg-neutral-950/35 w-1/2 mt-0 mb-0 mx-auto flex flex-col justify-center items-center gap-4 border-[.5px] border-neutral-500 rounded-xl overflow-hidden transition-all duration-1000 ease-in-out h-full w-3/4`}
               >
-                {review.excerpts.map((excerpt, idx) => (
-                  <motion.div
-                    key={idx}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: idx * 0.1 }}
-                    className={`flex flex-col justify-center items-center gap-0 w-full `}
-                  >
-                    <p
-                      className={`${
-                        showExcerpts ? "opacity-100" : "opacity-0"
-                      } w-full text-sm text-center transition-all duration-1000 ease-in-out`}
-                    >
-                      {excerpt}
-                    </p>
-                    {idx !== review.excerpts.length - 1 && (
-                      <div className="w-full flex justify-center items-center mt-2 -mb-1">
-                        <Image
-                          src={"/diamond-3.png"}
-                          alt={"decoration"}
-                          width={20}
-                          height={20}
-                          className="opacity-75 w-3 h-auto"
-                        />
-                      </div>
-                    )}
-                  </motion.div>
-                ))}
+                <Image
+                  src={review.image}
+                  alt={"review"}
+                  width={200}
+                  height={200}
+                  className="w-full h-auto"
+                />
               </motion.div>
             )}
             <p className="text-xs italic text-neutral-400 hover:text-neutral-200 transition-all duration-300 ease-in-out cursor-pointer active:text-neutral-300">
               show {showExcerpts ? "less" : "more"}
             </p>
 
-            <div
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.0 }}
               className={`w-full h-auto flex flex-col gap-2 justify-center items-center mt-0 mb-0 `}
             >
               <Image
@@ -94,7 +76,7 @@ export default function ReviewCard({
                 height={20}
                 className="opacity-75 w-10 h-auto rotate-180"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className="mt-8 flex flex-col justify-center items-center gap-1 w-full text-neutral-300 px-8 pt-2 pb-8">

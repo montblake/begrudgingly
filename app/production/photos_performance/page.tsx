@@ -127,7 +127,7 @@ const photos = [
 
 export default function Home() {
   return (
-    <main className="w-full h-fit py-8">
+    <main className="w-full h-fit py-8 bg-red-950/50">
       <div className="relative w-full">
         <div className="fixed z-40 top-36 left-0 w-full flex flex-col justify-center items-center">
           <h1 className="text-xs text-neutral-500 italic border border-neutral-500 rounded-xl px-4 py-2 -mt-2  bg-black/50">

@@ -1,7 +1,6 @@
 "use client";
 import ReviewCard from "@/components/review_card";
-import ReviewModal from "@/components/review_modal";
-import { useState } from "react";
+import ReviewCardAlt from "@/components/review_card_alt";
 
 const reviews = [
   {
@@ -66,35 +65,30 @@ const reviews = [
   },
 ];
 
-export default function Home() {
-  const [selected, setSelected] = useState(null);
-
+export default function Reviews() {
   return (
-    <main
-      className={`w-full py-0 bg-red-950/50 ${
-        selected !== null ? "h-full" : "h-fit"
-      }`}
-    >
-      {selected !== null ? (
-        <ReviewModal
-          review={reviews[selected]}
-          indexNum={selected}
-          numReviews={reviews.length}
-          close={() => setSelected(null)}
-        />
-      ) : (
-        <div className=" h-full grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1000px] mx-auto pt-8 pb-16 place-items-center">
-          {reviews.map((review, index) => (
-            <ReviewCard
-              key={index}
-              review={review}
-              index={index}
-              numReviews={reviews.length}
-              setSelected={setSelected}
-            />
-          ))}
-        </div>
-      )}
+    <main className={`w-full py-0 bg-red-950/50 h-fit`}>
+      <div className=" h-full grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1000px] mx-auto pt-8 pb-16 px-4 sm:px-8 md:px-12 place-items-center">
+        {reviews.map((review, index) => (
+          <>
+            {index !== reviews.length - 1 ? (
+              <ReviewCard
+                key={index}
+                review={review}
+                index={index}
+                numReviews={reviews.length}
+              />
+            ) : (
+              <ReviewCardAlt
+                key={index}
+                review={review}
+                index={index}
+                numReviews={reviews.length}
+              />
+            )}
+          </>
+        ))}
+      </div>
     </main>
   );
 }

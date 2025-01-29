@@ -39,6 +39,16 @@ const navLinks = [
       </>
     ),
   },
+  {
+    href: "/booking",
+    label: "Booking",
+    desktopLabel: "Booking",
+  },
+  {
+    href: "/contact",
+    label: "Contact",
+    desktopLabel: "Contact",
+  },
 ];
 
 export default function Nav() {
