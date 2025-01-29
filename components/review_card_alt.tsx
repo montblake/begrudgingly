@@ -13,6 +13,7 @@ export default function ReviewCard({
     excerpts: string[];
     source: string;
     link: string;
+    image: string;
   };
   index: number;
 }) {
