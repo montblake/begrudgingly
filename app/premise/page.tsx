@@ -11,7 +11,7 @@ export default function Premise() {
         transition={{ delay: 0, duration: 0.5 }}
         className="w-full max-w-[1000px] mx-auto h-fit md:h-full flex flex-col md:flex-row justify-start items-start gap-4 px-4 md:px-8 py-2 rounded-2xl pb-16 overflow-hidden"
       >
-        <div className=" w-full h-full min-h-[360px] max-w-[360px] sm:max-w-[400px] md:max-w-[500px] mx-auto rounded-2xl overflow-hidden drop-shadow-lg border border-neutral-600">
+        <div className="sticky top-4 w-full h-full min-h-[360px] max-w-[360px] sm:max-w-[400px] md:max-w-[500px] mx-auto rounded-2xl overflow-hidden drop-shadow-lg border border-neutral-600">
           <Image
             src="/charles-full.jpg"
             alt="Charles Dickens"
@@ -48,11 +48,12 @@ export default function Premise() {
             </p>
 
             <p className="text-neutral-400 text-sm mt-4">
-              But… what if that’s not exactly the whole story? What if reports
-              of his death were, shall we say, exaggerated? And what if, for
-              some mysterious and mystical reason, Dickens is bound to repeat
-              his reading of <span className="italic">A Christmas Carol</span>{" "}
-              every December—year after year, century after century?
+              But… what if that&apos;s not exactly the whole story? What if
+              reports of his death were, shall we say, exaggerated? And what if,
+              for some mysterious and mystical reason, Dickens is bound to
+              repeat his reading of{" "}
+              <span className="italic">A Christmas Carol</span> every
+              December—year after year, century after century?
             </p>
 
             <p className="text-neutral-400 text-sm mt-4">
