@@ -85,18 +85,18 @@ export default function Nav() {
                     alt="Home"
                     width={200}
                     height={32}
-                    className="h-5 w-auto relative z-100 -top-[1px] hover:scale-105 transition-all duration-300 opacity-90 mix-blend-screen"
+                    className="h-5 w-auto relative z-100 -top-[1px] hover:scale-95 transition-all duration-300 opacity-90 mix-blend-screen"
                   />
                 </a>
               </Tooltip>
             </li>
           </ul>
-          <ul className="hidden md:flex space-x-4 items-center">
+          <ul className="hidden md:flex space-x-2 lg:space-x-4 items-center">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className={`text-sm  ${
+                  className={`text-xs lg:text-sm  ${
                     pathname === link.href
                       ? "font-bold text-neutral-200"
                       : "text-neutral-400 hover:text-neutral-300 active:underline"

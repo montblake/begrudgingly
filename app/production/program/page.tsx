@@ -1,13 +1,17 @@
 export default function Program() {
   return (
-    <div className="w-full h-fit p-8 bg-red-950/50">
-      <div className="flex flex-col items-center justify-center max-w-2xl px-4 sm:px-12 md:px-16 w-full bg-neutral-100/80 text-neutral-900 py-8 sm:py-12 md:py-16 rounded-xl mx-auto">
+    <div className="w-full h-fit p-4 sm:p-8">
+      <div className="flex flex-col items-center justify-center max-w-2xl px-4 sm:px-12 md:px-16 w-full bg-neutral-200 text-neutral-900 py-8 sm:py-12 md:py-16 rounded-xl mx-auto">
         <h1 className="font-bold text-center mb-12">
-          <span className="text-4xl">Charles Dickens</span>
+          <span className="text-2xl sm:text-3xl md:text-4xl">
+            Charles Dickens
+          </span>
           <br />
-          <span className="text-5xl">Begrudgingly</span>
+          <span className="text-4xl sm:text-5xl md:text-6xl relative -top-1">
+            Begrudgingly
+          </span>
           <br />
-          <span className="text-lg relative top-[8px]">
+          <span className="text-sm sm:text-base md:text-lg relative -top-1 sm:top-0">
             Performs <span className="italic">A Christmas Carol</span> Again
           </span>
         </h1>

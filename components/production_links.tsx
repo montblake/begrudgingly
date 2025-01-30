@@ -36,7 +36,7 @@ export default function ProductionLinks() {
             className={`${isCurrentPage ? "pointer-events-none" : ""}`}
           >
             <h2
-              className={`text-xs ${
+              className={`text-xs text-center ${
                 isCurrentPage
                   ? "text-white"
                   : "text-neutral-400 hover:text-neutral-200 active:underline"

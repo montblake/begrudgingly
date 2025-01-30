@@ -36,13 +36,6 @@ const photos = [
     credit: "Michael Brosilow",
     vertical: false,
   },
-  // {
-  //   src: "/photos/brosilow/DSC_6365.jpg",
-  //   alt: "Charles Dickens",
-  //   credit: "Michael Brosilow",
-  //   vertical: false,
-  // },
-
   {
     src: "/photos/brosilow/MBP_0883.jpg",
     alt: "Charles Dickens",
@@ -136,7 +129,13 @@ const photos = [
   },
 ];
 
-export default function Home() {
+const HeaderInfo = {
+  headerText: "Photos of first preview by ",
+  photographer: "Michael Brosilow",
+  photographerLink: "https://www.brosilow.com/",
+};
+
+export default function PhotoGallery() {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
 
@@ -148,66 +147,20 @@ export default function Home() {
     });
   }, [api]);
   return (
-    <main className="w-full h-full py-0">
-      {/* <div className="relative w-full">
-        <div className="fixed z-40 top-36 left-0 w-full flex flex-col justify-center items-center">
-          <h1 className="text-xs text-neutral-500 italic border border-neutral-500 rounded-xl px-4 py-2 -mt-2  bg-black/50">
-            First Preview, photos by{" "}
+    <main className="w-full h-full py-4">
+      <div className="w-full h-full flex flex-col items-center justify-start bg-neutral-950 max-w-[800px] mx-auto rounded-2xl pl-4">
+        <div className="relative -left-2 mb-4">
+          <h1 className="text-xs text-center text-neutral-400 px-4 mb-0">
+            {HeaderInfo.headerText}
             <a
-              href="https://www.brosilow.com/"
+              href={HeaderInfo.photographerLink}
               target="_blank"
               className="text-neutral-200 hover:underline"
             >
-              Michael Brosilow
+              {HeaderInfo.photographer}
             </a>
           </h1>
-        </div>
-      </div> */}
-
-      {/* <div className="w-full h-full flex flex-col justify-start items-center gap-y-8 md:gap-y-16 px-4 pt-24 pb-24 overflow-y-scroll">
-        {photos.map((photo, index) => (
-          <Image
-            key={index}
-            src={photo.src}
-            alt={photo.alt}
-            className={`border border-neutral-500 rounded-2xl ${
-              photo.vertical
-                ? "h-full w-auto max-h-[60vh]"
-                : "w-full h-auto max-w-[800px]"
-            }`}
-            width={800}
-            height={800}
-          />
-        ))}
-      </div> */}
-      <div className="w-full h-full flex flex-col items-center justify-center bg-neutral-950 max-w-[800px] mx-auto rounded-2xl pl-4">
-        <Carousel
-          className="w-full md:max-w-[600px] max-h-[600px] flex flex-col justify-center items-center"
-          setApi={setApi}
-        >
-          <CarouselContent className="w-full">
-            {photos.map((photo, index) => (
-              <CarouselItem key={index} className={`w-full`}>
-                <Image
-                  src={photo.src}
-                  alt={photo.alt}
-                  width={800}
-                  height={800}
-                  className={`rounded-2xl border-[.5px] border-neutral-700 mx-auto ${
-                    photo.vertical
-                      ? "h-full w-auto max-h-[60vh]"
-                      : "w-full h-auto max-w-[800px]"
-                  }`}
-                />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
-        <div className="relative -left-2">
-          <div className="mt-4 pb-3 flex gap-2 justify-center items-center">
+          <div className="mt-2 pb-3 flex gap-2 justify-center items-center">
             {photos.map((_, index) => (
               <div
                 key={index}
@@ -217,17 +170,34 @@ export default function Home() {
               />
             ))}
           </div>
-          <h1 className="text-xs text-center text-neutral-500 italic px-4 mb-0">
-            Photos of first preview by{" "}
-            <a
-              href="https://www.brosilow.com/"
-              target="_blank"
-              className="text-neutral-200 hover:underline"
-            >
-              Michael Brosilow
-            </a>
-          </h1>
         </div>
+        <Carousel
+          className="w-full flex flex-col justify-center items-center"
+          setApi={setApi}
+        >
+          <CarouselContent className="w-full h-auto">
+            {photos.map((photo, index) => (
+              <CarouselItem key={index} className={`w-full`}>
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  width={800}
+                  height={800}
+                  className={`rounded-2xl border-[.5px] border-neutral-700 mx-auto ${
+                    photo.vertical
+                      ? "h-fit w-auto max-h-[65vh]"
+                      : "w-full h-auto max-w-[800px]"
+                  }`}
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+        <p className="italic text-neutral-400 text-xs text-center mt-2">
+          swipe or use buttons to navigate photos
+        </p>
       </div>
     </main>
   );
