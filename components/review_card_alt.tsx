@@ -57,8 +57,8 @@ export default function ReviewCard({
                 <Image
                   src={review.image}
                   alt={"review"}
-                  width={200}
-                  height={200}
+                  width={500}
+                  height={500}
                   className="w-full h-auto"
                 />
               </motion.div>

@@ -8,8 +8,8 @@ export default function Premise() {
           <Image
             src="/charles-full.jpg"
             alt="Charles Dickens"
-            width={1000}
-            height={1000}
+            width={800}
+            height={800}
             className="w-full h-auto"
           />
         </div>
@@ -27,13 +27,6 @@ export default function Premise() {
 
           <div className="w-full h-4 flex justify-center xl:justify-start items-center my-8">
             <hr className="w-full border-neutral-400/80" />
-            {/* <Image
-              src={"/diamond-3.png"}
-              alt={"decoration"}
-              width={20}
-              height={20}
-              className="opacity-75 w-8 h-auto"
-            /> */}
           </div>
 
           <div className="w-full px-4 sm:px-4  md:px-0 pb-8 sm:pb-12 md:p-0 pt-4">

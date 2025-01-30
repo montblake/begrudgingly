@@ -9,8 +9,8 @@ export default function Contact() {
             <Image
               src="/dickens_house_poster_2.jpg"
               alt="Contact Charles Dickens (image by Joe Mazza / brave lux inc.)"
-              width={1000}
-              height={1000}
+              width={800}
+              height={800}
               className="w-full h-auto"
             />
           </div>
