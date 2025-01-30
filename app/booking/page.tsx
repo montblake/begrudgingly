@@ -12,6 +12,7 @@ export default function Contact() {
               width={500}
               height={719}
               className="w-full h-auto"
+              priority
             />
           </div>
           {/* <p className="text-xs text-neutral-400 italic drop-shadow-xl">

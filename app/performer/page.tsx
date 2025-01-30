@@ -11,6 +11,7 @@ export default function Performer() {
             width={500}
             height={655}
             className="h-auto w-full"
+            priority
           />
         </div>
 

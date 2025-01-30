@@ -11,6 +11,7 @@ export default function Premise() {
             width={500}
             height={645}
             className="w-full h-auto"
+            priority
           />
         </div>
 
