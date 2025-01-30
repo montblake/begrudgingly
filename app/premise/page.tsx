@@ -19,6 +19,7 @@ export default function Premise() {
             height={645}
             className="w-full h-full"
             priority
+            loading="eager"
           />
         </div>
 
