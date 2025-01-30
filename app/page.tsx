@@ -1,9 +1,17 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "motion/react";
 
 export default function Home() {
   return (
-    <main className="w-full h-fit py-8">
-      <div className="w-full max-w-[1000px] mx-auto h-fit md:h-full flex flex-col md:flex-row justify-start items-start gap-4 px-4 md:px-8 py-0 rounded-2xl pb-0 overflow-hidden">
+    <main className="w-full h-fit py-4 sm:py-8">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0, duration: 0.5 }}
+        className="w-full max-w-[1000px] mx-auto h-fit md:h-full flex flex-col md:flex-row justify-start items-start gap-4 px-4 md:px-8 py-0 rounded-2xl pb-0 overflow-hidden"
+      >
         <div className="w-full h-full min-h-[360px] max-w-[500px] mx-auto rounded-2xl overflow-hidden drop-shadow-lg relative -top-4">
           <Image
             src="/2024_production_poster_web.png"
@@ -29,13 +37,6 @@ export default function Home() {
 
           <div className="w-full h-4 flex justify-center md:justify-start items-center my-8">
             <hr className="w-full border-neutral-400/80" />
-            {/* <Image
-              src={"/diamond-3.png"}
-              alt={"decoration"}
-              width={20}
-              height={20}
-              className="opacity-75 w-8 h-auto"
-            /> */}
           </div>
 
           <div className="w-full px-4 sm:px-4  md:px-0 pb-8 sm:pb-12 md:p-0 pt-4 flex flex-col gap-4 justify-start items-center">
@@ -69,7 +70,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </main>
   );
 }

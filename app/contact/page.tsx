@@ -1,9 +1,17 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "motion/react";
 
 export default function Contact() {
   return (
-    <main className="w-full h-full py-8 bg-teal-950/0">
-      <div className="w-full max-w-[1000px] mx-auto h-fit md:h-full flex flex-col md:flex-row justify-start items-start gap-4 px-4 py-0 md:px-8 rounded-2xl pb-0 overflow-hidden">
+    <main className="w-full h-full py-4 sm:py-8 bg-teal-950/0">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0, duration: 0.5 }}
+        className="w-full max-w-[1000px] mx-auto h-fit md:h-full flex flex-col md:flex-row justify-start items-start gap-4 px-4 py-0 md:px-8 rounded-2xl pb-0 overflow-hidden"
+      >
         <div className="w-full h-full flex flex-col justify-start items-center gap-2">
           <div className="w-full h-fit min-h-[360px] max-w-[320px] sm:max-w-[360px] md:max-w-[500px] mx-auto rounded-2xl overflow-hidden drop-shadow-lg border border-neutral-600">
             <Image
@@ -54,7 +62,7 @@ export default function Contact() {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </main>
   );
 }
