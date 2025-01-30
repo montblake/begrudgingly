@@ -8,8 +8,8 @@ export default function Home() {
           <Image
             src="/2024_production_poster_web.png"
             alt="Charles Dickens Begrudgingly... Poster"
-            width={1000}
-            height={1000}
+            width={500}
+            height={800}
             className="w-full h-auto"
           />
         </div>

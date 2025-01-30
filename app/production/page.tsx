@@ -9,8 +9,8 @@ export default function Production() {
             <Image
               src="/production_dickens.jpg"
               alt="Charles Dickens Begrudgingly... 2024 Production Image"
-              width={600}
-              height={800}
+              width={500}
+              height={733}
               className="w-full h-auto"
             />
           </div>

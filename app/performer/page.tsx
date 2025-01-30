@@ -8,8 +8,8 @@ export default function Performer() {
           <Image
             src="/dickens_layers/layered_blake.png"
             alt="Blake Montgomery Headshot"
-            width={800}
-            height={800}
+            width={500}
+            height={655}
             className="h-auto w-full"
           />
         </div>

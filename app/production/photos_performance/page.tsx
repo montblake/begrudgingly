@@ -66,12 +66,6 @@ const photos = [
     credit: "Michael Brosilow",
     vertical: true,
   },
-  // {
-  //   src: "/photos/brosilow/MBP_1109.jpg",
-  //   alt: "Charles Dickens",
-  //   credit: "Michael Brosilow",
-  //   vertical: true,
-  // },
   {
     src: "/photos/brosilow/MBP_0863.jpg",
     alt: "Charles Dickens",
@@ -147,8 +141,8 @@ export default function PhotoGallery() {
     });
   }, [api]);
   return (
-    <main className="w-full h-full py-4">
-      <div className="w-full h-full flex flex-col items-center justify-start bg-neutral-950 max-w-[800px] mx-auto rounded-2xl pl-4">
+    <main className="w-full h-full py-4 bg-neutral-950">
+      <div className="w-full h-full flex flex-col items-center justify-start max-w-[800px] mx-auto rounded-2xl pl-4">
         <div className="relative -left-2 mb-4">
           <h1 className="text-xs text-center text-neutral-400 px-4 mb-0">
             {HeaderInfo.headerText}
