@@ -24,12 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${baskerville.className} h-screen w-screen flex flex-col`}
+        className={`${baskerville.className} antialiased h-screen flex flex-col bg-victorian-texture bg-no-repeat bg-cover bg-fixed`}
       >
         <Nav />
-        <div className="w-full flex-1 min-h-0 overflow-auto bg-victorian-texture bg-no-repeat bg-cover bg-fixed">
-          {children}
-        </div>
+
+        {children}
+
         <Footer />
         <Analytics />
       </body>
