@@ -2,18 +2,18 @@ import Image from "next/image";
 
 export default function Special() {
   return (
-    <main className="flex-1 overflow-y-auto bg-neutral-100/0 flex flex-col justify-start items-center md:flex-row md:justify-center md:items-start md:px-8 md:pt-4 md:pb-16">
-      <div className="p-4">
+    <main className="flex-1 overflow-y-auto bg-neutral-100/0 flex flex-col justify-start items-center md:flex-row md:justify-center md:items-start md:px-8 md:pt-4 pb-16 max-w-[1000px] mx-auto">
+      <div className="w-full p-4">
         <Image
-          className="rounded-2xl"
+          className="w-full max-w-[400px] md:max-w-[500px] mx-auto rounded-2xl drop-shadow-lg border border-neutral-400"
           src="/blake_headshot.jpg"
-          alt="Next.js logo"
+          alt="Blake Montgomery Headshot"
           width={500}
-          height={800}
+          height={655}
         />
       </div>
-      <div className="flex flex-col justify-center items-center gap-4 max-w-lg p-4">
-        <h1 className="text-4xl font-bold text-neutral-200">
+      <div className="flex flex-col justify-center items-center gap-4 w-full max-w-[500px] md:max-w-none p-4">
+        <h1 className="text-4xl font-bold text-neutral-200 text-center md:text-left">
           Hello World, this is a large font message of great importance!
         </h1>
         <hr className="w-full border-neutral-400/80 my-8" />
