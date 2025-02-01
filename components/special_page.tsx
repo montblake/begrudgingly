@@ -46,7 +46,7 @@ export default function SpecialPage({
           rel_y={ImageProps.rel_y}
         />
       </div>
-      <div className="md:overflow-y-auto md:max-h-screen w-full md:pb-96">
+      <div className="md:overflow-y-auto md:max-h-screen w-full pb-48 md:pb-96">
         <SpecialText HeadlineProps={HeadlineProps} TextElement={TextElement} />
       </div>
     </main>
