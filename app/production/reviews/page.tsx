@@ -67,7 +67,7 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <main className={`w-full py-0 bg-red-950/50 h-fit`}>
+    <main className={`w-full py-0 h-fit`}>
       <div className=" h-full grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1000px] mx-auto pt-8 pb-16 px-4 sm:px-8 md:px-12 place-items-center">
         {reviews.map((review, index) => (
           <>

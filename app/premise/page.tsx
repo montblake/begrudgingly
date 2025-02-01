@@ -49,6 +49,20 @@ const TextElement = (
       might guide him to rediscover the beauty in his work &mdash; and the joy
       of sharing it with an audience, one more time.
     </p>
+    <div className="w-[90%] mx-auto md:mx-0 mt-4 flex flex-col items-center bg-gradient-to-br from-neutral-200/75 to-neutral-500/100 py-4 px-8 rounded-xl">
+      <p className="text-xs text-neutral-950">
+        Charles Dickens is currently exploring performance options for the
+        holidays in 2025 and beyond. If you&apos;re interested in presenting or
+        producing the show in your theater, please get in touch.
+      </p>
+      <div className="mt-4 w-full">
+        <a href="mailto:dickens@dickensagain.com">
+          <button className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full">
+            dickens@dickensagain.com
+          </button>
+        </a>
+      </div>
+    </div>
   </>
 );
 

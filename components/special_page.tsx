@@ -25,12 +25,14 @@ type SpecialProps = {
   ImageProps: ImageProps;
   HeadlineProps: HeadlineProps;
   TextElement: TextElement;
+  CTAElement?: ReactNode;
 };
 
 export default function SpecialPage({
   ImageProps,
   HeadlineProps,
   TextElement,
+  CTAElement,
 }: SpecialProps) {
   return (
     <main className="flex-1 bg-neutral-100/0 flex flex-col justify-start items-center md:flex-row md:justify-center md:items-start md:px-8 md:pt-4 pb-16 max-w-[1000px] mx-auto">
@@ -47,7 +49,11 @@ export default function SpecialPage({
         />
       </div>
       <div className="md:overflow-y-auto md:max-h-screen w-full pb-48 md:pb-96">
-        <SpecialText HeadlineProps={HeadlineProps} TextElement={TextElement} />
+        <SpecialText
+          HeadlineProps={HeadlineProps}
+          TextElement={TextElement}
+          CTAElement={CTAElement}
+        />
       </div>
     </main>
   );

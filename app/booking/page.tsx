@@ -41,6 +41,44 @@ const TextElement = (
       rows on the floor with at least one central aisle. The progression of the
       performance is charted to these areas.
     </p>
+    <div className="w-[90%] mx-auto md:mx-0 mt-4 flex flex-col items-center bg-gradient-to-br from-neutral-200/75 to-neutral-500/100 py-4 px-8 pb-8 rounded-xl gap-2">
+      <h2 className="text-neutral-950 text-sm font-bold">Curious?</h2>
+      <p className="text-xs text-neutral-950">
+        Meet the creative team and production staff in the{" "}
+        <a href="/production/program" className="text-neutral-200">
+          digital program
+        </a>
+        .
+      </p>
+      <p className="text-xs text-neutral-950">
+        See the show through the eyes of Joe Mazza in the{" "}
+        <a href="/production/photos_publicity" className="text-neutral-200">
+          publicity photos
+        </a>
+        .
+      </p>
+      <p className="text-xs text-neutral-950">
+        Experience the first preview with Michael Brosilow&apos;s{" "}
+        <a href="/production/photos_performance" className="text-neutral-200">
+          production photos
+        </a>
+        .
+      </p>
+      <p className="text-xs text-neutral-950">
+        Explore the show through the eyes of the critics in the{" "}
+        <a href="/production/reviews" className="text-neutral-200">
+          press reviews
+        </a>
+        .
+      </p>
+      {/* <div className="mt-4">
+        <a href="mailto:dickens@dickensagain.com">
+          <button className="bg-neutral-400 border border-neutral-500 text-neutral-950 text-sm px-4 py-2 rounded-xl hover:bg-neutral-300 transition-all duration-300 ease-in-out active:scale-95">
+            dickens@dickensagain.com
+          </button>
+        </a>
+      </div> */}
+    </div>
   </>
 );
 

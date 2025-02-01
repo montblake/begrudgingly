@@ -18,15 +18,20 @@ export default function ReviewCard({
   index: number;
 }) {
   const [showExcerpts, setShowExcerpts] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div
       key={index}
-      className="w-full max-w-[500px] h-full flex flex-col justify-start items-center"
+      className="w-full max-w-[360px] h-full flex flex-col justify-start items-center"
       onClick={() => setShowExcerpts(!showExcerpts)}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <div
-        className={`flex-1 bg-neutral-950/50 text-neutral-300 backdrop-blur-sm border border-neutral-500 rounded-xl drop-shadow-lg px-0 pt-8 pb-0 flex flex-col items-center justify-center`}
+        className={`flex-1 ${
+          isHovered ? "bg-red-950/50" : "bg-neutral-950/50"
+        } text-neutral-300 backdrop-blur-sm border border-neutral-500 rounded-xl drop-shadow-lg px-0 pt-8 pb-0 flex flex-col items-center justify-center transition-colors duration-300`}
       >
         <div className="flex-1 flex flex-col justify-between items-center gap-0 mb-2 w-full px-0 ">
           <h2
