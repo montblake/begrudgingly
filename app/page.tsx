@@ -39,7 +39,7 @@ const TextElement = (
       holidays in 2025 and beyond. If you&apos;re interested in presenting or
       producing the show in your theater, please get in touch.
     </p>
-    <div className="mt-4">
+    <div className="mt-4 flex flex-col items-center">
       <a href="mailto:dickens@dickensagain.com">
         <button className="bg-neutral-950 border border-neutral-400 text-neutral-400 text-sm px-4 py-2 rounded-xl hover:bg-neutral-800 transition-all duration-300 ease-in-out active:scale-95">
           dickens@dickensagain.com
