@@ -9,6 +9,8 @@ type ImageProps = {
   height: number;
   border: boolean;
   caption: string;
+  rel_x: number;
+  rel_y: number;
 };
 
 type HeadlineProps = {
@@ -40,6 +42,8 @@ export default function SpecialPage({
           height={ImageProps.height}
           border={ImageProps.border}
           caption={ImageProps.caption}
+          rel_x={ImageProps.rel_x}
+          rel_y={ImageProps.rel_y}
         />
       </div>
       <div className="md:overflow-y-auto md:max-h-screen w-full md:pb-96">

@@ -7,6 +7,8 @@ const ImageProps = {
   height: 655,
   border: true,
   caption: "Photo by Joe Mazza / brave lux inc.",
+  rel_x: 0,
+  rel_y: 0,
 };
 
 const HeadlineProps = {

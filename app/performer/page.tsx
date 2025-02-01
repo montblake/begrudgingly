@@ -7,6 +7,8 @@ const ImageProps = {
   height: 655,
   border: true,
   caption: "Headshot by Ian McLaren",
+  rel_x: 0,
+  rel_y: 0,
 };
 
 const HeadlineProps = {

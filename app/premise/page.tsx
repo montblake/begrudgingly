@@ -7,6 +7,8 @@ const ImageProps = {
   height: 645,
   border: true,
   caption: "",
+  rel_x: 0,
+  rel_y: 0,
 };
 
 const HeadlineProps = {
