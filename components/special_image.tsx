@@ -1,0 +1,48 @@
+import Image from "next/image";
+
+type ImageProps = {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  border: boolean;
+  caption: string;
+  rel_x: number;
+  rel_y: number;
+};
+
+export default function SpecialImage({
+  src,
+  alt,
+  width,
+  height,
+  border,
+  caption,
+  rel_x,
+  rel_y,
+}: ImageProps) {
+  return (
+    <div
+      className="w-full p-4 relative flex flex-col gap-2"
+      style={{
+        left: `${rel_x}px`,
+        top: `${rel_y}px`,
+      }}
+    >
+      <Image
+        className={`w-full max-w-[400px] md:max-w-[500px] mx-auto rounded-2xl drop-shadow-lg ${
+          border ? "border border-neutral-400" : ""
+        }`}
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+      />
+      {caption && (
+        <p className="text-center text-xs text-neutral-400 italic drop-shadow-xl">
+          {caption}
+        </p>
+      )}
+    </div>
+  );
+}

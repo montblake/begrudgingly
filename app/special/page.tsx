@@ -13,7 +13,7 @@ const HeadlineProps = {
   publisher: "",
 };
 
-const PerformerText = (
+const Text = (
   <div className="flex flex-col gap-4">
     <p className="text-neutral-400 text-sm">
       <span className="font-bold text-neutral-200">Blake Montgomery</span> began
@@ -106,7 +106,7 @@ function SpecialText() {
     <div className="flex flex-col justify-center items-center gap-4 w-full max-w-[500px] mx-auto md:max-w-none p-4">
       <SpecialHeadline {...HeadlineProps} />
       <hr className="w-full border-neutral-400/80 my-8" />
-      {PerformerText}
+      {Text}
     </div>
   );
 }
