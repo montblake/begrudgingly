@@ -10,8 +10,8 @@ export default function SpecialHeadline({
   publisher,
 }: HeadlineProps) {
   return (
-    <div className="flex flex-col justify-center items-center md:items-start gap-4 w-full">
-      <h1 className="text-3xl text-neutral-400 text-center md:text-left">
+    <div className="flex flex-col justify-center items-center md:items-start gap-4 w-full px-4 md:px-0">
+      <h1 className="text-2xl md:text-3xl text-neutral-400 text-center md:text-left">
         {title}
       </h1>
       {publisher ? (

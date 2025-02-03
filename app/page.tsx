@@ -1,5 +1,5 @@
 import SpecialPage from "@/components/special_page";
-
+import Link from "next/link";
 const ImageProps = {
   src: "/2024_production_poster_web.png",
   alt: "Charles Dickens Begrudgingly... Poster",
@@ -30,27 +30,54 @@ const TextElement = (
     <p className="">
       <span className="italic">Charles Dickens Begrudgingly...</span> originally
       charmed audiences during its Chicago debut at The Building Stage in
-      December 2011 and again in 2012. Now, ten years after the closing of The
-      Building Stage, former Artistic Director Blake Montgomery revives his Jeff
-      Award-winning solo performance for the 2024 holiday season.
+      December 2011. It returned to the theater in 2012, winning the Jeff Award
+      for solo performance.
+    </p>
+    <p className="">
+      Over a decade after the closing of The Building Stage, former Artistic
+      Director Blake Montgomery revived his exuberant take on the famous author
+      for the 2024 holiday season in a production produced by CLOWNSHOW and
+      presented at The Den Theatre in Chicago.
     </p>
   </>
 );
 
 const CTAElement = (
-  <div className="w-[90%] mx-auto md:mx-0 mt-4 flex flex-col items-center bg-gradient-to-br from-neutral-200/75 to-neutral-500/100 py-4 px-8 rounded-xl">
-    <p className="text-xs text-neutral-950">
-      Charles Dickens is currently exploring performance options for the
-      holidays in 2025 and beyond. If you&apos;re interested in presenting or
-      producing the show in your theater, please get in touch.
+  <div className="w-[90%] mx-auto md:mx-0 mt-4 flex flex-col items-start gap-2 bg-gradient-to-br from-neutral-100/75 to-neutral-500/75 pt-4 pb-8 px-8 rounded-xl border border-neutral-500 drop-shadow-md">
+    {/* <p className="text-xs text-neutral-950">
+      Blake Montgomery is currently exploring opportunities for{" "}
+      <span className="italic">Charles Dickens Begrudgingly</span> for the
+      holidays in 2025 and beyond.
+    </p> */}
+    <p className="text-xs text-neutral-950">Learn more about the show:</p>
+    <div className="w-full flex flex-col gap-2">
+      <Link href="/premise">
+        <button className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full">
+          the premise
+        </button>
+      </Link>
+      <Link href="/production">
+        <button className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full">
+          in production
+        </button>
+      </Link>
+      <Link href="/booking">
+        <button className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full">
+          booking information
+        </button>
+      </Link>
+    </div>
+    {/* <p className="text-xs text-neutral-950">
+      If you&apos;re interested in presenting or producing the show in your
+      theater, please get in touch.
     </p>
-    <div className="my-4 w-full">
+    <div className="my-2 w-full">
       <a href="mailto:dickens@dickensagain.com">
         <button className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full">
           dickens@dickensagain.com
         </button>
       </a>
-    </div>
+    </div> */}
   </div>
 );
 

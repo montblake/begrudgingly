@@ -1,7 +1,8 @@
 import SpecialPage from "@/components/special_page";
+import { Mail } from "lucide-react";
 
 const ImageProps = {
-  src: "/contact_dickens.jpg",
+  src: "/dickens_contact.jpg",
   alt: "Photo by Joe Mazza / brave lux inc.",
   width: 500,
   height: 655,
@@ -12,9 +13,8 @@ const ImageProps = {
 };
 
 const HeadlineProps = {
-  title:
-    "Get in touch. I would love to hear from you. I am on pins and needles in anticipation of your inquiry. With kind regards and best wishes.",
-  author: "Charles Dickens, author",
+  title: "",
+  author: "",
   publisher: "",
 };
 
@@ -36,15 +36,14 @@ const TextElement = (
     </p> */}
     <div className="w-[90%] mx-auto md:mx-0 mt-4 flex flex-col items-center bg-gradient-to-br from-neutral-200/75 to-neutral-500/100 py-4 px-8 rounded-xl gap-2">
       {/* <h2 className="text-neutral-950 text-sm font-bold">Curious?</h2> */}
-      <p className="text-xs text-neutral-900">
-        Charles Dickens is currently exploring performance options for the
-        holidays in 2025 and beyond. If you&apos;re interested in presenting or
-        producing the show in your theater, please get in touch.
+      <p className="text-xs text-neutral-950">
+        Inquiries for Blake Montgomery, or Charles Dickens, may be directed to:
       </p>
-      <div className="mt-4 w-full">
+      <div className="my-2 w-full">
         <a href="mailto:dickens@dickensagain.com">
-          <button className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full">
-            dickens@dickensagain.com
+          <button className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full flex items-center justify-center gap-2">
+            <Mail className="w-4 h-4 text-neutral-400" />
+            <span className="hover:underline">dickens@dickensagain.com</span>
           </button>
         </a>
       </div>

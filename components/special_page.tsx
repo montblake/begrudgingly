@@ -35,7 +35,7 @@ export default function SpecialPage({
   CTAElement,
 }: SpecialProps) {
   return (
-    <main className="flex-1 bg-neutral-100/0 flex flex-col justify-start items-center md:flex-row md:justify-center md:items-start md:px-8 md:pt-4 pb-16 max-w-[1000px] mx-auto">
+    <main className="flex-1 bg-neutral-100/0 flex flex-col justify-start items-center md:flex-row md:justify-center md:items-start md:px-8 md:pt-4 max-w-[1000px] mx-auto">
       <div className="md:sticky md:top-0 md:h-screen w-full">
         <SpecialImage
           src={ImageProps.src}
@@ -48,12 +48,13 @@ export default function SpecialPage({
           rel_y={ImageProps.rel_y}
         />
       </div>
-      <div className="md:overflow-y-auto md:max-h-screen w-full pb-48 md:pb-96">
+      <div className="md:overflow-y-auto md:max-h-screen w-full">
         <SpecialText
           HeadlineProps={HeadlineProps}
           TextElement={TextElement}
           CTAElement={CTAElement}
         />
+        <div className="w-full h-48 md:h-96 bg-gradient-to-b from-neutral-950/0 to-neutral-950/100 md:bg-none" />
       </div>
     </main>
   );

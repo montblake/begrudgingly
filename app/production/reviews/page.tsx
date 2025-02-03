@@ -6,9 +6,9 @@ const reviews = [
   {
     top: "one-man yuletide tour de force",
     excerpts: [
-      "more festive party than traditional oration",
-      "the perfect balance of dramatic and playful",
-      "an opportunity to rediscover comfort and joy",
+      "More festive party than traditional oration.",
+      "The perfect balance of dramatic and playful.",
+      "An opportunity to rediscover comfort and joy.",
     ],
     source: "The Fourth Walsh",
     link: "https://thefourthwalsh.com/2024/12/review-charles-dickens-begrudgingly-clownshow-yuletide-tour-de-force/",
@@ -17,9 +17,9 @@ const reviews = [
   {
     top: "wonderfully off-the-cuff and intimate",
     excerpts: [
-      "zany, spooky and tender",
-      "a handsome production",
-      "witty, heartfelt and (mostly) true to Dickens",
+      "Zany, spooky and tender.",
+      "A handsome production.",
+      "Witty, heartfelt and (mostly) true to Dickens.",
     ],
     source: "Chicago Stage and Screen",
     link: "https://www.chicagostageandscreen.com/post/a-homegrown-christmas-carol-to-revive-your-holiday-spirit",
@@ -29,7 +29,7 @@ const reviews = [
     top: "a remarkably artful riff",
     excerpts: [
       "[Montgomery's Dickens] deconstructs the story, then disarms us, and we are open to hear the story anew.",
-      "a work and performance not to be missed",
+      "A work and performance not to be missed.",
     ],
     source: "Buzz Center Stage",
     link: "https://www.buzznews.net/theatre/theatre-reviews/item/5732-this-charles-dickens-gets-to-the-heart-of-christmas-carol-in-spectacular-performance.html",
@@ -38,8 +38,8 @@ const reviews = [
   {
     top: "charming and sly",
     excerpts: [
-      "you may well find yourself enchanted by Montgomery's goofy but good-hearted take on Dickens",
-      "Montgomery's knowledge of the source text is palpable, which makes his riffs and discursions even more enjoyable",
+      "You may well find yourself enchanted by Montgomery's goofy but good-hearted take on Dickens.",
+      "Montgomery's knowledge of the source text is palpable, which makes his riffs and discursions even more enjoyable.",
       "READER RECOMMENDED",
     ],
     source: "Chicago Reader",
@@ -49,8 +49,8 @@ const reviews = [
   {
     top: "charming and funny",
     excerpts: [
-      "Montgomery's energy ... is balanced by his charming self-awareness—either as himself or Dickens, one can't quite be sure. But it hardly matters, as the effect is the same, disarming the audience and bringing us happily along with him",
-      "a welcome addition to the slew of holiday theater options on offer every year",
+      "Montgomery's energy ... is balanced by his charming self-awareness—either as himself or Dickens, one can't quite be sure. But it hardly matters, as the effect is the same, disarming the audience and bringing us happily along with him.",
+      "A welcome addition to the slew of holiday theater options on offer every year",
     ],
     source: "Third Coast Review",
     link: "https://thirdcoastreview.com/2024/12/11/stages-review-charles-dickens-begrudgingly-christmas-carol",
