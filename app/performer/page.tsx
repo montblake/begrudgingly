@@ -13,7 +13,7 @@ const ImageProps = {
 
 const HeadlineProps = {
   title:
-    "A superb storyteller! The perfect balance of dramatic and playful. I highly recommend the gift of Blake Montgomery this season.",
+    "A superb storyteller!\u2028 I highly recommend the gift of Blake Montgomery this season.",
   author: "Katy Walsh",
   publisher: "The Fourth Walsh",
 };

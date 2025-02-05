@@ -39,6 +39,7 @@ export default function SpecialImage({
         alt={alt}
         width={width}
         height={height}
+        priority
       />
       {caption && (
         <p className="text-center text-xs text-neutral-400 italic drop-shadow-xl">

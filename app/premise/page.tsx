@@ -63,20 +63,23 @@ const CTAElement = (
     </p> */}
     <p className="text-xs text-neutral-950">Learn more about the show:</p>
     <div className="w-full flex flex-col gap-2">
-      <Link href="/premise">
-        <button className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full">
-          the premise
-        </button>
+      <Link
+        href="/premise"
+        className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full text-center"
+      >
+        the premise
       </Link>
-      <Link href="/production">
-        <button className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full">
-          in production
-        </button>
+      <Link
+        href="/production"
+        className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full text-center"
+      >
+        in production
       </Link>
-      <Link href="/booking">
-        <button className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full">
-          booking information
-        </button>
+      <Link
+        href="/booking"
+        className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full text-center"
+      >
+        booking information
       </Link>
     </div>
     {/* <p className="text-xs text-neutral-950">

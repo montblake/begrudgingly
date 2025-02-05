@@ -23,9 +23,11 @@ export default function ReviewCard({
     <div
       key={index}
       className="w-full max-w-[360px] h-full flex flex-col justify-start items-center"
-      onClick={() => setShowExcerpts(!showExcerpts)}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      tabIndex={0}
+      role="article"
+      aria-label={`Review from ${review.source}`}
     >
       <div
         className={`flex-1 ${
@@ -88,9 +90,13 @@ export default function ReviewCard({
                 ))}
               </motion.div>
             )}
-            <p className="text-xs italic text-neutral-400 hover:text-neutral-200 transition-all duration-300 ease-in-out cursor-pointer active:text-neutral-300">
+            <button
+              onClick={() => setShowExcerpts(!showExcerpts)}
+              className="text-xs italic text-neutral-400 hover:text-neutral-200 transition-all duration-300 ease-in-out cursor-pointer active:text-neutral-300"
+              aria-expanded={showExcerpts}
+            >
               show {showExcerpts ? "less" : "more"}
-            </p>
+            </button>
 
             <div
               className={`w-full h-auto flex flex-col gap-2 justify-center items-center mt-0 mb-0 `}

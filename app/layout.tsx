@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Libre_Baskerville } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
-import Nav from "../components/nav";
+import Header from "../components/header";
 import Footer from "../components/footer";
 
 const baskerville = Libre_Baskerville({
@@ -26,7 +26,7 @@ export default function RootLayout({
       <body
         className={`${baskerville.className} antialiased h-screen flex flex-col bg-victorian-texture bg-no-repeat bg-cover bg-fixed overflow-hidden`}
       >
-        <Nav />
+        <Header />
         <div className="flex-1 overflow-y-auto">{children}</div>
         <Footer />
         <Analytics />

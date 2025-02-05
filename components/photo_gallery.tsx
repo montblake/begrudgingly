@@ -41,7 +41,7 @@ export default function PhotoGallery({
             <a
               href={HeaderInfo.photographerLink}
               target="_blank"
-              className="text-neutral-200 hover:underline"
+              className="text-neutral-200 hover:underline focus:outline-none focus:border-b-2 focus:border-blue-400"
             >
               {HeaderInfo.photographer}
             </a>

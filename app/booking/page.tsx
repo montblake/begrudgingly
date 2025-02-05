@@ -12,9 +12,10 @@ const ImageProps = {
 };
 
 const HeadlineProps = {
-  title: "An opportunity to rediscover comfort and joy.",
-  author: "Katy Walsh",
-  publisher: "The Fourth Walsh",
+  title:
+    "A remarkably artful riff on Dickens' original, written and performed stunningly well by Blake Montgomery.",
+  author: "Bill Esler",
+  publisher: "Buzz Center Stage",
 };
 
 const TextElement = (
@@ -72,11 +73,12 @@ const CTAElement = (
       theater, please get in touch with Blake:
     </p>
     <div className="my-2 w-full">
-      <a href="mailto:dickens@dickensagain.com">
-        <button className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full flex items-center justify-center gap-2">
-          <Mail className="w-4 h-4 text-neutral-400" />
-          <span className="hover:underline">dickens@dickensagain.com</span>
-        </button>
+      <a
+        href="mailto:dickens@dickensagain.com"
+        className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full flex items-center justify-center gap-2"
+      >
+        <Mail className="w-4 h-4 text-neutral-400" />
+        <span className="hover:underline">dickens@dickensagain.com</span>
       </a>
     </div>
   </div>
