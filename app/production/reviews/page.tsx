@@ -67,17 +67,18 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <main className={`w-full py-0 h-fit`}>
-      <div className=" h-full grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1000px] mx-auto pt-8 pb-16 px-4 sm:px-8 md:px-12 place-items-center">
+    <main className={`w-full py-0 h-full`}>
+      <div className=" h-full grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1000px] mx-auto pt-8 pb-16 px-4 sm:px-8 md:px-12 justify-items-center">
         {reviews.map((review, index) => (
-          <>
+          <div key={index}>
             {index !== reviews.length - 1 ? (
-              <ReviewCard key={index} review={review} index={index} />
+              <ReviewCard review={review} index={index} />
             ) : (
-              <ReviewCardAlt key={index} review={review} index={index} />
+              <ReviewCardAlt review={review} index={index} />
             )}
-          </>
+          </div>
         ))}
+        <div className="w-full h-48 md:h-96 bg-gradient-to-b from-neutral-950/0 to-neutral-950/100 md:bg-none" />
       </div>
     </main>
   );

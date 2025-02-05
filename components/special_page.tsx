@@ -25,14 +25,19 @@ type SpecialProps = {
   ImageProps: ImageProps;
   HeadlineProps: HeadlineProps;
   TextElement: TextElement;
-  CTAElement?: ReactNode;
+  CtaContent: CtaContent;
+};
+
+type CtaContent = {
+  intro: string;
+  links: { href: string; text: string }[];
 };
 
 export default function SpecialPage({
   ImageProps,
   HeadlineProps,
   TextElement,
-  CTAElement,
+  CtaContent,
 }: SpecialProps) {
   return (
     <main className="flex-1 bg-neutral-100/0 flex flex-col justify-start items-center md:flex-row md:justify-center md:items-start md:px-8 md:pt-4 max-w-[1000px] mx-auto">
@@ -52,7 +57,7 @@ export default function SpecialPage({
         <SpecialText
           HeadlineProps={HeadlineProps}
           TextElement={TextElement}
-          CTAElement={CTAElement}
+          CtaContent={CtaContent}
         />
         <div className="w-full h-48 md:h-96 bg-gradient-to-b from-neutral-950/0 to-neutral-950/100 md:bg-none" />
       </div>

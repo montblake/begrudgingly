@@ -1,5 +1,4 @@
 import SpecialPage from "@/components/special_page";
-import { Mail } from "lucide-react";
 const ImageProps = {
   src: "/dickens_house_poster_2.jpg",
   alt: "Gold-toned Dickens",
@@ -66,23 +65,17 @@ const TextElement = (
   </>
 );
 
-const CTAElement = (
-  <div className="w-[90%] mx-auto md:mx-0 mt-4 flex flex-col items-start gap-2 bg-gradient-to-br from-neutral-100/75 to-neutral-500/75 pt-4 pb-8 px-8 rounded-xl border border-neutral-500 drop-shadow-md">
-    <p className="text-xs text-neutral-950">
-      If you&apos;re interested in presenting or producing the show in your
-      theater, please get in touch with Blake:
-    </p>
-    <div className="my-2 w-full">
-      <a
-        href="mailto:dickens@dickensagain.com"
-        className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full flex items-center justify-center gap-2"
-      >
-        <Mail className="w-4 h-4 text-neutral-400" />
-        <span className="hover:underline">dickens@dickensagain.com</span>
-      </a>
-    </div>
-  </div>
-);
+const CtaContent = {
+  intro:
+    "If you're interested in presenting or producing the show in your theater, please get in touch with Blake:",
+  links: [
+    {
+      href: "mailto:dickens@dickensagain.com",
+      text: "dickens@dickensagain.com",
+      internal: false,
+    },
+  ],
+};
 
 export default function Booking() {
   return (
@@ -90,7 +83,7 @@ export default function Booking() {
       ImageProps={ImageProps}
       HeadlineProps={HeadlineProps}
       TextElement={TextElement}
-      CTAElement={CTAElement}
+      CtaContent={CtaContent}
     />
   );
 }

@@ -10,10 +10,12 @@ import {
 } from "@/components/ui/carousel";
 import { type CarouselApi } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
+import PhotoNav from "@/components/photo_nav";
 
 export default function PhotoGallery({
   HeaderInfo,
   photos,
+  links,
 }: {
   HeaderInfo: {
     headerText: string;
@@ -21,6 +23,8 @@ export default function PhotoGallery({
     photographer: string;
   };
   photos: { src: string; alt: string; credit: string; vertical: boolean }[];
+  intro: string;
+  links: { href: string; text: string; icon: string; internal: boolean }[];
 }) {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
@@ -84,6 +88,7 @@ export default function PhotoGallery({
         <p className="italic text-neutral-400 text-xs text-center mt-4">
           swipe or use buttons to navigate photos
         </p>
+        <PhotoNav links={links} />
       </div>
     </main>
   );

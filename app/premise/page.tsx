@@ -1,5 +1,4 @@
 import SpecialPage from "@/components/special_page";
-import Link from "next/link";
 
 const ImageProps = {
   src: "/charles-full.jpg",
@@ -54,47 +53,35 @@ const TextElement = (
   </>
 );
 
-const CTAElement = (
-  <div className="w-[90%] mx-auto md:mx-0 mt-4 flex flex-col items-start gap-2 bg-gradient-to-br from-neutral-100/75 to-neutral-500/75 pt-4 pb-8 px-8 rounded-xl border border-neutral-500 drop-shadow-md">
-    {/* <p className="text-xs text-neutral-950">
-      Blake Montgomery is currently exploring opportunities for{" "}
-      <span className="italic">Charles Dickens Begrudgingly</span> for the
-      holidays in 2025 and beyond.
-    </p> */}
-    <p className="text-xs text-neutral-950">Learn more about the show:</p>
-    <div className="w-full flex flex-col gap-2">
-      <Link
-        href="/premise"
-        className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full text-center"
-      >
-        the premise
-      </Link>
-      <Link
-        href="/production"
-        className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full text-center"
-      >
-        in production
-      </Link>
-      <Link
-        href="/booking"
-        className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full text-center"
-      >
-        booking information
-      </Link>
-    </div>
-    {/* <p className="text-xs text-neutral-950">
-      If you&apos;re interested in presenting or producing the show in your
-      theater, please get in touch.
-    </p>
-    <div className="my-2 w-full">
-      <a href="mailto:dickens@dickensagain.com">
-        <button className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full">
-          dickens@dickensagain.com
-        </button>
-      </a>
-    </div> */}
-  </div>
-);
+const CtaContent = {
+  intro: "Learn more about the show:",
+  links: [
+    {
+      href: "/production/photos_publicity",
+      text: "publicity photos",
+      icon: "camera",
+      internal: true,
+    },
+    // {
+    //   href: "/production/photos_performance",
+    //   text: "performance photos",
+    //   icon: "spotlight",
+    //   internal: true,
+    // },
+    {
+      href: "/production/reviews",
+      text: "press reviews",
+      icon: "glasses",
+      internal: true,
+    },
+    {
+      href: "/performer",
+      text: "the performer",
+      icon: "performer",
+      internal: true,
+    },
+  ],
+};
 
 export default function Premise() {
   return (
@@ -102,7 +89,7 @@ export default function Premise() {
       ImageProps={ImageProps}
       HeadlineProps={HeadlineProps}
       TextElement={TextElement}
-      CTAElement={CTAElement}
+      CtaContent={CtaContent}
     />
   );
 }

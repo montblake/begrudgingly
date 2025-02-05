@@ -58,6 +58,33 @@ const HeaderInfo = {
   photographerLink: "https://www.bravelux.com/",
 };
 
+const CtaContent = {
+  intro: "Learn more about the show:",
+  links: [
+    {
+      href: "/production/photos_performance",
+      text: "performance photos",
+      icon: "spotlight",
+      internal: true,
+    },
+    {
+      href: "/production/reviews",
+      text: "press reviews",
+      icon: "glasses",
+      internal: true,
+    },
+  ],
+};
+
 export default function PhotosPublicity() {
-  return <PhotoGallery HeaderInfo={HeaderInfo} photos={photos} />;
+  return (
+    <>
+      <PhotoGallery
+        HeaderInfo={HeaderInfo}
+        photos={photos}
+        intro={CtaContent.intro}
+        links={CtaContent.links}
+      />
+    </>
+  );
 }
