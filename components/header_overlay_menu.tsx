@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 interface NavLink {
   href: string;
   label: string;
