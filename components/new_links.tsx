@@ -39,50 +39,11 @@ export default function HeaderNavLinks({
                 pathname={pathname}
               />
             ) : (
-              // <div className="">
-              //   <NavigationMenuTrigger className="focus:text-neutral-200 relative -top-1">
-              //     In Production
-              //   </NavigationMenuTrigger>
-              //   <NavigationMenuContent className="">
-              //     <div className="bg-neutral-200 grid grid-cols-2 gap-6 p-6 md:w-[500px] lg:w-[600px]">
-              //       <div className="flex flex-col justify-between">
-              //         <h1 className="text-xl font-bold">
-              //           Charles Dickens Begrudgingly Performs 'A Christmas
-              //           Carol' Again
-              //         </h1>
-              //         <div className="flex flex-col gap-2">
-              //           <p className="text-sm leading-tight text-muted-foreground">
-              //             Created and performed by Blake Montgomery.
-              //           </p>
-              //           <p className="text-sm leading-tight text-muted-foreground">
-              //             Produced by Blake Montgomery / CLOWNSHOW.
-              //           </p>
-              //           <p className="text-sm leading-tight text-muted-foreground">
-              //             Performed at The Den Theatre in Chicago.
-              //           </p>
-              //           <p className="text-sm leading-tight text-muted-foreground">
-              //             December 5-22, 2024.
-              //           </p>
-              //         </div>
-              //       </div>
-              //       <div className="flex flex-col gap-2">
-              //         {link.subLinks.map((subLink) => (
-              //           <div key={subLink.href} className="bg-neutral-900">
-              //             <ListItem href={subLink.href} title={subLink.title}>
-              //               {subLink.description}
-              //             </ListItem>
-              //           </div>
-              //         ))}
-              //       </div>
-              //     </div>
-              //   </NavigationMenuContent>
-              // </div>
               <MenuItem
                 href={link.href}
                 title={link.title}
                 pathname={pathname}
               />
-              // <ListItem href={link.href} title={link.title} />
             )}
           </NavigationMenuItem>
         ))}
@@ -101,7 +62,7 @@ function MenuItem({
   pathname: string;
 }) {
   return (
-    <>
+    <div className="flex justify-center items-center">
       {pathname !== href ? (
         <Link
           href={href}
@@ -112,7 +73,7 @@ function MenuItem({
       ) : (
         <p className="text-xs lg:text-sm text-neutral-200">{title}</p>
       )}
-    </>
+    </div>
   );
 }
 
@@ -127,15 +88,18 @@ function MenuItemWithSubLinks({
 }) {
   return (
     <>
-      <NavigationMenuTrigger className="group inline-flex w-max items-center justify-center rounded bg-none text-xs lg:text-sm text-neutral-400 font-medium transition-colors hover:text-neutral-200 focus:border-b-2 focus:border-blue-500 focus:outline-none disabled:pointer-events-none disabled:opacity-50">
+      <NavigationMenuTrigger className="group inline-flex w-max items-center justify-center rounded bg-none text-xs lg:text-sm text-neutral-400 font-medium transition-colors hover:text-neutral-200 focus:border-b-2 focus:border-blue-500 focus:outline-none disabled:pointer-events-none disabled:opacity-50 relative flex justify-center items-center">
         {title}
       </NavigationMenuTrigger>
       <NavigationMenuContent className="">
-        <div className="w-[500px] grid grid-cols-2 p-8 bg-neutral-800 gap-8 rounded-xl">
+        <div className="w-[410px] lg:w-[540px] grid grid-cols-2 p-8 bg-neutral-800 gap-4 lg:gap-8 rounded-xl">
           <div className="flex flex-col justify-between">
             <p className="text-base text-neutral-200">
-              Charles Dickens Begrudgingly Performs{" "}
-              <span className="italic">A Christmas Carol</span> Again
+              Charles Dickens
+              <br /> Begrudgingly Performs
+              <br />
+              <span className="italic">A Christmas Carol</span>
+              <br /> Again
             </p>
             <div className="flex flex-col gap-2 text-xs text-neutral-200">
               <p>

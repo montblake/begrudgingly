@@ -43,14 +43,14 @@ const TextElement = (
 );
 
 const CTAElement = (
-  <div className="w-[90%] mx-auto md:mx-0 mt-4 flex flex-col items-start gap-2 bg-gradient-to-br from-neutral-100/75 to-neutral-500/75 pt-4 pb-8 px-8 rounded-xl border border-neutral-500 drop-shadow-md">
+  <div className="w-[90%] mx-auto md:mx-0 mt-4 flex flex-col items-start gap-4 bg-gradient-to-br from-neutral-100/75 to-neutral-500/75 pt-4 pb-8 px-8 rounded-xl border border-neutral-500 drop-shadow-md">
     {/* <p className="text-xs text-neutral-950">
       Blake Montgomery is currently exploring opportunities for{" "}
       <span className="italic">Charles Dickens Begrudgingly</span> for the
       holidays in 2025 and beyond.
     </p> */}
     <p className="text-xs text-neutral-950">Learn more about the show:</p>
-    <div className="w-full flex flex-col gap-2">
+    <div className="w-full flex flex-col gap-3">
       <Link
         href="/premise"
         className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full text-center"
@@ -58,16 +58,22 @@ const CTAElement = (
         the premise
       </Link>
       <Link
-        href="/production"
+        href="/production/photos_publicity"
         className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full text-center"
       >
-        in production
+        publicity photos
       </Link>
       <Link
-        href="/booking"
+        href="/production/photos_performance"
         className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full text-center"
       >
-        booking information
+        performance photos
+      </Link>
+      <Link
+        href="/reviews"
+        className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-2 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full text-center"
+      >
+        press reviews
       </Link>
     </div>
     {/* <p className="text-xs text-neutral-950">

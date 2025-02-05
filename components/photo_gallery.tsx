@@ -34,8 +34,8 @@ export default function PhotoGallery({
   }, [api]);
   return (
     <main className="w-full h-full py-4 bg-neutral-950">
-      <div className="w-full h-full flex flex-col items-center justify-start max-w-[800px] mx-auto rounded-2xl pl-4">
-        <div className="relative -left-2 mb-4">
+      <div className="w-full h-full flex flex-col items-center justify-start max-w-[800px] mx-auto rounded-2xl pl-4 relative">
+        <div className="relative -left-2 mt-4 mb-4">
           <h1 className="text-xs text-center text-neutral-400 px-4 mb-0">
             {HeaderInfo.headerText}
             <a
@@ -58,12 +58,12 @@ export default function PhotoGallery({
           </div>
         </div>
         <Carousel
-          className="w-full flex flex-col justify-center items-center"
+          className="w-full max-w-[800px] h-[500px] flex flex-col justify-center items-center"
           setApi={setApi}
         >
-          <CarouselContent className="w-full h-auto">
+          <CarouselContent className="w-full h-fit">
             {photos.map((photo, index) => (
-              <CarouselItem key={index} className={`w-full`}>
+              <CarouselItem key={index} className={`w-full h-auto`}>
                 <Image
                   src={photo.src}
                   alt={photo.alt}
@@ -71,17 +71,17 @@ export default function PhotoGallery({
                   height={800}
                   className={`rounded-2xl border-[.5px] border-neutral-700 mx-auto ${
                     photo.vertical
-                      ? "h-fit w-auto max-h-[65vh]"
+                      ? "h-full w-auto max-h-[70vh]"
                       : "w-full h-auto max-w-[800px]"
                   }`}
                 />
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className="left-2" />
+          <CarouselNext className="right-2" />
         </Carousel>
-        <p className="italic text-neutral-400 text-xs text-center mt-2">
+        <p className="italic text-neutral-400 text-xs text-center mt-4">
           swipe or use buttons to navigate photos
         </p>
       </div>
