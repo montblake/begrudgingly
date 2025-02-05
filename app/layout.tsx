@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${baskerville.className} antialiased h-screen flex flex-col bg-victorian-texture bg-no-repeat bg-cover bg-fixed overflow-hidden`}
+        className={`${baskerville.className} antialiased h-screen flex flex-col bg-victorian-texture bg-no-repeat bg-cover bg-fixed`}
       >
         <Header />
         <div className="flex-1 overflow-y-auto">{children}</div>
