@@ -6,7 +6,10 @@ import {
   Lightbulb,
   Cone as Spotlight,
   // PersonStanding as Performer,
-  User as Performer,
+  PersonStanding as Performer,
+  ScrollText as Program,
+  ReceiptText as Booking,
+  CircleUser as Contact,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -18,6 +21,9 @@ const iconMap = {
   lightbulb: <Lightbulb className="w-4 h-4" />,
   spotlight: <Spotlight className="w-4 h-4" />,
   performer: <Performer className="w-4 h-4" />,
+  program: <Program className="w-4 h-4" />,
+  booking: <Booking className="w-4 h-4" />,
+  contact: <Contact className="w-4 h-4" />,
 };
 
 export default function CTAElement({

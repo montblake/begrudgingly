@@ -1,4 +1,5 @@
 "use client";
+import CTAElement from "@/components/cta_element";
 import ReviewCard from "@/components/review_card";
 import ReviewCardAlt from "@/components/review_card_alt";
 
@@ -65,10 +66,28 @@ const reviews = [
   },
 ];
 
+const CtaProps = {
+  intro: "Learn more about the show:",
+  links: [
+    {
+      href: "/program",
+      text: "production credits",
+      icon: "program",
+      internal: true,
+    },
+    {
+      href: "/performer",
+      text: "meet the performer",
+      icon: "performer",
+      internal: true,
+    },
+  ],
+};
+
 export default function Reviews() {
   return (
     <main className={`w-full py-0 h-full`}>
-      <div className=" h-full grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1000px] mx-auto pt-8 pb-16 px-4 sm:px-8 md:px-12 justify-items-center">
+      <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1000px] mx-auto pt-8 pb-16 px-4 sm:px-8 md:px-12 justify-items-center">
         {reviews.map((review, index) => (
           <div key={index}>
             {index !== reviews.length - 1 ? (
@@ -78,8 +97,11 @@ export default function Reviews() {
             )}
           </div>
         ))}
-        <div className="w-full h-48 md:h-96 bg-gradient-to-b from-neutral-950/0 to-neutral-950/100 md:bg-none" />
       </div>
+      <div className="w-[80%] max-w-[400px] mx-auto">
+        <CTAElement intro={CtaProps.intro} links={CtaProps.links} />
+      </div>
+      <div className="w-full h-48 md:h-96 bg-gradient-to-b from-neutral-950/0 to-neutral-950/100 md:bg-none" />
     </main>
   );
 }

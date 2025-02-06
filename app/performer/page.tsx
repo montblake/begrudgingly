@@ -41,8 +41,21 @@ const TextElement = (
 );
 
 const CtaProps = {
-  intro: "",
-  links: [],
+  intro: "Learn more about the show:",
+  links: [
+    {
+      href: "/booking",
+      text: "booking information",
+      icon: "booking",
+      internal: true,
+    },
+    {
+      href: "/contact",
+      text: "contact information",
+      icon: "contact",
+      internal: true,
+    },
+  ],
 };
 
 export default function Performer() {

@@ -1,3 +1,23 @@
+import CTAElement from "@/components/cta_element";
+
+const CtaProps = {
+  intro: "Learn more about the show:",
+  links: [
+    {
+      href: "/performer",
+      text: "meet the performer",
+      icon: "performer",
+      internal: true,
+    },
+    {
+      href: "/booking",
+      text: "booking information",
+      icon: "booking",
+      internal: true,
+    },
+  ],
+};
+
 export default function Program() {
   return (
     <div className="w-full h-fit p-4 sm:p-8">
@@ -277,6 +297,9 @@ export default function Program() {
             </p>
           </div>
         </div>
+      </div>
+      <div className="w-[80%] max-w-[400px] mx-auto pt-8">
+        <CTAElement intro={CtaProps.intro} links={CtaProps.links} />
       </div>
       <div className="w-full h-48 md:h-96 bg-gradient-to-b from-neutral-950/0 to-neutral-950/100 md:bg-none" />
     </div>

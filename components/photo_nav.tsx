@@ -28,10 +28,10 @@ export default function PhotoNav({
   return (
     <div className="w-[80%] max-w-[400px] mx-auto md:mx-0 mt-8 flex flex-col items-start gap-4 bg-gradient-to-br from-neutral-100/75 to-neutral-500/75 p-2 rounded-xl border border-neutral-500 drop-shadow-md">
       {/* <p className="text-xs text-neutral-950">{intro}</p> */}
-      <div className="w-full flex flex-col sm:flex-row gap-2">
+      <div className="w-full flex flex-col sm:flex-row items-center justify-center gap-2">
         {links &&
           links.map((link) => (
-            <div key={link.href}>
+            <div key={link.href} className="w-full">
               {link.internal ? (
                 <Link
                   key={link.href}
