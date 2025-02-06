@@ -38,27 +38,29 @@ export default function PhotoGallery({
   }, [api]);
   return (
     <main className="w-full flex-1 min-h-0 py-4 overflow-y-auto">
-      <div className="w-full h-full flex flex-col items-center justify-start max-w-[800px] mx-auto rounded-2xl pl-4 relative overflow-y-auto">
-        <div className="relative -left-2 mt-4 mb-4">
-          <h1 className="text-xs text-center text-neutral-400 px-4 mb-0">
-            {HeaderInfo.headerText}
-            <a
-              href={HeaderInfo.photographerLink}
-              target="_blank"
-              className="text-neutral-200 hover:underline focus:outline-none focus:border-b-2 focus:border-blue-400"
-            >
-              {HeaderInfo.photographer}
-            </a>
-          </h1>
-          <p className="italic text-neutral-600 text-xs text-center mt-1">
-            swipe or use buttons to navigate photos
-          </p>
-        </div>
+      <div className="w-full h-full flex flex-col items-center justify-start max-w-[800px] mx-auto pl-4 relative overflow-y-auto">
         <Carousel
-          className="w-full max-w-[800px] h-auto flex flex-col justify-center items-center"
+          className="w-full h-auto flex flex-col justify-center items-center "
           setApi={setApi}
         >
-          <div className="w-[calc(100%-1rem)] mr-4 flex justify-between items-center bg-neutral-800 rounded-t-2xl p-4 border border-neutral-700 border-b-0">
+          <div className="w-[calc(100%-1rem)] mr-4 flex flex-col justify-center items-center bg-neutral-800 rounded-t-2xl p-4 border border-neutral-700 border-b-0">
+            <div className="w-full flex flex-col items-center justify-center bg-neutral-900 rounded-2xl p-4 border border-neutral-700">
+              <h1 className="text-xs text-center text-neutral-400 px-4 mb-0">
+                {HeaderInfo.headerText}
+                <a
+                  href={HeaderInfo.photographerLink}
+                  target="_blank"
+                  className="text-neutral-200 hover:underline focus:outline-none focus:border-b-2 focus:border-blue-400"
+                >
+                  {HeaderInfo.photographer}
+                </a>
+              </h1>
+              <p className="italic text-neutral-600 text-xs text-center mt-1">
+                swipe or use buttons to navigate photos
+              </p>
+            </div>
+          </div>
+          <div className="w-[calc(100%-1rem)] mr-4 flex justify-between items-center bg-neutral-800 px-4 pb-4 border-x border-neutral-700">
             <CarouselPrevious className="" />
             <div className="flex flex-wrap gap-2 justify-center items-center w-1/2">
               {photos.map((_, index) => (
@@ -76,13 +78,14 @@ export default function PhotoGallery({
             {photos.map((photo, index) => (
               <CarouselItem key={index} className={`w-full h-auto`}>
                 <div
-                  className={`w-full h-full max-h-[65vh] bg-neutral-800 rounded-b-2xl overflow-hidden pb-8 border border-neutral-700 border-t-0`}
+                  className={`w-full h-full max-h-[65vh] bg-neutral-800 overflow-hidden pb-0 border-x border-neutral-700`}
                 >
                   <Image
                     src={photo.src}
                     alt={photo.alt}
                     width={800}
                     height={800}
+                    priority
                     className={` border-[.5px] border-neutral-700 mx-auto ${
                       photo.vertical
                         ? "h-full w-auto"
@@ -94,10 +97,10 @@ export default function PhotoGallery({
             ))}
           </CarouselContent>
         </Carousel>
-        {/* <p className="italic text-neutral-400 text-xs text-center mt-4">
-          swipe or use buttons to navigate photos
-        </p> */}
-        <PhotoNav links={links} />
+
+        <div className="w-[calc(100%-1rem)] mr-4 bg-neutral-800 rounded-b-2xl border border-neutral-700 border-t-0 flex items-center justify-center pb-8">
+          <PhotoNav links={links} />
+        </div>
         <div className="w-full h-24 md:h-36 bg-gradient-to-b from-neutral-950/0 to-neutral-950/100 md:bg-none" />
       </div>
     </main>
