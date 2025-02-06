@@ -28,15 +28,14 @@ export default function CTAElement({
   links: { href: string; text: string; internal: boolean; icon: string }[];
 }) {
   return (
-    <div className="w-[80%] mx-auto md:mx-0 mt-4 flex flex-col items-start gap-4 bg-gradient-to-br from-neutral-100/75 to-neutral-500/75 pt-4 pb-8 px-8 rounded-xl border border-neutral-500 drop-shadow-md">
+    <div className="w-[100%] lg:w-[80%] mx-auto md:mx-0 mt-4 flex flex-col items-start gap-4 bg-gradient-to-br from-neutral-100/75 to-neutral-500/75 pt-4 pb-8 px-8 rounded-xl border border-neutral-500 drop-shadow-md">
       <p className="text-xs text-neutral-950">{intro}</p>
       <div className="w-full flex flex-col gap-2">
         {links &&
           links.map((link) => (
-            <>
+            <div key={link.href} className="w-full">
               {link.internal ? (
                 <Link
-                  key={link.href}
                   href={link.href}
                   className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-4 rounded-xl hover:text-neutral-200 transition-all duration-300 ease-in-out active:scale-95 w-full flex items-center justify-center drop-shadow-md"
                 >
@@ -52,7 +51,7 @@ export default function CTAElement({
                   <span className="ml-2">{link.text}</span>
                 </a>
               )}
-            </>
+            </div>
           ))}
       </div>
     </div>

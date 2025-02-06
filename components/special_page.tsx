@@ -30,7 +30,7 @@ type SpecialProps = {
 
 type CtaContent = {
   intro: string;
-  links: { href: string; text: string }[];
+  links: { href: string; text: string; internal: boolean; icon: string }[];
 };
 
 export default function SpecialPage({

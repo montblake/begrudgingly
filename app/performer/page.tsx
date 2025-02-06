@@ -40,12 +40,18 @@ const TextElement = (
   </>
 );
 
+const CtaContent = {
+  intro: "",
+  links: [],
+};
+
 export default function Performer() {
   return (
     <SpecialPage
       ImageProps={ImageProps}
       HeadlineProps={HeadlineProps}
       TextElement={TextElement}
+      CtaContent={CtaContent}
     />
   );
 }
