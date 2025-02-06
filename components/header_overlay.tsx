@@ -25,13 +25,13 @@ export default function HeaderOverlayMenu({
       }`}
     >
       <div
-        className={`fixed right-0 top-0 h-full w-96 bg-neutral-200 p-8 flex flex-col justify-start transition-transform duration-300 ${
+        className={`fixed right-0 top-0 h-full w-96 bg-neutral-200 flex flex-col transition-transform duration-300 ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <button
           onClick={toggleMenu}
-          className="absolute top-2 right-2 text-neutral-600"
+          className="absolute top-2 right-2 text-neutral-600 z-10"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -48,85 +48,87 @@ export default function HeaderOverlayMenu({
             />
           </svg>
         </button>
-        <div>
-          <ul className="mt-0 space-y-2 text-lg">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                {link.href !== "" ? (
-                  <Link
-                    href={link.href}
-                    onClick={toggleMenu}
-                    className={`block capitalize ${
-                      pathname === link.href
-                        ? "text-neutral-950 font-bold"
-                        : "text-neutral-600 hover:underline"
-                    }`}
-                  >
-                    {link.title}
-                  </Link>
-                ) : (
-                  <div className="block text-neutral-600 text-base bg-neutral-100 p-4 rounded-lg">
-                    <div className="flex flex-col gap-2 bg-neutral-300 py-2 px-4 rounded-lg">
+        <div className="flex-1 overflow-y-auto p-8 pb-64">
+          <div>
+            <ul className="mt-0 space-y-2 text-lg">
+              {navLinks.map((link) => (
+                <li key={link.href}>
+                  {link.href !== "" ? (
+                    <Link
+                      href={link.href}
+                      onClick={toggleMenu}
+                      className={`block capitalize ${
+                        pathname === link.href
+                          ? "text-neutral-950 font-bold"
+                          : "text-neutral-600 hover:underline"
+                      }`}
+                    >
                       {link.title}
-                      <hr className="w-full border-neutral-600 my-1" />
-                      <p className="text-xs italic whitespace-pre-line mb-2">
-                        {link.description.split("\u2029").map((line, i) => (
-                          <span key={i}>
-                            {line}
-                            {i <
-                              link.description.split("\u2029").length - 1 && (
-                              <br />
-                            )}
-                          </span>
+                    </Link>
+                  ) : (
+                    <div className="block text-neutral-600 text-base bg-neutral-100 p-4 rounded-lg">
+                      <div className="flex flex-col gap-2 bg-neutral-300 py-2 px-4 rounded-lg">
+                        {link.title}
+                        <hr className="w-full border-neutral-600 my-1" />
+                        <p className="text-xs italic whitespace-pre-line mb-2">
+                          {link.description.split("\u2029").map((line, i) => (
+                            <span key={i}>
+                              {line}
+                              {i <
+                                link.description.split("\u2029").length - 1 && (
+                                <br />
+                              )}
+                            </span>
+                          ))}
+                        </p>
+                      </div>
+                      <ul className="flex flex-col space-y-2 pl-4 mt-2">
+                        {link.subLinks.map((subLink) => (
+                          <Link
+                            key={subLink.href}
+                            href={subLink.href}
+                            onClick={toggleMenu}
+                            className="text-neutral-700 text-lg hover:underline"
+                          >
+                            {subLink.title}
+                          </Link>
                         ))}
-                      </p>
+                      </ul>
                     </div>
-                    <ul className="flex flex-col space-y-2 pl-4 mt-2">
-                      {link.subLinks.map((subLink) => (
-                        <Link
-                          key={subLink.href}
-                          href={subLink.href}
-                          onClick={toggleMenu}
-                          className="text-neutral-700 text-lg hover:underline"
-                        >
-                          {subLink.title}
-                        </Link>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-              </li>
-            ))}
-          </ul>
-          <hr className="w-full border-neutral-600 my-6" />
-        </div>
-        <div className="w-full flex-1 flex flex-col justify-start items-start gap-4 text-neutral-800 pb-16">
-          <div className="flex flex-col justify-start items-start gap-0 font-bold mb-0">
-            <h1 className="text-2xl">
-              Charles Dickens
-              <br />
-              Begrudingly Performs
-              <br />
-              <span className="italic">A Christmas Carol</span> Again
-            </h1>
-            <p className="text-xs mt-2">
-              created and performed by <br />
-              <span className="text-lg">Blake Montgomery</span>
+                  )}
+                </li>
+              ))}
+            </ul>
+            <hr className="w-full border-neutral-600 my-6" />
+          </div>
+          <div className="w-full flex flex-col justify-start items-start gap-4 text-neutral-800">
+            <div className="flex flex-col justify-start items-start gap-0 font-bold mb-0">
+              <h1 className="text-2xl">
+                Charles Dickens
+                <br />
+                Begrudingly Performs
+                <br />
+                <span className="italic">A Christmas Carol</span> Again
+              </h1>
+              <p className="text-xs mt-2">
+                created and performed by <br />
+                <span className="text-lg">Blake Montgomery</span>
+              </p>
+            </div>
+
+            <p className="text-xs hover:scale-110 text-red-600 transition-all duration-300">
+              This is a{" "}
+              <a
+                href="https://www.thisisaclownshow.com"
+                className=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                clownshow
+              </a>
+              .
             </p>
           </div>
-
-          <p className="text-xs hover:scale-110 text-red-600 transition-all duration-300">
-            This is a{" "}
-            <a
-              href="https://www.thisisaclownshow.com"
-              className=""
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              clownshow
-            </a>
-            .
-          </p>
         </div>
       </div>
     </div>
