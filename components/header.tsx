@@ -30,14 +30,9 @@ const navLinks: NavLink[] = [
   {
     href: "",
     title: "In Production",
-    description: "Production",
+    description:
+      "Produced by CLOWNSHOW.\u2029Performed at The Den Theatre, Chicago.\u2029December 5-22, 2024.",
     subLinks: [
-      {
-        href: "/program",
-        title: "Program",
-        description: "Production credits in the digital program",
-        subLinks: [],
-      },
       {
         href: "/photos_publicity",
         title: "Publicity Photos",
@@ -54,6 +49,12 @@ const navLinks: NavLink[] = [
         href: "/reviews",
         title: "Press Reviews",
         description: "In the words of the critics...",
+        subLinks: [],
+      },
+      {
+        href: "/program",
+        title: "Digital Program",
+        description: "Production credits in the digital program",
         subLinks: [],
       },
     ],

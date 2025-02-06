@@ -65,15 +65,29 @@ export default function HeaderOverlayMenu({
                     {link.title}
                   </Link>
                 ) : (
-                  <div className="block capitalize text-neutral-400">
-                    {link.title}
-                    <ul className="flex flex-col space-y-2 pl-4">
+                  <div className="block text-neutral-600 text-base bg-neutral-100 p-4 rounded-lg">
+                    <div className="flex flex-col gap-2 bg-neutral-300 py-2 px-4 rounded-lg">
+                      {link.title}
+                      <hr className="w-full border-neutral-600 my-1" />
+                      <p className="text-xs italic whitespace-pre-line mb-2">
+                        {link.description.split("\u2029").map((line, i) => (
+                          <span key={i}>
+                            {line}
+                            {i <
+                              link.description.split("\u2029").length - 1 && (
+                              <br />
+                            )}
+                          </span>
+                        ))}
+                      </p>
+                    </div>
+                    <ul className="flex flex-col space-y-2 pl-4 mt-2">
                       {link.subLinks.map((subLink) => (
                         <Link
                           key={subLink.href}
                           href={subLink.href}
                           onClick={toggleMenu}
-                          className="text-neutral-700 hover:underline"
+                          className="text-neutral-700 text-lg hover:underline"
                         >
                           {subLink.title}
                         </Link>
