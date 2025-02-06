@@ -19,15 +19,17 @@ const navLinks: NavLink[] = [
     href: "/",
     title: "Home",
     description: "Home",
+    subLinks: [],
   },
   {
     href: "/premise",
     title: "Premise",
     description: "Premise",
+    subLinks: [],
   },
   {
-    href: "/production",
-    title: "Production",
+    href: "",
+    title: "In Production",
     description: "Production",
     subLinks: [
       {
@@ -72,23 +74,10 @@ const navLinks: NavLink[] = [
 export default function Header() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // const [isProductionLinksOpen, setIsProductionLinksOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  // const toggleProductionLinks = () => {
-  //   setIsProductionLinksOpen(!isProductionLinksOpen);
-  // };
-
-  // useEffect(() => {
-  //   if (pathname.includes("/production")) {
-  //     setIsProductionLinksOpen(true);
-  //   } else {
-  //     setIsProductionLinksOpen(false);
-  //   }
-  // }, [pathname]);
 
   return (
     <>
@@ -98,7 +87,6 @@ export default function Header() {
           <HeaderNavLinks navLinks={navLinks} pathname={pathname} />
           <HeaderHamburger toggleMenu={toggleMenu} />
         </nav>
-        {/* {isProductionLinksOpen && <ProductionLinks />} */}
       </div>
 
       <HeaderOverlayMenu

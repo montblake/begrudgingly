@@ -278,6 +278,7 @@ export default function Program() {
           </div>
         </div>
       </div>
+      <div className="w-full h-48 md:h-96 bg-gradient-to-b from-neutral-950/0 to-neutral-950/100 md:bg-none" />
     </div>
   );
 }
