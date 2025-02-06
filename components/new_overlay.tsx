@@ -22,7 +22,7 @@ export default function HeaderOverlayMenu({
     <>
       {isMenuOpen && (
         <div className="fixed inset-0 bg-neutral-950 bg-opacity-50 z-50">
-          <div className="fixed right-0 top-0 h-full w-96 bg-neutral-200 p-8 flex flex-col justify-between">
+          <div className="fixed right-0 top-0 h-full w-96 bg-neutral-200 p-8 flex flex-col justify-start">
             <button
               onClick={toggleMenu}
               className="absolute top-2 right-2 text-neutral-600"
@@ -76,10 +76,10 @@ export default function HeaderOverlayMenu({
                   </li>
                 ))}
               </ul>
-              <hr className="w-full border-neutral-600 mt-12" />
+              <hr className="w-full border-neutral-600 my-12" />
             </div>
-            <div className="w-full flex flex-col justify-between items-start gap-4 text-neutral-800">
-              <div className="flex flex-col justify-start items-start gap-0 font-bold mb-12">
+            <div className="w-full flex-1 flex flex-col justify-start items-start gap-4 text-neutral-800 pb-16">
+              <div className="flex flex-col justify-start items-start gap-0 font-bold mb-4">
                 <h1 className="text-2xl">
                   Charles Dickens
                   <br />
@@ -87,13 +87,13 @@ export default function HeaderOverlayMenu({
                   <br />
                   <span className="italic">A Christmas Carol</span> Again
                 </h1>
-                <p className="text-xs mt-4">
+                <p className="text-xs mt-2">
                   created and performed by <br />
                   <span className="text-lg">Blake Montgomery</span>
                 </p>
               </div>
 
-              <p className="text-xs hover:scale-110 active:text-red-600 transition-all duration-300">
+              <p className="text-xs hover:scale-110 text-red-600 transition-all duration-300">
                 This is a{" "}
                 <a
                   href="https://www.thisisaclownshow.com"
