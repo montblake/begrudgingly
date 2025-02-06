@@ -48,7 +48,7 @@ export default function CTAElement({
                   className="bg-neutral-900 border border-neutral-500 text-neutral-400 hover:text-neutral-200 text-xs px-4 py-3 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full flex items-center justify-center gap-2 drop-shadow-md"
                 >
                   <Mail className="w-4 h-4" />
-                  <span className="ml-2">{link.text}</span>
+                  <span className="ml-0">{link.text}</span>
                 </a>
               )}
             </div>

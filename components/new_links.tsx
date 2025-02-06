@@ -17,7 +17,7 @@ interface NavLink {
   href: string;
   title: string;
   description: string;
-  subLinks?: NavLink[];
+  subLinks: NavLink[];
 }
 
 export default function HeaderNavLinks({
@@ -32,7 +32,7 @@ export default function HeaderNavLinks({
       <NavigationMenuList className="gap-1 lg:gap-4 xl:gap-6">
         {navLinks.map((link) => (
           <NavigationMenuItem key={link.title}>
-            {link.subLinks ? (
+            {link.subLinks.length > 0 ? (
               <MenuItemWithSubLinks
                 title={link.title}
                 subLinks={link.subLinks}
@@ -66,6 +66,7 @@ function MenuItem({
       {pathname !== href ? (
         <Link
           href={href}
+          scroll={false}
           className={`text-xs lg:text-sm text-neutral-400 hover:text-neutral-300 active:underline focus:border-b-2 focus:border-blue-400 focus:outline-none`}
         >
           {title}
@@ -149,6 +150,7 @@ function SubMenuItem({
   return (
     <Link
       href={href}
+      scroll={false}
       className={`w-full flex flex-col gap-1 p-4 rounded-xl border border-neutral-700 ${
         pathname === href
           ? "bg-neutral-100"

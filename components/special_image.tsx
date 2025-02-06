@@ -32,7 +32,7 @@ export default function SpecialImage({
       }
     >
       <Image
-        className={`w-full max-w-[360px] md:max-w-[500px] mx-auto rounded-2xl drop-shadow-lg ${
+        className={`relative -top-2 w-full max-w-[360px] md:max-w-[500px] mx-auto rounded-2xl drop-shadow-lg ${
           border ? "border border-neutral-600" : ""
         }`}
         src={src}

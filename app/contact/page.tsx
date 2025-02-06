@@ -21,7 +21,7 @@ const TextElement = <></>;
 
 const CtaContent = {
   intro:
-    "Inquiries for Blake Montgomery, or Charles Dickens, may be directed to:",
+    "To contact Blake Montgomery, or Charles Dickens, kindly direct your electronic correspondence to the following address:",
   links: [
     {
       href: "mailto:dickens@dickensagain.com",

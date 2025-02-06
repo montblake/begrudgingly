@@ -31,7 +31,7 @@ export default function PhotoNav({
       <div className="w-full flex flex-col sm:flex-row gap-2">
         {links &&
           links.map((link) => (
-            <>
+            <div key={link.href}>
               {link.internal ? (
                 <Link
                   key={link.href}
@@ -50,7 +50,7 @@ export default function PhotoNav({
                   <span className="ml-2">{link.text}</span>
                 </a>
               )}
-            </>
+            </div>
           ))}
       </div>
     </div>

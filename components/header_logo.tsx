@@ -13,6 +13,7 @@ export default function HeaderLogo({ pathname }: { pathname: string }) {
             alt="Home"
             width={200}
             height={32}
+            priority
             className="h-5 w-auto relative z-100 -top-[1px] opacity-90 mix-blend-screen"
           />
         </li>
@@ -28,6 +29,7 @@ export default function HeaderLogo({ pathname }: { pathname: string }) {
                 alt="Home"
                 width={200}
                 height={32}
+                priority
                 className="h-5 w-auto relative z-100 -top-[1px] hover:scale-95 transition-all duration-300 opacity-90 mix-blend-screen"
               />
             </a>

@@ -57,19 +57,13 @@ const CtaContent = {
   intro: "Learn more about the show:",
   links: [
     {
-      href: "/production/photos_publicity",
+      href: "/photos_publicity",
       text: "publicity photos",
       icon: "camera",
       internal: true,
     },
-    // {
-    //   href: "/production/photos_performance",
-    //   text: "performance photos",
-    //   icon: "spotlight",
-    //   internal: true,
-    // },
     {
-      href: "/production/reviews",
+      href: "/reviews",
       text: "press reviews",
       icon: "glasses",
       internal: true,

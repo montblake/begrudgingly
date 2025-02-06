@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import ScrollToTop from "../components/scroll_to_top";
+import PageTransition from "../components/page_transition";
 
 const baskerville = Libre_Baskerville({
   subsets: ["latin"],
@@ -29,7 +30,7 @@ export default function RootLayout({
       >
         <ScrollToTop />
         <Header />
-        <div className="flex-1 overflow-y-auto">{children}</div>
+        {children}
         <Footer />
         <Analytics />
       </body>

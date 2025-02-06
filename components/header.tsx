@@ -33,25 +33,25 @@ const navLinks: NavLink[] = [
     description: "Production",
     subLinks: [
       {
-        href: "/production/program",
+        href: "/program",
         title: "Program",
         description: "Production credits in the digital program",
         subLinks: [],
       },
       {
-        href: "/production/photos_publicity",
+        href: "/photos_publicity",
         title: "Publicity Photos",
         description: "Publicity photos by Joe Mazza / brave lux inc.",
         subLinks: [],
       },
       {
-        href: "/production/photos_performance",
+        href: "/photos_performance",
         title: "Performance Photos",
         description: "Performance photos by Michael Brosilow",
         subLinks: [],
       },
       {
-        href: "/production/reviews",
+        href: "/reviews",
         title: "Press Reviews",
         description: "In the words of the critics...",
         subLinks: [],
