@@ -11,6 +11,11 @@ const ImageProps = {
   rel_y: 0,
 };
 
+type MultiText = {
+  title: string;
+  text: string;
+}[];
+
 const HeadlineProps = {
   title:
     "A disarming portrayal of Dickens.... Every inch the consummate host, he makes each guest feel personally welcomed into the space. ",
@@ -34,27 +39,23 @@ const TextElement = (
       death were, shall we say, exaggerated? And what if, for some mysterious
       and mystical reason, Dickens is bound to repeat his reading of{" "}
       <span className="italic">A Christmas Carol</span> every December—year
-      after year, century after century?
+      after year, century after century? Now, over 200 years old and a bit weary
+      of his own creation, Dickens finds himself once again booked to perform
+      his overly familiar Christmas tale.
     </p>
 
     <p className="">
-      Now, over 200 years old and a bit weary of his own creation, Dickens finds
-      himself once again booked to perform his overly familiar Christmas tale.
       Join the famous author as he tries to change his fate and avoid another
-      performance of his most famous work.
-    </p>
-
-    <p className="">
-      Perhaps Dickens might get his wish of simply hosting a holiday party. Or
-      perhaps, the Spirits of Christmas just might guide him to rediscover the
-      beauty in his work &mdash; and the joy of sharing it with an audience, one
-      more time.
+      performance of his most famous work. Perhaps Dickens might get his wish of
+      simply hosting a holiday party. Or perhaps, the Spirits of Christmas just
+      might guide him to rediscover the beauty in his work &mdash; and the joy
+      of sharing it with an audience, one more time.
     </p>
   </>
 );
 
 const CtaProps = {
-  intro: "Learn more about the show:",
+  intro: "",
   links: [
     {
       href: "/photos_publicity",
@@ -69,13 +70,15 @@ const CtaProps = {
       internal: true,
     },
     {
-      href: "/performer",
-      text: "the performer",
-      icon: "performer",
+      href: "/creator",
+      text: "the creator",
+      icon: "creator",
       internal: true,
     },
   ],
 };
+
+const MultiText: MultiText = [];
 
 export default function Premise() {
   return (
@@ -84,6 +87,7 @@ export default function Premise() {
       HeadlineProps={HeadlineProps}
       TextElement={TextElement}
       CtaProps={CtaProps}
+      MultiText={MultiText}
     />
   );
 }

@@ -10,6 +10,11 @@ const ImageProps = {
   rel_y: 20,
 };
 
+type MultiText = {
+  title: string;
+  text: string;
+}[];
+
 const HeadlineProps = {
   title:
     "Montgomery's smart, heartfelt reinvention proves that you don't need fake snow and flying ghosts to make the tale resonate.",
@@ -29,20 +34,20 @@ const TextElement = (
     <p className="">
       <span className="italic">Charles Dickens Begrudgingly...</span> originally
       charmed audiences during its Chicago debut at The Building Stage in
-      December 2011. It returned to the theater in 2012, winning the Jeff Award
-      for solo performance.
+      December 2011. It returned to the theater in 2012, winning a Jeff Award
+      for Solo Performance.
     </p>
     <p className="">
-      Over a decade after the closing of The Building Stage, former Artistic
-      Director Blake Montgomery revived his exuberant take on the famous author
-      for the 2024 holiday season in a production produced by CLOWNSHOW and
-      presented at The Den Theatre in Chicago.
+      A decade after the closing of The Building Stage, show creator Blake
+      Montgomery revived his exuberant take on the famous author. With a new
+      production company, CLOWNSHOW, he presented the piece at The Den Theatre
+      in Chicago, December 5-22, 2024.
     </p>
   </>
 );
 
 const CtaProps = {
-  intro: "Learn more about the show:",
+  intro: "",
   links: [
     {
       href: "/premise",
@@ -65,6 +70,8 @@ const CtaProps = {
   ],
 };
 
+const MultiText: MultiText = [];
+
 export default function Home() {
   return (
     <SpecialPage
@@ -72,6 +79,7 @@ export default function Home() {
       HeadlineProps={HeadlineProps}
       TextElement={TextElement}
       CtaProps={CtaProps}
+      MultiText={MultiText}
     />
   );
 }

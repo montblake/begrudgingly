@@ -5,8 +5,7 @@ import {
   Glasses,
   Lightbulb,
   Cone as Spotlight,
-  // PersonStanding as Performer,
-  PersonStanding as Performer,
+  PersonStanding as Creator,
   ScrollText as Program,
   ReceiptText as Booking,
   CircleUser as Contact,
@@ -20,7 +19,7 @@ const iconMap = {
   glasses: <Glasses className="w-4 h-4" />,
   lightbulb: <Lightbulb className="w-4 h-4" />,
   spotlight: <Spotlight className="w-4 h-4" />,
-  performer: <Performer className="w-4 h-4" />,
+  creator: <Creator className="w-4 h-4" />,
   program: <Program className="w-4 h-4" />,
   booking: <Booking className="w-4 h-4" />,
   contact: <Contact className="w-4 h-4" />,
@@ -34,8 +33,8 @@ export default function CTAElement({
   links: { href: string; text: string; internal: boolean; icon: string }[];
 }) {
   return (
-    <div className="w-[100%] lg:w-[80%] mx-auto md:mx-0 mt-4 flex flex-col items-start gap-4 bg-gradient-to-br from-neutral-100/75 to-neutral-500/75 pt-4 pb-8 px-8 rounded-xl border border-neutral-500 drop-shadow-md">
-      <p className="text-xs text-neutral-950">{intro}</p>
+    <div className="w-[100%] lg:w-[80%] mx-auto md:mx-0 mt-4 flex flex-col items-start gap-2 bg-gradient-to-br from-neutral-100/75 to-neutral-500/75 pt-4 pb-4 px-8 rounded-xl border border-neutral-500 drop-shadow-md">
+      {intro !== "" && <p className="text-xs text-neutral-950">{intro}</p>}
       <div className="w-full flex flex-col gap-2">
         {links &&
           links.map((link) => (

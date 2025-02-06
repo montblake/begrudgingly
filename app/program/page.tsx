@@ -1,12 +1,12 @@
 import CTAElement from "@/components/cta_element";
 
 const CtaProps = {
-  intro: "Learn more about the show:",
+  intro: "",
   links: [
     {
-      href: "/performer",
-      text: "meet the performer",
-      icon: "performer",
+      href: "/creator",
+      text: "meet the creator",
+      icon: "creator",
       internal: true,
     },
     {

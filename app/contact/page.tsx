@@ -32,6 +32,13 @@ const CtaProps = {
   ],
 };
 
+type MultiText = {
+  title: string;
+  text: string;
+}[];
+
+const MultiText: MultiText = [];
+
 export default function Contact() {
   return (
     <SpecialPage
@@ -39,6 +46,7 @@ export default function Contact() {
       HeadlineProps={HeadlineProps}
       TextElement={TextElement}
       CtaProps={CtaProps}
+      MultiText={MultiText}
     />
   );
 }

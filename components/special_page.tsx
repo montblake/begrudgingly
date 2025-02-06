@@ -26,6 +26,7 @@ type SpecialProps = {
   HeadlineProps: HeadlineProps;
   TextElement: TextElement;
   CtaProps: CtaProps;
+  MultiText: MultiText;
 };
 
 type CtaProps = {
@@ -33,12 +34,19 @@ type CtaProps = {
   links: { href: string; text: string; internal: boolean; icon: string }[];
 };
 
+type MultiText = {
+  title: string;
+  text: string;
+}[];
+
 export default function SpecialPage({
   ImageProps,
   HeadlineProps,
   TextElement,
   CtaProps,
+  MultiText,
 }: SpecialProps) {
+  console.log("MULTI TEXT", MultiText);
   return (
     <main className="flex-1 bg-neutral-100/0 flex flex-col justify-start items-center md:flex-row md:justify-center md:items-start md:px-8 md:pt-4 max-w-[1000px] mx-auto">
       <div className="md:sticky md:top-0 md:h-screen w-full">
@@ -58,6 +66,7 @@ export default function SpecialPage({
           HeadlineProps={HeadlineProps}
           TextElement={TextElement}
           CtaProps={CtaProps}
+          MultiText={MultiText}
         />
         <div className="w-full h-48 md:h-96 bg-gradient-to-b from-neutral-950/0 to-neutral-950/100 md:bg-none" />
       </div>

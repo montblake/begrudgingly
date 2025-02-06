@@ -60,9 +60,9 @@ const navLinks: NavLink[] = [
     ],
   },
   {
-    href: "/performer",
-    title: "Performer",
-    description: "Performer",
+    href: "/creator",
+    title: "Creator",
+    description: "Creator",
     subLinks: [],
   },
   {
