@@ -37,8 +37,8 @@ export default function PhotoGallery({
     });
   }, [api]);
   return (
-    <main className="w-full h-full py-4 bg-neutral-950">
-      <div className="w-full h-full flex flex-col items-center justify-start max-w-[800px] mx-auto rounded-2xl pl-4 relative">
+    <main className="w-full flex-1 min-h-0 py-4 overflow-y-auto">
+      <div className="w-full h-full flex flex-col items-center justify-start max-w-[800px] mx-auto rounded-2xl pl-4 relative overflow-y-auto">
         <div className="relative -left-2 mt-4 mb-4">
           <h1 className="text-xs text-center text-neutral-400 px-4 mb-0">
             {HeaderInfo.headerText}
@@ -50,45 +50,55 @@ export default function PhotoGallery({
               {HeaderInfo.photographer}
             </a>
           </h1>
-          <div className="mt-2 pb-3 flex gap-2 justify-center items-center">
-            {photos.map((_, index) => (
-              <div
-                key={index}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ease-in-out ${
-                  current === index ? "bg-neutral-200" : "bg-neutral-500"
-                }`}
-              />
-            ))}
-          </div>
+          <p className="italic text-neutral-600 text-xs text-center mt-1">
+            swipe or use buttons to navigate photos
+          </p>
         </div>
         <Carousel
-          className="w-full max-w-[800px] h-[500px] flex flex-col justify-center items-center"
+          className="w-full max-w-[800px] h-auto flex flex-col justify-center items-center"
           setApi={setApi}
         >
-          <CarouselContent className="w-full h-fit">
-            {photos.map((photo, index) => (
-              <CarouselItem key={index} className={`w-full h-auto`}>
-                <Image
-                  src={photo.src}
-                  alt={photo.alt}
-                  width={800}
-                  height={800}
-                  className={`rounded-2xl border-[.5px] border-neutral-700 mx-auto ${
-                    photo.vertical
-                      ? "h-full w-auto max-h-[70vh]"
-                      : "w-full h-auto max-w-[800px]"
+          <div className="w-[calc(100%-1rem)] mr-4 flex justify-between items-center bg-neutral-800 rounded-t-2xl p-4 border border-neutral-700 border-b-0">
+            <CarouselPrevious className="" />
+            <div className="flex flex-wrap gap-2 justify-center items-center w-1/2">
+              {photos.map((_, index) => (
+                <div
+                  key={index}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ease-in-out ${
+                    current === index ? "bg-neutral-200" : "bg-neutral-500"
                   }`}
                 />
+              ))}
+            </div>
+            <CarouselNext className="" />
+          </div>
+          <CarouselContent className="w-full h-full">
+            {photos.map((photo, index) => (
+              <CarouselItem key={index} className={`w-full h-auto`}>
+                <div
+                  className={`w-full h-full max-h-[65vh] bg-neutral-800 rounded-b-2xl overflow-hidden pb-8 border border-neutral-700 border-t-0`}
+                >
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    width={800}
+                    height={800}
+                    className={` border-[.5px] border-neutral-700 mx-auto ${
+                      photo.vertical
+                        ? "h-full w-auto"
+                        : "w-full h-auto max-w-[800px]"
+                    }`}
+                  />
+                </div>
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="left-2" />
-          <CarouselNext className="right-2" />
         </Carousel>
-        <p className="italic text-neutral-400 text-xs text-center mt-4">
+        {/* <p className="italic text-neutral-400 text-xs text-center mt-4">
           swipe or use buttons to navigate photos
-        </p>
+        </p> */}
         <PhotoNav links={links} />
+        <div className="w-full h-24 md:h-36 bg-gradient-to-b from-neutral-950/0 to-neutral-950/100 md:bg-none" />
       </div>
     </main>
   );

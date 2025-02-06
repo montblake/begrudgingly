@@ -26,7 +26,7 @@ export default function PhotoNav({
   links: { href: string; text: string; internal: boolean; icon: string }[];
 }) {
   return (
-    <div className="w-[80%] mx-auto md:mx-0 mt-4 flex flex-col items-start gap-4 bg-gradient-to-br from-neutral-100/75 to-neutral-500/75 p-2 rounded-xl border border-neutral-500 drop-shadow-md">
+    <div className="w-[80%] max-w-[400px] mx-auto md:mx-0 mt-8 flex flex-col items-start gap-4 bg-gradient-to-br from-neutral-100/75 to-neutral-500/75 p-2 rounded-xl border border-neutral-500 drop-shadow-md">
       {/* <p className="text-xs text-neutral-950">{intro}</p> */}
       <div className="w-full flex flex-col sm:flex-row gap-2">
         {links &&
