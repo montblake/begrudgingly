@@ -76,10 +76,10 @@ export default function HeaderOverlayMenu({
                   </li>
                 ))}
               </ul>
-              <hr className="w-full border-neutral-600 my-12" />
+              <hr className="w-full border-neutral-600 my-6" />
             </div>
             <div className="w-full flex-1 flex flex-col justify-start items-start gap-4 text-neutral-800 pb-16">
-              <div className="flex flex-col justify-start items-start gap-0 font-bold mb-4">
+              <div className="flex flex-col justify-start items-start gap-0 font-bold mb-0">
                 <h1 className="text-2xl">
                   Charles Dickens
                   <br />
