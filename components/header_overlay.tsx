@@ -102,7 +102,7 @@ export default function HeaderOverlayMenu({
             <hr className="w-full border-neutral-600 my-6" />
           </div>
           <div className="w-full flex flex-col justify-start items-start gap-4 text-neutral-800">
-            <div className="flex flex-col justify-start items-start gap-0 font-bold mb-0">
+            <div className="flex flex-col justify-start items-start gap-0 font-bold mb-8">
               <h1 className="text-2xl">
                 Charles Dickens
                 <br />
@@ -116,7 +116,7 @@ export default function HeaderOverlayMenu({
               </p>
             </div>
 
-            <p className="text-xs hover:scale-110 text-red-600 transition-all duration-300">
+            <p className="text-xs active:scale-95 text-red-600 hover:scale-105 transition-all duration-300">
               This is a{" "}
               <a
                 href="https://www.thisisaclownshow.com"
