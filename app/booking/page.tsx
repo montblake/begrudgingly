@@ -73,6 +73,7 @@ const CtaContent = {
       href: "mailto:dickens@dickensagain.com",
       text: "dickens@dickensagain.com",
       internal: false,
+      icon: "mail",
     },
   ],
 };
