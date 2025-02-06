@@ -58,7 +58,7 @@ const HeaderInfo = {
   photographerLink: "https://www.bravelux.com/",
 };
 
-const CtaContent = {
+const CtaProps = {
   intro: "Learn more about the show:",
   links: [
     {
@@ -82,8 +82,8 @@ export default function PhotosPublicity() {
       <PhotoGallery
         HeaderInfo={HeaderInfo}
         photos={photos}
-        intro={CtaContent.intro}
-        links={CtaContent.links}
+        intro={CtaProps.intro}
+        links={CtaProps.links}
       />
     </>
   );

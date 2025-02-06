@@ -3,8 +3,8 @@
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import HeaderLogo from "./header_logo";
-import HeaderNavLinks from "./new_links";
-import HeaderOverlayMenu from "./new_overlay";
+import HeaderNavLinks from "./header_links";
+import HeaderOverlayMenu from "./header_overlay";
 import HeaderHamburger from "./header_hamburger";
 
 interface NavLink {

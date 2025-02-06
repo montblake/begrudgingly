@@ -53,7 +53,7 @@ const TextElement = (
   </>
 );
 
-const CtaContent = {
+const CtaProps = {
   intro: "Learn more about the show:",
   links: [
     {
@@ -83,7 +83,7 @@ export default function Premise() {
       ImageProps={ImageProps}
       HeadlineProps={HeadlineProps}
       TextElement={TextElement}
-      CtaContent={CtaContent}
+      CtaProps={CtaProps}
     />
   );
 }

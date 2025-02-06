@@ -1,4 +1,5 @@
 import SpecialPage from "@/components/special_page";
+
 const ImageProps = {
   src: "/dickens_house_poster_2.jpg",
   alt: "Gold-toned Dickens",
@@ -65,7 +66,7 @@ const TextElement = (
   </>
 );
 
-const CtaContent = {
+const CtaProps = {
   intro:
     "If you're interested in presenting or producing the show in your theater, please get in touch with Blake:",
   links: [
@@ -84,7 +85,7 @@ export default function Booking() {
       ImageProps={ImageProps}
       HeadlineProps={HeadlineProps}
       TextElement={TextElement}
-      CtaContent={CtaContent}
+      CtaProps={CtaProps}
     />
   );
 }

@@ -19,7 +19,7 @@ const HeadlineProps = {
 
 const TextElement = <></>;
 
-const CtaContent = {
+const CtaProps = {
   intro:
     "To contact Blake Montgomery, or Charles Dickens, kindly direct your electronic correspondence to the following address:",
   links: [
@@ -38,7 +38,7 @@ export default function Contact() {
       ImageProps={ImageProps}
       HeadlineProps={HeadlineProps}
       TextElement={TextElement}
-      CtaContent={CtaContent}
+      CtaProps={CtaProps}
     />
   );
 }

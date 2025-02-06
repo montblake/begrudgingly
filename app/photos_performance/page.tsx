@@ -130,7 +130,7 @@ const HeaderInfo = {
   photographerLink: "https://www.brosilow.com/",
 };
 
-const CtaContent = {
+const CtaProps = {
   intro: "Learn more about the show:",
   links: [
     {
@@ -154,8 +154,8 @@ export default function PhotosPerformance() {
       <PhotoGallery
         HeaderInfo={HeaderInfo}
         photos={photos}
-        intro={CtaContent.intro}
-        links={CtaContent.links}
+        intro={CtaProps.intro}
+        links={CtaProps.links}
       />
     </>
   );

@@ -40,7 +40,7 @@ const TextElement = (
   </>
 );
 
-const CtaContent = {
+const CtaProps = {
   intro: "",
   links: [],
 };
@@ -51,7 +51,7 @@ export default function Performer() {
       ImageProps={ImageProps}
       HeadlineProps={HeadlineProps}
       TextElement={TextElement}
-      CtaContent={CtaContent}
+      CtaProps={CtaProps}
     />
   );
 }
