@@ -73,6 +73,7 @@ const MultiText: MultiText = [];
 export default function Creator() {
   return (
     <SpecialPage
+      key="/creator"
       ImageProps={ImageProps}
       HeadlineProps={HeadlineProps}
       TextElement={TextElement}

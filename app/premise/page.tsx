@@ -83,6 +83,7 @@ const MultiText: MultiText = [];
 export default function Premise() {
   return (
     <SpecialPage
+      key="/premise"
       ImageProps={ImageProps}
       HeadlineProps={HeadlineProps}
       TextElement={TextElement}

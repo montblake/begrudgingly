@@ -86,7 +86,7 @@ const CtaProps = {
 
 export default function Reviews() {
   return (
-    <main className={`w-full py-0 h-full`}>
+    <main key="/reviews" className={`w-full py-0 h-full`}>
       <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1000px] mx-auto pt-8 pb-16 px-4 sm:px-8 md:px-12 justify-items-center">
         {reviews.map((review, index) => (
           <div key={index}>

@@ -1,4 +1,5 @@
 import SpecialPage from "@/components/special_page";
+import { platform } from "os";
 
 const ImageProps = {
   src: "/dickens_house_poster_2.jpg",
@@ -23,46 +24,19 @@ const TextElement = (
     <p>
       Blake Montgomery is currently exploring opportunities to perform{" "}
       <span className="italic">Charles Dickens Begrudgingly</span> for the
-      holidays in 2025 and beyond. Whether an adaptation of the existing
-      blackbox production makes sense for your organization or a new production
-      is in order, this joyful and heartfelt show is sure to delight your
-      audience.
-    </p>
-    {/* <p>
-      The existing production design is for a small blackbox space, around
-      21&#39; x 65&#39; in dimensions, with a grid hanging at least 12&#39;
-      above the deck. The audience is laid out in rows on the floor with at
-      least one central aisle. Dickens engages with the audience and eventually
-      performs his story from the central aisle, on a raised platform at the
-      foot of stage, and on a slightly higher stage platform. The progression of
-      the performance is charted to take advantage of these spaces.
+      holidays in 2025 and beyond.
     </p>
     <p>
-      This existing design seats 65 patrons. A slightly larger blackbox could
-      utilize the same design and work with larger audiences size. Moving the
-      show into a more traditional theater setting would most likely relace the
-      production design with the actual theater architecture but would require a
-      new performance plan and rehearsal time to make use of the details of the
-      space. While the construction of the piece is flexible and able to adjust
-      to many variables, making sure the venue is the right fit will be key to
-      ensuring a succesful production.
+      Whether an adaptation of the existing blackbox production makes sense for
+      your organization or a new production is in order, this joyful and
+      heartfelt show is sure to delight your audience. Open to discussions about
+      presenting the show or collaborating on a new production specifically for
+      your audience. Ideally looking for a run lasting the full holiday season.
     </p>
     <p>
-      *The show was created in Chicago and makes some pointed reference, without
-      name, to the annual Goodman Theatre production of{" "}
-      <span className="italic">A Christmas Carol</span>. Initially lauded as a
-      preferred alternative to watching Dickens&apos; solo reading, the
-      production is later used to deconstruct the Fezziwig sequence. To work
-      outside of Chicago, there should be a famous, venerable, long-running,
-      institutional theater production of Dickens&apos; tale that runs locally
-      which everyone in the audience is at least vaguely familiar with. Ideally
-      this production should also feature an over-the-top song and dance number
-      for the Fezziwig party scene.
+      Below, Blake shares some thoughts on the show, the existing production,
+      suitable venues:
     </p>
-    <p>
-      **Currently, rights for an independant production of the script are not
-      available.
-    </p> */}
   </>
 );
 
@@ -80,26 +54,31 @@ const CtaProps = {
 
 const MultiText = [
   {
-    title: "Production Design",
-    text: "The existing production design is for a small blackbox space, around 21' x 65' in dimensions, with a grid hanging at least 12' above the deck. The audience is laid out in rows on the floor with at least one central aisle. Dickens engages with the audience and eventually performs his story from the central aisle, on a raised platform at the foot of stage, and on a slightly higher stage platform. The progression of the performance is charted to take advantage of these spaces.",
+    title: "Important Considerations",
+    text: " The show is built around a close and lively connection with the audience and is performed throughout the whole of the theater space. Both the audience relationship and the performance of the story require choosing an appropriate venue for the piece.",
   },
   {
-    title: "Audience Relationship",
-    text: "This existing design seats 65 patrons. A slightly larger blackbox could utilize the same design and work with larger audiences size. Moving the show into a more traditional theater setting would most likely relace the production design with the actual theater architecture but would require a new performance plan and rehearsal time to make use of the details of the space. While the construction of the piece is flexible and able to adjust to many variables, making sure the venue is the right fit will be key to ensuring a succesful production.",
+    title: "Existing Blackbox Production",
+    text: "The current production is designed for a blackbox space of 21' x 65' and seating around 75. This design could work at larger sizes for probably up to 100-125 patrons without affecting the nature of the performance.\nThe production is designed to be performed throughout the whole of the theater space. There is a small raised platform on one end that holds Dickens' reading desk and is assumed to be the site of the performance. The actual performance alternates between the raised platform and a slightly raised fore-stage area, along with a carpeted central aisle running through the audience, which is seated in rows of chairs on floor-level. A seemingly unoccupied tech booth is visibly located in the back of the theater.\nThe rest of the production design is decorative and mostly fills the walls along the seating area, suggesting the decor the presenting theater would have in place for an appearance of the celebrated author reading his famous story. The vibe is more a salon than theater. ",
+  },
+  {
+    title: "Larger Venues",
+    text: "At larger sizes, or in a more traditional theater setting, the production would need to be adjusted both to the architecture of the space and how the audience will be seated.\nIn the case of a traditional theater setting, the design could be simplified to make use of existing theater decor; however, the structure of the performance would need to be re-imagined to make use of the architecture of the space and the audience's seating arrangement.\nWith a bit of time, the blocking can certainly be adjusted and incorporated into the performance. What is less clear is what it would do to the sense of intimacy that is one of the production's most important features. That uncertainty acknowledged, presenting the show in a larger venue might work wonderfully well and is well worth exploring.",
+  },
+  {
+    title: "Necessary Local Reference",
+    text: "The script needs to reference a well-known local production of A Christmas Carol. In Chicago where the script was develped, this was the Goodman Theatre's long-running production. Initially introduced to the audience as Dickens is attempting to escape performing his story: \n\"You do know that not far from here, there's a rather large, and fairly well-known, theater that's doing a version of my book as a PLAY. They have characters and sets. Intimate moments and bustling crowd scenes. Dancers, musicians! The snow really falls and the spirits actually fly through the air. In formation! They spare no expense, they give it all to you, just lay it out on the stage. All I can do is talk. You have to imagine everything yourselves. Where's the fun in that? It's not far. It's just downtown/down the street/it's on Randolph!\"\nLater this production is referenced again: \"You know the next scene, the party at Fezziwig's? Well, they do it rather well at that large theater downtown.\" Dickens proceeds to describe the scene in all its joyous, big-budget splendor. Having painted this picture for the audience, Dickens is then able to offer an alternative interpretation, focusing solely on the experience of Scrooge during the party.",
   },
   {
     title: "Rights",
-    text: "Currently, rights to the script are not available.",
-  },
-  {
-    title: "Fairly Large and Rather Well-Known",
-    text: "The show was created in Chicago and makes some pointed reference, without name, to the annual Goodman Theatre production of A Christmas Carol. Initially lauded as a preferred alternative to watching Dickens' solo reading, the production is later used to deconstruct the Fezziwig sequence. To work outside of Chicago, there should be a famous, venerable, long-running, institutional theater production of Dickens' tale that runs locally which everyone in the audience is at least vaguely familiar with. Ideally this production should also feature an over-the-top song and dance number for the Fezziwig party scene.",
+    text: "This show is available for performance by Blake Montgomery, either as a presentation of the existing CLOWNSHOW production or in a new production created in collaboration with your artistic team -- or some hybrid of the two. \nCurrently, rights to the script for production are not available.",
   },
 ];
 
 export default function Booking() {
   return (
     <SpecialPage
+      key="/booking"
       ImageProps={ImageProps}
       HeadlineProps={HeadlineProps}
       TextElement={TextElement}

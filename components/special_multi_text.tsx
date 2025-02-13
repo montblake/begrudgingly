@@ -33,8 +33,21 @@ export default function SpecialMultiText({
       </div>
       <hr className="w-full border-neutral-700 my-4" />
       <div className="flex flex-col gap-4 text-neutral-800">
-        {MultiText[activeText].text}
+        {MultiText[activeText].text.split("\n").map((line, index) => (
+          <p key={index}>{line}</p>
+        ))}
       </div>
+      <hr className="w-full border-neutral-700 my-4" />
+      <p className="text-neutral-800 text-ms">
+        For more information, please contact Blake Montgomery at{" "}
+        <a
+          href="mailto:dickens@dickensagain.com"
+          className="hover:underline active:font-bold"
+        >
+          dickens@dickensagain.com
+        </a>
+        .
+      </p>
     </div>
   );
 }

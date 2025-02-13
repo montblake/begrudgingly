@@ -152,6 +152,7 @@ export default function PhotosPerformance() {
   return (
     <>
       <PhotoGallery
+        key="/photos_performance"
         HeaderInfo={HeaderInfo}
         photos={photos}
         intro={CtaProps.intro}

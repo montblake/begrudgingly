@@ -1,6 +1,9 @@
+"use client";
+
 import { ReactNode } from "react";
 import SpecialImage from "./special_image";
 import SpecialText from "./special_text";
+import { AnimatePresence, motion } from "motion/react";
 
 type ImageProps = {
   src: string;
@@ -47,7 +50,7 @@ export default function SpecialPage({
   MultiText,
 }: SpecialProps) {
   return (
-    <main className="flex-1 bg-neutral-100/0 flex flex-col justify-start items-center md:flex-row md:justify-center md:items-start md:px-8 md:pt-4 max-w-[1000px] mx-auto">
+    <main className="flex-1 bg-neutral-100/0 flex flex-col justify-start items-center md:flex-row md:justify-center md:items-start md:px-8 md:pt-4 max-w-[1000px] mx-auto overflow-y-scroll">
       <div className="md:sticky md:top-0 md:h-screen w-full">
         <SpecialImage
           src={ImageProps.src}

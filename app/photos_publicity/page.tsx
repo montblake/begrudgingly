@@ -80,6 +80,7 @@ export default function PhotosPublicity() {
   return (
     <>
       <PhotoGallery
+        key="/photos_publicity"
         HeaderInfo={HeaderInfo}
         photos={photos}
         intro={CtaProps.intro}

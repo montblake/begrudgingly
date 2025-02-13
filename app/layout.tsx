@@ -25,11 +25,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${baskerville.className} antialiased h-screen flex flex-col bg-victorian-texture bg-no-repeat bg-cover bg-fixed`}
+        className={`${baskerville.className} antialiased h-screen flex flex-col bg-victorian-texture bg-no-repeat bg-cover bg-fixed bg-center overflow-x-hidden`}
       >
         <ScrollToTop />
         <Header />
-        {children}
+        <div className="flex-1 overflow-y-scroll">{children}</div>
         <Footer />
         <Analytics />
       </body>

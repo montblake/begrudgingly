@@ -42,6 +42,7 @@ const MultiText: MultiText = [];
 export default function Contact() {
   return (
     <SpecialPage
+      key="/contact"
       ImageProps={ImageProps}
       HeadlineProps={HeadlineProps}
       TextElement={TextElement}

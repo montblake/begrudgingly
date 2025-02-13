@@ -5,11 +5,9 @@ import { motion } from "motion/react";
 export default function Template({ children }: { children: React.ReactNode }) {
   return (
     <motion.div
-      className="flex-1 overflow-y-auto"
-      initial={{ y: 0, opacity: 0 }}
+      initial={{ y: 10, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      // exit={{ y: -20, opacity: 0 }}
-      transition={{ duration: 0.75 }}
+      transition={{ duration: 1 }}
     >
       {children}
     </motion.div>

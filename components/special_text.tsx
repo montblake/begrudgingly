@@ -37,7 +37,7 @@ export default function SpecialText({
       {HeadlineProps.title && (
         <hr className="px-8 w-[100%] md:w-[80%] border-neutral-600 my-4" />
       )}
-      <div className="flex flex-col gap-4 text-neutral-400 text-sm drop-shadow-lg">
+      <div className="flex flex-col gap-4 text-neutral-400 text-base drop-shadow-lg">
         {TextElement}
         {MultiText.length > 0 && <SpecialMultiText MultiText={MultiText} />}
         {CtaProps.links.length > 0 && <CTAElement {...CtaProps} />}
