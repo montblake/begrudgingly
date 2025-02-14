@@ -14,9 +14,9 @@ const ImageProps = {
 
 const HeadlineProps = {
   title:
-    "A remarkably artful riff on Dickens' original, written and performed stunningly well by Blake Montgomery.",
-  author: "Bill Esler",
-  publisher: "Buzz Center Stage",
+    "A disarming portrayal of Dickens.... Every inch the consummate host, he makes each guest feel personally welcomed into the space. ",
+  author: "Stephanie Kulke",
+  publisher: "Chicago Stage and Screen",
 };
 
 const TextElement = (

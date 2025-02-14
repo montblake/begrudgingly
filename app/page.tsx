@@ -1,13 +1,14 @@
 import SpecialPage from "@/components/special_page";
+
 const ImageProps = {
-  src: "/2024_production_poster_web.png",
-  alt: "Charles Dickens Begrudgingly... Poster",
+  src: "/charles-full.jpg",
+  alt: "Historical image of Charles Dickens",
   width: 500,
-  height: 800,
-  border: false,
+  height: 645,
+  border: true,
   caption: "",
-  rel_x: 10,
-  rel_y: 20,
+  rel_x: 0,
+  rel_y: 0,
 };
 
 type MultiText = {
@@ -17,31 +18,39 @@ type MultiText = {
 
 const HeadlineProps = {
   title:
-    "Montgomery's smart, heartfelt reinvention proves that you don't need fake snow and flying ghosts to make the tale resonate.",
-  author: "Kerry Reid",
-  publisher: "Chicago Reader",
+    "A remarkably artful riff on Dickens' original, written and performed stunningly well by Blake Montgomery.",
+  author: "Bill Esler",
+  publisher: "Buzz Center Stage",
 };
 
 const TextElement = (
   <>
     <p className="">
-      This one-of-a-kind holiday production, which imagines a still-living
-      Dickens forced to perform his famous{" "}
-      <span className="italic">A Christmas Carol</span> for the 171st
-      consecutive year, lovingly celebrates and skewers the famous author and
-      our Christmas traditions.
+      In 1853, ten years after publishing{" "}
+      <span className="italic">A Christmas Carol</span>, Charles Dickens began
+      reading his work to live audiences, finding both success and purpose in
+      these public performances. They were so successful that he continued until
+      his death in 1870.
     </p>
+
     <p className="">
-      <span className="italic">Charles Dickens Begrudgingly...</span> originally
-      charmed audiences during its Chicago debut at The Building Stage in
-      December 2011. It returned to the theater in 2012, winning a Jeff Award
-      for Solo Performance.
+      But… what if that’s not exactly the whole story? What if reports of his
+      death were, shall we say, exaggerated? And what if, for some mysterious
+      and mystical reason, Dickens is bound to repeat his reading of{" "}
+      <span className="italic">A Christmas Carol</span> every December—year
+      after year, century after century?
     </p>
-    <p className="">
-      A decade after the closing of The Building Stage, show creator Blake
-      Montgomery revived his exuberant take on the famous author. With a new
-      production company, CLOWNSHOW, he presented the piece at The Den Theatre
-      in Chicago, December 5-22, 2024.
+    <p>
+      <span className="font-bold">Charles Dickens Begrudgingly...</span>presents
+      the famous author, now over 200 years old, finding himself once again
+      booked to perform his overly familiar Christmas tale. Dickens, however,
+      has a plan. Unbeknownst to the theater&apos;s management, he intends to
+      abandon the performance in lieu of a simply hosting a holiday party.
+    </p>
+    <p>
+      Perhaps Dickens will get his wish. Or, perhaps, the Spirits of Christmas
+      might intervene and put him on a path to rediscover the beauty in his work
+      &mdash; and the joy of sharing it with an audience, one more time.
     </p>
   </>
 );
@@ -50,8 +59,8 @@ const CtaProps = {
   intro: "",
   links: [
     {
-      href: "/premise",
-      text: "the premise",
+      href: "/about",
+      text: "about",
       icon: "lightbulb",
       internal: true,
     },
@@ -75,6 +84,7 @@ const MultiText: MultiText = [];
 export default function Home() {
   return (
     <SpecialPage
+      key="/premise"
       ImageProps={ImageProps}
       HeadlineProps={HeadlineProps}
       TextElement={TextElement}

@@ -22,9 +22,9 @@ const navLinks: NavLink[] = [
     subLinks: [],
   },
   {
-    href: "/premise",
-    title: "Premise",
-    description: "Premise",
+    href: "/about",
+    title: "About",
+    description: "About",
     subLinks: [],
   },
   {
