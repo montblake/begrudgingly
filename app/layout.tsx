@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import ScrollToTop from "../components/scroll_to_top";
-
+import { ReactScan } from "../components/react-scan";
 const baskerville = Libre_Baskerville({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -24,6 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <ReactScan />
       <body
         className={`${baskerville.className} antialiased h-screen flex flex-col bg-victorian-texture bg-no-repeat bg-cover bg-fixed bg-center overflow-x-hidden`}
       >
