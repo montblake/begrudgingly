@@ -3,7 +3,6 @@
 import { ReactNode } from "react";
 import SpecialImage from "./special_image";
 import SpecialText from "./special_text";
-import { AnimatePresence, motion } from "motion/react";
 
 type ImageProps = {
   src: string;

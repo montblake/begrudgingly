@@ -1,5 +1,4 @@
 import SpecialPage from "@/components/special_page";
-import { platform } from "os";
 
 const ImageProps = {
   src: "/dickens_house_poster_2.jpg",
