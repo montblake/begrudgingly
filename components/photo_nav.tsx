@@ -26,7 +26,7 @@ export default function PhotoNav({
   links: { href: string; text: string; internal: boolean; icon: string }[];
 }) {
   return (
-    <div className="w-[80%] max-w-[400px] mx-auto md:mx-0 mt-8 flex flex-col items-start gap-4 bg-gradient-to-br from-neutral-100/75 to-neutral-500/75 p-2 rounded-xl border border-neutral-500 drop-shadow-md">
+    <div className="w-[80%] max-w-[400px] mx-auto md:mx-0 mt-8 flex flex-col items-start gap-4  drop-shadow-md">
       {/* <p className="text-xs text-neutral-950">{intro}</p> */}
       <div className="w-full flex flex-col sm:flex-row items-center justify-center gap-2">
         {links &&
@@ -36,7 +36,7 @@ export default function PhotoNav({
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="bg-neutral-900 border border-neutral-500 text-neutral-400 text-xs px-4 py-4 rounded-xl hover:text-neutral-200 transition-all duration-300 ease-in-out active:scale-95 w-full flex items-center justify-center drop-shadow-md"
+                  className="bg-gradient-to-br from-yellow-200/75 to-yellow-900/75 text-neutral-950 text-xs font-bold px-4 py-4 rounded-xl hover:bg-neutral-300 active:scale-95 transition-all duration-300 w-full flex items-center justify-center drop-shadow-md"
                 >
                   {iconMap[link.icon as keyof typeof iconMap]}
                   <span className="ml-2">{link.text}</span>
@@ -44,7 +44,7 @@ export default function PhotoNav({
               ) : (
                 <a
                   href="mailto:dickens@dickensagain.com"
-                  className="bg-neutral-900 border border-neutral-500 text-neutral-400 hover:text-neutral-200 text-xs px-4 py-3 rounded-xl hover:text-neutral-300 transition-all duration-300 ease-in-out active:scale-95 w-full flex items-center justify-center gap-2 drop-shadow-md"
+                  className="bg-gradient-to-br from-yellow-200/75 to-yellow-900/75 text-neutral-950 hover:text-neutral-200 text-xs px-4 py-3 rounded-xl hover:bg-neutral-300 active:scale-95 transition-all duration-300 w-full flex items-center justify-center gap-2 drop-shadow-lg"
                 >
                   <Mail className="w-4 h-4" />
                   <span className="ml-2">{link.text}</span>

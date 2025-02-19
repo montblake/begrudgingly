@@ -151,14 +151,14 @@ function SubMenuItem({
     <Link
       href={href}
       scroll={false}
-      className={`w-full flex flex-col gap-1 p-4 rounded-xl border border-neutral-700 ${
+      className={`w-full flex flex-col gap-0 p-4 rounded-xl border border-neutral-700 ${
         pathname === href
-          ? "bg-neutral-100"
-          : "bg-neutral-400 hover:bg-neutral-300 active:scale-95 transition-all duration-300"
+          ? "bg-neutral-200"
+          : "bg-gradient-to-br from-yellow-200/75 to-yellow-900/75 hover:bg-neutral-300 active:scale-95 transition-all duration-300"
       }`}
     >
-      <p className="text-neutral-950 text-sm">{title}</p>
-      <hr className="border-neutral-700" />
+      <p className="text-neutral-950 font-bold text-sm">{title}</p>
+      {/* <hr className="border-neutral-700" /> */}
       <p className="text-neutral-800 text-xs">{description}</p>
     </Link>
   );

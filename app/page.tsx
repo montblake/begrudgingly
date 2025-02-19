@@ -25,32 +25,34 @@ const HeadlineProps = {
 
 const TextElement = (
   <>
-    <p className="">
+    {/* <p className="">
       In 1853, ten years after publishing{" "}
       <span className="italic">A Christmas Carol</span>, Charles Dickens began
       reading his work to live audiences, finding both success and purpose in
       these public performances. They were so successful that he continued until
       his death in 1870.
-    </p>
+    </p> */}
 
-    <p className="">
+    {/* <p className="">
       But… what if that’s not exactly the whole story? What if reports of his
       death were, shall we say, exaggerated? And what if, for some mysterious
       and mystical reason, Dickens is bound to repeat his reading of{" "}
       <span className="italic">A Christmas Carol</span> every December—year
       after year, century after century?
-    </p>
+    </p> */}
     <p>
-      <span className="font-bold">Charles Dickens Begrudgingly...</span>presents
-      the famous author, now over 200 years old, finding himself once again
-      booked to perform his overly familiar Christmas tale. Dickens, however,
-      has a plan. Unbeknownst to the theater&apos;s management, he intends to
-      abandon the performance in lieu of a simply hosting a holiday party.
+      This solo show, created and performed by Blake Montgomery, presents the
+      famous author, now over 200 years old, finding himself once again booked
+      to perform his overly familiar Christmas tale as he has every December
+      since 1853. Dickens, however, has a plan. Unbeknownst to the
+      theater&apos;s management, he intends to abandon the performance in lieu
+      of a simply hosting a holiday party.
     </p>
     <p>
       Perhaps Dickens will get his wish. Or, perhaps, the Spirits of Christmas
-      might intervene and put him on a path to rediscover the beauty in his work
-      &mdash; and the joy of sharing it with an audience, one more time.
+      might intervene to give him what he really needs, setting him on a path to
+      rediscover the beauty in his work &mdash; and the joy of sharing it with
+      an audience, one more time.
     </p>
   </>
 );
