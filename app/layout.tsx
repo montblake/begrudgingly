@@ -4,7 +4,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import ScrollToTop from "../components/scroll_to_top";
+
 const baskerville = Libre_Baskerville({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -26,9 +26,8 @@ export default function RootLayout({
       <body
         className={`${baskerville.className} antialiased h-screen flex flex-col bg-victorian-texture bg-no-repeat bg-cover bg-fixed bg-center overflow-x-hidden`}
       >
-        <ScrollToTop />
         <Header />
-        <div className="flex-1 overflow-y-scroll">{children}</div>
+        {children}
         <Footer />
         <Analytics />
       </body>
