@@ -37,11 +37,9 @@ export default function ReviewCard({
       style={{ cursor: "pointer" }}
     >
       <div
-        className={`flex-1 backdrop-blur-sm border border-neutral-600 rounded-xl drop-shadow-lg px-0 pt-8 pb-0 flex flex-col items-center justify-center transition-colors duration-100 ${
-          isHovered && !showExcerpts
-            ? "bg-gradient-to-br from-yellow-200/75 to-yellow-900/75 text-neutral-950"
-            : "bg-neutral-950/50 text-neutral-300"
-        } ${isHovered && showExcerpts ? "shadow-lg shadow-yellow-500/50" : ""}`}
+        className={`flex-1 backdrop-blur-sm border border-neutral-600 rounded-xl drop-shadow-lg px-0 pt-8 pb-0 flex flex-col items-center justify-center transition-all duration-100 bg-neutral-950/50 text-neutral-300 ${
+          isHovered ? "shadow-lg shadow-yellow-500/50" : ""
+        }`}
       >
         <div className="flex-1 flex flex-col justify-between items-center gap-0 mb-2 w-full px-0 max-w-[400px]">
           <h2 className={`text-lg mb-0 text-center w-full px-8 py-0 mb-12`}>
@@ -57,9 +55,7 @@ export default function ReviewCard({
                 alt={"decoration"}
                 width={20}
                 height={20}
-                className={`opacity-75 w-10 h-auto rotate-0 ${
-                  isHovered && !showExcerpts ? "invert" : ""
-                }`}
+                className={`opacity-75 w-10 h-auto rotate-0`}
               />
             </div>
             {showExcerpts && (
@@ -67,11 +63,7 @@ export default function ReviewCard({
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.2, delay: 0.0 }}
-                className={`bg-neutral-950/35 w-full mt-0 mb-0 mx-auto flex flex-col justify-center items-center gap-4 border-[.5px] border-neutral-600 rounded-xl px-0 py-0 h-full ${
-                  isHovered && !showExcerpts
-                    ? "bg-gradient-to-br from-neutral-200/75 to-neutral-400/75"
-                    : "bg-neutral-950/35"
-                }`}
+                className={`bg-neutral-950/35 w-full mt-0 mb-0 mx-auto flex flex-col justify-center items-center gap-4 border-[.5px] border-neutral-600 rounded-xl px-0 py-0 h-full`}
               >
                 <Image
                   src={review.image}
@@ -101,9 +93,7 @@ export default function ReviewCard({
                 alt={"decoration"}
                 width={20}
                 height={20}
-                className={`opacity-75 w-10 h-auto rotate-180 ${
-                  isHovered && !showExcerpts ? "invert" : ""
-                }`}
+                className={`opacity-75 w-10 h-auto rotate-180`}
               />
             </div>
           </div>
@@ -117,11 +107,7 @@ export default function ReviewCard({
               href={review.link}
               target="_blank"
               rel="noopener noreferrer"
-              className={`text-xs italic relative z-10 lowercase border active:bg-neutral-700 rounded-xl py-2 px-4 mt-2 ${
-                isHovered && !showExcerpts
-                  ? "text-neutral-950 border-neutral-950 font-bold hover:bg-neutral-300/50 active:bg-neutral-300/75"
-                  : "text-neutral-300 border-neutral-600 hover:bg-neutral-300/25 active:bg-neutral-300/50"
-              }`}
+              className={`text-xs italic relative z-10 lowercase border active:bg-neutral-700 rounded-xl py-2 px-4 mt-2 text-neutral-300 border-neutral-600 hover:bg-neutral-300/25 active:bg-neutral-300/50`}
             >
               Read Full Review
             </a>

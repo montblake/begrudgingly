@@ -43,9 +43,9 @@ export default function PhotoGallery({
           className="w-full h-auto flex flex-col justify-center items-center "
           setApi={setApi}
         >
-          <div className="w-[calc(100%-1rem)] mr-4 flex flex-col justify-center items-center bg-neutral-800 rounded-t-2xl p-4 border border-neutral-700 border-b-0">
-            <div className="w-full flex flex-col items-center justify-center bg-neutral-900 rounded-2xl p-4 border border-neutral-700">
-              <h1 className="text-xs text-center text-neutral-400 px-4 mb-0">
+          <div className="w-[calc(100%-1rem)] mr-4 flex flex-col justify-center items-center bg-neutral-950 rounded-t-2xl p-4 border border-neutral-800 border-b-0">
+            <div className="w-full flex flex-col items-center justify-center bg-neutral-800 rounded-2xl p-4 border border-neutral-700">
+              <h1 className="text-xs text-center text-neutral-300 px-4 mb-0">
                 {HeaderInfo.headerText}
                 <a
                   href={HeaderInfo.photographerLink}
@@ -55,30 +55,30 @@ export default function PhotoGallery({
                   {HeaderInfo.photographer}
                 </a>
               </h1>
-              <p className="italic text-neutral-600 text-xs text-center mt-1">
+              <p className="italic text-neutral-500 text-xs text-center mt-1">
                 swipe or use buttons to navigate photos
               </p>
             </div>
           </div>
-          <div className="w-[calc(100%-1rem)] mr-4 flex justify-between items-center bg-neutral-800 px-4 pb-4 border-x border-neutral-700">
-            <CarouselPrevious className="" />
+          <div className="w-[calc(100%-1rem)] mr-4 flex justify-center items-center bg-neutral-950 px-4 pb-4 border-x border-neutral-800">
+            <CarouselPrevious className="bg-gradient-to-br from-yellow-200 to-yellow-900 text-neutral-950 text-xs font-bold border border-neutral-700 hover:scale-110" />
             <div className="flex flex-wrap gap-2 justify-center items-center w-1/2">
               {photos.map((_, index) => (
                 <div
                   key={index}
                   className={`w-2 h-2 rounded-full transition-all duration-300 ease-in-out ${
-                    current === index ? "bg-neutral-200" : "bg-neutral-500"
+                    current === index ? "bg-neutral-300" : "bg-neutral-700"
                   }`}
                 />
               ))}
             </div>
-            <CarouselNext className="" />
+            <CarouselNext className="bg-gradient-to-br from-yellow-200 to-yellow-900 text-neutral-950 text-xs font-bold border border-neutral-700 hover:scale-110" />
           </div>
           <CarouselContent className="w-full h-full">
             {photos.map((photo, index) => (
               <CarouselItem key={index} className={`w-full h-auto`}>
                 <div
-                  className={`w-full h-full max-h-[65vh] bg-neutral-800 overflow-hidden pb-0 border-x border-neutral-700`}
+                  className={`w-full h-full max-h-[65vh] bg-neutral-950 overflow-hidden pb-0 border-x border-neutral-800`}
                 >
                   <Image
                     src={photo.src}
@@ -98,7 +98,7 @@ export default function PhotoGallery({
           </CarouselContent>
         </Carousel>
 
-        <div className="w-[calc(100%-1rem)] mr-4 bg-neutral-800 rounded-b-2xl border border-neutral-700 border-t-0 flex items-center justify-center pb-8">
+        <div className="w-[calc(100%-1rem)] mr-4 bg-neutral-950 rounded-b-2xl border border-neutral-800 border-t-0 flex items-center justify-center pb-8">
           <PhotoNav links={links} />
         </div>
         <div className="w-full h-24 md:h-36 bg-gradient-to-b from-neutral-950/0 to-neutral-950/100 md:bg-none" />

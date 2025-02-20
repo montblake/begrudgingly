@@ -72,7 +72,7 @@ const CtaProps = {
 
 const MultiText: MultiText = [];
 
-export default function About() {
+export default function History() {
   return (
     <SpecialPage
       ImageProps={ImageProps}

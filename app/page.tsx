@@ -61,9 +61,9 @@ const CtaProps = {
   intro: "",
   links: [
     {
-      href: "/about",
-      text: "about",
-      icon: "lightbulb",
+      href: "/history",
+      text: "history",
+      icon: "history",
       internal: true,
     },
     {
