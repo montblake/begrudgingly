@@ -13,7 +13,7 @@ export default function SpecialHeadline({
 
   return (
     <div className="flex flex-col justify-center items-center md:items-start gap-4 w-full px-4 md:px-0">
-      <h1 className="text-2xl md:text-3xl text-neutral-400 text-center md:text-left">
+      <h1 className="text-2xl md:text-3xl text-neutral-400 text-center md:text-left font-bold">
         {titleLines.map((line, index) => (
           <span key={index} className="block">
             {line}

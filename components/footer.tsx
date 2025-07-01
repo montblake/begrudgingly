@@ -3,11 +3,8 @@
 
 export default function Footer() {
   return (
-    <div className="w-full hidden md:block ">
-      {/* <div className="w-full h-4 bg-gradient-to-b from-transparent to-neutral-950" /> */}
-      <div className="w-full flex flex-row justify-between items-center gap-x-4  text-neutral-400 bg-neutral-800 px-4 md:px-12 py-2 border-t border-neutral-700">
-        {/* <div className="flex flex-col w-full justify-start items-start md:flex-row md:justify-between">
-        <div className="flex flex-col w-full"> */}
+    <div className="w-full hidden md:block h-[3rem] text-neutral-400 bg-neutral-800 px-4 md:px-12 py-0 border-t border-neutral-700">
+      <div className="w-full h-full flex flex-row justify-between items-center gap-x-4  ">
         <h1 className="text-xs uppercase inline-block">
           Charles Dickens Begrudgingly{" "}
           <span className="inline xl:hidden">...</span>

@@ -42,7 +42,9 @@ export default function ReviewCard({
         }`}
       >
         <div className="flex-1 flex flex-col justify-between items-center gap-0 mb-2 w-full px-0 max-w-[400px]">
-          <h2 className={`text-lg mb-0 text-center w-full px-8 py-0 mb-12`}>
+          <h2
+            className={`text-lg mb-0 text-center w-full px-8 py-0 mb-12 font-bold`}
+          >
             {review.top}
           </h2>
 
