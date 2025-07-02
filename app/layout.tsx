@@ -24,11 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${baskerville.className} antialiased h-screen flex flex-col bg-victorian-texture bg-no-repeat bg-cover bg-fixed bg-center overflow-x-hidden`}
+        className={`${baskerville.className} antialiased h-screen flex flex-col justify-start items-center bg-victorian-texture bg-no-repeat bg-cover bg-fixed bg-center`}
       >
         <Header />
         {children}
-        <Footer />
+        {/* <Footer /> */}
         <Analytics />
       </body>
     </html>

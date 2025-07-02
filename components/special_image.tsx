@@ -23,7 +23,7 @@ export default function SpecialImage({
 }: ImageProps) {
   return (
     <div
-      className={`w-full py-4 px-6 relative flex flex-col gap-2 md:px-0 md:translate-x-[var(--rel-x)] md:-translate-y-[var(--rel-y)]`}
+      className={`w-full relative flex flex-col gap-2 md:translate-x-[var(--rel-x)] md:-translate-y-[var(--rel-y)] max-h-[calc(100vh-3rem)] md:sticky md:top-0`}
       style={
         {
           "--rel-x": `${rel_x}px`,
@@ -32,7 +32,7 @@ export default function SpecialImage({
       }
     >
       <Image
-        className={`relative -top-2 w-full max-w-[360px] md:max-w-[420px] mx-auto rounded-2xl drop-shadow-lg ${
+        className={`relative w-full rounded-2xl drop-shadow-lg ${
           border ? "border border-neutral-600" : ""
         }`}
         src={src}

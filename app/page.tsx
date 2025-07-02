@@ -25,21 +25,6 @@ const HeadlineProps = {
 
 const TextElement = (
   <>
-    {/* <p className="">
-      In 1853, ten years after publishing{" "}
-      <span className="italic">A Christmas Carol</span>, Charles Dickens began
-      reading his work to live audiences, finding both success and purpose in
-      these public performances. They were so successful that he continued until
-      his death in 1870.
-    </p> */}
-
-    {/* <p className="">
-      But… what if that’s not exactly the whole story? What if reports of his
-      death were, shall we say, exaggerated? And what if, for some mysterious
-      and mystical reason, Dickens is bound to repeat his reading of{" "}
-      <span className="italic">A Christmas Carol</span> every December—year
-      after year, century after century?
-    </p> */}
     <p>
       This solo show, created and performed by Blake Montgomery, presents the
       famous author, now over 200 years old, finding himself once again booked

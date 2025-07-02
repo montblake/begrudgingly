@@ -49,20 +49,19 @@ export default function SpecialPage({
   MultiText,
 }: SpecialProps) {
   return (
-    <main className="flex-1 bg-neutral-100/0 flex flex-col justify-start items-center md:flex-row md:justify-center md:items-start md:px-8 md:pt-4 max-w-[1000px] mx-auto">
-      <div className="md:sticky md:top-0 md:h-screen w-full">
-        <SpecialImage
-          src={ImageProps.src}
-          alt={ImageProps.alt}
-          width={ImageProps.width}
-          height={ImageProps.height}
-          border={ImageProps.border}
-          caption={ImageProps.caption}
-          rel_x={ImageProps.rel_x}
-          rel_y={ImageProps.rel_y}
-        />
-      </div>
-      <div className="md:overflow-y-auto md:max-h-screen w-full">
+    <main className="bg-green-200/0 flex flex-col gap-8 md:gap-0 justify-start items-center md:flex-row md:justify-start md:items-start max-w-[1000px] mx-auto max-h-[calc(100vh-3rem)] overflow-y-scroll p-4 relative">
+      <SpecialImage
+        src={ImageProps.src}
+        alt={ImageProps.alt}
+        width={ImageProps.width}
+        height={ImageProps.height}
+        border={ImageProps.border}
+        caption={ImageProps.caption}
+        rel_x={ImageProps.rel_x}
+        rel_y={ImageProps.rel_y}
+      />
+
+      <div className="w-full h-full p-0 md:overflow-y-scroll">
         <SpecialText
           HeadlineProps={HeadlineProps}
           TextElement={TextElement}
