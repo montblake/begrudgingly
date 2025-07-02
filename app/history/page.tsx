@@ -25,23 +25,18 @@ const HeadlineProps = {
 const TextElement = (
   <>
     <p className="">
-      This one-of-a-kind holiday production, which imagines a still-living
-      Dickens forced to perform his famous{" "}
-      <span className="italic">A Christmas Carol</span> for the 171st
-      consecutive year, lovingly celebrates and skewers the famous author and
-      our Christmas traditions.
+      Blake Montgomery first created and performed
+      <span className="italic">Charles Dickens Begrudgingly...</span> at The
+      Building Stage in December 2011.
+    </p>
+    <p>
+      Blake performed a slightly revised version at The Building Stage in 2012
+      in a production that won a Jeff Award for Solo Performance.
     </p>
     <p className="">
-      <span className="italic">Charles Dickens Begrudgingly...</span> originally
-      charmed audiences during its Chicago debut at The Building Stage in
-      December 2011. It returned to the theater in 2012, winning a Jeff Award
-      for Solo Performance.
-    </p>
-    <p className="">
-      A decade after the closing of The Building Stage, show creator Blake
-      Montgomery revived his exuberant take on the famous author. With a new
-      production company, CLOWNSHOW, he presented the piece at The Den Theatre
-      in Chicago, December 5-22, 2024.
+      Blake revived his exuberant take on the famous author with a new
+      production company, CLOWNSHOW, for the 2024 holidays with performances at
+      The Den Theatre in Chicago.
     </p>
   </>
 );

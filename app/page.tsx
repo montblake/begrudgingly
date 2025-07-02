@@ -26,12 +26,15 @@ const HeadlineProps = {
 const TextElement = (
   <>
     <p>
-      This solo show, created and performed by Blake Montgomery, presents the
-      famous author, now over 200 years old, finding himself once again booked
-      to perform his overly familiar Christmas tale as he has every December
-      since 1853. Dickens, however, has a plan. Unbeknownst to the
-      theater&apos;s management, he intends to abandon the performance in lieu
-      of a simply hosting a holiday party.
+      This solo show, created and performed by Blake Montgomery, presents an
+      intimate and slightly absurd portrayal of the famous author: now over 200
+      years old, he finds himself once again booked to perform his overly
+      familiar Christmas tale &mdash; just as he has every December since 1853.
+    </p>
+    <p>
+      Dickens, however, has a plan. Unbeknownst to the theater&apos;s
+      management, he intends to abandon the performance in lieu of a simply
+      hosting a holiday party.
     </p>
     <p>
       Perhaps Dickens will get his wish. Or, perhaps, the Spirits of Christmas
