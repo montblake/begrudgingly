@@ -1,13 +1,13 @@
 import SpecialPage from "@/components/special_page";
 const ImageProps = {
-  src: "/2024_production_poster_web.png",
-  alt: "Charles Dickens Begrudgingly... Poster",
+  src: "/charles-full.jpg",
+  alt: "Historical image of Charles Dickens",
   width: 500,
-  height: 800,
-  border: false,
+  height: 645,
+  border: true,
   caption: "",
-  rel_x: 10,
-  rel_y: 20,
+  rel_x: 0,
+  rel_y: 0,
 };
 
 type MultiText = {
@@ -17,9 +17,9 @@ type MultiText = {
 
 const HeadlineProps = {
   title:
-    "Montgomery's smart, heartfelt reinvention proves that you don't need fake snow and flying ghosts to make the tale resonate.",
-  author: "Kerry Reid",
-  publisher: "Chicago Reader",
+    "A remarkably artful riff on Dickens' original, written and performed stunningly well by Blake Montgomery.",
+  author: "Bill Esler",
+  publisher: "Buzz Center Stage",
 };
 
 const TextElement = (
