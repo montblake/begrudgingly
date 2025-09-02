@@ -1,7 +1,7 @@
 import SpecialPage from "@/components/special_page";
 
 const ImageProps = {
-  src: "/2024_production_poster_web.png",
+  src: "/2025_production_poster_web.png",
   alt: "Charles Dickens Begrudgingly... Poster",
   width: 500,
   height: 800,
