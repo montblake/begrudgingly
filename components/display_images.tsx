@@ -4,10 +4,11 @@ import Image from "next/image";
 
 const photos = [
   {
-    src: "/photos/bravelux/1_joe-mazza-chicago-brave-lux-inc-5108630.jpg",
+    src: "/dickensphoto_1.jpg",
+    srcV: "/dickensphoto_1_vert.jpg",
     alt: "Charles Dickens",
     credit: "Joe Mazza / brave lux inc.",
-    dY: 50,
+    dY: 0,
   },
   {
     src: "/photos/bravelux/4-joe-mazza-chicago-brave-lux-inc-5206468.jpg",
@@ -66,13 +67,13 @@ export default function DisplayImages() {
   };
 
   return (
-    <div className="PHOTOVIEWER w-full h-auto max-h-[600px] flex justify-start items-start relative overflow-hidden">
+    <div className="PHOTOVIEWER w-[200%] h-auto flex justify-start items-start relative overflow-hidden">
       <Image
         src={photos[current].src}
         alt={photos[current].alt}
         width={800}
         height={800}
-        className="w-full border border-neutral-700 relative -top-[var(--dY)]"
+        className="w-full border border-neutral-700 relative -top-[var(--dY)] -left-[15%]"
         style={
           {
             "--dY": `${photos[current].dY}px`,
