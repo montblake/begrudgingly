@@ -65,7 +65,7 @@ export default function PictureReviewScramble() {
 
   return (
     <div className="w-full">
-      <div className="w-full p-0 grid grid-cols-2 md:grid-cols-3 gap-2">
+      <div className="w-full bg-neutral-900/30 backdrop-blur grid grid-cols-2 md:grid-cols-3 gap-2 border border-neutral-600 rounded-xl p-6">
         {Images.map((image, index) => (
           <div
             key={index}
@@ -96,10 +96,15 @@ export default function PictureReviewScramble() {
             </p>
           </div>
         ))}
+        <div className="w-full flex justify-start items-start col-span-3">
+          <p className="w-full text-neutral-400 flex justify-start items-center text-xs">
+            From Clownshow&apos;s 2024 production at The Den Theatre in Chicago.
+          </p>
+          <p className="w-full text-neutral-400 flex justify-end items-center text-xs">
+            Photos by Joe Mazza / Brave Lux Inc.
+          </p>
+        </div>
       </div>
-      <p className="w-full text-neutral-400 flex justify-center items-center text-xs p-4">
-        Photos by Joe Mazza / Brave Lux Inc.
-      </p>
     </div>
   );
 }

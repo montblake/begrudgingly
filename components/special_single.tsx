@@ -61,8 +61,8 @@ export default function SpecialPage() {
 
           <div className="w-full flex flex-col gap-0 rounded-xl px-2 md:px-6 text-neutral-950">
             <div className="w-full bg-neutral-300 rounded-xl md:px-0 md:py-0 border border-neutral-600 relative overflow-hidden flex flex-col items-start justify-start">
-              <div className="bg-neutral-900 w-full px-4 py-2">
-                <h1 className="text-3xl uppercase font-bold text-center text-amber-300/80 my-2">
+              <div className="bg-red-400 w-full px-4 py-2">
+                <h1 className="text-3xl uppercase font-bold text-center text-transparent bg-clip-text bg-gradient-to-b from-amber-100 to-amber-800 my-2">
                   C<span className="text-2xl">hicago</span> 2025
                 </h1>
               </div>
