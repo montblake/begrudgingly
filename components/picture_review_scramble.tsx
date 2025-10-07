@@ -64,12 +64,12 @@ export default function PictureReviewScramble() {
   }, [replaced]);
 
   return (
-    <div className="w-full">
-      <div className="w-full bg-neutral-900/30 backdrop-blur grid grid-cols-2 md:grid-cols-3 gap-2 border border-neutral-600 rounded-xl p-6">
+    <div className="w-full pl-2 pr-2 md:pl-6 md:pr-0">
+      <div className="IMAGES_CONTAINER w-full bg-transparent md:bg-neutral-900/30 backdrop-blur grid grid-cols-2 md:grid-cols-3 gap-2 md:border border-neutral-600 rounded-xl p-0 md:p-6">
         {Images.map((image, index) => (
           <div
             key={index}
-            className="w-full h-[250px] rounded-xl bg-neutral-300 border border-neutral-600 overflow-hidden flex flex-col justify-center items-center relative"
+            className="w-full h-[200px] md:h-[250px] rounded-xl bg-neutral-300 border border-neutral-600 overflow-hidden flex flex-col justify-center items-center relative"
           >
             <Image
               src={image.src}
@@ -80,28 +80,28 @@ export default function PictureReviewScramble() {
                 replaced != index ? "opacity-100" : "opacity-0"
               }`}
             />
-            <h2
-              className={`text-neutral-950 font-bold text-center text-2xl md:text-4xl p-4 absolute top-0 transition-opacity duration-1000 leading-[1em] ${
-                replaced == index ? "opacity-100" : "opacity-0"
-              }`}
-            >
-              {image.quote}
-            </h2>
-            <p
-              className={`text-neutral-950 font-bold italic text-center text-xs md:text-sm p-4 absolute bottom-0 transition-opacity duration-1000 ${
-                replaced == index ? "opacity-100" : "opacity-0"
-              }`}
-            >
-              {image.publisher}
-            </p>
+            <div className="w-full h-full md:h-full bg-neutral-300">
+              <h2
+                className={`w-full text-neutral-950 font-bold text-center text-xl sm:text-2xl leading-tight md:text-3xl lg:text-4xl p-4 absolute top-0 transition-opacity duration-1000 ${
+                  replaced == index ? "opacity-100" : "opacity-0"
+                }`}
+              >
+                {image.quote}
+              </h2>
+              <p
+                className={`w-full text-neutral-950 italic text-center text-xs md:text-sm p-4 absolute bottom-0 transition-opacity duration-1000 ${
+                  replaced == index ? "opacity-100" : "opacity-0"
+                }`}
+              >
+                {image.publisher}
+              </p>
+            </div>
           </div>
         ))}
-        <div className="w-full flex justify-start items-start col-span-3">
-          <p className="w-full text-neutral-400 flex justify-start items-center text-xs">
-            From Clownshow&apos;s 2024 production at The Den Theatre in Chicago.
-          </p>
-          <p className="w-full text-neutral-400 flex justify-end items-center text-xs">
-            Photos by Joe Mazza / Brave Lux Inc.
+        <div className="w-full col-span-2 md:col-span-3 flex justify-center items-center">
+          <p className="w-full text-neutral-400 text-center text-xs py-2">
+            The 2024 Clownshow production at The Den Theatre in Chicago. Photos
+            by Joe Mazza/Brave Lux Inc.
           </p>
         </div>
       </div>
