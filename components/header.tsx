@@ -66,12 +66,6 @@ const navLinks: NavLink[] = [
     subLinks: [],
   },
   {
-    href: "/booking",
-    title: "Booking",
-    description: "Booking",
-    subLinks: [],
-  },
-  {
     href: "/contact",
     title: "Contact",
     description: "Contact",

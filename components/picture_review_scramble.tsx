@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Images = [
   {
@@ -65,7 +66,7 @@ export default function PictureReviewScramble() {
 
   return (
     <div className="w-full pl-2 pr-2 md:pl-6 md:pr-0">
-      <div className="IMAGES_CONTAINER w-full bg-transparent md:bg-neutral-900/30 backdrop-blur grid grid-cols-2 md:grid-cols-3 gap-2 md:border border-neutral-600 rounded-xl p-0 md:p-6">
+      <div className="IMAGES_CONTAINER w-full bg-transparent grid grid-cols-2 md:grid-cols-3 gap-2 rounded-xl p-0 md:p-0">
         {Images.map((image, index) => (
           <div
             key={index}
@@ -100,8 +101,11 @@ export default function PictureReviewScramble() {
         ))}
         <div className="w-full col-span-2 md:col-span-3 flex justify-center items-center">
           <p className="w-full text-neutral-400 text-center text-xs py-2">
-            The 2024 Clownshow production at The Den Theatre in Chicago. Photos
-            by Joe Mazza/Brave Lux Inc.
+            The{" "}
+            <Link href="/program" className="hover:border-b border-neutral-400">
+              2024 Clownshow production
+            </Link>{" "}
+            at The Den Theatre in Chicago. Photos by Joe Mazza/Brave Lux Inc.
           </p>
         </div>
       </div>

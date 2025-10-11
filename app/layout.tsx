@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import { Libre_Baskerville } from "next/font/google";
+import { Libre_Baskerville, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import Header from "../components/header";
 
 const baskerville = Libre_Baskerville({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const ibmPlex = IBM_Plex_Sans({
   subsets: ["latin"],
   weight: ["400", "700"],
 });

@@ -24,7 +24,7 @@ export default function Home() {
       <div className="w-full h-auto flex flex-col gap-8 justify-start items-center px-4 pt-8 md:px-8">
         <PictureReviewScramble />
       </div>
-      <div className="w-full h-auto flex flex-col gap-8 justify-start items-center px-0 pt-12 md:px-8 md:pb-8">
+      <div className="w-full h-auto flex flex-col gap-8 justify-start items-center mt-8 px-0 pt-0 md:px-8 mb-0 md:mb-8">
         <Schedule />
       </div>
     </main>

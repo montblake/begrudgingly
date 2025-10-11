@@ -20,7 +20,7 @@ export default function FirstLeft() {
       />
 
       <div className="w-full flex flex-col gap-0 rounded-xl px-2 md:px-6 text-neutral-950">
-        <div className="w-full rounded-xl px-6 py-0 md:px-6 md:py-0 bg-neutral-900/30 backdrop-blur border border-neutral-600 relative flex flex-col items-start justify-start overflow-hidden">
+        <div className="w-full rounded-xl px-6 py-0 md:px-6 md:py-0 bg-neutral-900/30c backdrop-blur border border-neutral-600 relative flex flex-col items-start justify-start overflow-hidden">
           <div className="w-full px-4 py-2">
             <h1 className="text-3xl uppercase font-bold text-center text-transparent bg-clip-text bg-gradient-to-b from-amber-100/80 via-amber-300/80 to-amber-500/80 my-2">
               C<span className="text-2xl">hicago</span> 2025
@@ -41,16 +41,36 @@ export default function FirstLeft() {
                 box office
               </p>
               <div className="text-sm font-bold text-center flex flex-col items-start justify-center gap-0">
-                <p>(773) 975-8150</p>
-                <p>theaterwit.org</p>
+                <a
+                  href="tel:773-975-8150"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:border-b border-neutral-950"
+                >
+                  (773) 975-8150
+                </a>
+                <a
+                  href="https://theaterwit.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:border-b border-neutral-950"
+                >
+                  theaterwit.org
+                </a>
               </div>
             </div>
           </div>
-          <div className="w-full relative z-30 flex flex-col items-center justify-center mb-4">
+
+          <a
+            href="https://www.theaterwit.org/tickets/productions/564/performances#top"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full relative z-30 flex flex-col items-center justify-center mb-4"
+          >
             <Button className="w-[80%] bg-gradient-to-b from-amber-200/80 via-amber-400/80 to-amber-500/80  px-8 py-6 rounded-2xl mx-auto font-bold  uppercase text-neutral-900 border-2 border-black hover:scale-105 hover:bg-amber-300/90 transition-all duration-300 text-center text-base mt-6 mb-4">
               Tickets
             </Button>
-          </div>
+          </a>
         </div>
       </div>
     </div>
