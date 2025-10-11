@@ -5,21 +5,22 @@ import { useState } from "react";
 const PlayElement = (
   <>
     <p>
-      Charles Dickens finds himself once again booked to perform his overly
-      familiar Christmas tale just as he has every December since 1853. The
-      famous author, however, has other ideas.
+      Now over 200 years old, Charles Dickens finds himself once again booked to
+      perform his overly familiar Christmas tale just as he has every December
+      since 1853. Dickens, however, has other ideas.
     </p>
     <p>
-      Unfortunately, his accidental conjuring of some unemployed Christmas
-      Spirit sets in motion a chain of events that place Dickens on a path to
-      rediscover the beauty in his work — and the joy of sharing it with an
-      audience — one more time.{" "}
+      Perhaps he&apos;ll get his wish of simply hosting a festive holiday party.
+      Or, perhaps, the Spirits of Christmas might intervene to give him what he
+      really needs: a chance to rediscover the beauty in his work &mdash; and
+      the joy of sharing it with an audience &mdash; one more time.
     </p>
     <p>
       Told in, around, and with the audience, this one-man yuletide tour de
-      force is more festive party than traditional oration. Offering the perfect
-      balance of dramatic and playful moments, it is both charming and sly, and
-      a remarkably artful riff on Dickens&apos;s original.
+      force is more festive party than traditional oration. The perfect balance
+      of dramatic and playful, it is a remarkably artful riff on Dickens&apos;s
+      original and a charming new holiday tradition to share with friends and
+      family.
     </p>
   </>
 );
@@ -27,17 +28,17 @@ const PlayElement = (
 const NewsElement = (
   <>
     <p>
-      This year, the show will be performed at Theater Wit in Chicago from
-      December 4-28. MOving the show to this venue allows us a longer run and a
-      larger house, both of which are good essential to the success of the
+      This year, the show will be performed at Chicago&apos;s Theater Wit.
+      Moving the show to this venue allows us a longer run, a larger house, and
+      better sightlines while still maintaining the intimacy of the original
       production. With this change in venue comes a perfect opportunity to
-      re-examine the show and to make some changes to improve the production.
+      re-examine the show and to make some changes to improve the story-telling.
     </p>
     <p>
-      Joining the company for the process and helming the new production is
-      award-winning director, Jonathan Berry. Berry will work with Blake
-      Montgomery to re-imagine the show and to build a new production that will
-      debut at Chicago&apos;s Theater Wit from December 4-28.
+      Joining the company for the process is award-winning Chicago-based
+      director, Jonathan Berry. Berry will work with the show&apos;s
+      creator/performer Blake Montgomery to re-imagine the show and build the
+      new production that will debut in December 2025.
     </p>
   </>
 );
