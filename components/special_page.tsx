@@ -49,7 +49,7 @@ export default function SpecialPage({
   MultiText,
 }: SpecialProps) {
   return (
-    <main className="bg-green-200/0 flex flex-col gap-8 md:gap-0 justify-start items-center md:flex-row md:justify-start md:items-start max-w-[1000px] mx-auto max-h-[calc(100vh-3rem)] overflow-y-scroll p-4 md:p-8 relative">
+    <main className="flex flex-col gap-8 md:gap-0 justify-start items-center md:flex-row md:justify-start md:items-start max-w-[1000px] mx-auto max-h-[calc(100vh-3rem)] overflow-y-scroll p-4 md:p-8 relative">
       <SpecialImage
         src={ImageProps.src}
         alt={ImageProps.alt}

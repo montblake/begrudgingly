@@ -3,6 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 
+import { Mail } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -47,6 +48,16 @@ export default function HeaderNavLinks({
             )}
           </NavigationMenuItem>
         ))}
+        <a
+          href="http://eepurl.com/i2jCO2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="w-8 h-8 rounded-full flex flex-col items-center justify-center gap-1 bg-gradient-to-b from-amber-400/80 via-amber-500/80 to-amber-600/80 border-2 border-black hover:scale-105 transition-all duration-300 active:border-neutral-300 text-neutral-950 active:text-neutral-300">
+            <Mail size={12} className="" />
+            {/* <span className="text-sm font-bold uppercase">Subscribe</span> */}
+          </div>
+        </a>
       </NavigationMenuList>
     </NavigationMenu>
   );
