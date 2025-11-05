@@ -24,13 +24,13 @@ const nextConfig = {
         destination: "https://www.dickensagain.com/2024/photos-performance",
         permanent: true,
       },
-      // // non-www to www (catch-all for all other paths)
-      // {
-      //   source: "/:path*",
-      //   has: [{ type: "host", value: "dickensagain.com" }],
-      //   destination: "https://www.dickensagain.com/:path*",
-      //   permanent: true,
-      // },
+      // non-www to www (catch-all for all other paths)
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "dickensagain.com" }],
+        destination: "https://www.dickensagain.com/:path*",
+        permanent: true,
+      },
     ];
   },
   trailingSlash: true,
