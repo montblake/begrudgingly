@@ -22,9 +22,9 @@ export default function FirstLeft() {
       <div className="w-full flex flex-col gap-0 rounded-xl px-2 md:px-6 text-neutral-950">
         <div className="w-full rounded-xl px-6 py-0 md:px-6 md:py-0 bg-neutral-900/30c backdrop-blur border border-neutral-600 relative flex flex-col items-start justify-start overflow-hidden">
           <div className="w-full px-4 py-2">
-            <h1 className="text-3xl uppercase font-bold text-center text-transparent bg-clip-text bg-gradient-to-b from-amber-100/80 via-amber-300/80 to-amber-500/80 my-2">
+            <h2 className="text-3xl uppercase font-bold text-center text-transparent bg-clip-text bg-gradient-to-b from-amber-100/80 via-amber-300/80 to-amber-500/80 my-2">
               C<span className="text-2xl">hicago</span> 2025
-            </h1>
+            </h2>
           </div>
           <div className="w-full bg-neutral-300 backdrop-blur relative z-30 flex flex-col items-start justify-center overflow-hidden h-full md:h-auto rounded-xl px-4">
             <div className="absolute bottom-[10%] md:bottom-0 left-[60%] md:left-[50%] w-3/4 h-3/4 md:w-full md:h-full bg-[url('/dickens_illustration.png')] bg-contain bg-bottom-left bg-no-repeat z-1 mix-blend-multiply opacity-100" />
