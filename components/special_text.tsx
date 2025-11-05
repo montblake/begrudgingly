@@ -33,9 +33,6 @@ export default function SpecialText({
 }) {
   return (
     <div className="flex flex-col justify-center items-center md:items-start gap-4 w-full max-w-[500px] mx-auto md:max-w-none px-8 backdrop-blur-sm">
-      {/* {HeadlineProps.title && (
-        <hr className="px-8 w-[100%] md:w-[80%] border-neutral-600 my-4" />
-      )} */}
       {HeadlineProps.title && <SpecialHeadline {...HeadlineProps} />}
       {HeadlineProps.title && (
         <hr className="px-8 w-[100%] md:w-[80%] border-neutral-600 my-4" />

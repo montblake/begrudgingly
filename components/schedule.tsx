@@ -14,7 +14,6 @@ export default function Schedule() {
             <h3 className="text-xs md:text-xl tracking-tighter md:-mt-2 font-bold uppercase text-neutral-950 text-center">
               Performances
             </h3>
-            {/* <hr className="px-8 w-[100%] md:w-[180px] border-neutral-600 my-2" /> */}
             <p className="text-xs md:text-sm mt-4">at</p>
             <div className="flex flex-col items-start justify-center gap-0">
               <h2 className="text-base md:text-lg font-bold">Theater Wit</h2>
