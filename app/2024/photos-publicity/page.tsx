@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Charles Dickens Begrudgingly - 2024 Publicity Photos",
   description:
     "Publicity photos of Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again, by Joe Mazza / brave lux inc.",
+  alternates: { canonical: "/2024/photos-publicity/" },
 };
 
 const photos = [

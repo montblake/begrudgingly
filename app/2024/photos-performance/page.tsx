@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Charles Dickens Begrudgingly — 2024 Performance Photos",
   description:
     "Performance photos of Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again, by Michael Brosilow.",
+  alternates: { canonical: "/2024/photos-performance/" },
 };
 
 const photos = [

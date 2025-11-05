@@ -1,3 +1,4 @@
+// app/layout.tsx
 import { Libre_Baskerville } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
@@ -10,7 +11,6 @@ const baskerville = Libre_Baskerville({
 
 export const metadata = {
   metadataBase: new URL("https://www.dickensagain.com"),
-  alternates: { canonical: "/" }, // will resolve to https://www.dickensagain.com/
 };
 
 export default function RootLayout({
