@@ -22,10 +22,13 @@ const HeadlineProps = {
 const TextElement = (
   <>
     <p>
-      <span className="font-bold text-neutral-200">Blake Montgomery</span> began
-      his career in Chicago directing ensemble clown theater and performing with
-      a variety of non-naturalistic Chicago theaters, most notably Redmoon with
-      whom he collaborated for more than a decade.
+      <span className="font-bold text-neutral-200">Blake Montgomery</span> is a
+      Chicago-based theater artist whose career spans acting and directing,
+      written works and devised theater, physical theater styles and our
+      text-based tradition. Hebegan his career in Chicago directing ensemble
+      clown theater and performing with a variety of non-naturalistic Chicago
+      theaters, most notably Redmoon with whom he collaborated for more than a
+      decade.
     </p>
     <p>
       In 2005, Montgomery founded The Building Stage, a theater company and

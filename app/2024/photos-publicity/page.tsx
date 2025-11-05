@@ -93,6 +93,28 @@ export default function PhotosPublicity() {
         intro={CtaProps.intro}
         links={CtaProps.links}
       />
+      <div className="w-full max-w-3xl mx-auto px-4 sm:px-8 md:px-2 py-8 -mt-8">
+        <div className="bg-neutral-200/50 backdrop-blur-sm border border-neutral-700/30 rounded-xl p-6 md:p-12">
+          <p className="text-neutral-300 text-base md:text-base leading-relaxed">
+            These publicity photos capture{" "}
+            <span className="font-semibold">
+              Charles Dickens Begrudgingly Performs A Christmas Carol Again
+            </span>
+            , created and performed by Blake Montgomery for the 2024 production
+            at The Den Theatre in Chicago. Photographed by Joe Mazza of Brave
+            Lux Inc., these images showcase Montgomery&apos;s portrayal of
+            Charles Dickens in this one-man theatrical adaptation of the classic
+            Christmas tale. The images capture the production&apos;s perfect
+            balance of dramatic storytelling and playful humor, showcasing
+            Montgomery&apos;s intimate, off-the-cuff performance style that
+            makes the familiar story feel fresh and engaging. These promotional
+            images were used for press materials and marketing for the CLOWNSHOW
+            production, which ran from December 5-22, 2024, and received
+            critical acclaim from Chicago theater critics.
+          </p>
+        </div>
+        <div className="w-full h-24 md:h-36 bg-gradient-to-b from-neutral-950/0 to-neutral-950/100 md:bg-none" />
+      </div>
     </>
   );
 }

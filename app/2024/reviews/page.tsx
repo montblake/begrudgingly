@@ -104,6 +104,29 @@ export default function Reviews() {
           </div>
         ))}
       </div>
+      <div className="w-full max-w-3xl mx-auto px-4 sm:px-8 md:px-2 py-8">
+        <div className="bg-neutral-200/50 backdrop-blur-sm border border-neutral-700/30 rounded-xl p-6 md:p-12">
+          <p className="text-neutral-300 text-base md:text-base leading-relaxed">
+            The 2024 production of{" "}
+            <span className="font-semibold">
+              Charles Dickens Begrudgingly Performs A Christmas Carol Again
+            </span>
+            , created and performed by Blake Montgomery, received overwhelmingly
+            positive reviews from Chicago theater critics during its run at The
+            Den Theatre from December 5-22, 2024. Critics praised
+            Montgomery&apos;s one-man performance as a &quot;yuletide tour de
+            force&quot; that was both &quot;charming and sly,&quot; noting the
+            production&apos;s perfect balance of dramatic storytelling and
+            playful humor. The show was described as a &quot;remarkably artful
+            riff&quot; on the classic tale, with reviewers highlighting
+            Montgomery&apos;s intimate, off-the-cuff performance style that made
+            the familiar story feel fresh and engaging. The production,
+            presented by CLOWNSHOW, successfully captured the essence of
+            Dickens&apos;s timeless Christmas story while adding
+            Montgomery&apos;s unique theatrical perspective.
+          </p>
+        </div>
+      </div>
       <div className="w-[80%] max-w-[400px] mx-auto">
         <CTAElement intro={CtaProps.intro} links={CtaProps.links} />
       </div>

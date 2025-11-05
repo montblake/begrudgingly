@@ -101,7 +101,6 @@ export default function PhotoGallery({
         <div className="w-[calc(100%-1rem)] mr-4 bg-neutral-950 rounded-b-2xl border border-neutral-800 border-t-0 flex items-center justify-center pb-8">
           <PhotoNav links={links} />
         </div>
-        <div className="w-full h-24 md:h-36 bg-gradient-to-b from-neutral-950/0 to-neutral-950/100 md:bg-none" />
       </div>
     </main>
   );

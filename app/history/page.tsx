@@ -33,18 +33,24 @@ const HeadlineProps = {
 const TextElement = (
   <>
     <p className="">
-      Blake Montgomery first created and performed
-      <span className="italic">Charles Dickens Begrudgingly...</span> at The
-      Building Stage in December 2011.
+      <span className="italic">Charles Dickens Begrudgingly...</span> charmed
+      audiences when it premiered at The Building Stage in December of 2011.
     </p>
     <p>
-      Blake performed a slightly revised version at The Building Stage in 2012
-      in a production that won a Jeff Award for Solo Performance.
+      Creator Blake Montgomery performed a slightly revised version the
+      following year at The Building Stage in 2012. This production won a Jeff
+      Award for Solo Performance.
     </p>
     <p className="">
-      Blake revived his exuberant take on the famous author with a new
-      production company, CLOWNSHOW, for the 2024 holidays with performances at
-      The Den Theatre in Chicago.
+      Fast forward to 2024, Blake revived his exuberant take on the famous
+      author with a new production company, CLOWNSHOW, for the 2024 holidays
+      with performances at The Den Theatre in Chicago.
+    </p>
+    <p>
+      In 2025, the show will be once again be presented by Clownshow and
+      performed at Chicago&apos;s Theater Wit. The newly revised production will
+      be directed by Jonathan Berry who joins the creative team for the first
+      time. The show will run from December 4-28.
     </p>
   </>
 );
