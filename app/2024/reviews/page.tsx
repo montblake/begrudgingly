@@ -4,8 +4,7 @@ import ReviewCardAlt from "@/components/review_card_alt";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again: 2024 Press Reviews",
+  title: "Charles Dickens Begrudgingly - 2024 Press Reviews",
   description:
     "Press reviews of Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again, by the critics from the 2024 season.",
 };

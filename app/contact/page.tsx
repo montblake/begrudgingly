@@ -41,8 +41,7 @@ type MultiText = {
 const MultiText: MultiText = [];
 
 export const metadata: Metadata = {
-  title:
-    "Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again: Contact Information",
+  title: "Charles Dickens Begrudgingly — Contact Information",
   description: "Contact information for Blake Montgomery and Charles Dickens",
 };
 

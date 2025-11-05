@@ -2,8 +2,7 @@ import CTAElement from "@/components/cta_element";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again: 2024 Season Digital Program",
+  title: "Charles Dickens Begrudgingly - 2024 Digital Program",
   description:
     "Digital program of Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again, by Blake Montgomery for the 2024 season.",
 };

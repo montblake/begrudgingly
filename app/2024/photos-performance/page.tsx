@@ -2,8 +2,7 @@ import PhotoGallery from "@/components/photo_gallery";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again: Performance Photos",
+  title: "Charles Dickens Begrudgingly — 2024 Performance Photos",
   description:
     "Performance photos of Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again, by Michael Brosilow.",
 };

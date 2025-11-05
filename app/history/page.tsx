@@ -2,8 +2,7 @@ import SpecialPage from "@/components/special_page";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again: Production History",
+  title: "Charles Dickens Begrudgingly — Production History",
   description:
     "Production history of Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again, by Blake Montgomery",
 };

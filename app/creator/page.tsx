@@ -66,8 +66,7 @@ type MultiText = {
 const MultiText: MultiText = [];
 
 export const metadata: Metadata = {
-  title:
-    "Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again: Meet the Creator",
+  title: "Charles Dickens Begrudgingly — Meet the Creator",
   description:
     "Meet the creator and performer of Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again, Blake Montgomery",
 };
