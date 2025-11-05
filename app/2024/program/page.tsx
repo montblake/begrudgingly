@@ -22,7 +22,7 @@ const CtaProps = {
 
 export default function Program() {
   return (
-    <div key="/program" className="w-full h-fit p-4 sm:p-8">
+    <div key="/2024/program" className="w-full h-fit p-4 sm:p-8">
       <div className="flex flex-col items-center justify-center max-w-2xl px-4 sm:px-12 md:px-16 w-full bg-neutral-200 text-neutral-900 py-8 sm:py-12 md:py-16 rounded-xl mx-auto">
         <h1 className="font-bold text-center mb-12">
           <span className="text-2xl sm:text-3xl md:text-4xl">

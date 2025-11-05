@@ -102,7 +102,10 @@ export default function PictureReviewScramble() {
         <div className="w-full col-span-2 md:col-span-3 flex justify-center items-center">
           <p className="w-full text-neutral-400 text-center text-xs py-2">
             The{" "}
-            <Link href="/program" className="hover:border-b border-neutral-400">
+            <Link
+              href="/2024/program"
+              className="hover:border-b border-neutral-400"
+            >
               2024 Clownshow production
             </Link>{" "}
             at The Den Theatre in Chicago. Photos by Joe Mazza/Brave Lux Inc.
