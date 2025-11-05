@@ -1,0 +1,172 @@
+# LLMs.txt
+
+## Project Overview
+
+This is a Next.js website for the theater production **"Charles Dickens Begrudgingly Performs A Christmas Carol Again"**, created and performed by Blake Montgomery. The production is part of the CLOWNSHOW theater company.
+
+### Production Details
+- **Title**: Charles Dickens Begrudgingly Performs A Christmas Carol Again
+- **Creator/Performer**: Blake Montgomery
+- **Venue**: Theater Wit, 1229 W. Belmont, Chicago, IL
+- **2025 Production Dates**: December 4-28, 2025
+- **Company**: CLOWNSHOW (thisisaclownshow.com)
+
+### Creative Team
+- **Scenic Design**: Pamela Maurer
+- **Costume Design**: Izumi Inaba
+- **Wig Design**: Megan E. Pirtle
+- **Lighting Design**: Emmitt Socey
+- **Sound Design**: Oskar Westbridge
+
+## Technology Stack
+
+- **Framework**: Next.js 14.2.24 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: 
+  - Radix UI (Accordion, Navigation Menu, Slot)
+  - Material UI (MUI)
+  - Custom components with shadcn/ui patterns
+- **Animations**: Motion (Framer Motion), Embla Carousel
+- **Icons**: Lucide React
+- **Deployment**: Vercel (with Vercel Analytics)
+
+## Project Structure
+
+```
+begrudgingly/
+├── app/                    # Next.js App Router pages
+│   ├── 2024/              # 2024 production pages
+│   │   ├── photos-performance/
+│   │   ├── photos-publicity/
+│   │   ├── program/
+│   │   └── reviews/
+│   ├── contact/           # Contact page
+│   ├── creator/           # Creator (Blake Montgomery) page
+│   ├── history/           # Production history
+│   ├── page.tsx           # Home page
+│   ├── layout.tsx         # Root layout
+│   ├── globals.css        # Global styles
+│   └── sitemap.ts         # Dynamic sitemap
+├── components/            # React components
+│   ├── ui/               # Reusable UI components (button, carousel, navigation-menu)
+│   ├── cta_element.tsx   # Call-to-action component
+│   ├── display_images.tsx
+│   ├── display_reviews.tsx
+│   ├── first_left.tsx     # Home page left column
+│   ├── first_right.tsx   # Home page right column
+│   ├── footer.tsx
+│   ├── header.tsx         # Main header component
+│   ├── photo_gallery.tsx
+│   ├── review_card.tsx    # Review display components
+│   ├── schedule.tsx       # Production schedule
+│   └── special_*.tsx     # Special page components
+├── lib/                   # Utility functions
+│   └── utils.ts          # Shared utilities (cn, etc.)
+├── public/               # Static assets
+│   ├── photos/           # Production photos
+│   └── *.png, *.jpg      # Images and logos
+└── LLMs.txt              # This file
+
+```
+
+## Key Features
+
+### Pages
+1. **Home Page** (`app/page.tsx`)
+   - Main landing page with production poster
+   - Schedule component
+   - Picture review scramble
+   - First left/right column layout
+
+2. **Program Page** (`app/2024/program/page.tsx`)
+   - Full production program
+   - Cast and crew credits
+   - About the company section
+
+3. **Creator Page** (`app/creator/page.tsx`)
+   - Information about Blake Montgomery
+
+4. **History Page** (`app/history/page.tsx`)
+   - Production history and background
+
+5. **Reviews Page** (`app/2024/reviews/page.tsx`)
+   - Production reviews
+
+6. **Photo Galleries**
+   - Performance photos
+   - Publicity photos
+
+7. **Contact Page** (`app/contact/page.tsx`)
+   - Contact information
+
+### Components
+
+#### Navigation
+- `header.tsx` - Main site header
+- `header_hamburger.tsx` - Mobile menu
+- `header_overlay.tsx` - Menu overlay
+- `header_links.tsx` - Navigation links
+
+#### Content Display
+- `first_left.tsx` / `first_right.tsx` - Home page columns
+- `display_images.tsx` - Image gallery display
+- `display_reviews.tsx` - Review display
+- `review_card.tsx` / `review_card_alt.tsx` - Review card variants
+- `photo_gallery.tsx` - Photo gallery
+- `photo_nav.tsx` - Photo navigation
+
+#### Special Components
+- `special_*.tsx` - Various special page components
+- `schedule.tsx` - Production schedule component
+- `cta_element.tsx` - Call-to-action component
+
+#### UI Components (`components/ui/`)
+- `button.tsx` - Button component
+- `carousel.tsx` - Carousel component
+- `navigation-menu.tsx` - Navigation menu
+
+## Design Patterns
+
+- **Component Structure**: Modular React components with TypeScript
+- **Styling**: Tailwind CSS utility classes
+- **Layout**: Responsive design with mobile-first approach
+- **Images**: Next.js Image component for optimization
+- **Metadata**: Next.js Metadata API for SEO
+
+## Development Guidelines
+
+### Running the Project
+```bash
+npm run dev      # Development server
+npm run build    # Production build
+npm run start    # Start production server
+npm run lint     # Run ESLint
+```
+
+### Key Conventions
+- Use TypeScript for all components
+- Follow Next.js App Router conventions
+- Use Tailwind CSS for styling
+- Images should be optimized using Next.js Image component
+- Components should be in the `components/` directory
+- Pages should be in the `app/` directory following Next.js App Router structure
+
+### Important Notes
+- The site is for a theater production, so content should reflect the theatrical/creative nature
+- Production information (dates, venue, etc.) should be kept up to date
+- Image paths in `public/` should match references in components
+- The site uses a dark/neutral color scheme with accent colors (amber, red)
+
+## Content Management
+
+- Production dates and venue information are hardcoded in components
+- Reviews and photos are likely managed through component props or data files
+- Schedule information is in the `schedule.tsx` component
+
+## Future Plans
+
+According to the program page, CLOWNSHOW plans to:
+- Feature new solo pieces (including a 2025 piece about Wilkie Collins and "The Woman in White")
+- Eventually include Blake's directorial work
+- Feature ensemble-created aesthetic work
