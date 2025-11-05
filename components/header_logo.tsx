@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Tooltip from "@mui/material/Tooltip";
+import Link from "next/link";
 
 export default function HeaderLogo({ pathname }: { pathname: string }) {
   return (
@@ -9,8 +10,10 @@ export default function HeaderLogo({ pathname }: { pathname: string }) {
       {pathname === "/" ? (
         <li>
           <Tooltip title="Home" arrow>
-            <a
+            <Link
               href="/"
+              aria-label="Home"
+              scroll={false}
               className="text-neutral-200 flex items-center focus:outline-none focus:border-b-2 focus:border-blue-400"
             >
               <Image
@@ -21,14 +24,16 @@ export default function HeaderLogo({ pathname }: { pathname: string }) {
                 priority
                 className="h-5 w-auto relative z-100 -top-[1px] hover:scale-95 transition-all duration-300 opacity-90 mix-blend-screen"
               />
-            </a>
+            </Link>
           </Tooltip>
         </li>
       ) : (
         <li>
           <Tooltip title="Home" arrow>
-            <a
+            <Link
               href="/"
+              aria-label="Home"
+              scroll={false}
               className="text-neutral-200 flex items-center focus:outline-none focus:border-b-2 focus:border-blue-400"
             >
               <Image
@@ -39,7 +44,7 @@ export default function HeaderLogo({ pathname }: { pathname: string }) {
                 priority
                 className="h-5 w-auto relative z-100 -top-[1px] hover:scale-95 transition-all duration-300 opacity-90 mix-blend-screen"
               />
-            </a>
+            </Link>
           </Tooltip>
         </li>
       )}
