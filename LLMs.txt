@@ -1,4 +1,4 @@
-# LLMs.txt
+# llms.txt
 
 ## Project Overview
 
