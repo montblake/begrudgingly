@@ -76,13 +76,13 @@ const CtaProps = {
   intro: "",
   links: [
     {
-      href: "/2024/program",
+      href: "/2024/program/",
       text: "2024 digital program",
       icon: "program",
       internal: true,
     },
     {
-      href: "/creator",
+      href: "/creator/",
       text: "meet the creator",
       icon: "creator",
       internal: true,

@@ -53,7 +53,7 @@ const CtaProps = {
   intro: "",
   links: [
     {
-      href: "/contact",
+      href: "/contact/",
       text: "contact information",
       icon: "contact",
       internal: true,

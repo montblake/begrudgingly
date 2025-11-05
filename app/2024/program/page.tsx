@@ -11,7 +11,7 @@ const CtaProps = {
   intro: "",
   links: [
     {
-      href: "/creator",
+      href: "/creator/",
       text: "meet the creator",
       icon: "creator",
       internal: true,
