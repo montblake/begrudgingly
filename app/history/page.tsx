@@ -1,4 +1,13 @@
 import SpecialPage from "@/components/special_page";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again: Production History",
+  description:
+    "Production history of Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again, by Blake Montgomery",
+};
+
 const ImageProps = {
   src: "/charles-full.jpg",
   alt: "Historical image of Charles Dickens",
@@ -45,13 +54,13 @@ const CtaProps = {
   intro: "",
   links: [
     {
-      href: "/photos_publicity",
+      href: "/2024/photos-publicity",
       text: "publicity photos",
       icon: "camera",
       internal: true,
     },
     {
-      href: "/reviews",
+      href: "/2024/reviews",
       text: "press reviews",
       icon: "glasses",
       internal: true,

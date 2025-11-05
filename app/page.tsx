@@ -3,6 +3,14 @@ import Schedule from "@/components/schedule";
 import FirstLeft from "@/components/first_left";
 import FirstRight from "@/components/first_right";
 import { Mail } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again: 2025 Production at Theater Wit, 1229 W. Belmont, Chicago, IL",
+  description:
+    "Home page of the 2025 production of Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again, by Blake Montgomery at Theater Wit, 1229 W. Belmont, Chicago, IL. December 4-28, 2025. Join our mailing list for updates and special ticket offers! Purchase tickets at theaterwit.org",
+};
 
 export default function Home() {
   return (

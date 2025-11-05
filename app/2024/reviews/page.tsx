@@ -1,7 +1,14 @@
-"use client";
 import CTAElement from "@/components/cta_element";
 import ReviewCard from "@/components/review_card";
 import ReviewCardAlt from "@/components/review_card_alt";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again: 2024 Press Reviews",
+  description:
+    "Press reviews of Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again, by the critics from the 2024 season.",
+};
 
 const reviews = [
   {
@@ -70,8 +77,8 @@ const CtaProps = {
   intro: "",
   links: [
     {
-      href: "/program",
-      text: "production credits",
+      href: "/2024/program",
+      text: "2024 digital program",
       icon: "program",
       internal: true,
     },

@@ -1,16 +1,12 @@
-// "use client";
-
-// import Image from "next/image";
-// import {
-//   Carousel,
-//   CarouselContent,
-//   CarouselItem,
-//   CarouselPrevious,
-//   CarouselNext,
-// } from "@/components/ui/carousel";
-// import { type CarouselApi } from "@/components/ui/carousel";
-// import { useEffect, useState } from "react";
 import PhotoGallery from "@/components/photo_gallery";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again: Performance Photos",
+  description:
+    "Performance photos of Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again, by Michael Brosilow.",
+};
 
 const photos = [
   {
@@ -134,13 +130,13 @@ const CtaProps = {
   intro: "Learn more about the show:",
   links: [
     {
-      href: "/photos_publicity",
+      href: "/2024/photos-publicity",
       text: "publicity photos",
       icon: "camera",
       internal: true,
     },
     {
-      href: "/reviews",
+      href: "/2024/reviews",
       text: "press reviews",
       icon: "glasses",
       internal: true,
@@ -152,7 +148,7 @@ export default function PhotosPerformance() {
   return (
     <>
       <PhotoGallery
-        key="/photos_performance"
+        key="/photos-performance"
         HeaderInfo={HeaderInfo}
         photos={photos}
         intro={CtaProps.intro}

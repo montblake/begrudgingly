@@ -1,4 +1,12 @@
 import PhotoGallery from "@/components/photo_gallery";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again: Publicity Photos",
+  description:
+    "Publicity photos of Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again, by Joe Mazza / brave lux inc.",
+};
 
 const photos = [
   {
@@ -62,13 +70,13 @@ const CtaProps = {
   intro: "Learn more about the show:",
   links: [
     {
-      href: "/photos_performance",
+      href: "/2024/photos-performance",
       text: "performance photos",
       icon: "spotlight",
       internal: true,
     },
     {
-      href: "/reviews",
+      href: "/2024/reviews",
       text: "press reviews",
       icon: "glasses",
       internal: true,

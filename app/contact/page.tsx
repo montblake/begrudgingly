@@ -1,4 +1,5 @@
 import SpecialPage from "@/components/special_page";
+import { Metadata } from "next";
 
 const ImageProps = {
   src: "/dickens_contact.jpg",
@@ -38,6 +39,12 @@ type MultiText = {
 }[];
 
 const MultiText: MultiText = [];
+
+export const metadata: Metadata = {
+  title:
+    "Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again: Contact Information",
+  description: "Contact information for Blake Montgomery and Charles Dickens",
+};
 
 export default function Contact() {
   return (
