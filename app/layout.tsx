@@ -8,6 +8,11 @@ const baskerville = Libre_Baskerville({
   weight: ["400", "700"],
 });
 
+export const metadata = {
+  metadataBase: new URL("https://www.dickensagain.com"),
+  alternates: { canonical: "/" }, // will resolve to https://www.dickensagain.com/
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
