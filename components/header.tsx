@@ -22,7 +22,7 @@ const navLinks: NavLink[] = [
     subLinks: [],
   },
   {
-    href: "/history/",
+    href: "/history",
     title: "History",
     description: "History",
     subLinks: [],
@@ -34,25 +34,25 @@ const navLinks: NavLink[] = [
       "Produced by CLOWNSHOW.\u2029Performed at The Den Theatre, Chicago.\u2029December 5-22, 2024.",
     subLinks: [
       {
-        href: "/2024/photos-publicity/",
+        href: "/2024/photos-publicity",
         title: "Publicity Photos",
         description: "by Joe Mazza / brave lux inc.",
         subLinks: [],
       },
       {
-        href: "/2024/photos-performance/",
+        href: "/2024/photos-performance",
         title: "Performance Photos",
         description: "by Michael Brosilow",
         subLinks: [],
       },
       {
-        href: "/2024/reviews/",
+        href: "/2024/reviews",
         title: "Press Reviews",
         description: "in the words of the critics...",
         subLinks: [],
       },
       {
-        href: "/2024/program/",
+        href: "/2024/program",
         title: "Digital Program",
         description: "credits for artistic and production team",
         subLinks: [],
@@ -60,13 +60,13 @@ const navLinks: NavLink[] = [
     ],
   },
   {
-    href: "/creator/",
+    href: "/creator",
     title: "Creator",
     description: "Creator",
     subLinks: [],
   },
   {
-    href: "/contact/",
+    href: "/contact",
     title: "Contact",
     description: "Contact",
     subLinks: [],
