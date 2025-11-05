@@ -168,7 +168,7 @@ function SubMenuItem({
       }`}
     >
       <p className="text-neutral-950 font-bold text-sm">{title}</p>
-      {/* <hr className="border-neutral-700" /> */}
+
       <p className="text-neutral-800 text-xs">{description}</p>
     </Link>
   );
