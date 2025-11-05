@@ -1,51 +1,52 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = "https://www.dickensagain.com";
   return [
     {
-      url: "https://www.dickensagain.com/",
+      url: `${baseUrl}/`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: "https://www.dickensagain.com/history",
+      url: `${baseUrl}/history/`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://www.dickensagain.com/2024/reviews",
+      url: `${baseUrl}/2024/reviews/`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.5,
     },
     {
-      url: "https://www.dickensagain.com/2024/program",
+      url: `${baseUrl}/2024/program/`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.5,
     },
     {
-      url: "https://www.dickensagain.com/2024/photos-publicity",
+      url: `${baseUrl}/2024/photos-publicity/`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.5,
     },
     {
-      url: "https://www.dickensagain.com/2024/photos-performance",
+      url: `${baseUrl}/2024/photos-performance/`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.5,
     },
     {
-      url: "https://www.dickensagain.com/creator",
+      url: `${baseUrl}/creator/`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.5,
     },
     {
-      url: "https://www.dickensagain.com/contact",
+      url: `${baseUrl}/contact/`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.5,
