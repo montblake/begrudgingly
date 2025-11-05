@@ -9,23 +9,25 @@ export default function HeaderLogo({ pathname }: { pathname: string }) {
     <ul className="flex space-x-6 items-center justify-center mr-8">
       {pathname === "/" ? (
         <li>
-          <Tooltip title="Home" arrow>
+          {/* <Tooltip title="Home" arrow>
             <Link
               href="/"
               aria-label="Home"
               scroll={false}
               className="text-neutral-200 flex items-center focus:outline-none focus:border-b-2 focus:border-blue-400"
-            >
-              <Image
-                src="/cdb_logo.png"
-                alt="Home"
-                width={200}
-                height={32}
-                priority
-                className="h-5 w-auto relative z-100 -top-[1px] hover:scale-95 transition-all duration-300 opacity-90 mix-blend-screen"
-              />
-            </Link>
-          </Tooltip>
+            > */}
+          <Image
+            src="/cdb_logo.png"
+            alt="Home"
+            width={200}
+            height={32}
+            priority
+            className={`h-5 w-auto relative z-100 -top-[1px]  transition-all duration-300 opacity-90 mix-blend-screen ${
+              pathname === "/" ? "" : "hover:scale-95"
+            }`}
+          />
+          {/* </Link>
+          </Tooltip> */}
         </li>
       ) : (
         <li>
