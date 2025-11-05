@@ -28,7 +28,7 @@ const navLinks: NavLink[] = [
     subLinks: [],
   },
   {
-    href: "/2024/in-production/",
+    href: "",
     title: "In Production",
     description:
       "Produced by CLOWNSHOW.\u2029Performed at The Den Theatre, Chicago.\u2029December 5-22, 2024.",
