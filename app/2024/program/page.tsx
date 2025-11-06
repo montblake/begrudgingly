@@ -39,58 +39,58 @@ export default function Program() {
         </h1>
         <div className="flex flex-col items-center justify-center mb-8">
           <h5 className="text-base italic">created and performed by</h5>
-          <h2 className="text-2xl font-bold">Blake Montgomery</h2>
+          <h3 className="text-2xl font-bold">Blake Montgomery</h3>
         </div>
         <div className="flex flex-col items-center justify-center mb-8">
           <h5 className="text-base italic">scenic design</h5>
-          <h2 className="text-xl font-bold mb-2">Pamela Maurer</h2>
+          <h3 className="text-xl font-bold mb-2">Pamela Maurer</h3>
           <h5 className="text-base italic">costume design</h5>
-          <h2 className="text-xl font-bold mb-2">Izumi Inaba</h2>
+          <h3 className="text-xl font-bold mb-2">Izumi Inaba</h3>
           <h5 className="text-base italic">wig design</h5>
-          <h2 className="text-xl font-bold mb-2">Megan E. Pirtle</h2>
+          <h3 className="text-xl font-bold mb-2">Megan E. Pirtle</h3>
           <h5 className="text-base italic">lighting design</h5>
-          <h2 className="text-xl font-bold mb-2">Emmitt Socey</h2>
+          <h3 className="text-xl font-bold mb-2">Emmitt Socey</h3>
           <h5 className="text-base italic">sound design</h5>
-          <h2 className="text-xl font-bold">Oskar Westbridge</h2>
+          <h3 className="text-xl font-bold">Oskar Westbridge</h3>
         </div>
         <div className="flex flex-col items-center justify-center mb-8">
           <h5 className="text-base italic">ghost of rehearsals present</h5>
-          <h2 className="text-xl font-bold">George Keating</h2>
+          <h3 className="text-xl font-bold">George Keating</h3>
         </div>
 
         <div className="flex flex-col items-center justify-center mb-8">
           <h5 className="text-base italic">stage management</h5>
-          <h2 className="text-xl font-bold mb-2">Jake Snell</h2>
+          <h3 className="text-xl font-bold mb-2">Jake Snell</h3>
 
           <h5 className="text-base italic">Production Electrician</h5>
-          <h2 className="text-xl font-bold mb-2">Hannah Kwak</h2>
+          <h3 className="text-xl font-bold mb-2">Hannah Kwak</h3>
           <h5 className="text-base italic">board operator</h5>
-          <h2 className="text-xl font-bold mb-2 text-center">
+          <h3 className="text-xl font-bold mb-2 text-center">
             Thompson MacKenzie Scribner
-          </h2>
+          </h3>
           <h5 className="text-base italic">electrician</h5>
-          <h2 className="text-xl font-bold mb-2">Hazel Matteson</h2>
+          <h3 className="text-xl font-bold mb-2">Hazel Matteson</h3>
           <h5 className="text-base italic">prompt book fabrication</h5>
-          <h2 className="text-xl font-bold mb-2">Sion Silva</h2>
+          <h3 className="text-xl font-bold mb-2">Sion Silva</h3>
         </div>
         <div className="flex flex-col items-center justify-center mb-8">
           <h5 className="text-base italic">house management</h5>
-          <h2 className="text-xl font-bold mb-2">Andrew Snyder</h2>
+          <h3 className="text-xl font-bold mb-2">Andrew Snyder</h3>
           <h5 className="text-base italic">marketing and media</h5>
-          <h2 className="text-xl font-bold mb-2">SHOUT Marketing</h2>
+          <h3 className="text-xl font-bold mb-2">SHOUT Marketing</h3>
         </div>
         <div className="flex flex-col items-center justify-center mb-8">
           <h5 className="text-base italic">special thanks to</h5>
-          <h2 className="text-base font-bold text-center">
+          <h3 className="text-base font-bold text-center">
             Chelsea Keenan, Lee Keenan,
             <br />
             Lauren Pizzi, Mieka Van Der Ploeg
-          </h2>
+          </h3>
         </div>
 
-        <h1 className="text-2xl font-bold mb-4 mt-12 text-center">
+        <h2 className="text-2xl font-bold mb-4 mt-12 text-center">
           Company Biographies
-        </h1>
+        </h2>
         <div className="flex flex-col items-center justify-start gap-4 max-w-xl">
           <p className="text-base">
             <span className="font-bold">
@@ -268,7 +268,7 @@ export default function Program() {
           </p>
         </div>
         <div className="flex flex-col items-center justify-start max-w-xl">
-          <h1 className="text-2xl font-bold mb-4 mt-12">About the Show</h1>
+          <h2 className="text-2xl font-bold mb-4 mt-12">About the Show</h2>
           <div className="flex flex-col items-center justify-start gap-4">
             <p className="text-base">
               <span className="font-bold">Charles Dickens Begrudgingly...</span>{" "}
@@ -281,7 +281,7 @@ export default function Program() {
           </div>
         </div>
         <div className="flex flex-col items-center justify-start max-w-xl">
-          <h1 className="text-2xl font-bold mb-4 mt-12">About the Company</h1>
+          <h2 className="text-2xl font-bold mb-4 mt-12">About the Company</h2>
           <div className="flex flex-col items-center justify-start gap-4">
             <p className="text-base">
               <span className="font-bold">CLOWNSHOW</span> is a theater company
