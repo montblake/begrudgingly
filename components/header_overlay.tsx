@@ -103,13 +103,13 @@ export default function HeaderOverlayMenu({
           </div>
           <div className="w-full flex flex-col justify-start items-start gap-4 text-neutral-800">
             <div className="flex flex-col justify-start items-start gap-0 font-bold mb-8">
-              <h1 className="text-2xl">
+              <h2 className="text-2xl">
                 Charles Dickens
                 <br />
                 Begrudingly Performs
                 <br />
                 <span className="italic">A Christmas Carol</span> Again
-              </h1>
+              </h2>
               <p className="text-xs mt-2">
                 created and performed by <br />
                 <span className="text-lg">Blake Montgomery</span>
