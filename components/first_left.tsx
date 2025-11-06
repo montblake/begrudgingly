@@ -5,8 +5,8 @@ import Image from "next/image";
 const MainImage = {
   src: "/2025_dickens_web_transparency_2.webp",
   alt: "Charles Dickens Begrudgingly... Poster",
-  width: 800,
-  height: 800,
+  width: 500,
+  height: 500,
 };
 
 export default function FirstLeft() {
@@ -15,10 +15,8 @@ export default function FirstLeft() {
       <Image
         src={MainImage.src}
         alt={MainImage.alt}
-        fill
         priority
         fetchPriority="high"
-        sizes="100vw"
         className="w-full h-auto object-cover object-center rounded-xl relative -top-0 md:-top-4 mb-4 md:-mb-4"
       />
 
