@@ -1,7 +1,7 @@
 import { Libre_Baskerville } from "next/font/google";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/react";
 import Header from "../components/header";
+import AnalyticsOnIdle from "./analyticsOnIdle";
 
 const baskerville = Libre_Baskerville({
   subsets: ["latin"],
@@ -19,20 +19,12 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <head>
-        {/* Preconnect for analytics (non-blocking) */}
-        <link
-          rel="preconnect"
-          href="https://vitals.vercel-insights.com"
-          crossOrigin=""
-        />
-      </head>
       <body
         className={`${baskerville.className} antialiased h-screen flex flex-col justify-start items-center bg-victorian-texture bg-no-repeat bg-cover bg-fixed bg-center`}
       >
         <Header />
         {children}
-        <Analytics />
+        {process.env.NODE_ENV === "production" && <AnalyticsOnIdle />}
       </body>
     </html>
   );
