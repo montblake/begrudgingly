@@ -38,54 +38,60 @@ export default function Program() {
           </span>
         </h1>
         <div className="flex flex-col items-center justify-center mb-8">
-          <h5 className="text-base italic">created and performed by</h5>
-          <h3 className="text-2xl font-bold">Blake Montgomery</h3>
+          <p className="text-base italic">created and performed by</p>
+          <p className="text-2xl font-bold">Blake Montgomery</p>
+        </div>
+        <h2 className="text-2xl font-bold mb-4 mt-12 text-center">
+          Creative Team
+        </h2>
+        <div className="flex flex-col items-center justify-center mb-8">
+          <p className="text-base italic">scenic design</p>
+          <p className="text-xl font-bold mb-2">Pamela Maurer</p>
+          <p className="text-base italic">costume design</p>
+          <p className="text-xl font-bold mb-2">Izumi Inaba</p>
+          <p className="text-base italic">wig design</p>
+          <p className="text-xl font-bold mb-2">Megan E. Pirtle</p>
+          <p className="text-base italic">lighting design</p>
+          <p className="text-xl font-bold mb-2">Emmitt Socey</p>
+          <p className="text-base italic">sound design</p>
+          <p className="text-xl font-bold">Oskar Westbridge</p>
         </div>
         <div className="flex flex-col items-center justify-center mb-8">
-          <h5 className="text-base italic">scenic design</h5>
-          <h3 className="text-xl font-bold mb-2">Pamela Maurer</h3>
-          <h5 className="text-base italic">costume design</h5>
-          <h3 className="text-xl font-bold mb-2">Izumi Inaba</h3>
-          <h5 className="text-base italic">wig design</h5>
-          <h3 className="text-xl font-bold mb-2">Megan E. Pirtle</h3>
-          <h5 className="text-base italic">lighting design</h5>
-          <h3 className="text-xl font-bold mb-2">Emmitt Socey</h3>
-          <h5 className="text-base italic">sound design</h5>
-          <h3 className="text-xl font-bold">Oskar Westbridge</h3>
-        </div>
-        <div className="flex flex-col items-center justify-center mb-8">
-          <h5 className="text-base italic">ghost of rehearsals present</h5>
-          <h3 className="text-xl font-bold">George Keating</h3>
+          <p className="text-base italic">ghost of rehearsals present</p>
+          <p className="text-xl font-bold">George Keating</p>
         </div>
 
+        <h2 className="text-2xl font-bold mb-4 mt-12 text-center">
+          Production Team
+        </h2>
         <div className="flex flex-col items-center justify-center mb-8">
-          <h5 className="text-base italic">stage management</h5>
-          <h3 className="text-xl font-bold mb-2">Jake Snell</h3>
+          <p className="text-base italic">stage management</p>
+          <p className="text-xl font-bold mb-2">Jake Snell</p>
 
-          <h5 className="text-base italic">Production Electrician</h5>
-          <h3 className="text-xl font-bold mb-2">Hannah Kwak</h3>
-          <h5 className="text-base italic">board operator</h5>
-          <h3 className="text-xl font-bold mb-2 text-center">
+          <p className="text-base italic">Production Electrician</p>
+          <p className="text-xl font-bold mb-2">Hannah Kwak</p>
+          <p className="text-base italic">board operator</p>
+          <p className="text-xl font-bold mb-2 text-center">
             Thompson MacKenzie Scribner
-          </h3>
-          <h5 className="text-base italic">electrician</h5>
-          <h3 className="text-xl font-bold mb-2">Hazel Matteson</h3>
-          <h5 className="text-base italic">prompt book fabrication</h5>
-          <h3 className="text-xl font-bold mb-2">Sion Silva</h3>
+          </p>
+          <p className="text-base italic">electrician</p>
+          <p className="text-xl font-bold mb-2">Hazel Matteson</p>
+          <p className="text-base italic">prompt book fabrication</p>
+          <p className="text-xl font-bold mb-2">Sion Silva</p>
         </div>
         <div className="flex flex-col items-center justify-center mb-8">
-          <h5 className="text-base italic">house management</h5>
-          <h3 className="text-xl font-bold mb-2">Andrew Snyder</h3>
-          <h5 className="text-base italic">marketing and media</h5>
-          <h3 className="text-xl font-bold mb-2">SHOUT Marketing</h3>
+          <p className="text-base italic">house management</p>
+          <p className="text-xl font-bold mb-2">Andrew Snyder</p>
+          <p className="text-base italic">marketing and media</p>
+          <p className="text-xl font-bold mb-2">SHOUT Marketing</p>
         </div>
         <div className="flex flex-col items-center justify-center mb-8">
-          <h5 className="text-base italic">special thanks to</h5>
-          <h3 className="text-base font-bold text-center">
+          <p className="text-base italic">special thanks to</p>
+          <p className="text-base font-bold text-center">
             Chelsea Keenan, Lee Keenan,
             <br />
             Lauren Pizzi, Mieka Van Der Ploeg
-          </h3>
+          </p>
         </div>
 
         <h2 className="text-2xl font-bold mb-4 mt-12 text-center">
