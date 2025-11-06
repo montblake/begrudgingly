@@ -1,15 +1,16 @@
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import FirstLeft from "@/components/first_left";
 import FirstRight from "@/components/first_right";
 import Schedule from "@/components/schedule";
+import PictureReviewScramble from "@/components/picture_review_scramble";
 import { Mail } from "lucide-react";
 import { Metadata } from "next";
 
 // Dynamically import below-the-fold client component to reduce initial bundle size
-const PictureReviewScramble = dynamic(
-  () => import("../components/picture_review_scramble"),
-  { ssr: false }
-);
+// const PictureReviewScramble = dynamic(
+//   () => import("../components/picture_review_scramble"),
+//   { ssr: false }
+// );
 
 export const metadata: Metadata = {
   title: "Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again — 2025",

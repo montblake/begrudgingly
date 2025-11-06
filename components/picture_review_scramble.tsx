@@ -5,50 +5,50 @@ import Link from "next/link";
 
 const Images = [
   {
-    src: "/photos/2025/1_joe-mazza.jpg",
+    src: "/photos/2025/1_joe-mazza.webp",
     alt: "Charles Dickens Begrudgingly... Poster",
-    width: 800,
-    height: 800,
+    width: 400,
+    height: 400,
     quote: "charming and sly",
     publisher: "Chicago Reader",
   },
   {
-    src: "/photos/2025/42_joe-mazza.jpg",
+    src: "/photos/2025/42_joe-mazza.webp",
     alt: "Charles Dickens Begrudgingly... Poster",
-    width: 800,
-    height: 800,
+    width: 400,
+    height: 400,
     quote: "wonderfully off-the-cuff and intimate",
     publisher: "Chicago Stage and Screen",
   },
   {
-    src: "/photos/2025/45_joe-mazza.jpg",
+    src: "/photos/2025/45_joe-mazza.webp",
     alt: "Charles Dickens Begrudgingly... Poster",
-    width: 800,
-    height: 800,
+    width: 400,
+    height: 400,
     quote: "one-man yuletide tour de force",
     publisher: "The Fourth Walsh",
   },
   {
-    src: "/photos/2025/4_joe-mazza.jpg",
+    src: "/photos/2025/4_joe-mazza.webp",
     alt: "Charles Dickens Begrudgingly... Poster",
-    width: 800,
-    height: 800,
+    width: 400,
+    height: 400,
     quote: "a remarkably artful riff",
     publisher: "Buzz Center Stage",
   },
   {
-    src: "/photos/2025/23_joe-mazza.jpg",
+    src: "/photos/2025/23_joe-mazza.webp",
     alt: "Charles Dickens Begrudgingly... Poster",
-    width: 800,
-    height: 800,
+    width: 400,
+    height: 400,
     quote: "witty, heartfelt and (mostly) true to Dickens",
     publisher: "Chicago Stage and Screen",
   },
   {
-    src: "/photos/bravelux/joe-mazza-chicago-brave-lux-inc-5108673.jpg",
+    src: "/photos/bravelux/joe-mazza-chicago-brave-lux-inc-5108673.webp",
     alt: "Charles Dickens Begrudgingly... Poster",
-    width: 800,
-    height: 800,
+    width: 400,
+    height: 400,
     quote: "rediscover comfort and joy",
     publisher: "The Fourth Walsh",
   },
@@ -105,7 +105,7 @@ export default function PictureReviewScramble() {
           <p className="w-full text-neutral-400 text-center text-xs py-2">
             The{" "}
             <Link
-              href="/2024/program"
+              href="/2024/program/"
               className="hover:border-b border-neutral-400"
             >
               2024 Clownshow production
