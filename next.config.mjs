@@ -34,7 +34,7 @@ const nextConfig = {
   },
 
   // Avoid extra 308s on rewritten destinations
-  trailingSlash: false,
+  trailingSlash: true,
 
   async headers() {
     return [

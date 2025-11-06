@@ -26,18 +26,6 @@ export default function RootLayout({
           href="https://vitals.vercel-insights.com"
           crossOrigin=""
         />
-
-        {/* Remove image preloads unless they’re strictly the LCP and NOT duplicated via CSS */}
-        {/* If you keep one, ensure it’s the exact same URL the component uses. */}
-        {/*
-        <link
-          rel="preload"
-          href="/images/2025_dickens_web_transparency.webp"
-          as="image"
-          type="image/webp"
-          fetchPriority="high"
-        />
-        */}
       </head>
       <body
         className={`${baskerville.className} antialiased h-screen flex flex-col justify-start items-center bg-victorian-texture bg-no-repeat bg-cover bg-fixed bg-center`}
