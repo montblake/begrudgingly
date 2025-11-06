@@ -1,7 +1,7 @@
 import { Libre_Baskerville } from "next/font/google";
 import "./globals.css";
 import Header from "../components/header";
-import AnalyticsOnIdle from "./analyticsOnIdle";
+import { Analytics } from "@vercel/analytics/react";
 
 const baskerville = Libre_Baskerville({
   subsets: ["latin"],
@@ -24,7 +24,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
-        {process.env.NODE_ENV === "production" && <AnalyticsOnIdle />}
+        {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
   );
