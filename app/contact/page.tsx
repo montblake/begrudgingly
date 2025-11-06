@@ -2,7 +2,7 @@ import SpecialPage from "@/components/special_page";
 import { Metadata } from "next";
 
 const ImageProps = {
-  src: "/dickens_contact.jpg",
+  src: "/dickens_contact.webp",
   alt: "Photo by Joe Mazza / brave lux inc.",
   width: 500,
   height: 750,
