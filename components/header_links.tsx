@@ -76,6 +76,7 @@ function MenuItem({
       {pathname !== href ? (
         <Link
           href={href}
+          prefetch={false}
           scroll={false}
           className={`text-xs lg:text-sm text-neutral-400 hover:text-neutral-300 active:underline focus:border-b-2 focus:border-blue-400 focus:outline-none`}
         >
@@ -161,6 +162,7 @@ function SubMenuItem({
     <Link
       href={href}
       scroll={false}
+      prefetch={false}
       className={`w-full flex flex-col gap-0 p-4 rounded-xl border border-neutral-700 ${
         pathname === href
           ? "bg-neutral-200"
