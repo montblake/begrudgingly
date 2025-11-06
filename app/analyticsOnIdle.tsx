@@ -4,7 +4,7 @@
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 
-// only load the analytics chunk when we actually render it
+// Load the analytics chunk only when rendered
 const Analytics = dynamic(
   () => import("@vercel/analytics/react").then((m) => m.Analytics),
   { ssr: false }
@@ -14,22 +14,33 @@ export default function AnalyticsOnIdle() {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    let idleId: number | undefined;
     const onIdle = () => setReady(true);
+    let cleanup: (() => void) | undefined;
 
     if ("requestIdleCallback" in window) {
-      const ric = window.requestIdleCallback as (cb: () => void) => number;
-      idleId = ric(onIdle);
-      return () => {
-        if ("cancelIdleCallback" in window) {
-          const cic = window.cancelIdleCallback as (id: number) => void;
-          cic(idleId!);
+      // Narrow and call requestIdleCallback safely
+      const ric = (
+        window as unknown as {
+          requestIdleCallback: (cb: () => void) => number;
+          cancelIdleCallback?: (id: number) => void;
         }
+      ).requestIdleCallback;
+
+      const id = ric(onIdle);
+      cleanup = () => {
+        (
+          window as unknown as {
+            cancelIdleCallback?: (id: number) => void;
+          }
+        ).cancelIdleCallback?.(id);
       };
     } else {
-      const t = window.setTimeout(onIdle, 1500) as unknown as number;
-      return () => clearTimeout(t);
+      // Works with both DOM and Node typings
+      const t: ReturnType<typeof setTimeout> = setTimeout(onIdle, 1500);
+      cleanup = () => clearTimeout(t);
     }
+
+    return () => cleanup?.();
   }, []);
 
   return ready ? <Analytics /> : null;
