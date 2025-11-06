@@ -2,7 +2,7 @@ import SpecialPage from "@/components/special_page";
 import { Metadata } from "next";
 
 const ImageProps = {
-  src: "/blake_headshot.jpg",
+  src: "/blake_headshot.webp",
   alt: "Blake Montgomery Headshot",
   width: 500,
   height: 655,
