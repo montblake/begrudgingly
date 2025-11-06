@@ -107,6 +107,9 @@ export default function Reviews() {
       </div>
       <div className="w-full max-w-3xl mx-auto px-4 sm:px-8 md:px-2 py-8">
         <div className="bg-neutral-200/50 backdrop-blur-sm border border-neutral-700/30 rounded-xl p-6 md:p-12">
+          <h1 className="text-2xl font-bold mb-4 text-neutral-300 text-center">
+            Press Reviews
+          </h1>
           <p className="text-neutral-300 text-base md:text-base leading-relaxed">
             The 2024 production of{" "}
             <span className="font-semibold">

@@ -37,9 +37,9 @@ const TextElement = (
       your correspondence.
     </p>
     <div className="bg-gradient-to-br from-amber-200/30 via-amber-300/20 to-amber-400/30 backdrop-blur-sm border border-amber-400/40 rounded-xl p-6 md:p-8 mt-6">
-      <h3 className="text-neutral-200 font-bold text-lg mb-3">
+      <h1 className="text-neutral-200 font-bold text-lg mb-3">
         Future Season Partnerships
-      </h3>
+      </h1>
       <p className="text-neutral-300 text-base leading-relaxed">
         We&apos;d love to partner up in future seasons with organizations
         capable of connecting Dickens to a new audience. Ideally, we are looking
