@@ -1,4 +1,3 @@
-// next.config.mjs
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
@@ -8,29 +7,23 @@ const nextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 60,
   },
+
   async redirects() {
     return [
-      {
-        source: "/reviews",
-        destination: "https://www.dickensagain.com/2024/reviews",
-        permanent: true,
-      },
-      {
-        source: "/program",
-        destination: "https://www.dickensagain.com/2024/program",
-        permanent: true,
-      },
+      // Use relative destinations to avoid extra origin parsing
+      { source: "/reviews", destination: "/2024/reviews", permanent: true },
+      { source: "/program", destination: "/2024/program", permanent: true },
       {
         source: "/photos_publicity",
-        destination: "https://www.dickensagain.com/2024/photos-publicity",
+        destination: "/2024/photos-publicity",
         permanent: true,
       },
       {
         source: "/photos_performance",
-        destination: "https://www.dickensagain.com/2024/photos-performance",
+        destination: "/2024/photos-performance",
         permanent: true,
       },
-      // non-www to www (catch-all for all other paths)
+      // non-www -> www (single hop)
       {
         source: "/:path*",
         has: [{ type: "host", value: "dickensagain.com" }],
@@ -39,7 +32,34 @@ const nextConfig = {
       },
     ];
   },
-  trailingSlash: true,
+
+  // Avoid extra 308s on rewritten destinations
+  trailingSlash: false,
+
+  async headers() {
+    return [
+      // Immutable cache for Next build artifacts
+      {
+        source: "/_next/static/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      // Optional: if you content-hash public images (e.g., /images/hero.abcd123.webp)
+      {
+        source: "/images/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;

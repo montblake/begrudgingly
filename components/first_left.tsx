@@ -1,3 +1,5 @@
+// app/components/first_left.tsx
+
 import Image from "next/image";
 import { Button } from "./ui/button";
 
@@ -17,6 +19,7 @@ export default function FirstLeft() {
         width={MainImage.width}
         height={MainImage.height}
         priority
+        fetchPriority="high"
         sizes="(max-width: 768px) 100vw, 50vw"
         className="w-full h-auto object-cover object-center rounded-xl relative -top-0 md:-top-4 mb-4 md:-mb-4"
       />
