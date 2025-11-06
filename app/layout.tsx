@@ -27,19 +27,19 @@ export default function RootLayout({
           crossOrigin=""
         />
         {/* Preload critical LCP image to avoid request chaining */}
-        <link
+        {/* <link
           rel="preload"
           as="image"
           href="/2025_dickens_web_transparency_2.webp"
           fetchPriority="high"
-        />
+        /> */}
         {/* Preload above-the-fold background image */}
-        <link
+        {/* <link
           rel="preload"
           as="image"
           href="/dickens_illustration.webp"
           fetchPriority="low"
-        />
+        /> */}
       </head>
       <body
         className={`${baskerville.className} antialiased h-screen flex flex-col justify-start items-center bg-victorian-texture bg-no-repeat bg-cover bg-fixed bg-center`}
