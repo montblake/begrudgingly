@@ -26,7 +26,7 @@ export default function Home() {
         <Schedule />
       </div>
 
-      <div className="w-full flex flex-col items-center justify-center mb-4md:mb-8">
+      <div className="w-full flex flex-col items-center justify-center mb-4 md:mb-8">
         <h2 className="text-xs md:text-xl font-bold text-center text-neutral-300 mb-4 mt-8 md:mt-0">
           Join our mailing list for updates and special ticket offers!
         </h2>
