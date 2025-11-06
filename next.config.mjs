@@ -1,6 +1,12 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  // Tell Next to target modern browsers only (no legacy polyfills/transforms)
+  experimental: {
+    legacyBrowsers: false, // <-- removes polyfills like Array.flat, fromEntries, etc.
+    esmExternals: true, // prefer ESM builds of deps where available
+  },
+
   images: {
     formats: ["image/avif", "image/webp"],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
