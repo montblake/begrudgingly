@@ -1,7 +1,6 @@
 // app/components/first_left.tsx
 
 import Image from "next/image";
-import { Button } from "./ui/button";
 
 const MainImage = {
   src: "/2025_dickens_web_transparency_2.webp",
@@ -72,9 +71,9 @@ export default function FirstLeft() {
             rel="noopener noreferrer"
             className="w-full relative z-30 flex flex-col items-center justify-center mb-4"
           >
-            <Button className="w-[80%] bg-gradient-to-b from-amber-200/80 via-amber-400/80 to-amber-500/80  px-8 py-6 rounded-2xl mx-auto font-bold  uppercase text-neutral-900 border-2 border-black hover:scale-105 hover:bg-amber-300/90 transition-all duration-300 text-center text-base mt-6 mb-4">
+            <span className="w-[80%] bg-gradient-to-b from-amber-200/80 via-amber-400/80 to-amber-500/80 px-8 py-6 rounded-2xl mx-auto font-bold uppercase text-neutral-900 border-2 border-black hover:scale-105 hover:bg-amber-300/90 transition-all duration-300 text-center text-base mt-6 mb-4 cursor-pointer inline-block">
               Tickets
-            </Button>
+            </span>
           </a>
         </div>
       </div>
