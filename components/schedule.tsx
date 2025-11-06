@@ -43,7 +43,7 @@ export default function Schedule() {
               rel="noopener noreferrer"
             >
               <Image
-                src="/clownshow_logo_tent.png"
+                src="/clownshow_logo_tent.webp"
                 alt="This is a clownshow."
                 width={200}
                 height={200}
@@ -134,7 +134,7 @@ export default function Schedule() {
           </div>
           <div className="w-full h-[90%]">
             <Image
-              src="/dickens_house_poster_2.jpg"
+              src="/dickens_house_poster_2.webp"
               alt="Holiday Dickens Wrapped With Ribbon"
               width={500}
               height={800}
@@ -159,7 +159,7 @@ export default function Schedule() {
           </div>
           <div className="w-full h-auto p-4">
             <Image
-              src="/dickens_house_poster_2.jpg"
+              src="/dickens_house_poster_2.webp"
               alt="Holiday Dickens Wrapped With Ribbon"
               width={500}
               height={800}

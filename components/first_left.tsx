@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 
 const MainImage = {
-  src: "/2025_dickens_web_transparency.webp",
+  src: "/2025_dickens_web_transparency_2.webp",
   alt: "Charles Dickens Begrudgingly... Poster",
   width: 800,
   height: 800,
