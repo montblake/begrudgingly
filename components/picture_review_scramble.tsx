@@ -77,6 +77,8 @@ export default function PictureReviewScramble() {
               alt={image.alt}
               width={image.width}
               height={image.height}
+              loading="lazy"
+              sizes="(max-width: 768px) 50vw, 33vw"
               className={`w-full h-full object-cover absolute transition-opacity duration-1000 ${
                 replaced != index ? "opacity-100" : "opacity-0"
               }`}
