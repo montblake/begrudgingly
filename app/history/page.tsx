@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const ImageProps = {
-  src: "/charles-full.webp",
+  src: "/charles-full-optimized.webp",
   alt: "Historical image of Charles Dickens",
   width: 500,
   height: 645,
