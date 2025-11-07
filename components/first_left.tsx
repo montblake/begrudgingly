@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 const MainImage = {
-  src: "/2025_dickens_web_transparency_2.webp",
+  src: "/2025_dickens_web_transparency_reduced.webp",
   alt: "Charles Dickens Begrudgingly... Poster",
   width: 500,
   height: 500,
