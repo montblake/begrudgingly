@@ -48,7 +48,7 @@ export default function Schedule() {
                 width={200}
                 height={200}
                 loading="lazy"
-                sizes="(max-width: 768px) 33vw, 25vw"
+                // sizes="(max-width: 768px) 33vw, 25vw"
                 className="w-full h-auto object-cover object-center relative -left-0 top-1 md:top-0 opacity-80 rotate-[-4deg] hover:scale-105 transition-all duration-300"
               />
             </a>
@@ -137,9 +137,9 @@ export default function Schedule() {
               src="/dickens_house_poster_2.webp"
               alt="Holiday Dickens Wrapped With Ribbon"
               width={500}
-              height={800}
+              height={500}
               loading="lazy"
-              sizes="(max-width: 768px) 100vw, 33vw"
+              // sizes="(max-width: 768px) 100vw, 33vw"
               className="w-full h-full object-cover object-top rounded-xl"
             />
           </div>
@@ -162,9 +162,9 @@ export default function Schedule() {
               src="/dickens_house_poster_2.webp"
               alt="Holiday Dickens Wrapped With Ribbon"
               width={500}
-              height={800}
+              height={500}
               loading="lazy"
-              sizes="100vw"
+              // sizes="100vw"
               className="w-full h-full object-cover object-top rounded-xl border border-neutral-400"
             />
           </div>

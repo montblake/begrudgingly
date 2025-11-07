@@ -16,7 +16,7 @@ export default function HeaderLogo({ pathname }: { pathname: string }) {
             className="text-neutral-200 flex items-center pointer-events-none"
           >
             <Image
-              src="/cdb_logo.png"
+              src="/cdb_logo.webp"
               alt="Home"
               width={200}
               height={32}
@@ -35,7 +35,7 @@ export default function HeaderLogo({ pathname }: { pathname: string }) {
               className="text-neutral-200 flex items-center focus:outline-none focus:border-b-2 focus:border-blue-400"
             >
               <Image
-                src="/cdb_logo.png"
+                src="/cdb_logo.webp"
                 alt="Home"
                 width={200}
                 height={32}
