@@ -17,7 +17,7 @@ export default function FirstLeft() {
         alt={MainImage.alt}
         width={MainImage.width}
         height={MainImage.height}
-        sizes="(max-width: 768px) 100vw, 50vw"
+        // sizes="(max-width: 768px) 100vw, 50vw"
         priority
         fetchPriority="high"
         className="w-full h-auto object-cover object-center rounded-xl relative -top-0 md:-top-4 mb-4 md:-mb-4"
