@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState } from "react";
 
 const PlayElement = (
   <>
@@ -45,11 +45,6 @@ const NewsElement = (
 
 export default function FirstRight() {
   const [showPlay, setShowPlay] = useState(true);
-  
-  const content = useMemo(
-    () => (showPlay ? PlayElement : NewsElement),
-    [showPlay]
-  );
 
   return (
     <div className="w-full">
@@ -76,8 +71,27 @@ export default function FirstRight() {
           New in 2025
         </button>
       </nav>
-      <div className="flex flex-col gap-4 text-neutral-400 text-base drop-shadow-lg">
-        {content}
+      <div className="relative flex flex-col gap-4 text-neutral-400 text-base drop-shadow-lg">
+        {/* Play content - always in DOM for SEO */}
+        <div
+          className={`flex flex-col gap-4 transition-opacity duration-300 ${
+            showPlay
+              ? "opacity-100"
+              : "opacity-0 absolute left-0 top-0 w-full pointer-events-none"
+          }`}
+        >
+          {PlayElement}
+        </div>
+        {/* News content - always in DOM for SEO */}
+        <div
+          className={`flex flex-col gap-4 transition-opacity duration-300 ${
+            !showPlay
+              ? "opacity-100"
+              : "opacity-0 absolute left-0 top-0 w-full pointer-events-none"
+          }`}
+        >
+          {NewsElement}
+        </div>
       </div>
     </div>
   );
