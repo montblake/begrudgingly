@@ -9,7 +9,7 @@ const nextConfig = {
   // Tell Next to target modern browsers only (no legacy polyfills/transforms)
   experimental: {
     esmExternals: true, // prefer ESM builds of deps where available
-    optimizePackageImports: ["@mui/material", "lucide-react"],
+    optimizePackageImports: ["lucide-react"],
   },
 
   // Optimize CSS loading
