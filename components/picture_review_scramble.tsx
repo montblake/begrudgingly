@@ -45,7 +45,7 @@ const Images = [
     publisher: "Chicago Stage and Screen",
   },
   {
-    src: "/photos/bravelux/joe-mazza-chicago-brave-lux-inc-5108673.webp",
+    src: "/photos/2025/joe-mazza-chicago-brave-lux-inc-5108673.webp",
     alt: "Charles Dickens Begrudgingly... Poster",
     width: 300,
     height: 300,
