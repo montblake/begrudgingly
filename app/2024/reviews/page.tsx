@@ -20,7 +20,7 @@ const reviews = [
     ],
     source: "The Fourth Walsh",
     link: "https://thefourthwalsh.com/2024/12/review-charles-dickens-begrudgingly-clownshow-yuletide-tour-de-force/",
-    image: "/red-dickens-2.jpg",
+    image: "",
   },
   {
     top: "wonderfully off-the-cuff and intimate",
@@ -31,7 +31,7 @@ const reviews = [
     ],
     source: "Chicago Stage and Screen",
     link: "https://www.chicagostageandscreen.com/post/a-homegrown-christmas-carol-to-revive-your-holiday-spirit",
-    image: "/red-dickens-5.jpg",
+    image: "",
   },
   {
     top: "a remarkably artful riff",
@@ -41,7 +41,7 @@ const reviews = [
     ],
     source: "Buzz Center Stage",
     link: "https://www.buzznews.net/theatre/theatre-reviews/item/5732-this-charles-dickens-gets-to-the-heart-of-christmas-carol-in-spectacular-performance.html",
-    image: "/red-dickens-1.jpg",
+    image: "",
   },
   {
     top: "charming and sly",
@@ -52,7 +52,7 @@ const reviews = [
     ],
     source: "Chicago Reader",
     link: "https://chicagoreader.com/performing-arts/theater/theater-review/charles-dickens-begrudgingly-performs-a-christmas-carol-again/",
-    image: "/red-dickens-4.jpg",
+    image: "",
   },
   {
     top: "charming and funny",
@@ -62,14 +62,14 @@ const reviews = [
     ],
     source: "Third Coast Review",
     link: "https://thirdcoastreview.com/2024/12/11/stages-review-charles-dickens-begrudgingly-christmas-carol",
-    image: "/red-dickens-6.jpg",
+    image: "",
   },
   {
     top: "When the classic British sci-fi TV series 'Doctor Who' was rebooted for the new century in 2005, the very first journey into the past for its time-traveling alien protagonist and his human companion was to 1869 Cardiff to see Charles Dickens give a public reading of 'A Christmas Carol.'",
     excerpts: [],
     source: "Chicago Tribune",
     link: "https://www.chicagotribune.com/2024/12/11/review-charles-dickens-begrudgingly-performs-a-christmas-carol-again-adds-layers-to-scrooges-story/?fbclid=IwY2xjawH1AMBleHRuA2FlbQIxMQABHYvICwEYRdA1ujv-gPyTXq9wttxYJRPvp5P8QGzbF5uIlTB2RwQcvLJdWg_aem_igiDTDBclgF0RQGW5BhbYA",
-    image: "/red-dickens-3.jpg",
+    image: "/red-dickens-3.webp",
   },
 ];
 

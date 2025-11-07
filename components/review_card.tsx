@@ -52,7 +52,7 @@ export default function ReviewCard({
               className={`w-full h-auto flex flex-col gap-2 justify-center items-center mt-0 mb-0 `}
             >
               <Image
-                src={"/decoration.png"}
+                src={"/decoration.webp"}
                 alt={"decoration"}
                 width={20}
                 height={20}
@@ -84,7 +84,7 @@ export default function ReviewCard({
                     {idx !== review.excerpts.length - 1 && (
                       <div className="w-full flex justify-center items-center mt-2 -mb-1">
                         <Image
-                          src={"/diamond-3.png"}
+                          src={"/diamond-3.webp"}
                           alt={"decoration"}
                           width={20}
                           height={20}
@@ -111,7 +111,7 @@ export default function ReviewCard({
               className={`w-full h-auto flex flex-col gap-2 justify-center items-center mt-0 mb-0 `}
             >
               <Image
-                src={"/decoration.png"}
+                src={"/decoration.webp"}
                 alt={"decoration"}
                 width={20}
                 height={20}
