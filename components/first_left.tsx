@@ -30,8 +30,15 @@ export default function FirstLeft() {
               C<span className="text-2xl">hicago</span> 2025
             </h2>
           </div>
-          <div className="w-full bg-neutral-300 backdrop-blur relative z-30 flex flex-col items-start justify-center overflow-hidden h-full md:h-auto rounded-xl px-4">
-            <div className="absolute bottom-[10%] md:bottom-0 left-[60%] md:left-[50%] w-3/4 h-3/4 md:w-full md:h-full bg-[url('/dickens_illustration.webp')] bg-contain bg-bottom-left bg-no-repeat z-1 mix-blend-multiply opacity-100" />
+          <div className="w-full bg-neutral-300 backdrop-blur relative z-30 flex flex-col items-start justify-center overflow-hidden h-full md:h-auto rounded-xl px-4 relative">
+            {/* <div className="absolute bottom-[10%] md:bottom-0 left-[60%] md:left-[50%] w-3/4 h-3/4 md:w-full md:h-full bg-[url('/dickens_illustration.webp')] bg-contain bg-bottom-left bg-no-repeat z-1 mix-blend-multiply opacity-100" /> */}
+            <Image
+              src="/dickens_illustration.webp"
+              alt="Charles Dickens Illustration"
+              width={200}
+              height={200}
+              className="w-1/2 absolute bottom-2 md:bottom-2 right-2 md:right-2 mix-blend-multiply opacity-100"
+            />
             <div className="w-full rounded-xl flex flex-col items-start justify-start gap-0 pt-6 pb-8 pl-2 md:pl-0">
               <h2 className="text-lg md:text-xl font-bold">
                 December 4&ndash;28
