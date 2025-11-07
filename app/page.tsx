@@ -4,15 +4,15 @@ import dynamic from "next/dynamic";
 import { Mail } from "lucide-react";
 import { Metadata } from "next";
 
-// Lazy load below-the-fold components
+// Lazy load below-the-fold components to reduce TBT
 const PictureReviewScramble = dynamic(
   () => import("@/components/picture_review_scramble"),
-  { ssr: true } // Keep SSR for SEO
+  { ssr: false } // Disable SSR to reduce initial bundle and TBT
 );
 
 const Schedule = dynamic(
   () => import("@/components/schedule"),
-  { ssr: true } // Keep SSR for SEO
+  { ssr: false } // Disable SSR to reduce initial bundle and TBT
 );
 
 export const metadata: Metadata = {

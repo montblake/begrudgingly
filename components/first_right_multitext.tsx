@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 
 const PlayElement = (
   <>
@@ -45,6 +45,12 @@ const NewsElement = (
 
 export default function FirstRight() {
   const [showPlay, setShowPlay] = useState(true);
+  
+  const content = useMemo(
+    () => (showPlay ? PlayElement : NewsElement),
+    [showPlay]
+  );
+
   return (
     <div className="w-full">
       <nav className="w-full flex flex-row justify-start items-center gap-4 mb-8">
@@ -70,15 +76,9 @@ export default function FirstRight() {
           New in 2025
         </button>
       </nav>
-      {showPlay ? (
-        <div className="flex flex-col gap-4 text-neutral-400 text-base drop-shadow-lg">
-          {PlayElement}
-        </div>
-      ) : (
-        <div className="flex flex-col gap-4 text-neutral-400 text-base drop-shadow-lg">
-          {NewsElement}
-        </div>
-      )}
+      <div className="flex flex-col gap-4 text-neutral-400 text-base drop-shadow-lg">
+        {content}
+      </div>
     </div>
   );
 }
