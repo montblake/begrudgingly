@@ -12,6 +12,20 @@ const nextConfig = {
     optimizePackageImports: ["@mui/material", "lucide-react"],
   },
 
+  // Optimize CSS loading
+  compiler: {
+    // Remove console logs in production (optional, but helps with bundle size)
+    removeConsole:
+      process.env.NODE_ENV === "production"
+        ? {
+            exclude: ["error", "warn"],
+          }
+        : false,
+  },
+
+  // Enable CSS optimization
+  swcMinify: true, // Already default in Next.js 14, but explicit
+
   images: {
     formats: ["image/avif", "image/webp"],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
