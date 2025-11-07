@@ -85,7 +85,8 @@ export default function PhotoGallery({
                     alt={photo.alt}
                     width={800}
                     height={800}
-                    loading="lazy"
+                    priority={index === 0}
+                    loading={index === 0 ? undefined : "lazy"}
                     className={` border-[.5px] border-neutral-700 mx-auto ${
                       photo.vertical
                         ? "h-full w-auto"
