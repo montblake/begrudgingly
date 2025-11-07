@@ -1,18 +1,23 @@
 /** @type {import('next').NextConfig} */
+import bundleAnalyzer from "@next/bundle-analyzer";
+
+const withBundleAnalyzer = bundleAnalyzer({
+  enabled: process.env.ANALYZE === "true",
+});
 
 const nextConfig = {
   // Tell Next to target modern browsers only (no legacy polyfills/transforms)
   experimental: {
-    legacyBrowsers: false, // <-- removes polyfills like Array.flat, fromEntries, etc.
     esmExternals: true, // prefer ESM builds of deps where available
+    optimizePackageImports: ["@mui/material", "lucide-react"],
   },
 
-  // images: {
-  //   formats: ["image/avif", "image/webp"],
-  //   deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-  //   imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-  //   minimumCacheTTL: 60,
-  // },
+  images: {
+    formats: ["image/avif", "image/webp"],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    minimumCacheTTL: 60,
+  },
 
   async redirects() {
     return [
@@ -55,17 +60,17 @@ const nextConfig = {
         ],
       },
       // Optional: if you content-hash public images (e.g., /images/hero.abcd123.webp)
-      {
-        source: "/images/:path*",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
+      // {
+      //   source: "/images/:path*",
+      //   headers: [
+      //     {
+      //       key: "Cache-Control",
+      //       value: "public, max-age=31536000, immutable",
+      //     },
+      //   ],
+      // },
     ];
   },
 };
 
-export default nextConfig;
+export default withBundleAnalyzer(nextConfig);
