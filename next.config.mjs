@@ -17,16 +17,16 @@ const nextConfig = {
   async redirects() {
     return [
       // Use relative destinations to avoid extra origin parsing
-      { source: "/reviews", destination: "/2024/reviews", permanent: true },
-      { source: "/program", destination: "/2024/program", permanent: true },
+      { source: "/reviews", destination: "/2024/reviews/", permanent: true },
+      { source: "/program", destination: "/2024/program/", permanent: true },
       {
         source: "/photos_publicity",
-        destination: "/2024/photos-publicity",
+        destination: "/2024/photos-publicity/",
         permanent: true,
       },
       {
         source: "/photos_performance",
-        destination: "/2024/photos-performance",
+        destination: "/2024/photos-performance/",
         permanent: true,
       },
       // non-www -> www (single hop)

@@ -11,7 +11,7 @@ const baskerville = Libre_Baskerville({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://www.dickensagain.com"),
+  metadataBase: new URL("https://www.dickensagain.com/"),
 };
 
 export default function RootLayout({
