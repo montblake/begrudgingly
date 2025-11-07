@@ -7,48 +7,48 @@ const Images = [
   {
     src: "/photos/2025/1_joe-mazza.webp",
     alt: "Charles Dickens Begrudgingly... Poster",
-    width: 400,
-    height: 400,
+    width: 300,
+    height: 300,
     quote: "charming and sly",
     publisher: "Chicago Reader",
   },
   {
     src: "/photos/2025/42_joe-mazza.webp",
     alt: "Charles Dickens Begrudgingly... Poster",
-    width: 400,
-    height: 400,
+    width: 300,
+    height: 300,
     quote: "wonderfully off-the-cuff and intimate",
     publisher: "Chicago Stage and Screen",
   },
   {
     src: "/photos/2025/45_joe-mazza.webp",
     alt: "Charles Dickens Begrudgingly... Poster",
-    width: 400,
-    height: 400,
+    width: 300,
+    height: 300,
     quote: "one-man yuletide tour de force",
     publisher: "The Fourth Walsh",
   },
   {
     src: "/photos/2025/4_joe-mazza.webp",
     alt: "Charles Dickens Begrudgingly... Poster",
-    width: 400,
-    height: 400,
+    width: 300,
+    height: 300,
     quote: "a remarkably artful riff",
     publisher: "Buzz Center Stage",
   },
   {
     src: "/photos/2025/23_joe-mazza.webp",
     alt: "Charles Dickens Begrudgingly... Poster",
-    width: 400,
-    height: 400,
+    width: 300,
+    height: 300,
     quote: "witty, heartfelt and (mostly) true to Dickens",
     publisher: "Chicago Stage and Screen",
   },
   {
     src: "/photos/bravelux/joe-mazza-chicago-brave-lux-inc-5108673.webp",
     alt: "Charles Dickens Begrudgingly... Poster",
-    width: 400,
-    height: 400,
+    width: 300,
+    height: 300,
     quote: "rediscover comfort and joy",
     publisher: "The Fourth Walsh",
   },
@@ -78,7 +78,6 @@ export default function PictureReviewScramble() {
               width={image.width}
               height={image.height}
               loading="lazy"
-              sizes="(max-width: 768px) 50vw, 33vw"
               className={`w-full h-full object-cover absolute transition-opacity duration-1000 ${
                 replaced != index ? "opacity-100" : "opacity-0"
               }`}
