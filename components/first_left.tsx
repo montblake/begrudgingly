@@ -31,9 +31,8 @@ export default function FirstLeft() {
             </h2>
           </div>
           <div className="w-full bg-neutral-300 backdrop-blur relative z-30 flex flex-col items-start justify-center overflow-hidden h-full md:h-auto rounded-xl px-4 relative">
-            {/* <div className="absolute bottom-[10%] md:bottom-0 left-[60%] md:left-[50%] w-3/4 h-3/4 md:w-full md:h-full bg-[url('/dickens_illustration.webp')] bg-contain bg-bottom-left bg-no-repeat z-1 mix-blend-multiply opacity-100" /> */}
             <Image
-              src="/dickens_illustration.webp"
+              src="/dickens_illustration-opt.webp"
               alt="Charles Dickens Illustration"
               width={200}
               height={200}

@@ -66,7 +66,7 @@ export default function SpecialPage() {
                   C<span className="text-2xl">hicago</span> 2025
                 </h1>
               </div>
-              <div className="absolute bottom-[10%] left-[50%] w-2/3 h-2/3 bg-[url('/dickens_illustration.webp')] bg-contain bg-bottom-left bg-no-repeat z-1 mix-blend-multiply opacity-100"></div>
+              <div className="absolute bottom-[10%] left-[50%] w-2/3 h-2/3 bg-[url('/dickens_illustration-opt.webp')] bg-contain bg-bottom-left bg-no-repeat z-1 mix-blend-multiply opacity-100"></div>
               <div className="w-full rounded-xl flex flex-col items-start justify-start gap-0 relative z-2 pl-4 md:pl-12 pt-6 pb-8">
                 <h2 className="text-lg md:text-xl font-bold text-center">
                   December 4&ndash;28
