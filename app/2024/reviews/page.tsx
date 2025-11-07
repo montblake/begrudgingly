@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Charles Dickens Begrudgingly - 2024 Press Reviews",
   description:
     "Press reviews of Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again, by the critics from the 2024 season.",
-  alternates: { canonical: "/2024/reviews/" },
+  alternates: { canonical: "/2024/reviews" },
 };
 
 const reviews = [
@@ -77,13 +77,13 @@ const CtaProps = {
   intro: "",
   links: [
     {
-      href: "/2024/program/",
+      href: "/2024/program",
       text: "2024 digital program",
       icon: "program",
       internal: true,
     },
     {
-      href: "/creator/",
+      href: "/creator",
       text: "meet the creator",
       icon: "creator",
       internal: true,

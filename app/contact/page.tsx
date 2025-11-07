@@ -77,7 +77,7 @@ const MultiText: MultiText = [];
 export const metadata: Metadata = {
   title: "Charles Dickens Begrudgingly — Contact Information",
   description: "Contact information for Blake Montgomery and Charles Dickens",
-  alternates: { canonical: "/contact/" },
+  alternates: { canonical: "/contact" },
 };
 
 export default function Contact() {

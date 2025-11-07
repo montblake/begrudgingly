@@ -1,3 +1,5 @@
+// next.config.mjs
+
 /** @type {import('next').NextConfig} */
 import bundleAnalyzer from "@next/bundle-analyzer";
 
@@ -35,20 +37,36 @@ const nextConfig = {
 
   async redirects() {
     return [
-      // Use relative destinations to avoid extra origin parsing
-      { source: "/reviews", destination: "/2024/reviews/", permanent: true },
-      { source: "/program", destination: "/2024/program/", permanent: true },
+      // Legacy → current (land on final non-slash targets)
+      { source: "/reviews", destination: "/2024/reviews", permanent: true },
+      { source: "/reviews/", destination: "/2024/reviews", permanent: true },
+
+      { source: "/program", destination: "/2024/program", permanent: true },
+      { source: "/program/", destination: "/2024/program", permanent: true },
+
       {
         source: "/photos_publicity",
-        destination: "/2024/photos-publicity/",
+        destination: "/2024/photos-publicity",
         permanent: true,
       },
       {
-        source: "/photos_performance",
-        destination: "/2024/photos-performance/",
+        source: "/photos_publicity/",
+        destination: "/2024/photos-publicity",
         permanent: true,
       },
-      // non-www -> www (single hop)
+
+      {
+        source: "/photos_performance",
+        destination: "/2024/photos-performance",
+        permanent: true,
+      },
+      {
+        source: "/photos_performance/",
+        destination: "/2024/photos-performance",
+        permanent: true,
+      },
+
+      // Apex → www (single hop)
       {
         source: "/:path*",
         has: [{ type: "host", value: "dickensagain.com" }],
@@ -57,9 +75,6 @@ const nextConfig = {
       },
     ];
   },
-
-  // Avoid extra 308s on rewritten destinations
-  trailingSlash: true,
 
   async headers() {
     return [
@@ -73,16 +88,6 @@ const nextConfig = {
           },
         ],
       },
-      // Optional: if you content-hash public images (e.g., /images/hero.abcd123.webp)
-      // {
-      //   source: "/images/:path*",
-      //   headers: [
-      //     {
-      //       key: "Cache-Control",
-      //       value: "public, max-age=31536000, immutable",
-      //     },
-      //   ],
-      // },
     ];
   },
 };

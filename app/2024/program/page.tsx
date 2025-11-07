@@ -5,14 +5,14 @@ export const metadata: Metadata = {
   title: "Charles Dickens Begrudgingly - 2024 Digital Program",
   description:
     "Digital program of Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again, by Blake Montgomery for the 2024 season.",
-  alternates: { canonical: "/2024/program/" },
+  alternates: { canonical: "/2024/program" },
 };
 
 const CtaProps = {
   intro: "",
   links: [
     {
-      href: "/creator/",
+      href: "/creator",
       text: "meet the creator",
       icon: "creator",
       internal: true,

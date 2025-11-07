@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Charles Dickens Begrudgingly — 2024 Performance Photos",
   description:
     "Performance photos of Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again, by Michael Brosilow.",
-  alternates: { canonical: "/2024/photos-performance/" },
+  alternates: { canonical: "/2024/photos-performance" },
 };
 
 const photos = [
@@ -130,13 +130,13 @@ const CtaProps = {
   intro: "Learn more about the show:",
   links: [
     {
-      href: "/2024/photos-publicity/",
+      href: "/2024/photos-publicity",
       text: "publicity photos",
       icon: "camera",
       internal: true,
     },
     {
-      href: "/2024/reviews/",
+      href: "/2024/reviews",
       text: "press reviews",
       icon: "glasses",
       internal: true,

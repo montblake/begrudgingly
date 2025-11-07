@@ -2,4 +2,4 @@ User-Agent: *
 Allow: /
 Disallow: /private/
 
-Sitemap: https://dickensagain.com/sitemap.xml
+Sitemap: https://www.dickensagain.com/sitemap.xml

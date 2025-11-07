@@ -53,7 +53,7 @@ const CtaProps = {
   intro: "",
   links: [
     {
-      href: "/contact/",
+      href: "/contact",
       text: "contact information",
       icon: "contact",
       internal: true,
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
   title: "Charles Dickens Begrudgingly — Meet the Creator",
   description:
     "Meet the creator and performer of Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again, Blake Montgomery",
-  alternates: { canonical: "/creator/" },
+  alternates: { canonical: "/creator" },
 };
 
 export default function Creator() {

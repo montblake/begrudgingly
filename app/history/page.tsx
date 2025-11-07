@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Charles Dickens Begrudgingly — Production History",
   description:
     "Production history of Charles Dickens Begrudgingly Performs A CHRISTMAS CAROL Again, by Blake Montgomery",
-  alternates: { canonical: "/history/" },
+  alternates: { canonical: "/history" },
 };
 
 const ImageProps = {
@@ -60,19 +60,19 @@ const CtaProps = {
   intro: "",
   links: [
     {
-      href: "/2024/photos-publicity/",
+      href: "/2024/photos-publicity",
       text: "publicity photos",
       icon: "camera",
       internal: true,
     },
     {
-      href: "/2024/reviews/",
+      href: "/2024/reviews",
       text: "press reviews",
       icon: "glasses",
       internal: true,
     },
     {
-      href: "/creator/",
+      href: "/creator",
       text: "the creator",
       icon: "creator",
       internal: true,
