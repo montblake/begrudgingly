@@ -16,7 +16,7 @@ const photos = [
     vertical: false,
   },
   {
-    src: "/photos/bravelux/4-joe-mazza-chicago-brave-lux-inc-5206468.avif",
+    src: "/photos/bravelux/2-joe-mazza-chicago-brave-lux-inc-5206468.avif",
     alt: "Charles Dickens",
     credit: "Joe Mazza / brave lux inc.",
     vertical: false,
