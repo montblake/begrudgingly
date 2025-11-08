@@ -6,7 +6,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "victorian-texture": "url('/victorian-texture_darker.webp')",
+        victorian: "url('/victorian-bg.avif')",
       },
       borderRadius: {
         lg: "var(--radius)",

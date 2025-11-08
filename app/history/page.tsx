@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const ImageProps = {
-  src: "/charles-full-optimized.webp",
+  src: "/charles-full.avif",
   alt: "2024 Production Poster for Charles Dickens Begrudgingly...",
   width: 500,
   height: 645,

@@ -69,7 +69,7 @@ const reviews = [
     excerpts: [],
     source: "Chicago Tribune",
     link: "https://www.chicagotribune.com/2024/12/11/review-charles-dickens-begrudgingly-performs-a-christmas-carol-again-adds-layers-to-scrooges-story/?fbclid=IwY2xjawH1AMBleHRuA2FlbQIxMQABHYvICwEYRdA1ujv-gPyTXq9wttxYJRPvp5P8QGzbF5uIlTB2RwQcvLJdWg_aem_igiDTDBclgF0RQGW5BhbYA",
-    image: "/red-dickens-3.webp",
+    image: "/red-dickens-3.avif",
   },
 ];
 

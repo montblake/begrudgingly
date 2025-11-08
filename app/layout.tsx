@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={baskerville.variable}>
       <body
-        className={`${baskerville.className} antialiased h-screen flex flex-col justify-start items-center bg-victorian-texture bg-no-repeat bg-cover bg-center bg-fixed`}
+        className={`${baskerville.className} antialiased h-screen flex flex-col justify-start items-center bg-victorian bg-no-repeat bg-cover bg-center bg-fixed`}
       >
         <Header />
         {children}

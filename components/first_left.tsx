@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 const MainImage = {
-  src: "/2025_dickens_web_transparency_reduced.webp",
+  src: "/dickens_poster_2025.avif",
   alt: "Charles Dickens Begrudgingly... Poster",
   width: 500,
   height: 500,
@@ -33,7 +33,7 @@ export default function FirstLeft() {
           </div>
           <div className="w-full bg-neutral-300 backdrop-blur relative z-30 flex flex-col items-start justify-center overflow-hidden h-full md:h-auto rounded-xl px-4 relative">
             <Image
-              src="/dickens_illustration-opt.webp"
+              src="/dickens_illustration.avif"
               alt="Charles Dickens Illustration"
               width={200}
               height={200}
