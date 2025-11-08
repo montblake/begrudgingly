@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Images = [
   {
-    src: "/photos/2025/1_joe-mazza.webp",
+    src: "/photos/2025/1_joe-mazza.avif",
     alt: "Charles Dickens Begrudgingly... Poster",
     width: 300,
     height: 300,
@@ -13,7 +13,7 @@ const Images = [
     publisher: "Chicago Reader",
   },
   {
-    src: "/photos/2025/42_joe-mazza.webp",
+    src: "/photos/2025/42_joe-mazza.avif",
     alt: "Charles Dickens Begrudgingly... Poster",
     width: 300,
     height: 300,
@@ -21,7 +21,7 @@ const Images = [
     publisher: "Chicago Stage and Screen",
   },
   {
-    src: "/photos/2025/45_joe-mazza.webp",
+    src: "/photos/2025/45_joe-mazza.avif",
     alt: "Charles Dickens Begrudgingly... Poster",
     width: 300,
     height: 300,
@@ -29,7 +29,7 @@ const Images = [
     publisher: "The Fourth Walsh",
   },
   {
-    src: "/photos/2025/4_joe-mazza.webp",
+    src: "/photos/2025/4_joe-mazza.avif",
     alt: "Charles Dickens Begrudgingly... Poster",
     width: 300,
     height: 300,
@@ -37,7 +37,7 @@ const Images = [
     publisher: "Buzz Center Stage",
   },
   {
-    src: "/photos/2025/23_joe-mazza.webp",
+    src: "/photos/2025/23_joe-mazza.avif",
     alt: "Charles Dickens Begrudgingly... Poster",
     width: 300,
     height: 300,
@@ -45,7 +45,7 @@ const Images = [
     publisher: "Chicago Stage and Screen",
   },
   {
-    src: "/photos/2025/joe-mazza-chicago-brave-lux-inc-5108673.webp",
+    src: "/photos/2025/joe-mazza-chicago-brave-lux-inc-5108673.avif",
     alt: "Charles Dickens Begrudgingly... Poster",
     width: 300,
     height: 300,
