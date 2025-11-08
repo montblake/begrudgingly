@@ -6,7 +6,7 @@ import Link from "next/link";
 const Images = [
   {
     src: "/photos/2025/1_joe-mazza.avif",
-    alt: "Charles Dickens Begrudgingly... Poster",
+    alt: "Charles Dickens Begrudgingly Photo",
     width: 300,
     height: 300,
     quote: "charming and sly",
@@ -14,7 +14,7 @@ const Images = [
   },
   {
     src: "/photos/2025/42_joe-mazza.avif",
-    alt: "Charles Dickens Begrudgingly... Poster",
+    alt: "Charles Dickens Begrudgingly Photo",
     width: 300,
     height: 300,
     quote: "wonderfully off-the-cuff and intimate",
@@ -22,7 +22,7 @@ const Images = [
   },
   {
     src: "/photos/2025/45_joe-mazza.avif",
-    alt: "Charles Dickens Begrudgingly... Poster",
+    alt: "Charles Dickens Begrudgingly Photo",
     width: 300,
     height: 300,
     quote: "one-man yuletide tour de force",
@@ -30,7 +30,7 @@ const Images = [
   },
   {
     src: "/photos/2025/4_joe-mazza.avif",
-    alt: "Charles Dickens Begrudgingly... Poster",
+    alt: "Charles Dickens Begrudgingly Photo",
     width: 300,
     height: 300,
     quote: "a remarkably artful riff",
@@ -38,7 +38,7 @@ const Images = [
   },
   {
     src: "/photos/2025/23_joe-mazza.avif",
-    alt: "Charles Dickens Begrudgingly... Poster",
+    alt: "Charles Dickens Begrudgingly Photo",
     width: 300,
     height: 300,
     quote: "witty, heartfelt and (mostly) true to Dickens",
@@ -46,7 +46,7 @@ const Images = [
   },
   {
     src: "/photos/2025/joe-mazza-chicago-brave-lux-inc-5108673.avif",
-    alt: "Charles Dickens Begrudgingly... Poster",
+    alt: "Charles Dickens Begrudgingly Photo",
     width: 300,
     height: 300,
     quote: "rediscover comfort and joy",
