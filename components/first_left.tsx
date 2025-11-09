@@ -18,9 +18,9 @@ export default function FirstLeft() {
         width={MainImage.width}
         height={MainImage.height}
         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 500px"
-        priority
-        fetchPriority="high"
-        quality={75}
+        preload
+        // fetchPriority="high"
+        quality={50}
         className="w-full h-auto object-cover object-center rounded-xl relative -top-0 md:-top-4 mb-4 md:-mb-4"
       />
 
@@ -38,6 +38,7 @@ export default function FirstLeft() {
               width={200}
               height={200}
               loading="lazy"
+              quality={50}
               className="w-1/2 absolute bottom-2 md:bottom-2 right-2 md:right-2 mix-blend-multiply opacity-100"
             />
             <div className="w-full rounded-xl flex flex-col items-start justify-start gap-0 pt-6 pb-8 pl-2 md:pl-0">

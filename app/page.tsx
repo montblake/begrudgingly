@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="w-full h-full flex flex-col justify-start items-start gap-0 max-w-[1000px] mx-auto">
+    <main className="w-full h-[calc(100vh-3rem)] flex flex-col justify-start items-start gap-0 max-w-[1000px] mx-auto overflow-y-scroll">
       <div className="TOP_ROW w-full flex flex-col gap-8 justify-start items-center md:flex-row md:justify-center md:items-stretch md:gap-8 mx-auto px-4 pt-0 md:px-8 md:pt-4 md:pb-8">
         <FirstLeft />
         <FirstRight />

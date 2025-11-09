@@ -47,6 +47,7 @@ export default function Schedule() {
                 alt="This is a clownshow."
                 width={200}
                 height={200}
+                quality={50}
                 loading="lazy"
                 sizes="(max-width: 768px) 33vw, 25vw"
                 className="w-full h-auto object-cover object-center relative -left-0 top-1 md:top-0 opacity-80 rotate-[-4deg] hover:scale-105 transition-all duration-300"
@@ -138,6 +139,7 @@ export default function Schedule() {
               alt="Holiday Dickens Wrapped With Ribbon"
               width={500}
               height={500}
+              quality={50}
               loading="lazy"
               sizes="(max-width: 768px) 100vw, 33vw"
               className="w-full h-full object-cover object-top rounded-xl"
@@ -163,6 +165,7 @@ export default function Schedule() {
               alt="Holiday Dickens Wrapped With Ribbon"
               width={500}
               height={500}
+              quality={50}
               loading="lazy"
               sizes="100vw"
               className="w-full h-full object-cover object-top rounded-xl border border-neutral-400"
