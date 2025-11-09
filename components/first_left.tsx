@@ -20,7 +20,7 @@ export default function FirstLeft() {
         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 500px"
         priority
         fetchPriority="high"
-        quality={85}
+        quality={75}
         className="w-full h-auto object-cover object-center rounded-xl relative -top-0 md:-top-4 mb-4 md:-mb-4"
       />
 
