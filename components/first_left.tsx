@@ -5,8 +5,8 @@ import Image from "next/image";
 const MainImage = {
   src: "/dickens_poster_2025.avif",
   alt: "Charles Dickens Begrudgingly... Poster",
-  width: 500,
-  height: 500,
+  width: 600,
+  height: 900,
 };
 
 export default function FirstLeft() {
@@ -17,7 +17,7 @@ export default function FirstLeft() {
         alt={MainImage.alt}
         width={MainImage.width}
         height={MainImage.height}
-        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 500px"
+        sizes="(max-width: 500px) 100vw, (max-width: 1000px) 50vw, 500px"
         preload
         // fetchPriority="high"
         quality={50}
