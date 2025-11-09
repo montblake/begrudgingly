@@ -1,6 +1,6 @@
 import { Libre_Baskerville } from "next/font/google";
 import "./globals.css";
-import Header from "../components/new_header";
+import Header from "../components/header";
 import { Analytics } from "@vercel/analytics/react";
 
 const baskerville = Libre_Baskerville({
