@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 // import { useState } from "react";
 import HeaderLogo from "./header_logo";
-import HeaderNavLinks from "./header_links";
+import HeaderNavLinks from "./new_header_links";
 // import HeaderOverlayMenu from "./header_overlay";
 // import HeaderHamburger from "./header_hamburger";
 import dynamic from "next/dynamic";
