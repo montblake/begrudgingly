@@ -1,9 +1,10 @@
 // "use client";
 
 import HeaderLogo from "./header_logo";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
+import HeaderNav from "./header_nav";
 
-const HeaderNav = dynamic(() => import("./header_nav"));
+// const HeaderNav = dynamic(() => import("./header_nav"));
 
 interface NavLink {
   href: string;
