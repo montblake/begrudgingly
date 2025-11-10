@@ -19,7 +19,8 @@ export default function FirstLeft() {
         height={MainImage.height}
         sizes="(max-width: 500px) 100vw, (max-width: 1000px) 50vw, 500px"
         loading="eager"
-        quality={50}
+        priority
+        quality={75}
         className="w-full h-auto object-cover object-center rounded-xl relative -top-0 md:-top-4 mb-4 md:-mb-4"
       />
 

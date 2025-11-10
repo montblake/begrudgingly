@@ -40,6 +40,7 @@ export default function SpecialImage({
         width={width}
         height={height}
         quality={50}
+        priority
         loading="eager"
       />
       {caption && (
