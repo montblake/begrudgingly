@@ -40,7 +40,7 @@ export default function SpecialImage({
         width={width}
         height={height}
         quality={50}
-        preload
+        loading="eager"
       />
       {caption && (
         <p className="text-center text-xs text-neutral-400 italic drop-shadow-xl">
