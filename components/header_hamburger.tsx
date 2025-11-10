@@ -1,10 +1,27 @@
+"use client";
+
 import { Mail } from "lucide-react";
+import HeaderOverlayMenu from "./header_overlay";
+import { useState } from "react";
+
+interface NavLink {
+  href: string;
+  title: string;
+  description: string;
+  subLinks: NavLink[];
+}
 
 export default function HeaderHamburger({
-  toggleMenu,
+  navLinks,
+  pathname,
 }: {
-  toggleMenu: () => void;
+  navLinks: NavLink[];
+  pathname: string;
 }) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <div className="flex flex-row items-center justify-center gap-2 md:hidden">
       <button className="text-neutral-200 relative z-50" onClick={toggleMenu}>
@@ -33,6 +50,12 @@ export default function HeaderHamburger({
           <Mail size={12} className="" />
         </div>
       </a>
+      <HeaderOverlayMenu
+        isMenuOpen={isMenuOpen}
+        toggleMenu={toggleMenu}
+        navLinks={navLinks}
+        pathname={pathname}
+      />
     </div>
   );
 }
