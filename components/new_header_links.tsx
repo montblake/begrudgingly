@@ -82,7 +82,7 @@ function MenuItem({
           {title}
         </Link>
       ) : (
-        <p className="text-xs lg:text-sm text-neutral-200">{title}</p>
+        <p className="text-xs xl:text-sm text-neutral-200">{title}</p>
       )}
     </div>
   );
@@ -99,7 +99,7 @@ function MenuItemWithSubLinks({
 }) {
   return (
     <>
-      <NavigationMenuTrigger className="group inline-flex w-max items-center justify-center rounded bg-none text-xs lg:text-sm text-neutral-400 font-medium transition-colors hover:text-neutral-200 focus:border-b-2 focus:border-blue-500 focus:outline-none disabled:pointer-events-none disabled:opacity-50 relative flex justify-center items-center">
+      <NavigationMenuTrigger className="group inline-flex w-max items-center justify-center rounded bg-none text-xs xl:text-sm text-neutral-400 font-medium transition-colors hover:text-neutral-200 focus:border-b-2 focus:border-blue-500 focus:outline-none disabled:pointer-events-none disabled:opacity-50 relative flex justify-center items-center">
         {title}
       </NavigationMenuTrigger>
       <NavigationMenuContent className="">
@@ -184,12 +184,14 @@ const ListItem = forwardRef<
       <a
         ref={ref}
         className={cn(
-          "block text-xs lg:text-sm text-neutral-300 select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-neutral-200 active:underline focus:text-white",
+          "block text-xs xl:text-sm text-neutral-300 select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-neutral-200 active:underline focus:text-white",
           className
         )}
         {...props}
       >
-        <div className="text-sm font-medium leading-none">{title}</div>
+        <div className="text-xs xl:text-sm font-medium leading-none">
+          {title}
+        </div>
         <p className="line-clamp-2 text-sm leading-snug text-neutral-400">
           {children}
         </p>
