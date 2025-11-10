@@ -4,10 +4,12 @@
 // import { useState } from "react";
 import HeaderLogo from "./header_logo";
 // import HeaderNavLinks from "./new_header_links";
-import HeaderNav from "./header_nav";
+// import HeaderNav from "./header_nav";
 // import HeaderOverlayMenu from "./header_overlay";
 // import HeaderHamburger from "./header_hamburger";
-// import dynamic from "next/dynamic";
+import dynamic from "next/dynamic";
+
+const HeaderNav = dynamic(() => import("./header_nav"));
 
 interface NavLink {
   href: string;
@@ -89,11 +91,5 @@ export default function Header() {
         <HeaderNav navLinks={navLinks} />
       </nav>
     </div>
-    //  <HeaderOverlayMenu
-    //         isMenuOpen={isMenuOpen}
-    //         toggleMenu={toggleMenu}
-    //         navLinks={navLinks}
-    //         pathname={pathname}
-    //       />
   );
 }
