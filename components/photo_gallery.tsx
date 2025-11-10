@@ -103,18 +103,18 @@ export default function PhotoGallery({
                 return (
                   <CarouselItem key={index} className={`w-full h-auto`}>
                     <div
-                      className={`w-full h-full max-h-[65vh] bg-neutral-950 overflow-hidden pb-0`}
+                      className={`w-full h-full max-h-[800px] bg-neutral-950 overflow-hidden pb-0 flex items-center justify-center`}
                     >
                       {/* Placeholder div to maintain carousel structure */}
                       <div
                         className={`border-[.5px] border-neutral-700 mx-auto bg-neutral-900 ${
-                          photo.vertical
-                            ? "h-full w-auto"
-                            : "w-full h-auto max-w-[800px]"
+                          photo.vertical ? "h-full w-auto" : "w-full h-auto"
                         }`}
-                        style={{
-                          aspectRatio: photo.vertical ? "2/3" : "16/9",
-                        }}
+                        style={
+                          {
+                            // aspectRatio: photo.vertical ? "2/3" : "16/9",
+                          }
+                        }
                       />
                     </div>
                   </CarouselItem>
@@ -122,24 +122,24 @@ export default function PhotoGallery({
               }
 
               // Determine quality: high for current, low for adjacent
-              const quality = isCurrent ? 75 : 20;
+              const quality = isCurrent ? 75 : 50;
 
               return (
                 <CarouselItem key={index} className={`w-full h-auto`}>
                   <div
-                    className={`w-full h-full max-h-[65vh] bg-neutral-950 overflow-hidden pb-0`}
+                    className={`w-full h-auto bg-neutral-950 overflow-hidden pb-0 flex items-center justify-center`}
                   >
                     <Image
                       src={photo.src}
                       alt={photo.alt}
-                      width={800}
-                      height={800}
+                      width={photo.vertical ? 800 : 500}
+                      height={photo.vertical ? 800 : 500}
                       quality={quality}
                       priority={index === 0 && isCurrent}
                       loading={isCurrent ? "eager" : "lazy"}
-                      className={`border-[.5px] border-neutral-700 mx-auto ${
+                      className={`border-[.5px] border-neutral-700 mx-auto rounded-2xl ${
                         photo.vertical
-                          ? "h-full w-auto"
+                          ? "h-full w-auto max-h-[800px]"
                           : "w-full h-auto max-w-[800px]"
                       }`}
                     />
@@ -150,7 +150,7 @@ export default function PhotoGallery({
           </CarouselContent>
         </Carousel>
 
-        <div className="w-[calc(100%-1rem)] mr-4 flex flex-col justify-start items-start py-0">
+        <div className="w-[calc(100%-1rem)] mr-4 flex flex-col justify-start items-start py-0 my-4">
           {textElement}
         </div>
         {/* <div className="w-[calc(100%-1rem)] mr-4 bg-neutral-950 rounded-b-2xl border border-neutral-800 border-t-0 flex items-center justify-center pb-8">
