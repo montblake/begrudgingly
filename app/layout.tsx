@@ -1,9 +1,9 @@
 import { Libre_Baskerville } from "next/font/google";
 import "./globals.css";
 import Header from "../components/header";
-import AnalyticsOnIdle from "./analyticsOnIdle";
+// import AnalyticsOnIdle from "./analyticsOnIdle";
 
-// import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/react";
 // import dynamic from "next/dynamic";
 // const Analytics = dynamic(
 //   () => import("@vercel/analytics/react").then((m) => m.Analytics) // Lazy load analytics to reduce TBT
@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
-        {process.env.NODE_ENV === "production" && <AnalyticsOnIdle />}
+        {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
   );
