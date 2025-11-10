@@ -30,7 +30,7 @@ export default function HeaderNavLinks({
 }) {
   return (
     <NavigationMenu className="hidden md:block">
-      <NavigationMenuList className="gap-1 lg:gap-4 xl:gap-6">
+      <NavigationMenuList className="gap-1 md:gap-4 lg:gap-4 xl:gap-6">
         {navLinks.map((link) => (
           <NavigationMenuItem key={link.title}>
             {link.subLinks.length > 0 ? (
@@ -78,7 +78,7 @@ function MenuItem({
           href={href}
           prefetch={false}
           scroll={false}
-          className={`text-xs lg:text-sm text-neutral-400 hover:text-neutral-300 active:underline focus:border-b-2 focus:border-blue-400 focus:outline-none`}
+          className={`text-xs xl:text-sm text-neutral-400 hover:text-neutral-300 active:underline focus:border-b-2 focus:border-blue-400 focus:outline-none`}
         >
           {title}
         </Link>

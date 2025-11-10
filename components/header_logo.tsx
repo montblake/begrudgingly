@@ -17,11 +17,11 @@ export default function HeaderLogo({ pathname }: { pathname: string }) {
             <Image
               src="/cdb_logo.avif"
               alt="Home"
-              width={180}
-              height={28}
+              width={200}
+              height={32}
               quality={50}
               loading="lazy"
-              className={`h-5 w-auto relative z-100 -top-[1px] opacity-90 mix-blend-screen`}
+              className={`h-4 w-auto relative z-100 -top-[1px] opacity-90 mix-blend-screen`}
             />
           </Link>
         </li>
@@ -37,11 +37,11 @@ export default function HeaderLogo({ pathname }: { pathname: string }) {
             <Image
               src="/cdb_logo.avif"
               alt="Home"
-              width={180}
-              height={28}
+              width={200}
+              height={32}
               quality={50}
               loading="lazy"
-              className="h-5 w-auto relative z-100 -top-[1px] hover:scale-95 transition-all duration-300 opacity-90 mix-blend-screen"
+              className="h-4 w-auto relative z-100 -top-[1px] hover:scale-95 transition-all duration-300 opacity-90 mix-blend-screen"
             />
           </Link>
         </li>
