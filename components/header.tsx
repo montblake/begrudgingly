@@ -17,14 +17,26 @@ interface NavLink {
 const navLinks: NavLink[] = [
   {
     href: "/",
-    title: "Home",
+    title: "Chicago 2025",
     description: "Home",
     subLinks: [],
   },
   {
     href: "/history",
-    title: "History",
+    title: "Production History",
     description: "History",
+    subLinks: [],
+  },
+  {
+    href: "/creator",
+    title: "Creative Team",
+    description: "Creator",
+    subLinks: [],
+  },
+  {
+    href: "/contact",
+    title: "Contact",
+    description: "Contact",
     subLinks: [],
   },
   {
@@ -58,18 +70,6 @@ const navLinks: NavLink[] = [
         subLinks: [],
       },
     ],
-  },
-  {
-    href: "/creator",
-    title: "Creator",
-    description: "Creator",
-    subLinks: [],
-  },
-  {
-    href: "/contact",
-    title: "Contact",
-    description: "Contact",
-    subLinks: [],
   },
 ];
 
