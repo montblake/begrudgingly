@@ -23,7 +23,7 @@ export default function FirstLeft() {
         loading="eager"
         priority
         quality={75}
-        className="object-contain object-center rounded-xl"
+        className="object-contain object-center rounded-xl -mt-2 md:-mt-4"
       />
       {/* </div> */}
 

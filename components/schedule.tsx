@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Schedule() {
   return (
     <div className="w-full mt-4 md:pr-2 md:pl-6">
-      <div className="w-full h-auto flex flex-row justify-center items-start gap-8 md:gap-12 px-4 pt-4 md:pt-8 pb-6 md:pb-12 md:px-8 bg-gradient-to-b from-amber-200/80 via-amber-400/80 to-amber-500/80 md:rounded-xl overflow-hidden">
+      <div className="w-full h-auto flex flex-row justify-center items-start gap-8 md:gap-12 px-4 pt-4 md:pt-8 pb-6 md:pb-12 md:px-8 bg-gradient-to-b from-amber-200/80 via-amber-400/80 to-amber-500/80 rounded-t-xl md:rounded-xl overflow-hidden">
         <div className="w-1/3 md:w-1/4 h-auto self-stretch flex flex-col items-between justify-between gap-0 pl-0">
           <div className="w-full flex flex-col items-start justify-center gap-0">
             <h2 className="text-4xl md:text-7xl tracking-tighter font-bold text-neutral-950 text-center">
@@ -148,7 +148,7 @@ export default function Schedule() {
           </div>
         </a>
       </div>
-      <div className="md:hidden w-full h-auto flex flex-row items-center justify-center bg-amber-500/80 p-4">
+      <div className="md:hidden w-full h-auto flex flex-row items-center justify-center bg-amber-500/80 p-4 rounded-b-xl">
         <a
           className="w-full h-auto flex flex-row items-center justify-center bg-neutral-900 rounded-2xl hover:scale-105 transition-all duration-300"
           href="https://www.theaterwit.org/tickets/productions/564/performances#top"

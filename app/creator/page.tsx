@@ -49,17 +49,17 @@ const TextElement = (
   </>
 );
 
-const CtaProps = {
-  intro: "",
-  links: [
-    {
-      href: "/contact",
-      text: "contact information",
-      icon: "contact",
-      internal: true,
-    },
-  ],
-};
+// const CtaProps = {
+//   intro: "",
+//   links: [
+//     {
+//       href: "/contact",
+//       text: "contact information",
+//       icon: "contact",
+//       internal: true,
+//     },
+//   ],
+// };
 
 type MultiText = {
   title: string;
@@ -82,7 +82,7 @@ export default function Creator() {
       ImageProps={ImageProps}
       HeadlineProps={HeadlineProps}
       TextElement={TextElement}
-      CtaProps={CtaProps}
+      // CtaProps={CtaProps}
       MultiText={MultiText}
     />
   );

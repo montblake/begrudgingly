@@ -56,29 +56,29 @@ const TextElement = (
   </>
 );
 
-const CtaProps = {
-  intro: "",
-  links: [
-    {
-      href: "/2024/photos-publicity",
-      text: "publicity photos",
-      icon: "camera",
-      internal: true,
-    },
-    {
-      href: "/2024/reviews",
-      text: "press reviews",
-      icon: "glasses",
-      internal: true,
-    },
-    {
-      href: "/creator",
-      text: "the creator",
-      icon: "creator",
-      internal: true,
-    },
-  ],
-};
+// const CtaProps = {
+//   intro: "",
+//   links: [
+//     {
+//       href: "/2024/photos-publicity",
+//       text: "publicity photos",
+//       icon: "camera",
+//       internal: true,
+//     },
+//     {
+//       href: "/2024/reviews",
+//       text: "press reviews",
+//       icon: "glasses",
+//       internal: true,
+//     },
+//     {
+//       href: "/creator",
+//       text: "the creator",
+//       icon: "creator",
+//       internal: true,
+//     },
+//   ],
+// };
 
 const MultiText: MultiText = [];
 
@@ -88,7 +88,7 @@ export default function History() {
       ImageProps={ImageProps}
       HeadlineProps={HeadlineProps}
       TextElement={TextElement}
-      CtaProps={CtaProps}
+      // CtaProps={CtaProps}
       MultiText={MultiText}
     />
   );

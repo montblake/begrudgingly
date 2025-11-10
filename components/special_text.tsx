@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import SpecialHeadline from "./special_headline";
-import CTAElement from "./cta_element";
+// import CTAElement from "./cta_element";
 import SpecialMultiText from "./special_multi_text";
 
 type HeadlineProps = {
@@ -10,10 +10,10 @@ type HeadlineProps = {
 };
 
 type TextElement = ReactNode;
-type CtaProps = {
-  intro: string;
-  links: { href: string; text: string; internal: boolean; icon: string }[];
-};
+// type CtaProps = {
+//   intro: string;
+//   links: { href: string; text: string; internal: boolean; icon: string }[];
+// };
 
 type MultiText = {
   title: string;
@@ -23,12 +23,12 @@ type MultiText = {
 export default function SpecialText({
   HeadlineProps,
   TextElement,
-  CtaProps,
+  // CtaProps,
   MultiText,
 }: {
   HeadlineProps: HeadlineProps;
   TextElement: TextElement;
-  CtaProps: CtaProps;
+  // CtaProps: CtaProps;
   MultiText: MultiText;
 }) {
   return (
@@ -40,7 +40,7 @@ export default function SpecialText({
       <div className="flex flex-col gap-4 text-neutral-400 text-base drop-shadow-lg">
         {TextElement}
         {MultiText.length > 0 && <SpecialMultiText MultiText={MultiText} />}
-        {CtaProps.links.length > 0 && <CTAElement {...CtaProps} />}
+        {/* {CtaProps.links.length > 0 && <CTAElement {...CtaProps} />} */}
       </div>
     </div>
   );
