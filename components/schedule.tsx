@@ -36,7 +36,7 @@ export default function Schedule() {
               </a>
             </div>
           </div>
-          <div className="w-full md:w-[80%] aspect-square flex flex-col items-center justify-center gap-0 rounded-xl p-0">
+          <div className="w-full md:w-[80%] aspect-square flex flex-col items-center justify-center gap-0 rounded-xl p-0 relative">
             <a
               href="https://thisisaclownshow.com"
               target="_blank"
@@ -45,12 +45,13 @@ export default function Schedule() {
               <Image
                 src="/clownshow_logo_tent.avif"
                 alt="This is a clownshow."
-                width={200}
-                height={200}
+                // width={200}
+                // height={200}
+                fill
                 quality={50}
                 loading="lazy"
                 sizes="(max-width: 768px) 33vw, 25vw"
-                className="w-full h-auto object-cover object-center relative -left-0 top-1 md:top-0 opacity-80 rotate-[-4deg] hover:scale-105 transition-all duration-300"
+                className="w-full h-auto object-contain object-center relative -left-0 top-1 md:top-0 opacity-80 rotate-[-4deg] hover:scale-105 transition-all duration-300"
               />
             </a>
           </div>
@@ -133,15 +134,15 @@ export default function Schedule() {
               On Sale Now
             </h3>
           </div>
-          <div className="w-full h-[90%]">
+          <div className="w-full h-[90%] relative">
             <Image
               src="/dickens_house_poster_2.avif"
               alt="Holiday Dickens Wrapped With Ribbon"
               width={500}
-              height={500}
+              height={750}
               quality={50}
               loading="lazy"
-              sizes="(max-width: 768px) 100vw, 33vw"
+              sizes="(max-width: 768px) 50vw, 25vw"
               className="w-full h-full object-cover object-top rounded-xl"
             />
           </div>

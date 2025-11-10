@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -81,8 +82,9 @@ export default function PictureReviewScramble() {
             <Image
               src={image.src}
               alt={image.alt}
-              width={image.width}
-              height={image.height}
+              // width={image.width}
+              // height={image.height}
+              fill
               loading="lazy"
               sizes="(max-width: 768px) 50vw, 33vw"
               quality={75}
