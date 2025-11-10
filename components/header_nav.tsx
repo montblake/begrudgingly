@@ -2,8 +2,12 @@
 
 import { usePathname } from "next/navigation";
 import dynamic from "next/dynamic";
-const HeaderNavLinks = dynamic(() => import("./new_header_links"));
-const HeaderHamburger = dynamic(() => import("./header_hamburger"));
+const HeaderNavLinks = dynamic(() => import("./new_header_links"), {
+  ssr: false,
+});
+const HeaderHamburger = dynamic(() => import("./header_hamburger"), {
+  ssr: false,
+});
 
 interface NavLink {
   href: string;
