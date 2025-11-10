@@ -1,8 +1,11 @@
 "use client";
 
-import HeaderNavLinks from "./new_header_links";
-import HeaderHamburger from "./header_hamburger";
+// import HeaderNavLinks from "./new_header_links";
+// import HeaderHamburger from "./header_hamburger";
 import { usePathname } from "next/navigation";
+import dynamic from "next/dynamic";
+const HeaderNavLinks = dynamic(() => import("./new_header_links"));
+const HeaderHamburger = dynamic(() => import("./header_hamburger"));
 
 interface NavLink {
   href: string;
