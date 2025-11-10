@@ -113,7 +113,7 @@ export default function PhotosPublicity() {
           key="/2024/photos-publicity"
           HeaderInfo={HeaderInfo}
           photos={photos}
-          intro={CtaProps.intro}
+          // intro={CtaProps.intro}
           links={CtaProps.links}
           textElement={textElement}
         />
