@@ -12,17 +12,20 @@ const MainImage = {
 export default function FirstLeft() {
   return (
     <div className="LEFT_COLUMN w-full">
+      {/* <div className="w-full h-[500px] relative"> */}
       <Image
         src={MainImage.src}
         alt={MainImage.alt}
         width={MainImage.width}
         height={MainImage.height}
-        sizes="(max-width: 500px) 100vw, (max-width: 1000px) 50vw, 500px"
+        // fill
+        sizes="(max-width: 768px) 100vw, 600pc"
         loading="eager"
         priority
         quality={75}
-        className="w-full h-auto object-cover object-center rounded-xl relative -top-0 md:-top-4 mb-4 md:-mb-4"
+        className="object-contain object-center rounded-xl"
       />
+      {/* </div> */}
 
       <div className="w-full flex flex-col gap-0 rounded-xl px-2 md:px-6 text-neutral-950">
         <div className="w-full rounded-xl px-6 py-0 md:px-6 md:py-0 bg-neutral-900/30c backdrop-blur border border-neutral-600 relative flex flex-col items-start justify-start overflow-hidden">
