@@ -6,7 +6,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        victorian: "url('/victorian-bg.avif')",
+        victorian: "url('/victorian-reduced-bg.avif')",
       },
       borderRadius: {
         lg: "var(--radius)",
