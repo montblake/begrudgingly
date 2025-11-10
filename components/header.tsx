@@ -1,12 +1,6 @@
 // "use client";
 
-// import { usePathname } from "next/navigation";
-// import { useState } from "react";
 import HeaderLogo from "./header_logo";
-// import HeaderNavLinks from "./new_header_links";
-// import HeaderNav from "./header_nav";
-// import HeaderOverlayMenu from "./header_overlay";
-// import HeaderHamburger from "./header_hamburger";
 import dynamic from "next/dynamic";
 
 const HeaderNav = dynamic(() => import("./header_nav"));
@@ -77,13 +71,7 @@ const navLinks: NavLink[] = [
   },
 ];
 
-// const HeaderHamburger = dynamic(() => import("./header_hamburger"), {
-//   ssr: false,
-// });
-
 export default function Header() {
-  // const pathname = usePathname();
-
   return (
     <div className="w-full h-[3rem] z-50 flex flex-col justify-center items-center bg-neutral-800 border-b border-neutral-700">
       <nav className="text-xs sm:text-sm md:text-base  w-full flex justify-between py-4 px-4 sm:px-12 lg:px-16 ">
