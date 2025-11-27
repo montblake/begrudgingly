@@ -1,13 +1,9 @@
 import { Libre_Baskerville } from "next/font/google";
 import "./globals.css";
 import Header from "../components/header";
-// import AnalyticsOnIdle from "./analyticsOnIdle";
 
 import { Analytics } from "@vercel/analytics/react";
-// import dynamic from "next/dynamic";
-// const Analytics = dynamic(
-//   () => import("@vercel/analytics/react").then((m) => m.Analytics) // Lazy load analytics to reduce TBT
-// );
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const baskerville = Libre_Baskerville({
   subsets: ["latin"],
@@ -26,6 +22,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={baskerville.variable}>
+      <GoogleTagManager gtmId="AW-17754632246" />
       <body
         className={`${baskerville.className} antialiased h-screen flex flex-col justify-start items-center bg-victorian bg-no-repeat bg-cover bg-center bg-fixed`}
       >
