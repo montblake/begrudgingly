@@ -28,7 +28,7 @@ type SpecialProps = {
   ImageProps: ImageProps;
   HeadlineProps: HeadlineProps;
   TextElement: TextElement;
-  CtaProps: CtaProps;
+  // CtaProps: CtaProps;
   MultiText: MultiText;
 };
 
