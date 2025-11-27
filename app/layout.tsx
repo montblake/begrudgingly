@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "../components/header";
 
 import { Analytics } from "@vercel/analytics/react";
-// import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const baskerville = Libre_Baskerville({
   subsets: ["latin"],
@@ -22,7 +22,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={baskerville.variable}>
-      {/* <GoogleTagManager gtmId="AW-17754632246" /> */}
+      <GoogleTagManager gtmId="AW-17754632246" />
       <body
         className={`${baskerville.className} antialiased h-screen flex flex-col justify-start items-center bg-victorian bg-no-repeat bg-cover bg-center bg-fixed`}
       >
