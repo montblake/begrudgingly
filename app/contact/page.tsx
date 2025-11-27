@@ -1,5 +1,6 @@
 import SpecialPage from "@/components/special_page";
 import { Metadata } from "next";
+import CTAElement from "@/components/cta_element";
 
 const ImageProps = {
   src: "/dickens_contact.avif",
@@ -16,6 +17,19 @@ const HeadlineProps = {
   title: "",
   author: "",
   publisher: "",
+};
+
+const CtaProps = {
+  intro:
+    "To contact Blake Montgomery, or Charles Dickens, kindly direct your electronic correspondence to the following address:",
+  links: [
+    {
+      href: "mailto:dickens@dickensagain.com",
+      text: "dickens@dickensagain.com",
+      internal: false,
+      icon: "mail",
+    },
+  ],
 };
 
 const TextElement = (
@@ -36,6 +50,7 @@ const TextElement = (
       would like to reach out regarding future collaborations, Blake welcomes
       your correspondence.
     </p>
+    <CTAElement intro={CtaProps.intro} links={CtaProps.links} />
     <div className="bg-gradient-to-br from-amber-200/30 via-amber-300/20 to-amber-400/30 backdrop-blur-sm border border-amber-400/40 rounded-xl p-6 md:p-8 mt-6">
       <h1 className="text-neutral-200 font-bold text-lg mb-3">
         Future Season Partnerships
@@ -53,19 +68,6 @@ const TextElement = (
     </div>
   </>
 );
-
-const CtaProps = {
-  intro:
-    "To contact Blake Montgomery, or Charles Dickens, kindly direct your electronic correspondence to the following address:",
-  links: [
-    {
-      href: "mailto:dickens@dickensagain.com",
-      text: "dickens@dickensagain.com",
-      internal: false,
-      icon: "mail",
-    },
-  ],
-};
 
 type MultiText = {
   title: string;
@@ -87,7 +89,7 @@ export default function Contact() {
       ImageProps={ImageProps}
       HeadlineProps={HeadlineProps}
       TextElement={TextElement}
-      CtaProps={CtaProps}
+      // CtaProps={CtaProps}
       MultiText={MultiText}
     />
   );

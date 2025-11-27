@@ -164,11 +164,11 @@ export default function Schedule() {
             <Image
               src="/dickens_house_poster_2.avif"
               alt="Holiday Dickens Wrapped With Ribbon"
-              width={500}
-              height={500}
+              width={300}
+              height={450}
               quality={50}
               loading="lazy"
-              sizes="100vw"
+              sizes="25vw"
               className="w-full h-full object-cover object-top rounded-xl border border-neutral-400"
             />
           </div>
