@@ -12,7 +12,9 @@ export default function OnSaleButtonMedium() {
       rel="noopener noreferrer"
       className="hidden md:block w-1/3 h-auto flex flex-col items-center justify-center bg-neutral-900 rounded-2xl p-4 -ml-12 self-stretch hover:scale-105 transition-all duration-300"
       onClick={() => {
-        track("On Sale Button Medium Clicked, Medium");
+        track("Tickets Button Clicked", {
+          location: "On Sale Button Medium",
+        });
         fireAdsConversion();
       }}
     >

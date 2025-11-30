@@ -11,7 +11,7 @@ export default function TicketsButton() {
       rel="noopener noreferrer"
       className="w-full relative z-30 flex flex-col items-center justify-center mb-4"
       onClick={() => {
-        track("Tickets Button Clicked");
+        track("Tickets Button Clicked", { location: "Tickets Button" });
         fireAdsConversion();
       }}
     >

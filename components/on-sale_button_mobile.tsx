@@ -13,7 +13,9 @@ export default function OnSaleButtonMobile() {
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => {
-          track("On Sale Button Mobile Clicked, Mobile");
+          track("Tickets Button Clicked", {
+            location: "On Sale Button Mobile",
+          });
           fireAdsConversion();
         }}
       >
