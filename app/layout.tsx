@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "../components/header";
 
 import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script";
 
 const baskerville = Libre_Baskerville({
   subsets: ["latin"],
@@ -28,6 +29,22 @@ export default function RootLayout({
         {children}
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
+
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17754632246"
+        strategy="afterInteractive"
+      />
+
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+
+    gtag('js', new Date());
+    gtag('config', 'AW-17754632246');
+  `}
+      </Script>
     </html>
   );
 }

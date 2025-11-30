@@ -1,9 +1,7 @@
 import FirstLeft from "@/components/first_left";
 import FirstRight from "@/components/first_right";
-// import dynamic from "next/dynamic";
 import PictureReviewScramble from "@/components/picture_review_scramble";
 import Schedule from "@/components/schedule";
-import { Link, Mail } from "lucide-react";
 import { Metadata } from "next";
 import Footer from "@/components/footer";
 
