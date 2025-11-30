@@ -12,8 +12,7 @@ const MainImage = {
 
 export default function FirstLeft() {
   return (
-    <div className="LEFT_COLUMN w-full">
-      {/* <div className="w-full h-[500px] relative"> */}
+    <div className="LEFT_COLUMN w-full ">
       <Image
         src={MainImage.src}
         alt={MainImage.alt}
@@ -24,9 +23,8 @@ export default function FirstLeft() {
         loading="eager"
         priority
         quality={75}
-        className="object-contain object-center rounded-xl -mt-2 md:-mt-4"
+        className="object-contain object-center rounded-xl -mt-2 md:-mt-4 mx-auto"
       />
-      {/* </div> */}
 
       <div className="w-full flex flex-col gap-0 rounded-xl px-2 md:px-6 text-neutral-950">
         <div className="w-full rounded-xl px-6 py-0 md:px-6 md:py-0 bg-neutral-900/30c backdrop-blur border border-neutral-600 relative flex flex-col items-start justify-start overflow-hidden">

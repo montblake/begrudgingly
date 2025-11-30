@@ -45,9 +45,8 @@ export default function Schedule() {
               <Image
                 src="/clownshow_logo_tent.avif"
                 alt="This is a clownshow."
-                // width={200}
-                // height={200}
-                fill
+                width={200}
+                height={200}
                 quality={50}
                 loading="lazy"
                 sizes="(max-width: 768px) 33vw, 25vw"
