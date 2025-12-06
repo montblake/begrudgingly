@@ -25,7 +25,9 @@ export default function FirstLeft() {
         quality={75}
         className="object-contain object-center rounded-xl -mt-2 md:-mt-4 mx-auto"
       />
-
+      <div className="w-full flex flex-col items-center justify-center -mt-8">
+        <TicketsButton />
+      </div>
       <div className="w-full flex flex-col gap-0 rounded-xl px-2 md:px-6 text-neutral-950">
         <div className="w-full rounded-xl px-6 py-0 md:px-6 md:py-0 bg-neutral-900/30c backdrop-blur border border-neutral-600 relative flex flex-col items-start justify-start overflow-hidden">
           <div className="w-full px-4 py-2">
@@ -75,8 +77,6 @@ export default function FirstLeft() {
               </div>
             </div>
           </div>
-
-          <TicketsButton />
         </div>
       </div>
     </div>
