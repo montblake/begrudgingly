@@ -1,5 +1,6 @@
 import SpecialHeadline from "./special_headline";
 import FirstRightMultitext from "./first_right_multitext";
+import TicketsButton from "./tickets_button";
 
 const Headline = {
   title:
@@ -13,7 +14,11 @@ export default function FirstRight() {
     <div className="w-full px-2 md:px-0 mx-auto">
       <div className="flex flex-col justify-start items-center md:items-start gap-0 w-full  px-8 bg-neutral-900/30 backdrop-blur px-4 py-16 rounded-xl border border-neutral-600 h-full">
         <SpecialHeadline {...Headline} />
-        <hr className="w-full border-neutral-600 mt-36 mb-4" />
+        {/* <hr className="w-full border-neutral-600 mt-36 mb-4" /> */}
+
+        <div className="w-full mt-4 mb-4">
+          <TicketsButton />
+        </div>
 
         <FirstRightMultitext />
       </div>

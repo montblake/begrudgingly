@@ -25,7 +25,7 @@ export default function FirstLeft() {
         quality={75}
         className="object-contain object-center rounded-xl -mt-2 md:-mt-4 mx-auto"
       />
-      <div className="w-full flex flex-col items-center justify-center -mt-8">
+      <div className="w-full md:hidden flex flex-col items-center justify-center -mt-8">
         <TicketsButton />
       </div>
       <div className="w-full flex flex-col gap-0 rounded-xl px-2 md:px-6 text-neutral-950">
@@ -35,7 +35,7 @@ export default function FirstLeft() {
               C<span className="text-2xl">hicago</span> 2025
             </h2>
           </div>
-          <div className="w-full bg-neutral-300 backdrop-blur relative z-30 flex flex-col items-start justify-center overflow-hidden h-full md:h-auto rounded-xl px-4 relative">
+          <div className="w-full bg-neutral-300 backdrop-blur relative z-30 flex flex-col items-start justify-center overflow-hidden h-full md:h-auto rounded-xl px-4 mb-8 md:mb-0 relative">
             <Image
               src="/dickens_illustration.avif"
               alt="Charles Dickens Illustration"
@@ -76,6 +76,9 @@ export default function FirstLeft() {
                 </a>
               </div>
             </div>
+          </div>
+          <div className="w-full hidden md:block">
+            <TicketsButton />
           </div>
         </div>
       </div>
